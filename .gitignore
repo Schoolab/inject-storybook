@@ -1,0 +1,14 @@
+*.log
+*.tgz
+.DS/Store
+.DS_Store
+.sass-cache
+dist
+node_modules
+.storybook
+stories
+public
+.npmrc
+package-lock.json
+package.json
+.gitignore
