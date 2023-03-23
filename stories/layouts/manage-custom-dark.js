@@ -1,15 +1,16 @@
-import navBar from '../components/navBar.html';
-import shortcutBar from '../components/shortcutBar.html';
+import navBar from '../components/navBar-custom-dark.html';
+import { createShortcutBar } from '../components/shortcutBar-custom-dark.js';
+import sidebar from "../components/sidebar.html";
 import breadcrump from "../components/breadcrump.html";
-import learningCoursesContent from "../components/learning-courses-content.html";
+import programContent from "../components/random-content.html";
 import subNav from "../components/subNav.html";
 import applicationTitle from "../components/application-title.html";
 import { script } from "../utils/script.js";
 
-export const createLearningCourses = () => {
+export const createManage = () => {
   const applicationUi = document.createElement('div');
   applicationUi.className = 'application-ui';
-
+  
   applicationUi.insertAdjacentHTML('beforeend', navBar);
 
   const applicationContainer = document.createElement('div');
@@ -17,7 +18,10 @@ export const createLearningCourses = () => {
 
   applicationUi.appendChild(applicationContainer);
 
+  const shortcutBar = createShortcutBar();
+
   applicationContainer.insertAdjacentHTML('beforeend',shortcutBar);
+  applicationContainer.insertAdjacentHTML('beforeend',sidebar);
 
   const applicationContent = document.createElement('main');
   applicationContent.className = 'application-content';
@@ -39,7 +43,8 @@ export const createLearningCourses = () => {
   appMainContainer.className = 'container-lg container-lg-fluid mb-lg-0 py-7 px-7';
 
   applicationContentDiv.appendChild(appMainContainer);
-  appMainContainer.insertAdjacentHTML('beforeend',learningCoursesContent);
+
+  appMainContainer.insertAdjacentHTML('beforeend',programContent);
   script();
   return applicationUi;
 };
