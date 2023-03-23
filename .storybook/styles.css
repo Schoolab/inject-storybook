@@ -1,0 +1,35 @@
+/* Prod */
+/* @import '~@schoolab/inject-css/css/main.css'; */
+
+/* Dev */
+@import '../../inject-css/css/main.css';
+
+@import './icon.css';
+
+:root {
+	--custom-navbar-dot-bg-color: #ff5630;
+	--custom-navbar-bg-color-start: #081134;
+	--custom-navbar-bg-color-end: #081134;
+	--custom-bottom-navbar-bg-color-start: #081134;
+	--custom-bottom-navbar-bg-color-end: #081134;
+	--custom-navbar-nav-link-color: #fff;
+	--custom-bottom-navbar-nav-link-color: #fff;
+
+
+	--primary-h: 160 !important;
+    --primary-s: 41% !important;
+    --primary-l: 57% !important;
+    --secondary: #34A0FC !important;
+    --secondary-h: 208 !important;
+    --secondary-s: 97% !important;
+    --secondary-l: 60% !important;
+    --contrastThreshold: 61%;
+    --custom-navbar-dot-bg-color: #41C696;
+    --custom-navbar-nav-link-color: #41C696;
+    --custom-bottom-navbar-nav-link-color: #41C696;
+}
+
+pre {
+    color: #fff;
+}
+
