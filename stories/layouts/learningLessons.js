@@ -1,15 +1,15 @@
-import navBar from '../components/navBar-custom-dark.html';
+import navBar from '../components/navBar.html';
 import shortcutBar from '../components/shortcutBar.html';
 import breadcrump from "../components/breadcrump.html";
-import programContent from "../components/program-dashboard-content.html";
-import subNav   from "../components/subNav.html";
+import learningCoursesContent from "../components/learning-lessons-content.html";
+import subNav from "../components/subNav.html";
 import applicationTitle from "../components/application-title.html";
 import { script } from "../utils/script.js";
 
-export const createProgramDashboard = () => {
+export const createLearningLessons = () => {
   const applicationUi = document.createElement('div');
   applicationUi.className = 'application-ui';
-  
+
   applicationUi.insertAdjacentHTML('beforeend', navBar);
 
   const applicationContainer = document.createElement('div');
@@ -39,8 +39,8 @@ export const createProgramDashboard = () => {
   appMainContainer.className = 'container-lg container-lg-fluid mb-lg-0 py-7 px-7';
 
   applicationContentDiv.appendChild(appMainContainer);
-
-  appMainContainer.insertAdjacentHTML('beforeend',programContent);
+  appMainContainer.insertAdjacentHTML('beforeend',learningCoursesContent);
   script();
   return applicationUi;
 };
+

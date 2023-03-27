@@ -1,6 +1,18 @@
 <div class="row">
     <div class="application-section col-12 col-lg-6 ">
-        <div class="cover-container rounded" style="background-image:url(&quot;img/hero.png&quot;);background-repeat:no-repeat; background-position:center; background-size:cover;"></div>
+        <div class="carousel slide carousel-fade pointer-event" id="carousel" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cover-container rounded" style="background-image:url(&quot;img/hero.png&quot;);background-repeat:no-repeat; background-position:center; background-size:cover;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cover-container rounded" style="background-image:url(&quot;img/hero-2.png&quot;);background-repeat:no-repeat; background-position:center; background-size:cover;">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev"><span class="carousel-control-prev-icon icon icon-chevron-left" aria-hidden="true"></span><span class="sr-only">Précédent</span></a><a class="carousel-control-next" href="#carousel" role="button" data-slide="next"><span class="carousel-control-next-icon icon icon-chevron-right" aria-hidden="true"></span><span class="sr-only">Suivant</span></a>
+        </div>
     </div>
     <div class="application-section col-12 col-lg-6 d-flex justify-content-center flex-column">
         <div class="h1 m-0 mb-5">Program-1 dashboard</div>
@@ -8,72 +20,113 @@
     </div>
     <div class="col-12 col-lg-6 col-xl-8 application-section">
         <div class="application-section">
-            <h4 class="application-section--title
-                            " data-toggle="collapse" data-target="#userApplications" aria-expanded="true">
-                <span class="application-section--title-content">My projects (3)</span>
-                <span class="icon icon-chevron-right ml-auto"></span>
-            </h4>
-            <div class="collapse show" id="userApplications">
-                <div class="item is-bordered mb-5">
-                    <div class="item-row p-0 flex-column flex-md-row flex-lg-column  flex-xl-row  align-items-center">
-                        <div class="rounded " style="background-image:url(&quot;https://inject-prod.s3.amazonaws.com/applications/covers/1050_co1140x380.jpg&quot;);background-repeat:no-repeat; background-position:center; background-size:cover; height:275px; width:100%"></div>
-                        <div class="p-7 w-100">
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="icon icon--letter is-sm mr-2 "><span>m</span></div>
-                                <a href="/program/75/project/2232/details"
-                                   class="item-title h4 mb-0"> My project </a>
-                            </div>
-                            <ul class="item-caption metas small is-list mb-3">
-                                <li>Created on 05/09/2022</li>
-                                <li>By John Doe</li>
-                            </ul>
-                            <p>consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo</p>
-                            <button class="btn btn-block btn-default stretched-link" href="#"> Project overview </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-6 col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch ">
-                        <div class="item is-bordered flex-fill flex-grow-1">
-                            <div class="item-row flex-column p-0 align-items-center">
-                                <div class="rounded" style="background-image:url(&quot;https://inject-prod.s3.amazonaws.com/applications/covers/1050_co1140x380.jpg&quot;);background-repeat:no-repeat; background-position:center; background-size:cover; height:275px; width:100%"></div>
-                                <div class="p-7 w-100">
-                                    <div class="d-flex align-items-center mb-2">
-                                        <div class="icon icon--letter is-sm mr-2 "><span>s</span></div>
-                                        <a href="/program/75/project/2232/details"
-                                           class="item-title h4 mb-0"> Second project </a>
-                                    </div>
-                                    <ul class="item-caption metas small is-list mb-3">
-                                        <li>Created on 05/09/2022</li>
-                                        <li>By John Doe</li>
-                                    </ul>
-                                    <p>consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo</p>
-                                    <button class="btn btn-block btn-default stretched-link" href="#"> Project overview </button>
+            <div class="row">
+                <div class="col-xl-6 col-lg-12 col-md-6 col-12 mb-7 d-flex align-items-stretch ">
+                    <div class="item is-bordered d-flex flex-fill flex-grow-1">
+                        <div class=" p-7 d-flex flex-column flex-grow-1 justify-content-between">
+                            <div class="mb-7">
+                                <div class="d-flex align-items-center mb-7">
+                                    <div class="icon icon-library  icon--letter is-sm mr-2 "></div>
+                                    <a href="#" class="item-title h4 mb-0"> Learning courses </a>
                                 </div>
+                                <p>consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-12 col-md-6 col-12 mb-5 d-flex align-items-stretch ">
-                        <div class="item item is-bordered flex-fill">
-                            <div class="item-row flex-column p-0 align-items-center ">
-                                <div class="rounded " style="background-image:url(&quot;https://inject-prod.s3.amazonaws.com/applications/covers/1050_co1140x380.jpg&quot;);background-repeat:no-repeat; background-position:center; background-size:cover; height:275px; width:100%"></div>
-                                <div class="p-7 w-100">
-                                    <div class="d-flex align-items-center mb-2">
-                                        <div class="icon icon--letter is-sm mr-2 "><span>t</span></div>
-                                        <a href="/program/75/project/2232/details"
-                                           class="item-title h4 mb-0"> Third project </a>
+                            <div>
+                                <div class="mb-7">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <span class="small text-muted">Courses</span>
+                                        <span class="small text-muted">In progress</span>
                                     </div>
-                                    <ul class="item-caption metas small is-list mb-3">
-                                        <li>Created on 05/09/2022</li>
-                                        <li>By John Doe</li>
-                                    </ul>
-                                    <p>consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo</p>
-                                    <button class="btn btn-block btn-default stretched-link" href="#"> Project overview </button>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="progress flex-fill mr-3" style="height: 5px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="small text-muted">33%</span>
+                                    </div>
                                 </div>
+                                <div class="mb-7">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <span class="small text-muted">Certificates</span>
+                                        <span class="small text-muted">Not started</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="progress flex-fill mr-3" style="height: 5px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="small text-muted">0%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-lg btn-block btn-default stretched-link" href="#"> View learning courses </button>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-xl-6 col-lg-12 col-md-6 col-12 mb-7 d-flex align-items-stretch ">
+                    <div class="item is-bordered d-flex flex-fill flex-grow-1">
+                        <div class=" p-7 d-flex flex-column flex-grow-1 justify-content-between">
+                            <div class="mb-7">
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="icon icon--letter is-sm mr-2 "><span>m</span></div>
+                                    <a href="/program/75/project/2232/details"
+                                       class="item-title h4 mb-0"> My-project </a>
+                                </div>
+                                <ul class="item-caption metas small is-list mb-5">
+                                    <li>Created on 05/09/2022</li>
+                                    <li>By John Doe</li>
+                                </ul>
+                                <p>consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</p>
+                            </div>
+                            <div>
+                                <div class="mb-7">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <span class="small text-muted">Objectives</span>
+                                        <span class="small text-muted">In progress</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="progress flex-fill mr-3" style="height: 5px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="small text-muted">33%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-lg btn-block btn-default stretched-link" href="#"> View project overview </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xl-6 col-lg-12 col-md-6 col-12 mb-7 d-flex align-items-stretch ">
+                    <div class="item is-bordered d-flex flex-fill flex-grow-1">
+                        <div class=" p-7 d-flex flex-column flex-grow-1 justify-content-between">
+                            <div class="mb-7">
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="icon icon--letter is-sm mr-2 "><span>s</span></div>
+                                    <a href="/program/75/project/2232/details"
+                                       class="item-title h4 mb-0"> Second project </a>
+                                </div>
+                                <ul class="item-caption metas small is-list mb-5">
+                                    <li>Created on 05/09/2022</li>
+                                    <li>By John Doe</li>
+                                </ul>
+                                <p>consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</p>
+                            </div>
+                            <div>
+                                <div class="mb-7">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <span class="small text-muted">Objectives</span>
+                                        <span class="small text-muted">In progress</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="progress flex-fill mr-3" style="height: 5px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="small text-muted">33%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-lg btn-block btn-default stretched-link" href="#"> View project overview</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </div>
         <h4 class="application-section--title">

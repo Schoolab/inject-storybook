@@ -1,11 +1,11 @@
-import { createManage } from './layouts/manage.js';
+import { createProgramUser } from './layouts/programUser.js';
 
 export default {
-    title: 'Components/SecondSidebar',
+    title: 'Pages/Program/User/About',
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
         layout: 'fullscreen',
       },
 };
 
-export const SecondSidebar = () => createManage();
+export const About = () => createProgramUser();

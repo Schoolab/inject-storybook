@@ -1,7 +1,7 @@
 import navBar from '../components/navBar.html';
 import shortcutBar from '../components/shortcutBar.html';
 import breadcrump from "../components/breadcrump.html";
-import programContent from "../components/program-content-carousel.html";
+import programContent from "../components/program-dashboard-carousel-content.html";
 import subNav from "../components/subNav.html";
 import applicationTitle from "../components/application-title.html";
 import { script } from "../utils/script.js";

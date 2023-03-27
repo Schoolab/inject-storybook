@@ -1,4 +1,5 @@
 import navBar from '../components/navBar.html';
+import shortcutBar from '../components/shortcutBar.html';
 import breadcrump from "../components/breadcrump.html";
 import projectOverviewContent from "../components/project-landing-page-content.html";
 import subNav  from "../components/subNav.html";
@@ -15,6 +16,8 @@ export const createProjectLandingPage = () => {
   applicationContainer.className = 'application-container';
 
   applicationUi.appendChild(applicationContainer);
+
+  applicationContainer.insertAdjacentHTML('beforeend',shortcutBar);
 
   const applicationContent = document.createElement('main');
   applicationContent.className = 'application-content';

@@ -1,11 +1,11 @@
-import { createManage } from './layouts/manage.js';
+import { createModalProject } from './layouts/modalProject.js';
 
 export default {
-    title: 'Components/SecondSidebar',
+    title: 'Pages/Modal/Project',
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
         layout: 'fullscreen',
       },
 };
+export const Project = () => createModalProject();
 
-export const SecondSidebar = () => createManage();

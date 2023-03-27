@@ -42,7 +42,7 @@ export const createManage = () => {
 
   applicationContentDiv.appendChild(appMainContainer);
 
-  appMainContainer.insertAdjacentHTML('beforeend',programContent);
+  // appMainContainer.insertAdjacentHTML('beforeend',programContent);
   script();
   return applicationUi;
 };

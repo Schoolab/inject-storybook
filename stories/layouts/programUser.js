@@ -1,13 +1,12 @@
 import navBar from '../components/navBar.html';
 import shortcutBar from '../components/shortcutBar.html';
-import sidebar from "../components/sidebar.html";
 import breadcrump from "../components/breadcrump.html";
-import LearningModulesContent from "../components/learning-modules-content.html";
-import subNav from "../components/subNav.html";
+import programContent from "../components/program-user-content.html";
+import subNav  from "../components/subNav.html";
 import applicationTitle from "../components/application-title.html";
-import {script} from '../utils/script.js'
+import { script } from "../utils/script.js";
 
-export const createLearningCoursesModules = () => {
+export const createProgramUser = () => {
   const applicationUi = document.createElement('div');
   applicationUi.className = 'application-ui';
   
@@ -19,7 +18,6 @@ export const createLearningCoursesModules = () => {
   applicationUi.appendChild(applicationContainer);
 
   applicationContainer.insertAdjacentHTML('beforeend',shortcutBar);
-  applicationContainer.insertAdjacentHTML('beforeend',sidebar);
 
   const applicationContent = document.createElement('main');
   applicationContent.className = 'application-content';
@@ -41,10 +39,8 @@ export const createLearningCoursesModules = () => {
   appMainContainer.className = 'container-lg container-lg-fluid mb-lg-0 py-7 px-7';
 
   applicationContentDiv.appendChild(appMainContainer);
-  appMainContainer.insertAdjacentHTML('beforeend',LearningModulesContent);
+
+  appMainContainer.insertAdjacentHTML('beforeend',programContent);
   script();
   return applicationUi;
 };
-
-
-
