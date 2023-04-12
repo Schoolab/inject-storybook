@@ -5,6 +5,8 @@
 @import '../../inject-css/css/main.css';
 
 @import './icon.css';
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+@import url('https://demo.schoolab.tools/bundles/starrating/css/rating.css');
 
 :root {
 	--custom-navbar-dot-bg-color: #ff5630;
@@ -32,4 +34,67 @@
 pre {
     color: #fff;
 }
+.rating div.star,
+.rating span.star {
+    font-family: Font Awesome\ 5 Free;
+    font-size: 15px;
+    font-weight: 900
+}
 
+@media (max-width:992px) {
+
+    .rating div.star,
+    .rating span.star {
+        font-size: 20px
+    }
+}
+
+.rating div.star:before,
+.rating span.star:before {
+    content: "\f005";
+    font-weight: 400
+}
+
+.rating[disabled=disabled] div.star:before,
+.rating[disabled=disabled] span.star:before {
+    color: #eaeaea
+}
+
+.rating:not([disabled=disabled]) div.star:hover:before,
+.rating:not([disabled=disabled]) div.star:hover~div.star:before,
+.rating:not([disabled=disabled]) span.star:hover:before,
+.rating:not([disabled=disabled]) span.star:hover~span.star:before {
+    color: #ffe57f;
+    font-weight: 900
+}
+
+.rating div.star-full,
+.rating span.star-full {
+    font-family: Font Awesome\ 5 Free;
+    font-size: 15px;
+    font-weight: 900
+}
+
+@media (max-width:992px) {
+
+    .rating div.star-full,
+    .rating span.star-full {
+        font-size: 20px
+    }
+}
+
+.rating div.star-full:before,
+.rating span.star-full:before {
+    color: #ffd740
+}
+
+.rating div.star-empty,
+.rating span.star-empty {
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 400
+}
+
+.rating div.star-empty:before,
+.rating span.star-empty:before {
+    content: "\f005"
+}
