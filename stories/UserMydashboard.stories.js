@@ -1,11 +1,11 @@
-import { createParticipation } from './layouts/participations.js';
+import { createUserMyDashboard } from './layouts/userMyDashboard.js';
 
 export default {
-    title: 'Pages/User/Participations',
+    title: 'Pages/User/MyDashboard',
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
         layout: 'fullscreen',
       },
 };
 
-export const Participations = () => createParticipation();
+export const MyDashboard = () => createUserMyDashboard();

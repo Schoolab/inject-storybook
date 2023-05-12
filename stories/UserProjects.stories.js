@@ -1,11 +1,11 @@
-import { createParticipation } from './layouts/participations.js';
+import { createUserProjects } from './layouts/userProjects.js';
 
 export default {
-    title: 'Pages/User/Participations',
+    title: 'Pages/User/UserProjects',
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
         layout: 'fullscreen',
       },
 };
 
-export const Participations = () => createParticipation();
+export const UserProjects = () => createUserProjects();
