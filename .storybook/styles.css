@@ -18,7 +18,7 @@
 	--custom-bottom-navbar-nav-link-color: #fff;
 
 
-	--primary-h: 160 !important;
+	/* --primary-h: 160 !important;
     --primary-s: 41% !important;
     --primary-l: 57% !important;
     --secondary: #34A0FC !important;
@@ -28,7 +28,7 @@
     --contrastThreshold: 61%;
     --custom-navbar-dot-bg-color: #41C696;
     --custom-navbar-nav-link-color: #41C696;
-    --custom-bottom-navbar-nav-link-color: #41C696;
+    --custom-bottom-navbar-nav-link-color: #41C696; */
 }
 
 pre {

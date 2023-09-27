@@ -1,5 +1,5 @@
 import navBar from '../components/navBar.html';
-import shortcutBar from '../components/shortcutBar.html';
+import shortcutBar from '../components/shortcutBar-not-expanded.html';
 import sidebar from "../components/sidebar.html";
 import breadcrump from "../components/breadcrump.html";
 import LearningModulesContent from "../components/learning-modules-content.html";
@@ -38,7 +38,7 @@ export const createLearningModules = () => {
 
   const appMainContainer = document.createElement('div');
   appMainContainer.id ="appMainContainer";
-  appMainContainer.className = 'container-lg container-lg-fluid mb-lg-0 py-7 px-7';
+  appMainContainer.className = 'container-lg container-lg-fluid mb-lg-0 py-7';
 
   applicationContentDiv.appendChild(appMainContainer);
   appMainContainer.insertAdjacentHTML('beforeend',LearningModulesContent);

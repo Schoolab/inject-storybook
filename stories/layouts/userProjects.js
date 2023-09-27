@@ -32,7 +32,7 @@ export const createUserProjects = () => {
 
   const appMainContainer = document.createElement('div');
   appMainContainer.id ="appMainContainer";
-  appMainContainer.className = 'container-lg container-lg-fluid mb-lg-0 py-7 px-7';
+  appMainContainer.className = 'container-lg container-lg-fluid mb-lg-0 py-7';
 
   applicationContentDiv.appendChild(appMainContainer);
   
