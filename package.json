@@ -30,7 +30,7 @@
     "babel-loader": "^8.2.5"
   },
   "dependencies": {
-    "@schoolab/inject-css": "1.0.0",
+    "@schoolab/inject-css": "1.0.92",
     "jquery": "^3.5.1"
   }
 }

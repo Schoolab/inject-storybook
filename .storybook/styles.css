@@ -1,8 +1,8 @@
 /* Prod */
-/* @import '~@schoolab/inject-css/css/main.css'; */
+@import '~@schoolab/inject-css/css/main.css';
 
 /* Dev */
-@import '../../inject-css/css/main.css';
+/* @import '../../inject-css/css/main.css'; */
 
 @import './icon.css';
 @import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
