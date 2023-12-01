@@ -1,0 +1,204 @@
+<div class="row">
+    <div class="col-12">
+        <div class="application-section">
+            <h3 class="application-section--title" data-toggle="collapse" data-target="#BasicInfo" aria-expanded="true">
+                <span class="application-section--title-content">Basic info</span>
+                <span class="icon icon-chevron-right ml-auto"></span>
+            </h3>
+            <div class="collapse show" id="BasicInfo">
+                <p class="mb-5">Name the program and add details such as a description, dates, a cover image and an icon.</p>
+                <div class="form-row">
+                    <div class="form-group col-lg-6">
+                        <label class="font-weight-bold required" for="translations_wrapper_lang_en_name">Name</label>
+                        <input type="text" id="translations_wrapper_lang_en_name" name="translations_wrapper[lang_en][name]" required="required" data-hint="name" aria-describedby="translations_wrapper_lang_en_name_help" class="form-control" value="We Design a Brighter Future">
+                        <small id="translations_wrapper_lang_en_name_help" class="form-text text-muted">The program name should be short and descriptive. 3-60 characters</small>
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="font-weight-bold required" for="translations_wrapper_lang_en_slug">Slug</label>
+                        <input type="text" id="translations_wrapper_lang_en_slug" name="translations_wrapper[lang_en][slug]" required="required" data-hint="slug" class="form-control" value="schoolab-impact">
+                        <small id="translations_wrapper_lang_en_slug_help" class="form-text text-muted">Slug must not be changed after you communicate it to your users.</small>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-lg-6">
+                        <label class="font-weight-bold" for="translations_wrapper[lang_fr][dateBegin]">Start date</label>
+                        <input type="date" id="translations_wrapper_lang_fr_dateBegin" name="translations_wrapper[lang_fr][dateBegin]" disabled="disabled" class="form-control">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="font-weight-bold" for="translations_wrapper[lang_fr][dateEnd]">End date</label>
+                        <input type="date" id="translations_wrapper_lang_fr_dateEnd" name="translations_wrapper[lang_fr][dateEnd]" disabled="disabled" class="form-control">
+                    </div>
+                </div>
+                <div class="alert alert-info d-flex align-items-left">
+                    <div class="flex-lg-shrink-1 mr-3 d-flex align-items-center">
+                        <span class="icon is-sm icon-information">
+                    </div>
+                    <div class="flex-fill ">
+                        <p>To edit the registrations dates go to <a href="#" class="alert-link">Registration</a> then <a href="#" class="alert-link">Dates & Rights</a></p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold" for="translations_wrapper_lang_en_overview">Short description</label>
+                    <textarea id="translations_wrapper_lang_en_overview" name="translations_wrapper[lang_en][overview]" length="500" maxlength="500" data-hint="overview" aria-describedby="translations_wrapper_lang_en_overview_help" rows="4" class="form-control" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 102px;">A program to teach you our methodologies and the basics of impact, in your daily life as well as in your company, for a brighter future!</textarea>
+                    <small id="translations_wrapper_lang_en_overview_help" class="form-text text-muted">A short sentence to explain what the program offers to participants. It will appear on lists.</small>
+                </div>
+                <div class="form-group" id="challengeCoverManager">
+                    <label class="font-weight-bold">Cover image</label>
+                    <div class="imageUploadManagerContainer">
+                        <div class="mb-3 imageUploadList">
+                            <div class="item is-bordered imageUploadListItem" data-identifier="11718cfa-9796-48f4-86ab-467af8f5cf04">
+                                <div class="item-row">
+                                    <div class="thumbnail is-lg" size="lg"><img src="https://inject-prod.s3.amazonaws.com/images/11718cfa-9796-48f4-86ab-467af8f5cf04/co300x200.png"></div>
+                                    <div class="item-content ml-4 py-1">
+                                        <span class="item-title is-truncated h4 mb-0">Screenshot 2023-08-02 at 20.11.34.png</span>
+                                        <small class="text-muted">Image/png</small>
+                                    </div>
+                                    <div class="item-options dropdown">
+                                        <button class="btn btn-sm btn-transparent btn-icon" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="icon icon-dots-vertical"></span>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item updateImageButton" href="javascript:void(0);" data-width="1800" data-height="1200" data-maxfileweight="5242880" data-url="/program/142/manage/cover-pictures/206/update" data-signed-url="/rest/challenge/142/cover-picture/signed-url/206"> Update </a>
+                                            <a class="dropdown-item text-danger deleteImageButton cursorLink" href="javascript:void(0);" data-url="/program/142/manage/cover-pictures/206/delete"> Delete </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="btn btn-block btn-lg btn-icon btn-default createImageButton" data-width="1800" data-height="1200" data-url="/program/142/manage/cover-pictures/create" data-signed-url="/rest/challenge/142/cover-picture/signed-url" data-maxfiles="5" data-maxfileweight="5242880" data-file-types="image/png,image/jpg,image/jpeg" data-maxfilesremaining="4">
+                            <span class="icon icon-paperclip"></span>
+                            <span>Add image</span>
+                        </span>
+                        <small class="form-text text-muted">PNG,JPG,JPEG, at least 1800x1200 px.</small>
+                    </div>
+                </div>
+                <fieldset class="form-group">
+                    <h4>Visibility</h4>
+                    <div class="d-flex flex-column flex-lg-row" id="challenge_advanced_form_visibility">
+                        <div class="flex-fill is-bordered mr-0 mr-lg-3 mb-3 mb-lg-0 custom-control custom-radio">
+                            <input type="radio" id="challenge_advanced_form_visibility_0" name="challenge_advanced_form[visibility]" class="custom-control-input" value="0">
+                            <label class="text-nowrap custom-control-label custom-control-label" for="challenge_advanced_form_visibility_0">Administrators only (draft mode)</label>
+                            <div class="input-box"></div>
+                        </div>
+                        <div class="flex-fill is-bordered mr-0 mr-lg-3 mb-3 mb-lg-0 custom-control custom-radio">
+                            <input type="radio" id="challenge_advanced_form_visibility_1" name="challenge_advanced_form[visibility]" class="custom-control-input" value="1" checked="checked">
+                            <label class="text-nowrap checkbox-custom custom-control-label custom-control-label" for="challenge_advanced_form_visibility_1">Members only</label>
+                            <div class="input-box"></div>
+                        </div>
+                        <div class="flex-fill is-bordered mb-3 mb-lg-0 custom-control custom-radio">
+                            <input type="radio" id="challenge_advanced_form_visibility_2" name="challenge_advanced_form[visibility]" class="custom-control-input" value="2">
+                            <label class="text-nowrap checkbox-custom custom-control-label custom-control-label" for="challenge_advanced_form_visibility_2">All visitors</label>
+                            <div class="input-box"></div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="alert alert-warning d-flex align-items-left">
+                    <div class="flex-lg-shrink-1 mr-3 d-flex align-items-center">
+                        <span class="icon is-sm icon-alert">
+                    </div>
+                    <div class="flex-fill ">
+                        <p>Reminder: don’t forget to publish the program to participants when you’re ready!</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary btn-flat">Save</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="application-section">
+            <h3 class="application-section--title" data-toggle="collapse" data-target="#PublicPage" aria-expanded="true">
+                <span class="application-section--title-content">Public pages & briefs</span>
+                <span class="icon icon-chevron-right ml-auto"></span>
+            </h3>
+            <div class="collapse show" id="PublicPage">
+                <p class="mb-5">Type briefs for your participants, Experts and Juries below.</p>
+
+                <div class="form-group">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="challenge_advanced_form_isPublic" name="challenge_advanced_form[isPublic]" autocomplete="off" aria-describedby="challenge_advanced_form_isPublic_help" class="custom-control-input" value="1">
+                        <label class="checkbox-custom custom-control-label custom-control-label" for="challenge_advanced_form_isPublic">Enable public page</label>                        
+                    </div> 
+                    <small id="challenge_advanced_form_isPublic_help" class="form-text text-muted ml-3 mt-0">To enable public page you need to create new pages in the manager, you can do this later</small>
+                </div>
+                <div class="form-group p-5 bg-light rounded"> 
+                    <label class="checkbox-custom font-weight-bold" for="challenge_advanced_form_customJavascript">Custom Javascript</label>
+                    <textarea id="challenge_advanced_form_customJavascript" name="challenge_advanced_form[customJavascript]" aria-describedby="challenge_advanced_form_customJavascript_help" rows="4" class="form-control" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 102px;"></textarea> 
+                    <small id="challenge_advanced_form_customJavascript_help" class="form-text text-muted">This Javascript code will be executed on the program public page.</small>
+                </div>
+                <div class="alert alert-info d-flex align-items-left">
+                    <div class="flex-lg-shrink-1 mr-3 d-flex align-items-center">
+                        <span class="icon is-sm icon-information">
+                    </div>
+                    <div class="flex-fill ">
+                        <p>To add a public page go to More then Content <a href="#" class="alert-link">Content</a></p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="id-1" name="name-1" autocomplete="off" aria-describedby="id-1_help" class="custom-control-input" value="1">
+                        <label class="checkbox-custom custom-control-label custom-control-label" for="id-1">Enable participants brief</label>                        
+                    </div> 
+                    <small id="id-1_help" class="form-text text-muted ml-3 mt-0">This will appear on the program dashboard for participants, experts and juries.</small>
+                </div>
+                <div class="form-group p-5 bg-light rounded"> 
+                    <label class="checkbox-custom font-weight-bold" for="id-2">Brief for participants</label>
+                    <textarea id="id-2" name="id-2" aria-describedby="id-2_help" rows="4" class="form-control" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 102px;"></textarea>                     
+                </div>
+                <div class="form-group">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="id-3" name="name-1" autocomplete="off" aria-describedby="id-3_help" class="custom-control-input" value="1">
+                        <label class="checkbox-custom custom-control-label custom-control-label" for="id-3">Enable juries brief</label>                        
+                    </div> 
+                    <small id="id-3_help" class="form-text text-muted ml-3 mt-0">This will appear on the juries’ dashboard only.</small>
+                </div>
+                <div class="form-group p-5 bg-light rounded"> 
+                    <label class="checkbox-custom font-weight-bold" for="id-4">Brief for juries</label>
+                    <textarea id="id-4" name="id-4" aria-describedby="id-4_help" rows="4" class="form-control" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 102px;"></textarea>                    
+                </div>
+                <div class="alert alert-info d-flex align-items-left">
+                    <div class="flex-lg-shrink-1 mr-3 d-flex align-items-center">
+                        <span class="icon is-sm icon-information">
+                    </div>
+                    <div class="flex-fill ">
+                        <p>Only people for whom the brief is intended can see it.</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary btn-flat">Save</button>
+                </div>
+            </div>
+        </div>
+        <div class="application-section">
+            <h3 class="application-section--title" data-toggle="collapse" data-target="#AdvancedSettings" aria-expanded="true">
+                <span class="application-section--title-content">Public pages & briefs</span>
+                <span class="icon icon-chevron-right ml-auto"></span>
+            </h3>
+            <div class="collapse show" id="AdvancedSettings">
+                <h4>Features</h4>
+                <div class="form-group mb-0">
+                    <div class="custom-control custom-checkbox">        
+                        <input type="checkbox" id="challenge_advanced_form_config_enable_challenge_timeline" name="challenge_advanced_form[config][enable_challenge_timeline]" autocomplete="off" class="custom-control-input" value="1">
+                        <label class="checkbox-custom custom-control-label custom-control-label" for="challenge_advanced_form_config_enable_challenge_timeline">Activate Project mode</label>
+                    </div>    
+                </div>
+                <div class="form-group mb-0">
+                    <div class="custom-control custom-checkbox">        
+                        <input type="checkbox" id="challenge_advanced_form_config_show_workspace_people" name="challenge_advanced_form[config][show_workspace_people]" autocomplete="off" class="custom-control-input" value="1" checked="checked">
+                        <label class="checkbox-custom custom-control-label custom-control-label" for="challenge_advanced_form_config_show_workspace_people">Show participants and mentors in the workspace menu</label>
+                    </div>    
+                </div>
+                <div class="form-group"><div class="custom-control custom-checkbox">        
+                    <input type="checkbox" id="challenge_thread_thread" name="challenge_thread[thread]" class="custom-control-input" value="1">
+                    <label class="checkbox-custom custom-control-label custom-control-label" for="challenge_thread_thread">Activate program global chat</label></div>    
+                </div>
+                <h4>Display</h4>
+                <div class="form-group"><div class="custom-control custom-checkbox">        
+                    <input type="checkbox" id="challenge_appearance_form_config_show_overview_register_closed_btn" name="challenge_appearance_form[config][show_overview_register_closed_btn]" autocomplete="off" class="custom-control-input" value="1">
+                    <label class="checkbox-custom custom-control-label custom-control-label" for="challenge_appearance_form_config_show_overview_register_closed_btn">Show the participation button (disabled) when applications are closed.</label></div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
