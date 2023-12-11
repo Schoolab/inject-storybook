@@ -65,7 +65,7 @@ export const script = () => {
             searching: false,
             scrollCollapse: true,
             scrollX: true,
-            scrollY: false,
+            scrollY: "50vh",
             ordering: false
         }); 
         jQuery(window).on('resize', function () {
