@@ -1,0 +1,306 @@
+<div class="row">
+    <div class="col-12">
+        <div class="application-section">
+            <div class="row mb-7 border-bottom">
+                <div class="col-lg-3 col-md-6 mb-7">
+                    <div class="item active is-bordered">
+                        <div class="item-row">
+                            <div class="item-row">                               
+                                <span class="icon icon-folder is-sm text-muted"></span>                               
+                                <div class="item-content ml-4 py-1">
+                                    <p class="item-title h4 mb-0"><input type="radio" class="d-none" name="showprograms" id="all-period" value="all-period">All files</p>
+                                    <ul class="item-caption metas small is-list">
+                                        <li>65 files</li>                                       
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item-options dropdown">
+                                <a class="btn btn-sm btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="icon icon-dots-vertical"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">                                  
+                                    <a class="dropdown-item">
+                                        <div class="dropdown-item--label">First action</div>
+                                    </a>
+                                    <a class="dropdown-item">
+                                        <div class="dropdown-item--label">Second action</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-7">
+                    <div class="item is-bordered">
+                        <div class="item-row">
+                            <div class="item-row">                               
+                                <span class="icon icon-folder is-sm text-muted"></span>                               
+                                <div class="item-content ml-4 py-1">
+                                    <p class="item-title h4 mb-0"><input type="radio" class="d-none" name="showprograms" id="all-period" value="all-period">Kit de bienvenue</p>
+                                    <ul class="item-caption metas small is-list">
+                                        <li>12 files</li>                                       
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item-options dropdown">
+                                <a class="btn btn-sm btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="icon icon-dots-vertical"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">                                  
+                                    <a class="dropdown-item">
+                                        <div class="dropdown-item--label">First action</div>
+                                    </a>
+                                    <a class="dropdown-item">
+                                        <div class="dropdown-item--label">Second action</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-7">
+                    <div class="item is-bordered">
+                        <div class="item-row">
+                            <div class="item-row">                               
+                                <span class="icon icon-folder is-sm text-muted"></span>                               
+                                <div class="item-content ml-4 py-1">
+                                    <p class="item-title h4 mb-0"><input type="radio" class="d-none" name="showprograms" id="all-period" value="all-period">Canvas</p>
+                                    <ul class="item-caption metas small is-list">
+                                        <li>24 files</li>                                       
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item-options dropdown">
+                                <a class="btn btn-sm btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="icon icon-dots-vertical"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">                                  
+                                    <a class="dropdown-item">
+                                        <div class="dropdown-item--label">First action</div>
+                                    </a>
+                                    <a class="dropdown-item">
+                                        <div class="dropdown-item--label">Second action</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="datatableFiltersWrapper ">
+                <div class="d-flex flex-column flex-lg-row align-items-lg-start pb-5 justify-content-lg-between">
+                    <div class="d-flex flex-column flex-lg-row scroll-h mr-lg-8 mr-0">
+                        <div class="btn-group btn-group-lg btn-group-toggle btn-filter-radios mr-lg-3 mr-0  mb-4 mb-lg-0" data-toggle="buttons">
+                            <label class="btn btn-default btn-sm text-nowrap"><input type="radio" name="showprograms" id="all-period" value="all-period">All</label>
+                            <label class="btn btn-default btn-sm text-nowrap active"><input type="radio" name="tocome" value="Plastic" id="tocome" checked>Learning </label>
+                            <label class="btn btn-default btn-sm text-nowrap"><input type="radio" name="showprograms" value="Past" id="Past">Objectives </label>
+                            <label class="btn btn-default btn-sm text-nowrap"><input type="radio" name="showprograms" value="Past" id="Past">Newsfeed </label>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div id="sg-datatables-challenges_list_datatable_filter" class="dataTables_filter mr-lg-3 mr-0 mb-5 mb-lg-0"><input type="search" class="form-control form-control-md" placeholder="Search" aria-controls="sg-datatables-challenges_list_datatable" style="min-width: 150px; width:100%"></div>
+                        <div class="mr-lg-3 mr-0 mb-5 mb-lg-0"><a class="btn btn-default btn-block btn-icon btn-lg text-nowrap" href="/organization/challenges/export"><span class="icon icon-download"></span><span>Export</span></a></div>
+                        <div class="mb-5 mb-lg-0"><a id="btn-new-challenge" class="btn btn-primary btn-icon btn-lg btn-block text-nowrap" data-form-url="/organization/challenge/modal/new" href="#"><span class="icon icon-plus"></span><span>Add resource</span></a></div>
+                    </div>
+                </div>
+            </div>
+            <table class="table responsive nowrap dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="" style="width: 100%;">
+                <thead>
+                    <tr role="row">
+                        <th class="sorting_disabled">
+                            <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                <input class="custom-control-input selectAllBulkSelectors" id="selectAll" type="checkbox" name="select">
+                                <label class="custom-control-label" for="selectAll"></label>
+                            </div>
+                        </th>
+                        <th class="sorting">Name</th>
+                        <th class="sorting">Tag</th>
+                        <th class="sorting">Origin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr role="row" class="odd">
+                        <td class="table-checkbox">
+                            <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                <input class="bulkActionSelector custom-control-input" id="455" value="455" type="checkbox">
+                                <label class="custom-control-label" for="455"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="item-icon icon icon-video"></div>
+                                    <div class="ml-3">
+                                        <p class="item-title h4 mb-0">Comment bien réussir ses interviews utilisateurs ?</p>
+                                        <ul class="item-caption metas small is-list">
+                                            <li>video/youtube</li>
+                                            <li><span class="icon icon-clock-outline">&nbsp;09/11/2023 17:15</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dropdown-container  ml-5">
+                                    <a class="btn btn-sm btn-transparent btn-icon text-muted" data-toggle="dropdown" data-toggle="dropdown" aria-expanded="false" data-boudary="window" href="#">
+                                        <span class="icon icon-dots-vertical"></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item">
+                                            <div class="dropdown-item--label">First action</div>
+                                        </a>
+                                        <a class="dropdown-item">
+                                            <div class="dropdown-item--label">Second action</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="badges is-small mt-3">
+                                <div class="badge badge-pill badge-tag is-small cursorLink">Tag 1</div>
+                                <div class="badge badge-pill badge-tag is-small cursorLink" data-tag-value="985" title="">Tag 2</div>
+                            </div>
+                        </td>
+                        <td>
+                            <span>Learning</span><br>
+                            <small>Capsule name</small>
+                        </td>
+                    </tr>
+                    <tr role="row" class="odd">
+                        <td class="table-checkbox">
+                            <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                <input class="bulkActionSelector custom-control-input" id="455" value="455" type="checkbox">
+                                <label class="custom-control-label" for="455"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="item-icon icon icon-video"></div>
+                                    <div class="ml-3">
+                                        <p class="item-title h4 mb-0">Apprendre à définir sa proposition de valeur</p>
+                                        <ul class="item-caption metas small is-list">
+                                            <li>video/youtube</li>
+                                            <li><span class="icon icon-clock-outline">&nbsp;09/11/2023 17:15</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dropdown-container  ml-5">
+                                    <a class="btn btn-sm btn-transparent btn-icon text-muted" data-toggle="dropdown" data-toggle="dropdown" aria-expanded="false" data-boudary="window" href="#">
+                                        <span class="icon icon-dots-vertical"></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item">
+                                            <div class="dropdown-item--label">First action</div>
+                                        </a>
+                                        <a class="dropdown-item">
+                                            <div class="dropdown-item--label">Second action</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="badges is-small mt-3">
+                                <div class="badge badge-pill badge-tag is-small cursorLink">Tag 1</div>
+                                <div class="badge badge-pill badge-tag is-small cursorLink" data-tag-value="985" title="">Tag 2</div>
+                            </div>
+                        </td>
+                        <td>
+                            <span>Learning</span><br>
+                            <small>Capsule name</small>
+                        </td>
+                    </tr>
+                    <tr role="row" class="odd">
+                        <td class="table-checkbox">
+                            <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                <input class="bulkActionSelector custom-control-input" id="455" value="455" type="checkbox">
+                                <label class="custom-control-label" for="455"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="item-icon icon icon-video"></div>
+                                    <div class="ml-3">
+                                        <p class="item-title h4 mb-0">Avoir une stratégie de marque en conformité avec sa proposition de valeur</p>
+                                        <ul class="item-caption metas small is-list">
+                                            <li>video/youtube</li>
+                                            <li><span class="icon icon-clock-outline">&nbsp;09/11/2023 17:15</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dropdown-container  ml-5">
+                                    <a class="btn btn-sm btn-transparent btn-icon text-muted" data-toggle="dropdown" data-toggle="dropdown" aria-expanded="false" data-boudary="window" href="#">
+                                        <span class="icon icon-dots-vertical"></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item">
+                                            <div class="dropdown-item--label">First action</div>
+                                        </a>
+                                        <a class="dropdown-item">
+                                            <div class="dropdown-item--label">Second action</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="badges is-small mt-3">
+                                <div class="badge badge-pill badge-tag is-small cursorLink">Tag 1</div>
+                                <div class="badge badge-pill badge-tag is-small cursorLink" title="">Tag 2</div>
+                                <div class="badge badge-pill badge-tag is-small cursorLink" title="">Tag 3</div>
+                            </div>
+                        </td>
+                        <td>
+                            <span>Learning</span><br>
+                            <small>Capsule name</small>
+                        </td>
+                    </tr>
+                    <tr role="row" class="odd">
+                        <td class="table-checkbox">
+                            <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                <input class="bulkActionSelector custom-control-input" id="455" value="455" type="checkbox">
+                                <label class="custom-control-label" for="455"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="item-icon icon icon-video"></div>
+                                    <div class="ml-3">
+                                        <p class="item-title h4 mb-0">Comment bien réussir ses interviews utilisateurs ?</p>
+                                        <ul class="item-caption metas small is-list">
+                                            <li>video/youtube</li>
+                                            <li><span class="icon icon-clock-outline">&nbsp;09/11/2023 17:15</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dropdown-container  ml-5">
+                                    <a class="btn btn-sm btn-transparent btn-icon text-muted" data-toggle="dropdown" data-toggle="dropdown" aria-expanded="false" data-boudary="window" href="#">
+                                        <span class="icon icon-dots-vertical"></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item">
+                                            <div class="dropdown-item--label">First action</div>
+                                        </a>
+                                        <a class="dropdown-item">
+                                            <div class="dropdown-item--label">Second action</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="badges is-small mt-3">
+                                <div class="badge badge-pill badge-tag is-small cursorLink">Tag 1</div>
+                            </div>
+                        </td>
+                        <td>
+                            <span>Learning</span><br>
+                            <small>Capsule name</small>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
