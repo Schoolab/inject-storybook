@@ -23,11 +23,10 @@ export const script = () => {
             if ($('.scroll-h') != null) {
                 $('.scroll-h').mousedown(function (event) {
                     $(this)
-                        .data('down', true)
+                        // .data('down', true)
                         .data('x', event.clientX)
                         .data('scrollLeft', this.scrollLeft)
-                        .addClass("dragging");
-
+                        .addClass("dragging");                    
                     return false;
                 })
                 $('.scroll-h').mouseup(function (event) {
@@ -39,18 +38,46 @@ export const script = () => {
                     if ($(this).data('down') == true) {
                         this.scrollLeft = $(this).data('scrollLeft') + $(this).data('x') - event.clientX;
                     }
-                })
-                $(window).mouseout(function (event) {
-                    if ($('.team-form-data').data('down')) {
-                        try {
-                            if (event.originalTarget.nodeName == 'BODY' || event.originalTarget.nodeName == 'HTML') {
-                                $('.team-form-data').data('down', false);
-                            }
-                        } catch (e) { }
-                    }
-                });
+                })      
             }
         });
+        // let isDragging = false;
+        // let startPosition = 0;
+        // let scrollLeft = 0;
+        
+        // const scrollContainer = document.getElementById('testscroll');
+        
+        // scrollContainer.addEventListener('mousedown', (e) => {
+        //     isDragging = true;
+        //     startPosition = e.pageX - scrollContainer.offsetLeft;
+        //     scrollLeft = scrollContainer.scrollLeft;
+        // });
+        
+        // scrollContainer.addEventListener('mouseleave', () => {
+        //     isDragging = false;
+        // });
+        
+        // scrollContainer.addEventListener('mouseup', () => {
+        //     isDragging = false;
+        // });
+        
+        // scrollContainer.addEventListener('mousemove', (e) => {
+        //     if (!isDragging) return;
+        
+        //     // Temporarily disable pointer events on the scroll container
+        //     scrollContainer.style.pointerEvents = 'none';
+        
+        //     const newPosition = e.pageX - scrollContainer.offsetLeft;
+        //     const distance = newPosition - startPosition;
+        //     scrollContainer.scrollLeft = scrollLeft - distance;
+        
+        //     // Re-enable pointer events after handling the drag-and-drop
+        //     setTimeout(() => {
+        //         scrollContainer.style.pointerEvents = 'auto';
+        //     });
+        // });
+
+
         //tables 
         var table = new DataTable('.table', {
             fixedColumns: {
@@ -65,7 +92,7 @@ export const script = () => {
             searching: false,
             scrollCollapse: true,
             scrollX: true,
-            scrollY: "50vh",
+            scrollY: "75vh",
             ordering: false
         }); 
         jQuery(window).on('resize', function () {
@@ -74,20 +101,19 @@ export const script = () => {
                 table.fixedColumns().left('1');
                 table.fixedColumns().left('2');
             }
-            else {               
-                table.fixedColumns().left('0');
-                table.scrollY = '100vh';
-               
+            else {
+                table.fixedColumns().left('0');                           
             }
         });
+        table.on( 'draw', function () {
+            console.log( 'Redraw occurred at: '+new Date().getTime() );
+        } );
     
 
         $('.table').on('show.bs.dropdown', (event) => {           
             let thisTable = event.target.closest('table');         
-            thisTable.classList.add('dropdowns-opened');          
-            // add class to all <tr>
-            $(thisTable).find('tr').addClass('non-dropdown');            
-            // remove class of this <tr>
+            thisTable.classList.add('dropdowns-opened'); 
+            $(thisTable).find('tr').addClass('non-dropdown');  
             event.target.closest('tr').classList.remove('non-dropdown');
         });
         
