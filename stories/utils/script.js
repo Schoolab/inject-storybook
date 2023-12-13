@@ -19,28 +19,28 @@ export const script = () => {
         //dropdown
         $('.dropdown-toggle').dropdown();
         //drag and scroll horizontally
-        $(document).ready(function () {
-            if ($('.scroll-h') != null) {
-                $('.scroll-h').mousedown(function (event) {
-                    $(this)
-                        // .data('down', true)
-                        .data('x', event.clientX)
-                        .data('scrollLeft', this.scrollLeft)
-                        .addClass("dragging");                    
-                    return false;
-                })
-                $('.scroll-h').mouseup(function (event) {
-                    $(this)
-                        .data('down', false)
-                        .removeClass("dragging");
-                })
-                $('.scroll-h').mousemove(function (event) {
-                    if ($(this).data('down') == true) {
-                        this.scrollLeft = $(this).data('scrollLeft') + $(this).data('x') - event.clientX;
-                    }
-                })      
-            }
-        });
+        // $(document).ready(function () {
+        //     if ($('.scroll-h') != null) {
+        //         $('.scroll-h').mousedown(function (event) {
+        //             $(this)
+        //                 // .data('down', true)
+        //                 .data('x', event.clientX)
+        //                 .data('scrollLeft', this.scrollLeft)
+        //                 .addClass("dragging");                    
+        //             return false;
+        //         })
+        //         $('.scroll-h').mouseup(function (event) {
+        //             $(this)
+        //                 .data('down', false)
+        //                 .removeClass("dragging");
+        //         })
+        //         $('.scroll-h').mousemove(function (event) {
+        //             if ($(this).data('down') == true) {
+        //                 this.scrollLeft = $(this).data('scrollLeft') + $(this).data('x') - event.clientX;
+        //             }
+        //         })      
+        //     }
+        // });
         // let isDragging = false;
         // let startPosition = 0;
         // let scrollLeft = 0;
