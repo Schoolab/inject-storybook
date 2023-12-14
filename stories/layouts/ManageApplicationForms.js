@@ -1,14 +1,13 @@
 import navBar from '../components/navBar.html';
-
+import shortcutBar from '../components/shortcutBar-not-expanded.html';
 import sidebar from "../components/sidebar.html";
 import breadcrump from "../components/breadcrump.html";
-import LearningModulesContent from "../components/admin-programs-content.html";
+import LearningModulesContent from "../components/manage-application-forms-content.html";
 import subNav from "../components/subNav.html";
 import applicationTitle from "../components/application-title.html";
 import {script} from '../utils/script.js'
-import {datatables} from '../utils/datatables.js'
 
-export const createAdminPrograms = () => {
+export const createManageApplicationForms = () => {
   const applicationUi = document.createElement('div');
   applicationUi.className = 'application-ui';
   
@@ -19,7 +18,7 @@ export const createAdminPrograms = () => {
 
   applicationUi.appendChild(applicationContainer);
 
-  
+  applicationContainer.insertAdjacentHTML('beforeend',shortcutBar);
   applicationContainer.insertAdjacentHTML('beforeend',sidebar);
 
   const applicationContent = document.createElement('main');
@@ -44,7 +43,6 @@ export const createAdminPrograms = () => {
   applicationContentDiv.appendChild(appMainContainer);
   appMainContainer.insertAdjacentHTML('beforeend',LearningModulesContent);
   script();
-  datatables();
   return applicationUi;
 };
 

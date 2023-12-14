@@ -1,50 +1,5 @@
 export const script = () => {
-    $(function () {
-        //tooltips
-        var tooltips = $('[data-toggle="tooltip"]');
-        tooltips.tooltip();
-        function disableTooltipInMobile() {
-            tooltips.tooltip('enable');
-            if (window.matchMedia("(max-width: 991.98px)").matches) {
-                tooltips.tooltip('disable');
-            }
-            $('.application-shortcutbar.shortcutbar-expanded a').tooltip('disable')
-            $('.application-shortcutbar.shortcutbar-expanded div').tooltip('disable')
-
-        }
-        disableTooltipInMobile();
-        $(window).resize(function () {
-            disableTooltipInMobile();
-        });
-        //dropdown
-        $('.dropdown-toggle').dropdown();
-        //drag and scroll horizontally
-        // $(document).ready(function () {
-        //     if ($('.scroll-h') != null) {
-        //         $('.scroll-h').mousedown(function (event) {
-        //             $(this)
-        //                 // .data('down', true)
-        //                 .data('x', event.clientX)
-        //                 .data('scrollLeft', this.scrollLeft)
-        //                 .addClass("dragging");                    
-        //             return false;
-        //         })
-        //         $('.scroll-h').mouseup(function (event) {
-        //             $(this)
-        //                 .data('down', false)
-        //                 .removeClass("dragging");
-        //         })
-        //         $('.scroll-h').mousemove(function (event) {
-        //             if ($(this).data('down') == true) {
-        //                 this.scrollLeft = $(this).data('scrollLeft') + $(this).data('x') - event.clientX;
-        //             }
-        //         })      
-        //     }
-        // });
-        // let isDragging = false;
-        // let startPosition = 0;
-        // let scrollLeft = 0;
-        
+    $(function () {        
         // const scrollContainer = document.getElementById('testscroll');
         
         // scrollContainer.addEventListener('mousedown', (e) => {
@@ -79,49 +34,51 @@ export const script = () => {
 
 
         //tables 
-        var table = new DataTable('.table', {
-            fixedColumns: {
-                left: 1,
-                left: 2,
-            },
-            responsive: {
-                fixedColumns: false
-            },
-            paging: false,
-            info: false,
-            searching: false,
-            scrollCollapse: true,
-            scrollX: true,
-            scrollY: "75vh",
-            ordering: false
-        }); 
-        jQuery(window).on('resize', function () {
-            var win = jQuery(this); //this = window
-            if (win.width() >= 1200) {
-                table.fixedColumns().left('1');
-                table.fixedColumns().left('2');
-            }
-            else {
-                table.fixedColumns().left('0');                           
-            }
-        });
-        table.on( 'draw', function () {
-            console.log( 'Redraw occurred at: '+new Date().getTime() );
-        } );
-    
-
-        $('.table').on('show.bs.dropdown', (event) => {           
-            let thisTable = event.target.closest('table');         
-            thisTable.classList.add('dropdowns-opened'); 
-            $(thisTable).find('tr').addClass('non-dropdown');  
-            event.target.closest('tr').classList.remove('non-dropdown');
-        });
+        // if ($('.table') != null) {
+        //     var table = new DataTable('.table', {
+        //         fixedColumns: {
+        //             left: 1,
+        //             left: 2,
+        //         },
+        //         responsive: {
+        //             fixedColumns: false
+        //         },
+        //         paging: false,
+        //         info: false,
+        //         searching: false,
+        //         scrollCollapse: true,
+        //         scrollX: true,
+        //         scrollY: "75vh",
+        //         ordering: false
+        //     }); 
+        //     jQuery(window).on('resize', function () {
+        //         var win = jQuery(this); //this = window
+        //         if (win.width() >= 1200) {
+        //             table.fixedColumns().left('1');
+        //             table.fixedColumns().left('2');
+        //         }
+        //         else {
+        //             table.fixedColumns().left('0');                           
+        //         }
+        //     });
+        //     table.on( 'draw', function () {
+        //         console.log( 'Redraw occurred at: '+new Date().getTime() );
+        //     } );
         
-        $('.table').on('hidden.bs.dropdown', (event) => {
-            let thisTable = event.target.closest('table');
-            thisTable.classList.remove('dropdowns-opened');
-            $(thisTable).find('tr').removeClass('non-dropdown');
-        });
+
+        //     $('.table').on('show.bs.dropdown', (event) => {           
+        //         let thisTable = event.target.closest('table');         
+        //         thisTable.classList.add('dropdowns-opened'); 
+        //         $(thisTable).find('tr').addClass('non-dropdown');  
+        //         event.target.closest('tr').classList.remove('non-dropdown');
+        //     });
+            
+        //     $('.table').on('hidden.bs.dropdown', (event) => {
+        //         let thisTable = event.target.closest('table');
+        //         thisTable.classList.remove('dropdowns-opened');
+        //         $(thisTable).find('tr').removeClass('non-dropdown');
+        //     });
+        // }
     })
 };
 
