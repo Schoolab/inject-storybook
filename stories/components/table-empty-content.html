@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-12">
+        <div class="application-section">         
+            <div class="datatableFiltersWrapper ">
+                <div class="d-flex flex-column flex-lg-row align-items-lg-start pb-5 justify-content-lg-between">
+                    <div class="d-flex flex-column flex-lg-row scroll-h mr-lg-8 mr-0 mb-3 mb-lg-0">
+                        <button type="button" class="btn btn-lg dropdown-toggle btn-default" disabled="">All</button>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row">                 
+                        <a id="btn-new-challenge" class="btn btn-primary btn-icon btn-lg btn-block text-nowrap" data-form-url="/organization/challenge/modal/new" href="#"><span class="icon icon-plus"></span><span>Add {{item}}</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-8 text-center bg-light rounded">
+                <div class="mb-5"><img class="w-100 m-auto" src="img/card-illustration-empty.png" style="max-width: 240px;"></div>
+                <h4 class=" mb-5">There is no {{item}} yet...</h4>
+                <p class="small text-muted">// If in the manage //  You need to create a first {{item}} to see something here. </p>
+                <a class="btn btn-lg btn-primary">+ Add first {{item}}</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,11 +1,11 @@
-import { createTables } from './layouts/tables.js';
+import { createTableEmpty } from './layouts/tables-empty.js';
 
 export default {
-    title: 'Components/Tables/DefaultTable',
+    title: 'Components/Tables/EmptyTable',
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
         layout: 'fullscreen',
       },
 };
-export const DefaultTable = () => createTables();
+export const EmptyTable = () => createTableEmpty();
 
