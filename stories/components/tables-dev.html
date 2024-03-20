@@ -1,0 +1,602 @@
+<div class="container py-8">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="dataTables_scroll dtfc-has-left" style="position: relative;">
+                <div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;">
+                    <div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 1013px; padding-right: 15px;">
+                        <table class="table nowrap nowrap dataTableWrapper w-100 dataTable no-footer" style="margin-left: 0px; width: 1013px;">
+                            <thead>
+                                <tr>
+                                    <th class="sorting_disabled dtfc-fixed-left" rowspan="1" colspan="1" style="width: 40px; left: 0px; position: sticky;" aria-label="
+                  
+                  
+                ">
+                                        <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                            <input class="custom-control-input selectAllBulkSelectors" id="selectAll" type="checkbox" name="select">
+                                            <label class="custom-control-label" for="selectAll"></label>
+                                        </div>
+                                    </th>
+                                    <th class="sorting sorting_asc dtfc-fixed-left" tabindex="0" aria-controls="sg-datatables-jury_session_datatable" rowspan="1" colspan="1" style="width: 354.797px; left: 74px; position: sticky;" aria-sort="ascending" aria-label="Name: activate to sort column descending">Name</th>
+                                    <th class="sorting" tabindex="0" aria-controls="sg-datatables-jury_session_datatable" rowspan="1" colspan="1" style="width: 40.7188px;" aria-label="Type: activate to sort column ascending">Type</th>
+                                    <th class="sorting" tabindex="0" aria-controls="sg-datatables-jury_session_datatable" rowspan="1" colspan="1" style="width: 79.625px;" aria-label="Start date: activate to sort column ascending">Start date</th>
+                                    <th class="sorting" tabindex="0" aria-controls="sg-datatables-jury_session_datatable" rowspan="1" colspan="1" style="width: 70.6719px;" aria-label="End date: activate to sort column ascending">End date</th>
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 51.75px;" aria-label="Status">Status</th>
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 73.6719px;" aria-label="Elements">Elements</th>
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 49.7656px;" aria-label="Juries">Juries</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="dataTables_scrollBody" style="position: relative; overflow: auto; width: 100%;">
+                    <table id="sg-datatables-jury_session_datatable" class="table nowrap nowrap dataTableWrapper w-100 dataTable no-footer dtfc-has-left" aria-describedby="sg-datatables-jury_session_datatable_info" style="width: 1016px;">
+                        <thead>
+                            <tr style="height: 0px;">
+                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 40px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="
+                  
+                  
+                ">
+                                    <div class="dataTables_sizing" style="height: 0px; overflow: hidden;">
+                                        <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                            <input class="custom-control-input selectAllBulkSelectors" type="checkbox" name="select">
+                                            <label class="custom-control-label" for="selectAll"></label>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="sorting sorting_asc" aria-controls="sg-datatables-jury_session_datatable" rowspan="1" colspan="1" style="width: 354.797px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-sort="ascending" aria-label="Name: activate to sort column descending">
+                                    <div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Name</div>
+                                </th>
+                                <th class="sorting" aria-controls="sg-datatables-jury_session_datatable" rowspan="1" colspan="1" style="width: 40.7188px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Type: activate to sort column ascending">
+                                    <div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Type</div>
+                                </th>
+                                <th class="sorting" aria-controls="sg-datatables-jury_session_datatable" rowspan="1" colspan="1" style="width: 79.625px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Start date: activate to sort column ascending">
+                                    <div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Start date</div>
+                                </th>
+                                <th class="sorting" aria-controls="sg-datatables-jury_session_datatable" rowspan="1" colspan="1" style="width: 70.6719px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="End date: activate to sort column ascending">
+                                    <div class="dataTables_sizing" style="height: 0px; overflow: hidden;">End date</div>
+                                </th>
+                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 51.75px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Status">
+                                    <div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Status</div>
+                                </th>
+                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 73.6719px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Elements">
+                                    <div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Elements</div>
+                                </th>
+                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 49.7656px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Juries">
+                                    <div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Juries</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="odd">
+                                <td class="table-checkbox dtfc-fixed-left" style="left: 0px; position: sticky;">
+                                    <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                        <input class="bulkActionSelector custom-control-input" id="161" value="161" type="checkbox">
+                                        <label class="custom-control-label" for="161"></label>
+                                    </div>
+                                </td>
+                                <td class="sorting_1 dtfc-fixed-left" style="left: 74px; position: sticky;">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <a class="font-weight-bold is-primary" href="/program/frrezpo/manage/evaluations/jury/session/161" title="Jury Demo Day CPi 2023">Jury Demo Day CPi 2023</a>
+                                            </div>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="dropdown-container">
+                                                <a class="btn btn-sm btn-transparent btn-icon text-muted dropdown-trigger" data-boudary="window" data-toggle="dropdown" aria-expanded="false" href="#">
+                                                    <span class="icon icon-dots-vertical"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                    <a href="/program/147/juries-sessions/161" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Details</div>
+                                                    </a><a href="/program/frrezpo/manage/evaluations/jury/session/161" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Manage</div>
+                                                    </a>
+                                                    <div class="dropdown-divider"><a href="javascript:void(0);"> null </a></div><a href="javascript:void(0);" class="rowAction dropdown-item text-danger" data-url="/rest/challenge/147/jury/session/161/delete" data-confirm-modal="confirmDeleteModal">
+                                                        <div class="dropdown-item--label">Delete</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Project</td>
+                                <td> 03/27/2023 </td>
+                                <td> - </td>
+                                <td>0</td>
+                                <td>23</td>
+                                <td>27</td>
+                            </tr>
+                            <tr class="even">
+                                <td class="table-checkbox dtfc-fixed-left" style="left: 0px; position: sticky;">
+                                    <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                        <input class="bulkActionSelector custom-control-input" id="142" value="142" type="checkbox">
+                                        <label class="custom-control-label" for="142"></label>
+                                    </div>
+                                </td>
+                                <td class="sorting_1 dtfc-fixed-left" style="left: 74px; position: sticky;">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <a class="font-weight-bold is-primary" href="/program/frrezpo/manage/evaluations/jury/session/142" title="Jury Microsoft Schneider">Jury Microsoft Schneider</a>
+                                            </div>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="dropdown-container">
+                                                <a class="btn btn-sm btn-transparent btn-icon text-muted dropdown-trigger" data-boudary="window" data-toggle="dropdown" aria-expanded="false" href="#">
+                                                    <span class="icon icon-dots-vertical"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                    <a href="/program/147/juries-sessions/142" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Details</div>
+                                                    </a><a href="/program/frrezpo/manage/evaluations/jury/session/142" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Manage</div>
+                                                    </a>
+                                                    <div class="dropdown-divider"><a href="javascript:void(0);"> null </a></div><a href="javascript:void(0);" class="rowAction dropdown-item text-danger" data-url="/rest/challenge/147/jury/session/142/delete" data-confirm-modal="confirmDeleteModal">
+                                                        <div class="dropdown-item--label">Delete</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Project</td>
+                                <td> 12/08/2022 </td>
+                                <td> - </td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr class="odd">
+                                <td class="table-checkbox dtfc-fixed-left" style="left: 0px; position: sticky;">
+                                    <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                        <input class="bulkActionSelector custom-control-input" id="192" value="192" type="checkbox">
+                                        <label class="custom-control-label" for="192"></label>
+                                    </div>
+                                </td>
+                                <td class="sorting_1 dtfc-fixed-left" style="left: 74px; position: sticky;">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <a class="font-weight-bold is-primary" href="/program/frrezpo/manage/evaluations/jury/session/180c1b7f" title="ma session de votes avec un nom méga long que ça finit jamais">ma session de votes avec un nom méga...</a>
+                                            </div>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="dropdown-container">
+                                                <a class="btn btn-sm btn-transparent btn-icon text-muted dropdown-trigger" data-boudary="window" data-toggle="dropdown" aria-expanded="false" href="#">
+                                                    <span class="icon icon-dots-vertical"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                    <a href="/program/147/juries-sessions/192" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Details</div>
+                                                    </a><a href="/program/frrezpo/manage/evaluations/jury/session/180c1b7f" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Manage</div>
+                                                    </a>
+                                                    <div class="dropdown-divider"><a href="javascript:void(0);"> null </a></div><a href="javascript:void(0);" class="rowAction dropdown-item text-danger" data-url="/rest/challenge/147/jury/session/192/delete" data-confirm-modal="confirmDeleteModal">
+                                                        <div class="dropdown-item--label">Delete</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Project</td>
+                                <td> - </td>
+                                <td> - </td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr class="even">
+                                <td class="table-checkbox dtfc-fixed-left" style="left: 0px; position: sticky;">
+                                    <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                        <input class="bulkActionSelector custom-control-input" id="131" value="131" type="checkbox">
+                                        <label class="custom-control-label" for="131"></label>
+                                    </div>
+                                </td>
+                                <td class="sorting_1 dtfc-fixed-left" style="left: 74px; position: sticky;">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <a class="font-weight-bold is-primary" href="/program/frrezpo/manage/evaluations/jury/session/131" title="PDR2023 - Jury 1">PDR2023 - Jury 1</a>
+                                            </div>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="dropdown-container">
+                                                <a class="btn btn-sm btn-transparent btn-icon text-muted dropdown-trigger" data-boudary="window" data-toggle="dropdown" aria-expanded="false" href="#">
+                                                    <span class="icon icon-dots-vertical"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                    <a href="/program/147/juries-sessions/131" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Details</div>
+                                                    </a><a href="/program/frrezpo/manage/evaluations/jury/session/131" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Manage</div>
+                                                    </a>
+                                                    <div class="dropdown-divider"><a href="javascript:void(0);"> null </a></div><a href="javascript:void(0);" class="rowAction dropdown-item text-danger" data-url="/rest/challenge/147/jury/session/131/delete" data-confirm-modal="confirmDeleteModal">
+                                                        <div class="dropdown-item--label">Delete</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Project</td>
+                                <td> 12/08/2022 </td>
+                                <td> - </td>
+                                <td>0</td>
+                                <td>3</td>
+                                <td>7</td>
+                            </tr>
+                            <tr class="odd">
+                                <td class="table-checkbox dtfc-fixed-left" style="left: 0px; position: sticky;">
+                                    <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                        <input class="bulkActionSelector custom-control-input" id="141" value="141" type="checkbox">
+                                        <label class="custom-control-label" for="141"></label>
+                                    </div>
+                                </td>
+                                <td class="sorting_1 dtfc-fixed-left" style="left: 74px; position: sticky;">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <a class="font-weight-bold is-primary" href="/program/frrezpo/manage/evaluations/jury/session/141" title="PDR2023 - Jury 10">PDR2023 - Jury 10</a>
+                                            </div>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="dropdown-container">
+                                                <a class="btn btn-sm btn-transparent btn-icon text-muted dropdown-trigger" data-boudary="window" data-toggle="dropdown" aria-expanded="false" href="#">
+                                                    <span class="icon icon-dots-vertical"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                    <a href="/program/147/juries-sessions/141" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Details</div>
+                                                    </a><a href="/program/frrezpo/manage/evaluations/jury/session/141" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Manage</div>
+                                                    </a>
+                                                    <div class="dropdown-divider"><a href="javascript:void(0);"> null </a></div><a href="javascript:void(0);" class="rowAction dropdown-item text-danger" data-url="/rest/challenge/147/jury/session/141/delete" data-confirm-modal="confirmDeleteModal">
+                                                        <div class="dropdown-item--label">Delete</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Project</td>
+                                <td> 12/08/2022 </td>
+                                <td> - </td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>3</td>
+                            </tr>
+                            <tr class="even">
+                                <td class="table-checkbox dtfc-fixed-left" style="left: 0px; position: sticky;">
+                                    <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                        <input class="bulkActionSelector custom-control-input" id="133" value="133" type="checkbox">
+                                        <label class="custom-control-label" for="133"></label>
+                                    </div>
+                                </td>
+                                <td class="sorting_1 dtfc-fixed-left" style="left: 74px; position: sticky;">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <a class="font-weight-bold is-primary" href="/program/frrezpo/manage/evaluations/jury/session/133" title="PDR2023 - Jury 2">PDR2023 - Jury 2</a>
+                                            </div>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="dropdown-container">
+                                                <a class="btn btn-sm btn-transparent btn-icon text-muted dropdown-trigger" data-boudary="window" data-toggle="dropdown" aria-expanded="false" href="#">
+                                                    <span class="icon icon-dots-vertical"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                    <a href="/program/147/juries-sessions/133" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Details</div>
+                                                    </a><a href="/program/frrezpo/manage/evaluations/jury/session/133" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Manage</div>
+                                                    </a>
+                                                    <div class="dropdown-divider"><a href="javascript:void(0);"> null </a></div><a href="javascript:void(0);" class="rowAction dropdown-item text-danger" data-url="/rest/challenge/147/jury/session/133/delete" data-confirm-modal="confirmDeleteModal">
+                                                        <div class="dropdown-item--label">Delete</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Project</td>
+                                <td> 12/08/2022 </td>
+                                <td> - </td>
+                                <td>0</td>
+                                <td>2</td>
+                                <td>4</td>
+                            </tr>
+                            <tr class="odd">
+                                <td class="table-checkbox dtfc-fixed-left" style="left: 0px; position: sticky;">
+                                    <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                        <input class="bulkActionSelector custom-control-input" id="134" value="134" type="checkbox">
+                                        <label class="custom-control-label" for="134"></label>
+                                    </div>
+                                </td>
+                                <td class="sorting_1 dtfc-fixed-left" style="left: 74px; position: sticky;">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <a class="font-weight-bold is-primary" href="/program/frrezpo/manage/evaluations/jury/session/134" title="PDR2023 - Jury 3">PDR2023 - Jury 3</a>
+                                            </div>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="dropdown-container">
+                                                <a class="btn btn-sm btn-transparent btn-icon text-muted dropdown-trigger" data-boudary="window" data-toggle="dropdown" aria-expanded="false" href="#">
+                                                    <span class="icon icon-dots-vertical"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                    <a href="/program/147/juries-sessions/134" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Details</div>
+                                                    </a><a href="/program/frrezpo/manage/evaluations/jury/session/134" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Manage</div>
+                                                    </a>
+                                                    <div class="dropdown-divider"><a href="javascript:void(0);"> null </a></div><a href="javascript:void(0);" class="rowAction dropdown-item text-danger" data-url="/rest/challenge/147/jury/session/134/delete" data-confirm-modal="confirmDeleteModal">
+                                                        <div class="dropdown-item--label">Delete</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Project</td>
+                                <td> 12/08/2022 </td>
+                                <td> - </td>
+                                <td>0</td>
+                                <td>3</td>
+                                <td>5</td>
+                            </tr>
+                            <tr class="even">
+                                <td class="table-checkbox dtfc-fixed-left" style="left: 0px; position: sticky;">
+                                    <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                        <input class="bulkActionSelector custom-control-input" id="135" value="135" type="checkbox">
+                                        <label class="custom-control-label" for="135"></label>
+                                    </div>
+                                </td>
+                                <td class="sorting_1 dtfc-fixed-left" style="left: 74px; position: sticky;">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <a class="font-weight-bold is-primary" href="/program/frrezpo/manage/evaluations/jury/session/135" title="PDR2023 - Jury 4">PDR2023 - Jury 4</a>
+                                            </div>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="dropdown-container">
+                                                <a class="btn btn-sm btn-transparent btn-icon text-muted dropdown-trigger" data-boudary="window" data-toggle="dropdown" aria-expanded="false" href="#">
+                                                    <span class="icon icon-dots-vertical"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                    <a href="/program/147/juries-sessions/135" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Details</div>
+                                                    </a><a href="/program/frrezpo/manage/evaluations/jury/session/135" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Manage</div>
+                                                    </a>
+                                                    <div class="dropdown-divider"><a href="javascript:void(0);"> null </a></div><a href="javascript:void(0);" class="rowAction dropdown-item text-danger" data-url="/rest/challenge/147/jury/session/135/delete" data-confirm-modal="confirmDeleteModal">
+                                                        <div class="dropdown-item--label">Delete</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Project</td>
+                                <td> 12/08/2022 </td>
+                                <td> - </td>
+                                <td>0</td>
+                                <td>3</td>
+                                <td>5</td>
+                            </tr>
+                            <tr class="odd">
+                                <td class="table-checkbox dtfc-fixed-left" style="left: 0px; position: sticky;">
+                                    <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                        <input class="bulkActionSelector custom-control-input" id="136" value="136" type="checkbox">
+                                        <label class="custom-control-label" for="136"></label>
+                                    </div>
+                                </td>
+                                <td class="sorting_1 dtfc-fixed-left" style="left: 74px; position: sticky;">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <a class="font-weight-bold is-primary" href="/program/frrezpo/manage/evaluations/jury/session/136" title="PDR2023 - Jury 5">PDR2023 - Jury 5</a>
+                                            </div>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="dropdown-container">
+                                                <a class="btn btn-sm btn-transparent btn-icon text-muted dropdown-trigger" data-boudary="window" data-toggle="dropdown" aria-expanded="false" href="#">
+                                                    <span class="icon icon-dots-vertical"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                    <a href="/program/147/juries-sessions/136" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Details</div>
+                                                    </a><a href="/program/frrezpo/manage/evaluations/jury/session/136" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Manage</div>
+                                                    </a>
+                                                    <div class="dropdown-divider"><a href="javascript:void(0);"> null </a></div><a href="javascript:void(0);" class="rowAction dropdown-item text-danger" data-url="/rest/challenge/147/jury/session/136/delete" data-confirm-modal="confirmDeleteModal">
+                                                        <div class="dropdown-item--label">Delete</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Project</td>
+                                <td> 12/08/2022 </td>
+                                <td> - </td>
+                                <td>0</td>
+                                <td>2</td>
+                                <td>5</td>
+                            </tr>
+                            <tr class="even">
+                                <td class="table-checkbox dtfc-fixed-left" style="left: 0px; position: sticky;">
+                                    <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                        <input class="bulkActionSelector custom-control-input" id="137" value="137" type="checkbox">
+                                        <label class="custom-control-label" for="137"></label>
+                                    </div>
+                                </td>
+                                <td class="sorting_1 dtfc-fixed-left" style="left: 74px; position: sticky;">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <a class="font-weight-bold is-primary" href="/program/frrezpo/manage/evaluations/jury/session/137" title="PDR2023 - Jury 6">PDR2023 - Jury 6</a>
+                                            </div>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="dropdown-container">
+                                                <a class="btn btn-sm btn-transparent btn-icon text-muted dropdown-trigger" data-boudary="window" data-toggle="dropdown" aria-expanded="false" href="#">
+                                                    <span class="icon icon-dots-vertical"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                    <a href="/program/147/juries-sessions/137" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Details</div>
+                                                    </a><a href="/program/frrezpo/manage/evaluations/jury/session/137" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Manage</div>
+                                                    </a>
+                                                    <div class="dropdown-divider"><a href="javascript:void(0);"> null </a></div><a href="javascript:void(0);" class="rowAction dropdown-item text-danger" data-url="/rest/challenge/147/jury/session/137/delete" data-confirm-modal="confirmDeleteModal">
+                                                        <div class="dropdown-item--label">Delete</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Project</td>
+                                <td> 12/08/2022 </td>
+                                <td> - </td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>3</td>
+                            </tr>
+                            <tr class="odd">
+                                <td class="table-checkbox dtfc-fixed-left" style="left: 0px; position: sticky;">
+                                    <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                        <input class="bulkActionSelector custom-control-input" id="138" value="138" type="checkbox">
+                                        <label class="custom-control-label" for="138"></label>
+                                    </div>
+                                </td>
+                                <td class="sorting_1 dtfc-fixed-left" style="left: 74px; position: sticky;">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <a class="font-weight-bold is-primary" href="/program/frrezpo/manage/evaluations/jury/session/138" title="PDR2023 - Jury 7">PDR2023 - Jury 7</a>
+                                            </div>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="dropdown-container">
+                                                <a class="btn btn-sm btn-transparent btn-icon text-muted dropdown-trigger" data-boudary="window" data-toggle="dropdown" aria-expanded="false" href="#">
+                                                    <span class="icon icon-dots-vertical"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                    <a href="/program/147/juries-sessions/138" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Details</div>
+                                                    </a><a href="/program/frrezpo/manage/evaluations/jury/session/138" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Manage</div>
+                                                    </a>
+                                                    <div class="dropdown-divider"><a href="javascript:void(0);"> null </a></div><a href="javascript:void(0);" class="rowAction dropdown-item text-danger" data-url="/rest/challenge/147/jury/session/138/delete" data-confirm-modal="confirmDeleteModal">
+                                                        <div class="dropdown-item--label">Delete</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Project</td>
+                                <td> 12/08/2022 </td>
+                                <td> - </td>
+                                <td>0</td>
+                                <td>3</td>
+                                <td>6</td>
+                            </tr>
+                            <tr class="even">
+                                <td class="table-checkbox dtfc-fixed-left" style="left: 0px; position: sticky;">
+                                    <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                        <input class="bulkActionSelector custom-control-input" id="139" value="139" type="checkbox">
+                                        <label class="custom-control-label" for="139"></label>
+                                    </div>
+                                </td>
+                                <td class="sorting_1 dtfc-fixed-left" style="left: 74px; position: sticky;">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <a class="font-weight-bold is-primary" href="/program/frrezpo/manage/evaluations/jury/session/139" title="PDR2023 - Jury 8">PDR2023 - Jury 8</a>
+                                            </div>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="dropdown-container">
+                                                <a class="btn btn-sm btn-transparent btn-icon text-muted dropdown-trigger" data-boudary="window" data-toggle="dropdown" aria-expanded="false" href="#">
+                                                    <span class="icon icon-dots-vertical"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                    <a href="/program/147/juries-sessions/139" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Details</div>
+                                                    </a><a href="/program/frrezpo/manage/evaluations/jury/session/139" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Manage</div>
+                                                    </a>
+                                                    <div class="dropdown-divider"><a href="javascript:void(0);"> null </a></div><a href="javascript:void(0);" class="rowAction dropdown-item text-danger" data-url="/rest/challenge/147/jury/session/139/delete" data-confirm-modal="confirmDeleteModal">
+                                                        <div class="dropdown-item--label">Delete</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Project</td>
+                                <td> 12/08/2022 </td>
+                                <td> - </td>
+                                <td>0</td>
+                                <td>3</td>
+                                <td>5</td>
+                            </tr>
+                            <tr class="odd">
+                                <td class="table-checkbox dtfc-fixed-left" style="left: 0px; position: sticky;">
+                                    <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
+                                        <input class="bulkActionSelector custom-control-input" id="140" value="140" type="checkbox">
+                                        <label class="custom-control-label" for="140"></label>
+                                    </div>
+                                </td>
+                                <td class="sorting_1 dtfc-fixed-left" style="left: 74px; position: sticky;">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <a class="font-weight-bold is-primary" href="/program/frrezpo/manage/evaluations/jury/session/140" title="PDR2023 - Jury 9">PDR2023 - Jury 9</a>
+                                            </div>
+                                        </div>
+                                        <div class="ml-3">
+                                            <div class="dropdown-container">
+                                                <a class="btn btn-sm btn-transparent btn-icon text-muted dropdown-trigger" data-boudary="window" data-toggle="dropdown" aria-expanded="false" href="#">
+                                                    <span class="icon icon-dots-vertical"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end">
+                                                    <a href="/program/147/juries-sessions/140" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Details</div>
+                                                    </a><a href="/program/frrezpo/manage/evaluations/jury/session/140" class="dropdown-item">
+                                                        <div class="dropdown-item--label">Manage</div>
+                                                    </a>
+                                                    <div class="dropdown-divider"><a href="javascript:void(0);"> null </a></div><a href="javascript:void(0);" class="rowAction dropdown-item text-danger" data-url="/rest/challenge/147/jury/session/140/delete" data-confirm-modal="confirmDeleteModal">
+                                                        <div class="dropdown-item--label">Delete</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Project</td>
+                                <td> 12/08/2022 </td>
+                                <td> - </td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="width: 5%;"></div>
+                    <div style="width: 5%;"></div>
+                </div>
+                <div class="dtfc-right-top-blocker" style="bottom: 0px; display: block; position: absolute; width: 1px; right: 0px; top: 0px; height: 53px;"></div>
+            </div>
+            <div id="sg-datatables-jury_session_datatable_processing" class="dataTables_processing bg-white border text-primary" role="status" style="display: none;">
+                <div><span class="spinner-border spinner-border-sm mr-3 text-center" role="status"><span class="sr-only">Loading…</span></span></div>
+            </div>
+        </div>
+    </div>
+</div>
