@@ -1,222 +1,814 @@
 <div class="row">
-    <div class="col-12 ">
-       
+    <div class="col-12 ">       
             <div class="row">
-                <div class="col-lg-6 col-12 mb-7 d-flex align-items-stretch">
-                    <div class="application-section flex-fill d-flex flex-column justify-content-between position-relative">
-                        <div class="mb-7 d-flex flex-column">
-                            <div class="mb-7">
-                                <h3>Observation</h3>
-                                <ul class="item-caption metas small is-list">
-                                    <li><span class="icon icon-calendar-outline">&nbsp;15/10/2021</span></li>
-                                    <li><span class="icon icon-clock-outline small text-muted">&nbsp;20min</span></li>
-                                </ul>
-                            </div>
-                            <p>Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6 col-12 mb-7 mb-lg-0 d-flex flex-column justify-content-between">
-                                <div class="mb-5">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <span class="small text-muted">Section</span>
-                                        <span class="icon icon-check text-primary small">Finished</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="progress flex-fill mr-3" style="height: 5px;">
-                                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <span class="small text-primary">100%</span>
-                                    </div>
+                <div class="col-12">
+                    <div class="application-section is-highlighted">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 d-flex flex-column flex-lg-row justify-content-center align-items-center py-lg-8 py-5">
+                                <div class="mr-lg-8 mr-0 order-2 order-lg-1">
+                                    <h2>Welcome in your learning course!</h2>
+                                    <p>This is where you'll find all your lessons. You can track your progress here. Each lesson has its own modules and capsules. Let's get started!</p>                                 
                                 </div>
-                                <button class="btn btn-lg btn-block btn-primary" href="#"> View modules </button>
-                            </div>
-                            <div class="col-lg-6 col-12 d-flex flex-column justify-content-between">
-                                <div class="d-flex mb-5">
-                                    <span class="icon icon-school is-sm mr-3"></span>
-                                    <div class="d-flex flex-column">
-                                        <span class="small mb-2">Observation certificate</span>
-                                        <span class="small text-muted">Not completed</span>
-                                    </div>
+                                <div class="order-1 order-lg-2 mb-5 mb-lg-0">
+                                    <svg class="progress-circle-container is-2xl mb-3" viewBox="0 0 32 32" data-percent="15" style="--percent:15;">
+                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                        <text class="progress-circle-text" x="16" y="15">1/5</text>
+                                        <text class="progress-circle-subtext" x="16" y="20">Lessons</text>
+                                    </svg>
                                 </div>
-                                <button class="btn btn-lg btn-block btn-default" href="#"> Take exam </button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-12 mb-7 d-flex align-items-stretch">
-                    <div class="application-section flex-fill d-flex flex-column justify-content-between position-relative">
-                        <div class="mb-7 d-flex flex-column">
-                            <div class="mb-7">
-                                <h3>Product</h3>
-                                <ul class="item-caption metas small is-list">
-                                    <li><span class="icon icon-calendar-outline">&nbsp;15/10/2021</span></li>
-                                    <li><span class="icon icon-clock-outline small text-muted">&nbsp;20min</span></li>
-                                </ul>
+                    <div class="application-section">
+                        <h3 class="application-section--title mb-0" data-toggle="collapse" data-target="#lesson-1" aria-expanded="false">
+                            <div>
+                                <span class="icon icon-lock text-muted d-none"></span>
+                                <span class="application-section--title-content">{{Lesson 1}}</span>
+                                <span class="ml-3 badge badge-pill text-primary bg-white border small">
+                                    <span class="icon icon-check text-primary small mr-2"></span>Finished
+                                </span>
                             </div>
-                            <p>Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6 col-12 mb-7 mb-lg-0 d-flex flex-column justify-content-between">
-                                <div class="mb-5">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <span class="small text-muted">Section</span>
-                                        <span class="small text-muted">In progress</span>
+                            <span class="icon icon-chevron-right ml-auto"></span>
+                        </h3>
+                        <div class="collapse" id="lesson-1">
+                            <p class="mt-3">{{Lesson 1 description}}</p>
+                            <div class="my-5 rounded bg-light p-5">
+                                <h4 class="to-collapse collapsed mb-0" data-toggle="collapse" data-target="#module-1" aria-expanded="true">
+                                    <div>
+                                        <span class="icon icon-lock text-muted d-none"></span>
+                                        <span>{{Module 1.1}}</span>
+                                        <span class="ml-3 badge badge-pill text-primary bg-white border small">
+                                            <span class="icon icon-check text-primary mr-2"></span>Quiz
+                                        </span>
+                                        <ul class="metas small is-list">
+                                            <li><span class="icon icon-calendar-outline">&nbsp;day/month/year</span></li>
+                                        </ul>
                                     </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="progress flex-fill mr-3" style="height: 5px;">
-                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <span class="icon icon-chevron-right ml-auto"></span>
+                                </h4>
+                                <div class="collapse show" id="module-1">
+                                    <p class="mt-3">{{Module 1 description}}</p>
+                                    <div class="card is-bordered  mb-5 p-5">
+                                        <div class="d-flex align-items-center flex-fill">
+                                            <ul class="list-timeline-items is-alone">
+                                                <li class="list-timeline-item has-sm-icon is-done is-not-first">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="100" style="--percent:100;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique </div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-done">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="100" style="--percent:100;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique</div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-done">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="100" style="--percent:100;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique</div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <span class="small text-muted">25%</span>
                                     </div>
-                                </div>
-                                <button class="btn btn-lg btn-block btn-primary" href="#"> View modules </button>
-                            </div>
-                            <div class="col-lg-6 col-12  d-flex flex-column justify-content-between">
-                                <div class="d-flex mb-5">
-                                    <span class="icon icon-school is-sm mr-3"></span>
-                                    <div class="d-flex flex-column">
-                                        <span class="small mb-2">Product certificate</span>
-                                        <span class="small text-muted">Not completed</span>
+                                    <div class="d-flex align-items-md-center flex-column flex-md-row">
+                                        <div class="flex-fill d-flex flex-column justify-content-between mb-3 mb-md-0">
+                                            <div class="mr-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span class="small text-muted">Capsules</span>
+                                                    <span class="icon icon-check text-primary small">Finished</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="progress flex-fill mr-3" style="height: 5px;">
+                                                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span class="small text-primary">5/5</span>
+                                                </div>
+                                            </div>                                      
+                                        </div>
+                                        <div class="d-flex">
+                                            <a class="btn btn-lg flex-fill btn-default mr-3" href="#"><span class="icon icon-certificate-outline mr-2" href="#"></span> View quiz </a>
+                                            <a class="btn btn-lg flex-fill btn-primary" href="#"> View capsules </a>
+                                        </div>
                                     </div>
+
+                                   
                                 </div>
-                                <button class="btn btn-lg btn-block btn-default" href="#"> Take exam </button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-12 mb-7 d-flex align-items-stretch">
-                    <div class="application-section flex-fill d-flex flex-column justify-content-between position-relative">
-                        <div class="mb-7 d-flex flex-column">
-                            <div class="mb-7">
-                                <h3>Sales</h3>
-                                <ul class="item-caption metas small is-list">
-                                    <li><span class="icon icon-calendar-outline">&nbsp;15/10/2021</span></li>
-                                    <li><span class="icon icon-clock-outline small text-muted">&nbsp;20min</span></li>
-                                </ul>
+                    <div class="application-section">
+                        <h3 class="application-section--title mb-0" data-toggle="collapse" data-target="#lesson-2" aria-expanded="true">
+                            <div>
+                                <span class="icon icon-lock text-muted d-none"></span>
+                                <span class="application-section--title-content">{{Lesson 2}}</span>
+                                <span class="ml-3 badge badge-pill text-primary bg-white border small  d-none">
+                                    <span class="icon icon-check text-primary small mr-2 d-none"></span>Finished
+                                </span>
                             </div>
-                            <p>Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</p>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex flex-column justify-content-between">
-                                <div class="mb-5">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <span class="small text-muted">Section</span>
-                                        <span class="small text-muted">Not started</span>
+                            <span class="icon icon-chevron-right ml-auto"></span>
+                        </h3>
+                        <div class="collapse show" id="lesson-2">
+                            <p class="mt-3">{{Lesson 2 description}}</p>
+                            <div class="my-5 rounded bg-light p-5">
+                                <h4 class="to-collapse collapsed mb-0" data-toggle="collapse" data-target="#module-2-1" aria-expanded="true">
+                                    <div>
+                                        <span class="icon icon-lock text-muted d-none"></span>
+                                        <span>{{Module 2.1}}</span>
+                                        <span class="ml-3 badge badge-pill text-primary bg-white border small d-none">
+                                            <span class="icon icon-check text-primary mr-2 "><span>Quiz
+                                        </span>
+                                        <ul class="metas small is-list">
+                                            <li><span class="icon icon-calendar-outline">&nbsp;day/month/year</span></li>
+                                        </ul>
                                     </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="progress flex-fill mr-3" style="height: 5px;">
-                                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0"></div>
+                                    <span class="icon icon-chevron-right ml-auto"></span>
+                                </h4>
+                                <div class="collapse show" id="module-2-1">
+                                    <p class="mt-3">{{Module 2.1 description}}</p>
+                                    <div class="card is-bordered  mb-5 p-5">
+                                        <div class="d-flex align-items-center flex-fill">
+                                            <ul class="list-timeline-items is-alone">
+                                                <li class="list-timeline-item has-sm-icon is-done is-not-first">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="100" style="--percent:100;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique </div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="50" style="--percent:50;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title text-primary"> Consectetur adipiscing elit duis tristique</div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-progress is-not-last">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="0" style="--percent:0;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique</div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <div class="list-timeline-item--title small text-muted ml-10">2 more </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <span class="small text-muted">0%</span>
+                                    </div>
+                                    <div class="d-flex align-items-md-center flex-column flex-md-row">
+                                        <div class="flex-fill d-flex flex-column justify-content-between mb-3 mb-md-0">
+                                            <div class="mr-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span class="small text-muted">Capsules</span>
+                                                    <span class="text-muted small">In progress</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="progress flex-fill mr-3" style="height: 5px;">
+                                                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span class="small text-muted">3/5</span>
+                                                </div>
+                                            </div>                                      
+                                        </div>
+                                        <div class="d-flex">
+                                            <a class="btn btn-lg flex-fill btn-default mr-3" href="#"><span class="icon icon-certificate-outline mr-2" href="#"></span> Take a quiz </a>
+                                            <a class="btn btn-lg flex-fill btn-primary" href="#"> Continue capsules </a>
+                                        </div>
                                     </div>
                                 </div>
-                                <button class="btn btn-lg btn-block btn-primary" href="#"> View modules </button>
+                            </div>
+                            <div class="my-5 rounded bg-light p-5">
+                                <h4 class="to-collapse collapsed mb-0" data-toggle="collapse" data-target="#module-2-2" aria-expanded="false">
+                                    <div>
+                                        <span class="icon icon-lock text-muted"></span>
+                                        <span>{{Module 2.2}}</span>
+                                        <span class="ml-3 badge badge-pill text-primary bg-white border small d-none">
+                                            <span class="icon icon-check text-primary mr-2"></span>Quiz
+                                        </span>
+                                        <ul class="metas small is-list">
+                                            <li><span class="icon icon-calendar-outline">&nbsp;day/month/year</span></li>
+                                        </ul>
+                                    </div>
+                                    <span class="icon icon-chevron-right ml-auto"></span>
+                                </h4>
+                                <div class="collapse" id="module-2-2">
+                                    <p class="mt-3">{{Module 2.2 description}}</p>
+                                    <div class="card is-bordered  mb-5 p-5">
+                                        <div class="mb-7 d-flex align-items-center flex-fill">
+                                            <ul class="list-timeline-items is-alone">
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="0" style="--percent:0;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique </div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="0" style="--percent:0;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique</div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-not-last is-progress">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="0" style="--percent:0;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique</div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <div class="list-timeline-item--title small text-muted ml-10">2 more </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-md-center flex-column flex-md-row">
+                                        <div class="flex-fill d-flex flex-column justify-content-between mb-3 mb-md-0">
+                                            <div class="mr-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span class="small text-muted">Capsules</span>
+                                                    <span class="text-muted small">Not completed</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="progress flex-fill mr-3" style="height: 5px;">
+                                                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span class="small text-muted">0/5</span>
+                                                </div>
+                                            </div>                                      
+                                        </div>
+                                        <div class="d-flex">
+                                            <a class="btn btn-lg flex-fill btn-default mr-3 disabled" href="#"><span class="icon icon-certificate-outline mr-2" href="#"></span> take a quiz </a>
+                                            <a class="btn btn-lg flex-fill btn-primary disabled" href="#"> Start capsules </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-12 mb-7 d-flex align-items-stretch">
-                    <div class="application-section flex-fill d-flex flex-column justify-content-between position-relative">
-                        <div class="mb-7 d-flex flex-column">
-                            <div class="mb-7">
-                                <h3>Communication</h3>
-                                <ul class="item-caption metas small is-list">
-                                    <li><span class="icon icon-calendar-outline">&nbsp;15/10/2021</span></li>
-                                    <li><span class="icon icon-clock-outline small text-muted">&nbsp;20min</span></li>
-                                </ul>
+                    <div class="application-section">
+                        <h3 class="application-section--title mb-0" data-toggle="collapse" data-target="#lesson-3" aria-expanded="false">
+                            <div>
+                                <span class="icon icon-lock text-muted"></span>
+                                <span class="application-section--title-content">{{Lesson 3}}</span>
+                                <span class="ml-3 badge badge-pill text-primary bg-white border small  d-none">
+                                    <span class="icon icon-check text-primary small mr-2 d-none"></span>Finished
+                                </span>
                             </div>
-                            <p>Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</p>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex flex-column justify-content-between">
-                                <div class="mb-5">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <span class="small text-muted">Section</span>
-                                        <span class="small text-muted">Not started</span>
+                            <span class="icon icon-chevron-right ml-auto"></span>
+                        </h3>
+                        <div class="collapse" id="lesson-3">
+                            <p class="mt-3">{{Lesson 3 description}}</p>
+                            <div class="my-5 rounded bg-light p-5">
+                                <h4 class="to-collapse collapsed mb-0" data-toggle="collapse" data-target="#module-3-1" aria-expanded="false">
+                                    <div>
+                                        <span class="icon icon-lock text-muted"></span>
+                                        <span>{{Module 3.1}}</span>
+                                        <span class="ml-3 badge badge-pill text-primary bg-white border small d-none">
+                                            <span class="icon icon-check text-primary mr-2"></span>Quiz
+                                        </span>
+                                        <ul class="metas small is-list">
+                                            <li><span class="icon icon-calendar-outline">&nbsp;day/month/year</span></li>
+                                        </ul>
                                     </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="progress flex-fill mr-3" style="height: 5px;">
-                                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <span class="icon icon-chevron-right ml-auto"></span>
+                                </h4>
+                                <div class="collapse" id="module-3-1">
+                                    <p class="mt-3">{{Module 3.1 description}}</p>
+                                    <div class="card is-bordered  mb-5 p-5">
+                                        <div class="mb-7 d-flex align-items-center flex-fill">
+                                            <ul class="list-timeline-items is-alone">
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="0" style="--percent:0;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique </div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="0" style="--percent:0;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique</div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-not-last is-progress">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="0" style="--percent:0;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique</div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <div class="list-timeline-item--title small text-muted ml-10">2 more </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <span class="small text-muted">0%</span>
+                                    </div>
+                                    <div class="d-flex align-items-md-center flex-column flex-md-row">
+                                        <div class="flex-fill d-flex flex-column justify-content-between mb-3 mb-md-0">
+                                            <div class="mr-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span class="small text-muted">Capsules</span>
+                                                    <span class="text-muted small">Not completed</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="progress flex-fill mr-3" style="height: 5px;">
+                                                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span class="small text-muted">0/5</span>
+                                                </div>
+                                            </div>                                      
+                                        </div>
+                                        <div class="d-flex">
+                                            <a class="btn btn-lg flex-fill btn-default mr-3 disabled" href="#"><span class="icon icon-certificate-outline mr-2" href="#"></span> take a quiz </a>
+                                            <a class="btn btn-lg flex-fill btn-primary disabled" href="#"> Start capsules </a>
+                                        </div>
                                     </div>
                                 </div>
-                                <button class="btn btn-lg btn-block btn-primary" href="#"> View modules </button>
+                            </div>
+                            <div class="my-5 rounded bg-light p-5">
+                                <h4 class="to-collapse collapsed mb-0" data-toggle="collapse" data-target="#module-3-2" aria-expanded="false">
+                                    <div>
+                                        <span class="icon icon-lock text-muted"></span>
+                                        <span>{{Module 3.2}}</span>
+                                        <span class="ml-3 badge badge-pill text-primary bg-white border small d-none">
+                                            <span class="icon icon-check text-primary mr-2"></span>Quiz
+                                        </span>
+                                        <ul class="metas small is-list">
+                                            <li><span class="icon icon-calendar-outline">&nbsp;day/month/year</span></li>
+                                        </ul>
+                                    </div>
+                                    <span class="icon icon-chevron-right ml-auto"></span>
+                                </h4>
+                                <div class="collapse" id="module-3-2">
+                                    <p class="mt-3">{{Module 3.2 description}}</p>
+                                    <div class="card is-bordered  mb-5 p-5">
+                                        <div class="mb-7 d-flex align-items-center flex-fill">
+                                            <ul class="list-timeline-items is-alone">
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="0" style="--percent:0;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique </div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="0" style="--percent:0;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique</div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-not-last is-progress">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="0" style="--percent:0;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique</div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <div class="list-timeline-item--title small text-muted ml-10">2 more </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-md-center flex-column flex-md-row">
+                                        <div class="flex-fill d-flex flex-column justify-content-between mb-3 mb-md-0">
+                                            <div class="mr-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span class="small text-muted">Capsules</span>
+                                                    <span class="text-muted small">Not completed</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="progress flex-fill mr-3" style="height: 5px;">
+                                                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span class="small text-muted">0/5</span>
+                                                </div>
+                                            </div>                                      
+                                        </div>
+                                        <div class="d-flex">
+                                            <a class="btn btn-lg flex-fill btn-default mr-3 disabled" href="#"><span class="icon icon-certificate-outline mr-2" href="#"></span> take a quiz </a>
+                                            <a class="btn btn-lg flex-fill btn-primary disabled" href="#"> Start capsules </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-12 mb-7 d-flex align-items-stretch">
-                    <div class="application-section flex-fill d-flex flex-column justify-content-between position-relative">
-                        <div class="mb-7 d-flex flex-column">
-                            <div class="mb-7">
-                                <h3>Financement</h3>
-                                <ul class="item-caption metas small is-list">
-                                    <li><span class="icon icon-calendar-outline">&nbsp;15/10/2021</span></li>
-                                    <li><span class="icon icon-clock-outline small text-muted">&nbsp;20min</span></li>
-                                </ul>
+                    <div class="application-section">
+                        <h3 class="application-section--title mb-0" data-toggle="collapse" data-target="#lesson-4" aria-expanded="false">
+                            <div>
+                                <span class="icon icon-lock text-muted"></span>
+                                <span class="application-section--title-content">{{Lesson 4}}</span>
+                                <span class="ml-3 badge badge-pill text-primary bg-white border small  d-none">
+                                    <span class="icon icon-check text-primary small mr-2 d-none"></span>Finished
+                                </span>
                             </div>
-                            <p>Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</p>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex flex-column justify-content-between">
-                                <div class="mb-5">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <span class="small text-muted">Section</span>
-                                        <span class="small text-muted">Not started</span>
+                            <span class="icon icon-chevron-right ml-auto"></span>
+                        </h3>
+                        <div class="collapse" id="lesson-4">
+                            <p class="mt-3">{{Lesson 3 description}}</p>
+                            <div class="my-5 rounded bg-light p-5">
+                                <h4 class="to-collapse collapsed mb-0" data-toggle="collapse" data-target="#module-4-1" aria-expanded="false">
+                                    <div>
+                                        <span class="icon icon-lock text-muted"></span>
+                                        <span>{{Module 4.1}}</span>
+                                        <span class="ml-3 badge badge-pill text-primary bg-white border small d-none">
+                                            <span class="icon icon-check text-primary mr-2"></span>Quiz
+                                        </span>
+                                        <ul class="metas small is-list">
+                                            <li><span class="icon icon-calendar-outline">&nbsp;day/month/year</span></li>
+                                        </ul>
                                     </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="progress flex-fill mr-3" style="height: 5px;">
-                                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0"></div>
+                                    <span class="icon icon-chevron-right ml-auto"></span>
+                                </h4>
+                                <div class="collapse" id="module-4-1">
+                                    <p class="mt-3">{{Module 4.1 description}}</p>
+                                    <div class="card is-bordered  mb-5 p-5">
+                                        <div class="mb-7 d-flex align-items-center flex-fill">
+                                            <ul class="list-timeline-items is-alone">
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="0" style="--percent:0;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique </div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="0" style="--percent:0;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique</div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-not-last is-progress">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="0" style="--percent:0;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique</div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <div class="list-timeline-item--title small text-muted ml-10">2 more </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <span class="small text-muted">0%</span>
+                                    </div>
+                                    <div class="d-flex align-items-md-center flex-column flex-md-row">
+                                        <div class="flex-fill d-flex flex-column justify-content-between mb-3 mb-md-0">
+                                            <div class="mr-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span class="small text-muted">Capsules</span>
+                                                    <span class="text-muted small">Not completed</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="progress flex-fill mr-3" style="height: 5px;">
+                                                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span class="small text-muted">0/5</span>
+                                                </div>
+                                            </div>                                      
+                                        </div>
+                                        <div class="d-flex">
+                                            <a class="btn btn-lg flex-fill btn-default mr-3 disabled" href="#"><span class="icon icon-certificate-outline mr-2" href="#"></span> take a quiz </a>
+                                            <a class="btn btn-lg flex-fill btn-primary disabled" href="#"> Start capsules </a>
+                                        </div>
                                     </div>
                                 </div>
-                                <button class="btn btn-lg btn-block btn-primary" href="#"> View modules </button>
                             </div>
-                        </div>
-                        <div class="overlay rounded d-flex justify-content-center align-items-center flex-column text-center p-7">
-                            <span class="text-white icon icon-lock is-md mb-3"></span>
-                            <p class="text-white small">Finish previous lessons to unlock this one.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12 mb-7 d-flex align-items-stretch">
-                    <div class="application-section flex-fill d-flex flex-column justify-content-between position-relative">
-                        <div class="mb-7 d-flex flex-column">
-                            <div class="mb-7">
-                                <h3>Ecosystème Investisseurs</h3>
-                                <ul class="item-caption metas small is-list">
-                                    <li><span class="icon icon-calendar-outline">&nbsp;15/10/2021</span></li>
-                                    <li><span class="icon icon-clock-outline small text-muted">&nbsp;20min</span></li>
-                                </ul>
-                            </div>
-                            <p>Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</p>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex flex-column justify-content-between">
-                                <div class="mb-5">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <span class="small text-muted">Section</span>
-                                        <span class="small text-muted">Not started</span>
+                            <div class="my-5 rounded bg-light p-5">
+                                <h4 class="to-collapse collapsed mb-0" data-toggle="collapse" data-target="#module-4-2" aria-expanded="false">
+                                    <div>
+                                        <span class="icon icon-lock text-muted"></span>
+                                        <span>{{Module 4.2}}</span>
+                                        <span class="ml-3 badge badge-pill text-primary bg-white border small d-none">
+                                            <span class="icon icon-check text-primary mr-2"></span>Quiz
+                                        </span>
+                                        <ul class="metas small is-list">
+                                            <li><span class="icon icon-calendar-outline">&nbsp;day/month/year</span></li>
+                                        </ul>
                                     </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="progress flex-fill mr-3" style="height: 5px;">
-                                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <span class="icon icon-chevron-right ml-auto"></span>
+                                </h4>
+                                <div class="collapse" id="module-4-2">
+                                    <p class="mt-3">{{Module 4.2 description}}</p>
+                                    <div class="card is-bordered  mb-5 p-5">
+                                        <div class="mb-7 d-flex align-items-center flex-fill">
+                                            <ul class="list-timeline-items is-alone">
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="0" style="--percent:0;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique </div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="0" style="--percent:0;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique</div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-not-last is-progress">
+                                                    <a class="list-timeline-item--content" href="/program/125/project/2065/module/3716">
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="d-flex px-1 mx-3">
+                                                                    <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="0" style="--percent:0;">
+                                                                        <circle class="progress-circle progress-circle-bg"></circle>
+                                                                        <circle class="progress-circle progress-circle-percent"></circle>
+                                                                        <path class="progress-circle-icon is-checked" d="M21.128 9.5L13.948 16.724L10.872 13.624L8 16.52L13.948 22.5L24 12.386L21.128 9.5Z"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="list-timeline-item--title"> Consectetur adipiscing elit duis tristique</div>
+                                                                <span class="icon icon-clock-outline small text-muted">&nbsp;5min</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-timeline-item has-sm-icon is-progress">
+                                                    <div class="list-timeline-item--title small text-muted ml-10">2 more </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <span class="small text-muted">0%</span>
+                                    </div>
+                                    <div class="d-flex align-items-md-center flex-column flex-md-row">
+                                        <div class="flex-fill d-flex flex-column justify-content-between mb-3 mb-md-0">
+                                            <div class="mr-3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span class="small text-muted">Capsules</span>
+                                                    <span class="text-muted small">Not completed</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="progress flex-fill mr-3" style="height: 5px;">
+                                                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span class="small text-muted">0/5</span>
+                                                </div>
+                                            </div>                                      
+                                        </div>
+                                        <div class="d-flex">
+                                            <a class="btn btn-lg flex-fill btn-default mr-3 disabled" href="#"><span class="icon icon-certificate-outline mr-2" href="#"></span> take a quiz </a>
+                                            <a class="btn btn-lg flex-fill btn-primary disabled" href="#"> Start capsules </a>
+                                        </div>
                                     </div>
                                 </div>
-                                <button class="btn btn-lg btn-block btn-primary" href="#"> View modules </button>
                             </div>
-                        </div>
-                        <div class="overlay rounded d-flex justify-content-center align-items-center flex-column text-center p-7">
-                            <span class="text-white icon icon-lock is-md mb-3"></span>
-                            <p class="text-white small">Finish previous lessons to unlock this one.</p>
                         </div>
                     </div>
                 </div>
             </div>
-       
+        </div>
     </div>
 </div>

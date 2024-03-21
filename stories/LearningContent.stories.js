@@ -1,11 +1,11 @@
-import { createLearningContent } from './layouts/learningContent.js';
+// import { createLearningContent } from './layouts/learningContent.js';
 
-export default {
-    title: 'Pages/Learning/Content',
-    parameters: {
-        // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
-        layout: 'fullscreen',
-      },
-};
+// export default {
+//     title: 'Pages/Learning/Content',
+//     parameters: {
+//         // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
+//         layout: 'fullscreen',
+//       },
+// };
 
-export const Content = () => createLearningContent();
+// export const Content = () => createLearningContent();
