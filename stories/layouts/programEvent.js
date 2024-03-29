@@ -1,9 +1,11 @@
 import navBar from '../components/navBar.html';
-import shortcutBar from '../components/shortcutBar.html';
+import shortcutBar from '../components/shortcutBar-not-expanded.html';
 import breadcrump from "../components/breadcrump.html";
 import programContent from "../components/program-event-content.html";
 import applicationTitle from "../components/application-title-no-subnav.html";
+import applicationAside from "../components/application-aside-event.html";
 import { script } from "../utils/script.js";
+import {aside} from '../utils/aside.js'
 
 export const createProgramEvent = () => {
   const applicationUi = document.createElement('div');
@@ -23,22 +25,18 @@ export const createProgramEvent = () => {
 
   applicationContainer.appendChild(applicationContent);
 
-  const applicationContentDiv = document.createElement('div');
-  applicationContentDiv.className = 'd-flex flex-column';
-
-  applicationContent.appendChild(applicationContentDiv);
-
-  applicationContentDiv.insertAdjacentHTML('beforeend',breadcrump);
-  applicationContentDiv.insertAdjacentHTML('beforeend',applicationTitle);
-
+  applicationContent.insertAdjacentHTML('beforeend',breadcrump);
+  applicationContent.insertAdjacentHTML('beforeend',applicationTitle);
 
   const appMainContainer = document.createElement('div');
   appMainContainer.id ="appMainContainer";
-  appMainContainer.className = 'container-lg container-lg-fluid mb-lg-0 py-7';
+  appMainContainer.className = 'container-fluid mb-lg-0 py-7';
 
-  applicationContentDiv.appendChild(appMainContainer);
+  applicationContent.appendChild(appMainContainer);
 
   appMainContainer.insertAdjacentHTML('beforeend',programContent);
+  applicationContainer.insertAdjacentHTML('beforeend',applicationAside);
   script();
+  aside();
   return applicationUi;
 };

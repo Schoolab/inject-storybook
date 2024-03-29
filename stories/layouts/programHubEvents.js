@@ -19,19 +19,14 @@ export const createProgramHubEvents = () => {
   applicationContent.className = 'application-content';
 
   applicationContainer.appendChild(applicationContent);
-
-  const applicationContentDiv = document.createElement('div');
-  applicationContentDiv.className = 'd-flex flex-column';
-
-  applicationContent.appendChild(applicationContentDiv);
   
-  applicationContentDiv.insertAdjacentHTML('beforeend',breadcrump);
-  applicationContentDiv.insertAdjacentHTML('beforeend',applicationTitle);
+  applicationContent.insertAdjacentHTML('beforeend',breadcrump);
+  applicationContent.insertAdjacentHTML('beforeend',applicationTitle);
 
   const appMainContainer = document.createElement('div');
   appMainContainer.id ="appMainContainer";
   appMainContainer.className = 'container-lg container-lg-fluid mb-lg-0 py-7';
-  applicationContentDiv.appendChild(appMainContainer);
+  applicationContent.appendChild(appMainContainer);
 
   appMainContainer.insertAdjacentHTML('beforeend',content);
   script();

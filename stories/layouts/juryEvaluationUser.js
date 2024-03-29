@@ -1,10 +1,13 @@
 import navBar from '../components/navBar.html';
-import shortcutBar from '../components/shortcutBar.html';
+import shortcutBar from '../components/shortcutBar-not-expanded.html';
 import breadcrump from "../components/breadcrump.html";
-import projectOverviewContent from "../components/jury-evaluation-content.html";
+import projectOverviewContent from "../components/jury-evaluation-content-user.html";
 import subNav  from "../components/subNav.html";
 import applicationTitle from "../components/application-title.html";
+import applicationAside from "../components/application-aside-jury.html";
+import applicationFooter from "../components/application-footer.html";
 import { script } from "../utils/script.js"
+import {aside} from '../utils/aside.js'
 
 export const createJuryEvaluation = () => {
   const applicationUi = document.createElement('div');
@@ -24,22 +27,21 @@ export const createJuryEvaluation = () => {
 
   applicationContainer.appendChild(applicationContent);
 
-  const applicationContentDiv = document.createElement('div');
-  applicationContentDiv.className = 'd-flex flex-column';
+  applicationContent.insertAdjacentHTML('beforeend',breadcrump);
+  applicationContent.insertAdjacentHTML('beforeend',applicationTitle);
 
-  applicationContent.appendChild(applicationContentDiv);
-
-  applicationContentDiv.insertAdjacentHTML('beforeend',breadcrump);
-  applicationContentDiv.insertAdjacentHTML('beforeend',applicationTitle);
-
-  applicationContentDiv.insertAdjacentHTML('beforeend',subNav);
+  applicationContent.insertAdjacentHTML('beforeend',subNav);
 
   const appMainContainer = document.createElement('div');
   appMainContainer.id ="appMainContainer";
+  appMainContainer.className = 'container-fluid mb-lg-0 py-7';
 
-  applicationContentDiv.appendChild(appMainContainer);
+  applicationContent.appendChild(appMainContainer);
 
   appMainContainer.insertAdjacentHTML('beforeend',projectOverviewContent);
+  applicationContainer.insertAdjacentHTML('beforeend',applicationAside);
+  applicationContent.insertAdjacentHTML('beforeend',applicationFooter);
   script();
+  aside();
   return applicationUi;
 };

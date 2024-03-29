@@ -3,8 +3,11 @@ import shortcutBar from '../components/shortcutBar-not-expanded.html';
 import breadcrump from "../components/breadcrump.html";
 import LearningModulesCapsule from "../components/learning-content-capsule.html";
 import subNav from "../components/subNav.html";
-import applicationTitle from "../components/application-title.html";
+import applicationTitle from "../components/application-title-no-desc.html";
+import applicationFooter from "../components/application-footer.html";
+import applicationAside from "../components/application-aside-capsules.html";
 import {script} from '../utils/script.js'
+import {aside} from '../utils/aside.js'
 
 export const createLearningCapsule = () => {
   const applicationUi = document.createElement('div');
@@ -24,23 +27,23 @@ export const createLearningCapsule = () => {
 
   applicationContainer.appendChild(applicationContent);
 
-  const applicationContentDiv = document.createElement('div');
-  applicationContentDiv.className = 'd-flex flex-column';
 
-  applicationContent.appendChild(applicationContentDiv);
+  applicationContent.insertAdjacentHTML('beforeend',breadcrump);
+  applicationContent.insertAdjacentHTML('beforeend',applicationTitle);
 
-  applicationContentDiv.insertAdjacentHTML('beforeend',breadcrump);
-  applicationContentDiv.insertAdjacentHTML('beforeend',applicationTitle);
-
-  applicationContentDiv.insertAdjacentHTML('beforeend',subNav);
+  applicationContent.insertAdjacentHTML('beforeend',subNav);
 
   const appMainContainer = document.createElement('div');
   appMainContainer.id ="appMainContainer";
-  appMainContainer.className = 'container-lg container-lg-fluid mb-lg-0 py-7';
+  appMainContainer.className = 'container-fluid mb-lg-0 py-7';
 
-  applicationContentDiv.appendChild(appMainContainer);
+  applicationContent.appendChild(appMainContainer);
   appMainContainer.insertAdjacentHTML('beforeend',LearningModulesCapsule);
+  
+  applicationContent.insertAdjacentHTML('beforeend',applicationFooter);
+  applicationContainer.insertAdjacentHTML('beforeend',applicationAside);
   script();
+  aside();
   return applicationUi;
 };
 

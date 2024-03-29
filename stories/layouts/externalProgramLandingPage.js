@@ -24,20 +24,15 @@ export const createExternalProgramLandingPage = () => {
 
   applicationContainer.appendChild(applicationContent);
 
-  const applicationContentDiv = document.createElement('div');
-  applicationContentDiv.className = 'd-flex flex-column';
+  applicationContent.insertAdjacentHTML('beforeend',breadcrump);
+  applicationContent.insertAdjacentHTML('beforeend',applicationTitle);
 
-  applicationContent.appendChild(applicationContentDiv);
-
-  applicationContentDiv.insertAdjacentHTML('beforeend',breadcrump);
-  applicationContentDiv.insertAdjacentHTML('beforeend',applicationTitle);
-
-  applicationContentDiv.insertAdjacentHTML('beforeend',subNav);
+  applicationContent.insertAdjacentHTML('beforeend',subNav);
 
   const appMainContainer = document.createElement('div');
   appMainContainer.id ="appMainContainer";
 
-  applicationContentDiv.appendChild(appMainContainer);
+  applicationContent.appendChild(appMainContainer);
 
   appMainContainer.insertAdjacentHTML('beforeend',projectOverviewContent);
   script();

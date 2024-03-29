@@ -4,6 +4,7 @@ import breadcrump from "../components/breadcrump.html";
 import programContent from "../components/program-dashboard-courses-content.html";
 import subNav  from "../components/subNav.html";
 import applicationTitle from "../components/application-title.html";
+import applicationFooter from "../components/application-footer.html";
 import { script } from "../utils/script.js";
 
 export const createProgramDashboard = () => {
@@ -24,23 +25,19 @@ export const createProgramDashboard = () => {
 
   applicationContainer.appendChild(applicationContent);
 
-  const applicationContentDiv = document.createElement('div');
-  applicationContentDiv.className = 'd-flex flex-column';
+  applicationContent.insertAdjacentHTML('beforeend',breadcrump);
+  applicationContent.insertAdjacentHTML('beforeend',applicationTitle);
 
-  applicationContent.appendChild(applicationContentDiv);
-
-  applicationContentDiv.insertAdjacentHTML('beforeend',breadcrump);
-  applicationContentDiv.insertAdjacentHTML('beforeend',applicationTitle);
-
-  applicationContentDiv.insertAdjacentHTML('beforeend',subNav);
+  applicationContent.insertAdjacentHTML('beforeend',subNav);
 
   const appMainContainer = document.createElement('div');
   appMainContainer.id ="appMainContainer";
   appMainContainer.className = 'container-lg container-lg-fluid mb-lg-0 py-7';
 
-  applicationContentDiv.appendChild(appMainContainer);
+  applicationContent.appendChild(appMainContainer);
 
   appMainContainer.insertAdjacentHTML('beforeend',programContent);
+  applicationContent.insertAdjacentHTML('beforeend',applicationFooter);
   script();
   return applicationUi;
 };
