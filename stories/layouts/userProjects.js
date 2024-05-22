@@ -19,7 +19,7 @@ export const createUserProjects = () => {
   const applicationContent = document.createElement('main');
   applicationContent.className = 'application-content';
 
-  applicationContainer.appendChild();
+  applicationContainer.appendChild(applicationContent);
 
   applicationContent.insertAdjacentHTML('beforeend',breadcrump);
   applicationContent.insertAdjacentHTML('beforeend',applicationTitle);

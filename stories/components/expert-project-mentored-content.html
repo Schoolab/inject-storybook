@@ -1,420 +1,171 @@
 <div class="application-section">
-    <div class="items row card-row">
-        <div class="col-12 col-lg-6">
-            <div class="item is-bordered is-static h-100">
-                <div class="item-cover cursorLink" data-toggle="modal" data-target="#loadingContentModal" data-url="/challenge/application/604/preview?f=gp">
-                    <picture>
-                        <source media="(max-width:576px)" srcset="https://inject-demo.s3.amazonaws.com/images/c17572e7-fb1e-48ac-b80d-bd77c815ed02/co576x192.jpeg">
-                        <source media="(max-width:768px)" srcset="https://inject-demo.s3.amazonaws.com/images/c17572e7-fb1e-48ac-b80d-bd77c815ed02/co768x256.jpeg">
-                        <source media="(max-width:951px)" srcset="https://inject-demo.s3.amazonaws.com/images/c17572e7-fb1e-48ac-b80d-bd77c815ed02/co951x600.jpeg">
-                        <source media="(max-width:1140px)" srcset="https://inject-demo.s3.amazonaws.com/images/c17572e7-fb1e-48ac-b80d-bd77c815ed02/co1140x380.jpeg">
-                        <img class="img-fluid d-block" src="https://inject-demo.s3.amazonaws.com/images/c17572e7-fb1e-48ac-b80d-bd77c815ed02/co1140x380.jpeg" alt="" width="1140" height="380">
-                    </picture>
-                </div>
-                <div class="item-row position-relative flex-column">                
-                    <h4 class="item-title mb-0">Equality for all</h4>
-                    <div class="mt-3">
-                        <ul class="metas is-list">
-                            <li>
-                                <div class="thumbnail-stack mr-2">
-                                    <div class="thumbnail is-oval is-xs">
-                                        <img src="https://inject-demo.s3.amazonaws.com/images/268a3d8e-cabc-4d2b-b524-9310d1aadf53/sq150.jpeg" width="150" height="150" class=" is-xs rounded-circle">
-                                    </div>
-                                </div>
-                                <small class="text-muted">1 member(s)</small>
-                            </li>
-                        </ul>
+    <div class="row card-row">
+        <div class="col-12">
+            <div class="d-flex flex-column flex-lg-row align-items-lg-start pb-5 justify-content-lg-between ">
+                <div class="d-flex flex-column flex-lg-row scroll-h mr-lg-8 mr-0">
+                    <div class="mr-lg-3 mr-0 mb-3 mb-lg-0">
+                        <form name="mentored" method="post" class=" mb-3">
+                            <button class="btn btn-lg btn-block btn-default text-nowrap customSwitch" data-switch="applicationsFilters_mentored" type="button" style="font-weight: 400;">Mentored projects</button>
+                            <input type="checkbox" name="applicationsFilters[mentored]" id="applicationsFilters_mentored" value="1" class=" d-none">
+                        </form>
                     </div>
-                    <div class="item-actions w-100 mt-5 pb-0">
-                        <a class="btn btn-lg btn-block btn-default" href="#" data-toggle="modal" data-target="#modalOpenThread" data-application-id="604">Chat &amp; Video</a>
-                        <a class="btn btn-lg btn-block btn-default" href="#" data-toggle="modal" data-target="#modalOpenThread" data-application-id="604">Project overview</a>
+                    <div class="mr-lg-3 mr-0 mb-3 mb-lg-0">
+                        <form name="isFollow" method="post" class=" mb-3">
+                            <button class="btn btn-lg btn-block btn-default text-nowrap customSwitch" data-switch="applicationsFilters_isFollow" type="button" style="font-weight: 400;">Followed</button>
+                            <input type="checkbox" name="applicationsFilters[isFollow]" id="applicationsFilters_isFollow" value="1" class=" d-none">
+                        </form>
                     </div>
                 </div>
-                <div class="item-row mt-2">
-                    <div id="sg-datatables-coaching_event_datatable_wrapper" class="w-100 dataTables_wrapper dt-bootstrap4 no-footer">
-                        <div class="row">
-                            <div class="col text-left">
-                                <div id="sg-datatables-coaching_event_datatable_filter" class="dataTables_filter showable d-none" data-showable="searchButton"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="sg-datatables-coaching_event_datatable"></label></div>
-                            </div>
-                        </div>
-                        <table id="sg-datatables-coaching_event_datatable" class="table dataTable no-footer dtr-inline" cellspacing="0" width="100%" role="grid" aria-describedby="sg-datatables-coaching_event_datatable_info" style="width: 100%;">
-                            <thead>
-                                <tr role="row">
-                                    <th class="sorting_desc" tabindex="0" aria-controls="sg-datatables-coaching_event_datatable" rowspan="1" colspan="1" style="width: 25px;" aria-sort="descending" aria-label="Date: activate to sort column ascending">Date</th>
-                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 64px;" aria-label="Duration">Duration</th>
-                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 100px;" aria-label="Note for PM">Note for PM</th>
-                                    <th class="sorting" tabindex="0" aria-controls="sg-datatables-coaching_event_datatable" rowspan="1" colspan="1" style="width: 72px;" aria-label="Team note: activate to sort column ascending">Team note</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr role="row" class="odd">
-                                    <td class="sorting_1" tabindex="0">
-                                        <div class="thumbnail is-session" title="30/11/2023">
-                                            <span class="date">30 NOV</span>
-                                            <span class="hour">18h30</span>
-                                        </div>
-                                    </td>
-                                    <td>30 min</td>
-                                    <td>
-                                        <div class="text-muted" data-toggle="tooltip" data-placement="top" title="Notes pour les Programmes Managers">
-                                            <a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a>
-                                        </div>
-                                    </td>
-                                    <td><a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a></td>
-                                </tr>
-                                <tr role="row" class="even">
-                                    <td class="sorting_1" tabindex="0">
-                                        <div class="thumbnail is-session" title="30/11/2023">
-                                            <span class="date">30 NOV</span>
-                                            <span class="hour">18h30</span>
-                                        </div>
-                                    </td>
-                                    <td>30 min</td>
-                                    <td>
-                                        <div class="text-muted" data-toggle="tooltip" data-placement="top" title="Notes pour les Programmes Managers">
-                                            <a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a>
-                                        </div>
-                                    </td>
-                                    <td><a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div id="sg-datatables-coaching_event_datatable_processing" class="dataTables_processing" style="display: none;">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <div class="spinner-border spinner-border-sm mr-3 text-center" role="status"><span class="sr-only">Loading…</span></div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="mr-lg-3 mr-0 mb-5 mb-lg-0 searchContainer">
+                        <form class="customSearch">
+                            <input name="search" autocomplete="off" type="search" id="search" class="form-control" style="min-width:150px;width:100%;" aria-describedby="search" placeholder="Search..." value="">
+                        </form>
                     </div>
-                </div>
-                <div class="item-row mt-auto flex-column">
-                    <ul class="item-caption metas small is-list">
-                        <li><span class="icon icon-clock-outline">&nbsp;1h30</span></li>
-                        <li>2 sessions</li>
-                    </ul>
-                    <a class="btn btn-block btn-primary btn-lg btn-icon mt-3" href="/program/53/expert/coaching-session/create"><span class="icon icon-plus"></span><span>Add a coaching</span></a>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-lg-6">
-            <div class="item is-bordered is-static h-100">
-                <div class="item-cover cursorLink" data-toggle="modal" data-target="#loadingContentModal" data-url="/challenge/application/612/preview?f=gp">
-                    <picture>
-                        <source media="(max-width:576px)" srcset="https://inject-demo.s3.amazonaws.com/images/7241300b-a008-4101-b202-7f65d47c7382/co576x192.jpeg">
-                        <source media="(max-width:768px)" srcset="https://inject-demo.s3.amazonaws.com/images/7241300b-a008-4101-b202-7f65d47c7382/co768x256.jpeg">
-                        <source media="(max-width:951px)" srcset="https://inject-demo.s3.amazonaws.com/images/7241300b-a008-4101-b202-7f65d47c7382/co951x600.jpeg">
-                        <source media="(max-width:1140px)" srcset="https://inject-demo.s3.amazonaws.com/images/7241300b-a008-4101-b202-7f65d47c7382/co1140x380.jpeg">
-                        <img class="img-fluid d-block" src="https://inject-demo.s3.amazonaws.com/images/7241300b-a008-4101-b202-7f65d47c7382/co1140x380.jpeg" alt="" width="1140" height="380">
-                    </picture>
-                </div>
-                <div class="item-row position-relative flex-column">
-                    <h4 class="item-title mb-0">Wind turbine</h4>
-                    <div class="pt-3">
-                        <ul class="metas is-list">
-                            <li>
-                                <div class="thumbnail-stack mr-2">
-                                    <div class="thumbnail is-oval is-xs">
-                                        <img src="https://inject-demo.s3.amazonaws.com/images/268a3d8e-cabc-4d2b-b524-9310d1aadf53/sq150.jpeg" width="150" height="150" class=" is-xs rounded-circle">
-                                    </div>
-                                </div>
-                                <small class="text-muted">1 member(s)</small>
-                            </li>
-                        </ul>
+        <div class="col-12 col-lg-4">
+            <div class="card h-100">
+                <div class="card-infos is-linked">
+                    <div class="card-banner">
+                        <div class="card-image" style="background-image:url(https://inject-demo.s3.amazonaws.com/images/c17572e7-fb1e-48ac-b80d-bd77c815ed02/co1140x380.jpeg);background-repeat:no-repeat; background-position:center; background-size:cover;"></div>
                     </div>
-                    <div class="item-actions w-100 mt-5 pb-0">
-                        <a class="btn btn-lg btn-block btn-default" href="#" data-toggle="modal" data-target="#modalOpenThread" data-application-id="604">Chat &amp; Video</a>
-                        <a class="btn btn-lg btn-block btn-default" href="#" data-toggle="modal" data-target="#modalOpenThread" data-application-id="604">Project overview</a>
+                    <div class="card-title">
+                        <a href="/program/142/details" class="h4 stretched-link line-clamp-1">Equality for all</a>
                     </div>
-                </div>
-                <div class="item-row mt-2">
-                    <div id="sg-datatables-coaching_event_datatable_wrapper" class="w-100 dataTables_wrapper dt-bootstrap4 no-footer">
-                        <div class="row">
-                            <div class="col text-left">
-                                <div id="sg-datatables-coaching_event_datatable_filter" class="dataTables_filter showable d-none" data-showable="searchButton"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="sg-datatables-coaching_event_datatable"></label></div>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <div class="d-flex align-items-center flex-wrap">
+                            <div class="mr-3 mb-3">
+                                <span class="text-muted small text-nowrap"><span class="icon icon-account-group is-xs"></span> 2 members</span>
                             </div>
-                        </div>
-                        <table id="sg-datatables-coaching_event_datatable" class="table dataTable no-footer dtr-inline" cellspacing="0" width="100%" role="grid" aria-describedby="sg-datatables-coaching_event_datatable_info" style="width: 100%;">
-                            <thead>
-                                <tr role="row">
-                                    <th class="sorting_desc" tabindex="0" aria-controls="sg-datatables-coaching_event_datatable" rowspan="1" colspan="1" style="width: 25px;" aria-sort="descending" aria-label="Date: activate to sort column ascending">Date</th>
-                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 64px;" aria-label="Duration">Duration</th>
-                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 100px;" aria-label="Note for PM">Note for PM</th>
-                                    <th class="sorting" tabindex="0" aria-controls="sg-datatables-coaching_event_datatable" rowspan="1" colspan="1" style="width: 72px;" aria-label="Team note: activate to sort column ascending">Team note</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr role="row" class="odd">
-                                    <td class="sorting_1" tabindex="0">
-                                        <div class="thumbnail is-session" title="30/11/2023">
-                                            <span class="date">30 NOV</span>
-                                            <span class="hour">18h30</span>
-                                        </div>
-                                    </td>
-                                    <td>30 min</td>
-                                    <td>
-                                        <div class="text-muted" data-toggle="tooltip" data-placement="top" title="Notes pour les Programmes Managers">
-                                            <a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a>
-                                        </div>
-                                    </td>
-                                    <td><a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a></td>
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td class="sorting_1" tabindex="0">
-                                        <div class="thumbnail is-session" title="30/11/2023">
-                                            <span class="date">30 NOV</span>
-                                            <span class="hour">18h30</span>
-                                        </div>
-                                    </td>
-                                    <td>30 min</td>
-                                    <td>
-                                        <div class="text-muted" data-toggle="tooltip" data-placement="top" title="Notes pour les Programmes Managers">
-                                            <a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a>
-                                        </div>
-                                    </td>
-                                    <td><a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a></td>
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td class="sorting_1" tabindex="0">
-                                        <div class="thumbnail is-session" title="30/11/2023">
-                                            <span class="date">30 NOV</span>
-                                            <span class="hour">18h30</span>
-                                        </div>
-                                    </td>
-                                    <td>30 min</td>
-                                    <td>
-                                        <div class="text-muted" data-toggle="tooltip" data-placement="top" title="Notes pour les Programmes Managers">
-                                            <a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a>
-                                        </div>
-                                    </td>
-                                    <td><a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a></td>
-                                </tr>
-                                <tr role="row" class="even">
-                                    <td class="sorting_1" tabindex="0">
-                                        <div class="thumbnail is-session" title="30/11/2023">
-                                            <span class="date">30 NOV</span>
-                                            <span class="hour">18h30</span>
-                                        </div>
-                                    </td>
-                                    <td>30 min</td>
-                                    <td>
-                                        <div class="text-muted" data-toggle="tooltip" data-placement="top" title="Notes pour les Programmes Managers">
-                                            <a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a>
-                                        </div>
-                                    </td>
-                                    <td><a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div id="sg-datatables-coaching_event_datatable_processing" class="dataTables_processing" style="display: none;">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <div class="spinner-border spinner-border-sm mr-3 text-center" role="status"><span class="sr-only">Loading…</span></div>
-                                </div>
+                            <div class="badges is-small mr-3">
+                                <div class="badge badge-pill badge-tag is-small">2words tag</div>
+                                <a class="badge badge-pill badge-tag is-small" href="#">2words tag</a>
+                            </div>
+                            <div class="mr-3 mb-3">
+                                <span class="text-muted small text-nowrap"> +2</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="item-row mt-auto flex-column">
-                    <ul class="item-caption metas small is-list">
-                        <li><span class="icon icon-clock-outline">&nbsp;1h30</span></li>
-                        <li>2 sessions</li>
-                    </ul>
-                    <a class="btn btn-block btn-primary btn-lg btn-icon mt-3" href="/program/53/expert/coaching-session/create"><span class="icon icon-plus"></span><span>Add a coaching</span></a>
+                <div class="card-links">
+                    <div class="d-flex align-items-center justify-content-between text-muted mb-3">
+                        <span class="small font-weight-bold text-truncate mr-2"># coaching sessions</span>
+                        <span class="small text-nowrap">Total hours <span class="font-weight-bold"><span class="icon icon--clock"></span> 1h30</span></span>
+                    </div>
+                    <div class="card-actions">
+                        <a class="btn btn-lg btn-primary btn-block" href="#"><span class="icon icon-plus-circle is-sm mr-2"></span> Add session </a>
+                        <a class="btn btn-lg btn-default btn-block" href="#"> <span class="icon icon-bookmark-outline is-sm mr-2"></span> Follow </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-lg-6">
-            <div class="item is-bordered is-static h-100">
-                <div class="item-cover cursorLink" data-toggle="modal" data-target="#loadingContentModal" data-url="/challenge/application/604/preview?f=gp">
-                    <picture>
-                        <source media="(max-width:576px)" srcset="https://inject-demo.s3.amazonaws.com/images/645a913c-6fa9-483c-8c0c-152fefc15cf5/co576x192.jpeg">
-                        <source media="(max-width:768px)" srcset="https://inject-demo.s3.amazonaws.com/images/645a913c-6fa9-483c-8c0c-152fefc15cf5/co768x256.jpeg">
-                        <source media="(max-width:951px)" srcset="https://inject-demo.s3.amazonaws.com/images/645a913c-6fa9-483c-8c0c-152fefc15cf5/co951x600.jpeg">
-                        <source media="(max-width:1140px)" srcset="https://inject-demo.s3.amazonaws.com/images/645a913c-6fa9-483c-8c0c-152fefc15cf5/co1140x380.jpeg">
-                        <img class="img-fluid d-block" src="https://inject-demo.s3.amazonaws.com/images/645a913c-6fa9-483c-8c0c-152fefc15cf5/co1140x380.jpeg" alt="" width="1140" height="380">
-                    </picture>
-                </div>
-                <div class="item-row position-relative flex-column">               
-                    <h4 class="item-title mb-0">One world</h4>
-                    <div class="mt-3">
-                        <ul class="metas is-list">
-                            <li>
-                                <div class="thumbnail-stack mr-2">
-                                    <div class="thumbnail is-oval is-xs">
-                                        <img src="https://inject-demo.s3.amazonaws.com/images/268a3d8e-cabc-4d2b-b524-9310d1aadf53/sq150.jpeg" width="150" height="150" class=" is-xs rounded-circle">
-                                    </div>
-                                </div>
-                                <small class="text-muted">1 member(s)</small>
-                            </li>
-                        </ul>
+        <div class="col-12 col-lg-4">
+            <div class="card h-100">
+                <div class="card-infos is-linked">
+                    <div class="card-banner">
+                        <div class="card-image" style="background-image:url(https://inject-demo.s3.amazonaws.com/images/7241300b-a008-4101-b202-7f65d47c7382/co1140x380.jpeg);background-repeat:no-repeat; background-position:center; background-size:cover;"></div>
                     </div>
-                    <div class="item-actions w-100 mt-5 pb-0">
-                        <a class="btn btn-lg btn-block btn-default" href="#" data-toggle="modal" data-target="#modalOpenThread" data-application-id="604">Chat &amp; Video</a>
-                        <a class="btn btn-lg btn-block btn-default" href="#" data-toggle="modal" data-target="#modalOpenThread" data-application-id="604">Project overview</a>
+                    <div class="card-title">
+                        <a href="/program/142/details" class="h4 stretched-link line-clamp-1">Wind turbine</a>
                     </div>
-                </div>
-                <div class="item-row mt-2">
-                    <div id="sg-datatables-coaching_event_datatable_wrapper" class="w-100 dataTables_wrapper dt-bootstrap4 no-footer">
-                        <div class="row">
-                            <div class="col text-left">
-                                <div id="sg-datatables-coaching_event_datatable_filter" class="dataTables_filter showable d-none" data-showable="searchButton"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="sg-datatables-coaching_event_datatable"></label></div>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <div class="d-flex align-items-center flex-wrap">
+                            <div class="mr-3 mb-3">
+                                <span class="text-muted small text-nowrap"><span class="icon icon-account-group is-xs"></span> 2 members</span>
                             </div>
-                        </div>
-                        <table id="sg-datatables-coaching_event_datatable" class="table dataTable no-footer dtr-inline" cellspacing="0" width="100%" role="grid" aria-describedby="sg-datatables-coaching_event_datatable_info" style="width: 100%;">
-                            <thead>
-                                <tr role="row">
-                                    <th class="sorting_desc" tabindex="0" aria-controls="sg-datatables-coaching_event_datatable" rowspan="1" colspan="1" style="width: 25px;" aria-sort="descending" aria-label="Date: activate to sort column ascending">Date</th>
-                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 64px;" aria-label="Duration">Duration</th>
-                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 100px;" aria-label="Note for PM">Note for PM</th>
-                                    <th class="sorting" tabindex="0" aria-controls="sg-datatables-coaching_event_datatable" rowspan="1" colspan="1" style="width: 72px;" aria-label="Team note: activate to sort column ascending">Team note</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr role="row" class="odd">
-                                    <td class="sorting_1" tabindex="0">
-                                        <div class="thumbnail is-session" title="30/11/2023">
-                                            <span class="date">30 NOV</span>
-                                            <span class="hour">18h30</span>
-                                        </div>
-                                    </td>
-                                    <td>30 min</td>
-                                    <td>
-                                        <div class="text-muted" data-toggle="tooltip" data-placement="top" title="Notes pour les Programmes Managers">
-                                            <a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a>
-                                        </div>
-                                    </td>
-                                    <td><a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a></td>
-                                </tr>
-                                <tr role="row" class="even">
-                                    <td class="sorting_1" tabindex="0">
-                                        <div class="thumbnail is-session" title="30/11/2023">
-                                            <span class="date">30 NOV</span>
-                                            <span class="hour">18h30</span>
-                                        </div>
-                                    </td>
-                                    <td>30 min</td>
-                                    <td>
-                                        <div class="text-muted" data-toggle="tooltip" data-placement="top" title="Notes pour les Programmes Managers">
-                                            <a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a>
-                                        </div>
-                                    </td>
-                                    <td><a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div id="sg-datatables-coaching_event_datatable_processing" class="dataTables_processing" style="display: none;">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <div class="spinner-border spinner-border-sm mr-3 text-center" role="status"><span class="sr-only">Loading…</span></div>
-                                </div>
+                            <div class="badges is-small mr-3">
+                                <div class="badge badge-pill badge-tag is-small">2words tag</div>
+                                <a class="badge badge-pill badge-tag is-small" href="#">2words tag</a>
+                            </div>
+                            <div class="mr-3 mb-3">
+                                <span class="text-muted small text-nowrap"> +2</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="item-row mt-auto flex-column">
-                    <ul class="item-caption metas small is-list">
-                        <li><span class="icon icon-clock-outline">&nbsp;1h30</span></li>
-                        <li>2 sessions</li>
-                    </ul>
-                    <a class="btn btn-block btn-primary btn-lg btn-icon mt-3" href="/program/53/expert/coaching-session/create"><span class="icon icon-plus"></span><span>Add a coaching</span></a>
+                <div class="card-links">
+                    <div class="d-flex align-items-center justify-content-between text-muted mb-3">
+                        <span class="small font-weight-bold text-truncate mr-2"># coaching sessions</span>
+                        <span class="small text-nowrap">Total hours <span class="font-weight-bold"><span class="icon icon--clock"></span> 1h30</span></span>
+                    </div>
+                    <div class="card-actions">
+                        <a class="btn btn-lg btn-primary btn-block" href="#"><span class="icon icon-plus-circle is-sm mr-2"></span> Add session </a>
+                        <a class="btn btn-lg btn-default btn-block" href="#"> <span class="icon icon-bookmark-outline is-sm mr-2"></span> Following </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-lg-6">
-            <div class="item is-bordered is-static h-100">
-                <div class="item-cover cursorLink" data-toggle="modal" data-target="#loadingContentModal" data-url="/challenge/application/604/preview?f=gp">
-                    <picture>
-                        <source media="(max-width:576px)" srcset="https://inject-demo.s3.amazonaws.com/images/36864d1d-f673-4bda-98f7-d76995c9cea1/co576x192.jpeg">
-                        <source media="(max-width:768px)" srcset="https://inject-demo.s3.amazonaws.com/images/36864d1d-f673-4bda-98f7-d76995c9cea1/co768x256.jpeg">
-                        <source media="(max-width:951px)" srcset="https://inject-demo.s3.amazonaws.com/images/36864d1d-f673-4bda-98f7-d76995c9cea1/co951x600.jpeg">
-                        <source media="(max-width:1140px)" srcset="https://inject-demo.s3.amazonaws.com/images/36864d1d-f673-4bda-98f7-d76995c9cea1/co1140x380.jpeg">
-                        <img class="img-fluid d-block" src="https://inject-demo.s3.amazonaws.com/images/36864d1d-f673-4bda-98f7-d76995c9cea1/co1140x380.jpeg" alt="" width="1140" height="380">
-                    </picture>
-                </div>
-                <div class="item-row position-relative flex-column">
-                    <h4 class="item-title mb-0">Orange book</h4>
-                    <div class="mt-3">
-                        <ul class="metas is-list">
-                            <li>
-                                <div class="thumbnail-stack mr-2">
-                                    <div class="thumbnail is-oval is-xs">
-                                        <img src="https://inject-demo.s3.amazonaws.com/images/268a3d8e-cabc-4d2b-b524-9310d1aadf53/sq150.jpeg" width="150" height="150" class=" is-xs rounded-circle">
-                                    </div>
-                                </div>
-                                <small class="text-muted">1 member(s)</small>
-                            </li>
-                        </ul>
+        <div class="col-12 col-lg-4">
+            <div class="card h-100">
+                <div class="card-infos is-linked">
+                    <div class="card-banner">
+                        <div class="card-image" style="background-image:url(https://inject-demo.s3.amazonaws.com/images/645a913c-6fa9-483c-8c0c-152fefc15cf5/co1140x380.jpeg);background-repeat:no-repeat; background-position:center; background-size:cover;"></div>
                     </div>
-                    <div class="item-actions w-100 mt-5 pb-0">
-                        <a class="btn btn-lg btn-block btn-default" href="#" data-toggle="modal" data-target="#modalOpenThread" data-application-id="604">Chat &amp; Video</a>
-                        <a class="btn btn-lg btn-block btn-default" href="#" data-toggle="modal" data-target="#modalOpenThread" data-application-id="604">Project overview</a>
+                    <div class="card-title">
+                        <a href="/program/142/details" class="h4 stretched-link line-clamp-1">One world</a>
                     </div>
-                </div>
-                <div class="item-row mt-2">
-                    <div id="sg-datatables-coaching_event_datatable_wrapper" class="w-100 dataTables_wrapper dt-bootstrap4 no-footer">
-                        <div class="row">
-                            <div class="col text-left">
-                                <div id="sg-datatables-coaching_event_datatable_filter" class="dataTables_filter showable d-none" data-showable="searchButton"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="sg-datatables-coaching_event_datatable"></label></div>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <div class="d-flex align-items-center flex-wrap">
+                            <div class="mr-3 mb-3">
+                                <span class="text-muted small text-nowrap"><span class="icon icon-account-group is-xs"></span> 2 members</span>
                             </div>
-                        </div>
-                        <table id="sg-datatables-coaching_event_datatable" class="table dataTable no-footer dtr-inline" cellspacing="0" width="100%" role="grid" aria-describedby="sg-datatables-coaching_event_datatable_info" style="width: 100%;">
-                            <thead>
-                                <tr role="row">
-                                    <th class="sorting_desc" tabindex="0" aria-controls="sg-datatables-coaching_event_datatable" rowspan="1" colspan="1" style="width: 25px;" aria-sort="descending" aria-label="Date: activate to sort column ascending">Date</th>
-                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 64px;" aria-label="Duration">Duration</th>
-                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 100px;" aria-label="Note for PM">Note for PM</th>
-                                    <th class="sorting" tabindex="0" aria-controls="sg-datatables-coaching_event_datatable" rowspan="1" colspan="1" style="width: 72px;" aria-label="Team note: activate to sort column ascending">Team note</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr role="row" class="odd">
-                                    <td class="sorting_1" tabindex="0">
-                                        <div class="thumbnail is-session" title="30/11/2023">
-                                            <span class="date">30 NOV</span>
-                                            <span class="hour">18h30</span>
-                                        </div>
-                                    </td>
-                                    <td>30 min</td>
-                                    <td>
-                                        <div class="text-muted" data-toggle="tooltip" data-placement="top" title="Notes pour les Programmes Managers">
-                                            <a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a>
-                                        </div>
-                                    </td>
-                                    <td><a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a></td>
-                                </tr>
-                                <tr role="row" class="even">
-                                    <td class="sorting_1" tabindex="0">
-                                        <div class="thumbnail is-session" title="30/11/2023">
-                                            <span class="date">30 NOV</span>
-                                            <span class="hour">18h30</span>
-                                        </div>
-                                    </td>
-                                    <td>30 min</td>
-                                    <td>
-                                        <div class="text-muted" data-toggle="tooltip" data-placement="top" title="Notes pour les Programmes Managers">
-                                            <a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a>
-                                        </div>
-                                    </td>
-                                    <td><a class="btn btn-default btn-sm py-3 px-4" href="/program/53/coaching-session/32/edit/posts"><span class="icon icon-note-text-outline text-muted"></span></a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div id="sg-datatables-coaching_event_datatable_processing" class="dataTables_processing" style="display: none;">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <div class="spinner-border spinner-border-sm mr-3 text-center" role="status"><span class="sr-only">Loading…</span></div>
-                                </div>
+                            <div class="badges is-small mr-3">
+                                <div class="badge badge-pill badge-tag is-small">2words tag</div>
+                                <a class="badge badge-pill badge-tag is-small" href="#">2words tag</a>
+                            </div>
+                            <div class="mr-3 mb-3">
+                                <span class="text-muted small text-nowrap"> +2</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="item-row mt-auto flex-column">
-                    <ul class="item-caption metas small is-list">
-                        <li><span class="icon icon-clock-outline">&nbsp;1h30</span></li>
-                        <li>2 sessions</li>
-                    </ul>
-                    <a class="btn btn-block btn-primary btn-lg btn-icon mt-3" href="/program/53/expert/coaching-session/create"><span class="icon icon-plus"></span><span>Add a coaching</span></a>
+                <div class="card-links">
+                    <div class="d-flex align-items-center justify-content-between text-muted mb-3">
+                        <span class="small font-weight-bold text-truncate mr-2"># coaching sessions</span>
+                        <span class="small text-nowrap">Total hours <span class="font-weight-bold"><span class="icon icon--clock"></span> 1h30</span></span>
+                    </div>
+                    <div class="card-actions">
+                        <a class="btn btn-lg btn-primary btn-block" href="#"><span class="icon icon-plus-circle is-sm mr-2"></span> Add session </a>
+                        <a class="btn btn-lg btn-default btn-block" href="#"> <span class="icon icon-bookmark-outline is-sm mr-2"></span> Follow </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4">
+            <div class="card h-100">
+                <div class="card-infos is-linked">
+                    <div class="card-banner">
+                        <div class="card-image" style="background-image:url(https://inject-demo.s3.amazonaws.com/images/36864d1d-f673-4bda-98f7-d76995c9cea1/co1140x380.jpeg);background-repeat:no-repeat; background-position:center; background-size:cover;"></div>
+                    </div>
+                    <div class="card-title">
+                        <a href="/program/142/details" class="h4 stretched-link line-clamp-1">Orange book</a>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <div class="d-flex align-items-center flex-wrap">
+                            <div class="mr-3 mb-3">
+                                <span class="text-muted small text-nowrap"><span class="icon icon-account-group is-xs"></span> 2 members</span>
+                            </div>
+                            <div class="badges is-small mr-3">
+                                <div class="badge badge-pill badge-tag is-small">2words tag</div>
+                                <a class="badge badge-pill badge-tag is-small" href="#">2words tag</a>
+                            </div>
+                            <div class="mr-3 mb-3">
+                                <span class="text-muted small text-nowrap"> +2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-links">
+                    <div class="d-flex align-items-center justify-content-between text-muted mb-3">
+                        <span class="small font-weight-bold text-truncate mr-2"># coaching sessions</span>
+                        <span class="small text-nowrap">Total hours <span class="font-weight-bold"><span class="icon icon--clock"></span> 1h30</span></span>
+                    </div>
+                    <div class="card-actions">
+                        <a class="btn btn-lg btn-primary btn-block" href="#"><span class="icon icon-plus-circle is-sm mr-2"></span> Add session </a>
+                        <a class="btn btn-lg btn-default btn-block" href="#"> <span class="icon icon-bookmark-outline is-sm mr-2"></span> Follow </a>
+                    </div>
                 </div>
             </div>
         </div>
