@@ -1,7 +1,7 @@
 import navBar from '../components/navBar.html';
 
 import sidebar from "../components/sidebar.html";
-import breadcrump from "../components/breadcrump.html";
+import breadcrumb from "../components/breadcrumb.html";
 import LearningModulesContent from "../components/admin-programs-content.html";
 import subNav from "../components/subNav.html";
 import applicationTitle from "../components/application-title.html";
@@ -27,7 +27,7 @@ export const createAdminPrograms = () => {
 
   applicationContainer.appendChild(applicationContent);
 
-  applicationContent.insertAdjacentHTML('beforeend',breadcrump);
+  applicationContent.insertAdjacentHTML('beforeend',breadcrumb);
   applicationContent.insertAdjacentHTML('beforeend',applicationTitle);
 
   applicationContent.insertAdjacentHTML('beforeend',subNav);

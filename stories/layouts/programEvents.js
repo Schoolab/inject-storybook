@@ -3,7 +3,7 @@ import shortcutBar from '../components/shortcutBar.html';
 import subNav  from "../components/subNav.html";
 import content from "../components/program-events-content.html";
 import applicationTitle from "../components/application-title.html";
-import breadcrump from "../components/breadcrump.html";
+import breadcrumb from "../components/breadcrumb.html";
 import { script } from "../utils/script.js"
 
 export const createProgramEvents = () => {
@@ -24,7 +24,7 @@ export const createProgramEvents = () => {
 
   applicationContainer.appendChild(applicationContent);
   
-  applicationContent.insertAdjacentHTML('beforeend',breadcrump);
+  applicationContent.insertAdjacentHTML('beforeend',breadcrumb);
   applicationContent.insertAdjacentHTML('beforeend',applicationTitle);
   applicationContent.insertAdjacentHTML('beforeend',subNav);
 

@@ -1,5 +1,5 @@
 import navBar from '../components/navBar.html';
-import breadcrump from "../components/breadcrump.html";
+import breadcrumb from "../components/breadcrumb.html";
 import LearningModulesContent from "../components/admin-installer-content.html";
 import applicationTitle from "../components/application-title.html";
 import {script} from '../utils/script.js'
@@ -21,7 +21,7 @@ export const createAdminInstaller = () => {
   applicationContainer.appendChild(applicationContent);
 
 
-  applicationContent.insertAdjacentHTML('beforeend',breadcrump);
+  applicationContent.insertAdjacentHTML('beforeend',breadcrumb);
   applicationContent.insertAdjacentHTML('beforeend',applicationTitle);
 
   const appMainContainer = document.createElement('div');

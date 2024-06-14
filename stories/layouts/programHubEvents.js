@@ -1,7 +1,7 @@
 import navBar from '../components/navBar.html';
 import content from "../components/programHub-events-content.html";
 import applicationTitle from "../components/application-title-no-subnav.html";
-import breadcrump from "../components/breadcrump.html";
+import breadcrumb from "../components/breadcrumb.html";
 import { script } from "../utils/script.js"
 
 export const createProgramHubEvents = () => {
@@ -20,7 +20,7 @@ export const createProgramHubEvents = () => {
 
   applicationContainer.appendChild(applicationContent);
   
-  applicationContent.insertAdjacentHTML('beforeend',breadcrump);
+  applicationContent.insertAdjacentHTML('beforeend',breadcrumb);
   applicationContent.insertAdjacentHTML('beforeend',applicationTitle);
 
   const appMainContainer = document.createElement('div');

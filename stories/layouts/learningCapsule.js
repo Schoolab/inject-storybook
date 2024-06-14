@@ -1,6 +1,6 @@
 import navBar from '../components/navBar.html';
 import shortcutBar from '../components/shortcutBar-not-expanded.html';
-import breadcrump from "../components/breadcrump.html";
+import breadcrumb from "../components/breadcrumb.html";
 import LearningModulesCapsule from "../components/learning-content-capsule.html";
 import subNav from "../components/subNav.html";
 import applicationTitle from "../components/application-title-no-desc.html";
@@ -28,7 +28,7 @@ export const createLearningCapsule = () => {
   applicationContainer.appendChild(applicationContent);
 
 
-  applicationContent.insertAdjacentHTML('beforeend',breadcrump);
+  applicationContent.insertAdjacentHTML('beforeend',breadcrumb);
   applicationContent.insertAdjacentHTML('beforeend',applicationTitle);
 
   applicationContent.insertAdjacentHTML('beforeend',subNav);

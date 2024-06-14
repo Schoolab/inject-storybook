@@ -1,6 +1,6 @@
 import navBar from '../components/navBar.html';
 import shortcutBar from '../components/shortcutBar.html';
-import breadcrump from "../components/breadcrump.html";
+import breadcrumb from "../components/breadcrumb.html";
 import programContent from "../components/expert-coaching-session-content.html";
 import applicationTitle from "../components/application-title-coaching-session.html";
 import { script } from "../utils/script.js";
@@ -23,7 +23,7 @@ export const createExpertCoachingSession = () => {
 
   applicationContainer.appendChild(applicationContent);
 
-  applicationContent.insertAdjacentHTML('beforeend',breadcrump);
+  applicationContent.insertAdjacentHTML('beforeend',breadcrumb);
   applicationContent.insertAdjacentHTML('beforeend',applicationTitle);
 
 

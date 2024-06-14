@@ -7,5 +7,5 @@ export default {
         layout: 'fullscreen',
       },
 };
-export const NavBar = () => createNavBar();
+export const Default = () => createNavBar();
 

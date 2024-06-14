@@ -8,65 +8,111 @@
                         <div class="card-external">
                             <div class="small">External: </div>
                             <div class="small font-weight-bold text-truncate mx-2">{{Organization name with a super long text}}</div>
-                            <div class="small icon icon-arrow-top-right"></div>
+                            <span class="small icon icon-arrow-top-right"></span>
                         </div>                                 
                     </div>  
                     <div class="card-title">
                         <a href="/program/142/details" class="h3 mb-0 stretched-link line-clamp-1"> {{Program name  with a super super super super super super superlong text}}</a>
                     </div>                      
-                    <div class="d-flex justify-content-between align-items-center flex-wrap">
-                        <div class="d-flex align-items-center flex-wrap">
-                            <div class="mr-3 mb-3">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-8px">
+                        <div class="d-flex align-items-center flex-wrap gap-8px">
+                            <div class="d-flex">
                                 <span class="text-muted small text-nowrap"><span class="icon icon-account-group is-xs"></span> {{num}} members</span>
-                            </div>                            
-                            <div class="badges is-small mr-3">
+                            </div>
+                            <div class="badges is-small">
                                 <div class="badge badge-pill badge-tag is-small">Food</div>
                                 <a class="badge badge-pill badge-tag is-small" href="#">Plastic</a>
                                 <a class="badge badge-pill badge-tag is-small" href="#">DEI</a>
-                            </div>  
-                            <div class="mr-3 mb-3">
-                                <span class="text-muted small text-nowrap"> +2</span> 
-                            </div>                                                      
+                                <span class="text-muted small text-nowrap"> +2</span>
+                            </div>
                         </div>
                         <div class="badges is-small">
-                            <div class="badge badge-pill badge-tag is-small is-open"><span class="icon icon-circle"></span> Open</div>
-                            <div class="badge badge-pill badge-tag is-small is-progress"><span class="icon icon-circle-slice-3"></span> In progress</div>
-                            <div class="badge badge-pill badge-tag is-small is-closed"><span class="icon icon-minus-circle"></span> Closed</div>
-                            <div class="badge badge-pill badge-tag is-small is-done"><span class="icon icon-circle"></span> Done</div>
-                            <div class="badge badge-pill badge-tag is-small is-draft"><span class="icon icon-circle-outline"></span> Draft</div>
+                            <div class="badge badge-pill badge-tag is-small is-open">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="6" cy="6" r="6" fill="currentColor"/>
+                                </svg>
+                                <span>Open</span>
+                            </div>
+                            <div class="badge badge-pill badge-tag is-small is-progress">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7969 7.55348L8.8987 6.77876C8.9642 6.53371 9 6.27334 9 6C9 5.72666 8.9642 5.46629 8.8987 5.22124L11.7969 4.44652C11.9294 4.94201 12 5.46276 12 6C12 6.53724 11.9294 7.05799 11.7969 7.55348ZM11.197 2.99952L8.60035 4.50194C8.33632 4.0456 7.9544 3.66368 7.49806 3.39965L9.00048 0.80297C9.91099 1.32978 10.6702 2.08901 11.197 2.99952ZM7.55348 0.203056L6.77876 3.1013C6.53371 3.0358 6.27334 3 6 3C5.72666 3 5.46629 3.0358 5.22124 3.1013L4.44652 0.203056C4.94201 0.0706099 5.46276 0 6 0C6.53724 0 7.05799 0.0706099 7.55348 0.203056ZM2.99952 0.80297L4.50194 3.39965C4.0456 3.66368 3.66368 4.0456 3.39965 4.50194L0.80297 2.99952C1.32978 2.08901 2.08901 1.32979 2.99952 0.80297ZM0.203056 4.44652C0.0706099 4.94201 0 5.46276 0 6C0 6.53724 0.0706099 7.05799 0.203056 7.55348L3.1013 6.77876C3.0358 6.53371 3 6.27334 3 6C3 5.72666 3.0358 5.46629 3.1013 5.22124L0.203056 4.44652ZM0.80297 9.00048L3.39965 7.49806C3.66368 7.9544 4.0456 8.33632 4.50194 8.60035L2.99952 11.197C2.08901 10.6702 1.32979 9.91099 0.80297 9.00048ZM4.44652 11.7969L5.22124 8.8987C5.46629 8.9642 5.72666 9 6 9C6.27334 9 6.53371 8.9642 6.77876 8.8987L7.55348 11.7969C7.05799 11.9294 6.53724 12 6 12C5.46276 12 4.94201 11.9294 4.44652 11.7969ZM9.00048 11.197L7.49806 8.60035C7.9544 8.33632 8.33632 7.9544 8.60035 7.49806L11.197 9.00048C10.6702 9.91099 9.91099 10.6702 9.00048 11.197Z" fill="currentColor"/>
+                                </svg>                                    
+                                <span>In progress</span>
+                            </div>
+                            <div class="badge badge-pill badge-tag is-small is-closed">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12ZM3 5C2.44772 5 2 5.44772 2 6C2 6.55228 2.44772 7 3 7H9C9.55229 7 10 6.55228 10 6C10 5.44772 9.55229 5 9 5H3Z" fill="currentColor"/>
+                                </svg>                                    
+                                <span>Closed</span>
+                            </div>
+                            <div class="badge badge-pill badge-tag is-small is-done">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="6" cy="6" r="6" fill="currentColor"/>
+                                </svg>
+                                <span>Done</span>
+                            </div>
+                            <div class="badge badge-pill badge-tag is-small is-draft">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 9C7.65685 9 9 7.65685 9 6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6C3 7.65685 4.34315 9 6 9ZM6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z" fill="currentColor"/>
+                                </svg>
+                                <span>Draft</span>
+                            </div>
                         </div>                                    
                     </div>
                 </div>
                 <div class="card-targets">
                     <div class="card-target">
-                        <a href="#" class="stretched-link d-flex align-items-center"><span class="icon icon-information is-sm mr-2"></span>Public page </a>
+                        <a href="#" class="stretched-link d-flex align-items-center">
+                            <span class="icon icon-information is-sm"></span>
+                            <span>Public page</span>
+                        </a>
                         <span class="icon icon-chevron-right is-sm"></span>
                     </div>
                     <div class="card-target">
-                        <a href="#" class="stretched-link d-flex align-items-center"><span class="icon icon-alpha-p-circle is-sm mr-2"></span>Open project overview </a>
+                        <a href="#" class="stretched-link d-flex align-items-center">
+                            <span class="icon icon--letter is-sm"><span>m</span></span>
+                            <span>Open project overview</span>
+                        </a>
                         <span class="icon icon-chevron-right is-sm"></span>
                     </div>
                     <div class="card-target">
-                        <a href="#" class="stretched-link d-flex align-items-center"><span class="icon icon-account-supervisor-circle is-sm mr-2"></span>Open experts overview </a>
+                        <a href="#" class="stretched-link d-flex align-items-center">
+                            <span class="icon icon-account-supervisor-circle is-sm"></span>
+                            <span>Open experts overview</span>
+                        </a>
                         <span class="icon icon-chevron-right is-sm"></span>
                     </div>
                     <div class="card-target">
-                        <a href="#" class="stretched-link d-flex align-items-center"><span class="icon icon-gavel is-sm mr-2"></span>Open jury overview </a>
+                        <a href="#" class="stretched-link d-flex align-items-center">
+                            <span class="icon icon-gavel is-sm"></span>
+                            <span>Open jury overview</span>
+                        </a>
                         <span class="icon icon-chevron-right is-sm"></span>
                     </div>
                     <div class="card-target">
-                        <a href="#" class="stretched-link d-flex align-items-center"><span class="icon icon-cog is-sm mr-2"></span>Manage program </a>
+                        <a href="#" class="stretched-link d-flex align-items-center">
+                            <span class="icon icon-cog is-sm"></span>
+                            <span>Manage program</span>
+                        </a>
                         <span class="icon icon-chevron-right is-sm"></span>
                     </div>    
                     <div class="card-target">
-                        <a href="#" class="stretched-link d-flex align-items-center"><span class="icon icon-cog is-sm mr-2"></span>Manage project</a>
+                        <a href="#" class="stretched-link d-flex align-items-center">
+                            <span class="icon icon-cog is-sm"></span>
+                            <span>Manage project</span>
+                        </a>
                         <span class="icon icon-chevron-right is-sm"></span>
                     </div>                         
                 </div>
                 <div class="card-links">
                     <div class="d-flex align-items-center justify-content-between text-muted mb-3">
                         <span class="small font-weight-bold text-truncate mr-2">Join the program</span>
-                        <span class="small">Canditates <span class="font-weight-bold"><span class="icon icon-account"></span> 48</span></span>
+                        <span class="small">
+                            Canditates 
+                            <span class="font-weight-bold">
+                                <span class="icon icon-account"></span> 48
+                            </span>
+                        </span>
                     </div>
                     <div class="card-actions">
                         <a class="btn btn-lg btn-primary btn-block" href="#"> Join </a>  

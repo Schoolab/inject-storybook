@@ -1,6 +1,6 @@
 import navBar from '../components/navBar.html';
 import shortcutBar from '../components/shortcutBar.html';
-import breadcrump from "../components/breadcrump.html";
+import breadcrumb from "../components/breadcrumb.html";
 import projectOverviewContent from "../components/expert-overview-content.html";
 import subNav  from "../components/subNav.html";
 import applicationTitle from "../components/application-title.html";
@@ -24,7 +24,7 @@ export const createExpertOverview = () => {
 
   applicationContainer.appendChild(applicationContent);
 
-  applicationContent.insertAdjacentHTML('beforeend',breadcrump);
+  applicationContent.insertAdjacentHTML('beforeend',breadcrumb);
   applicationContent.insertAdjacentHTML('beforeend',applicationTitle);
 
   applicationContent.insertAdjacentHTML('beforeend',subNav);

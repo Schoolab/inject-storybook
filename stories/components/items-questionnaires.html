@@ -1,0 +1,479 @@
+<div class="container py-8">
+    <div class="row">
+        <div class="col-12 d-flex flex-column gap-32px">
+
+            <div>
+                <h3>Default</h2>
+                <div class="item is-small is-bordered gap-0px">
+                    <div class="item-row gap-8px pb-8px" data-toggle="collapse" data-target="#question1" aria-expanded="false">
+                        <div class="d-flex p-2px text-muted" data-toggle="tooltip" data-placement="bottom" data-original-title="Short text" data-boundary="window">
+                            <span class="icon icon-format-size is-20px"></span>
+                        </div>
+                        <div class="item-content d-flex flex-column align-items-start">
+                            <h4 class="item-title">
+                                Question Label
+                                <span class="text-danger" data-toggle="tooltip" data-placement="bottom" data-original-title="Required question" data-boundary="window">*</span>
+                            </h4>
+                            <span class="small text-muted">n options: [list options here]</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-8px dropdown">
+                            <span class="icon icon-eye-off is-20px text-muted" data-toggle="tooltip" data-placement="bottom" data-original-title="Private response" data-boundary="window"></span>
+                            <span class="icon icon-lock is-20px text-muted" data-toggle="tooltip" data-placement="bottom" data-original-title="Locked. Can't be moved or deleted." data-boundary="window"></span>
+                            <div class="dropdown-container">
+                                <a class="btn btn-sm btn-transparent btn-icon" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                    <span class="icon icon-chevron-right" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <h6 class="dropdown-header">Position</h6>
+                                    <a class="dropdown-item">
+                                        <span class="dropdown-item--label">Send to top</span>
+                                    </a>
+                                    <a class="dropdown-item">
+                                        <span class="dropdown-item--label">Move up</span>
+                                    </a>
+                                    <a class="dropdown-item">
+                                        <span class="dropdown-item--label">Move down</span>
+                                    </a>
+                                    <a class="dropdown-item">
+                                        <span class="dropdown-item--label">Send to bottom</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header">Actions</h6>
+                                    <a class="dropdown-item" data-toggle="collapse" data-target="#question1">
+                                        <span class="dropdown-item--label">Edit</span>
+                                    </a>
+                                    <a class="dropdown-item is-danger">
+                                        <span class="dropdown-item--label">Delete</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="question1">
+                        <div class="bg-highlight rounded-sm p-16px mb-4px d-flex flex-column gap-16px">
+                            <ul class="nav nav-pills gap-8px" role="tablist">
+                                <li class="nav-item d-flex align-items-center gap-8px">
+                                    <span class="icon icon-translate is-16px text-muted"></span>
+                                    <span class="small d-none d-lg-flex text-muted">Edit for each language</span>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link is-sm active" id="question1_lang_en" data-toggle="pill" href="#form-question1_lang_en" role="tab" aria-controls="form-question1_lang_en" aria-selected="true">English</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link is-sm" id="question2_lang_fr" data-toggle="pill" href="#form-question2_lang_fr" role="tab" aria-controls="form-question2_lang_fr" aria-selected="false">French</a>
+                                </li>
+                            </ul>
+                            
+                            <div class="form-group">
+                                <label class="font-weight-bold required" for="question_label">Question</label>
+                                <input type="text" id="question_label" name="translations_wrapper[lang_en][name]" required="required" data-hint="name" aria-describedby="question_label_help" class="form-control" value="" placeholder="Your question here...">
+                                <div class="d-flex gap-8px mt-4px">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" id="checkbox1" value="checkbox1" checked>
+                                        <label class="checkbox-custom custom-control-label custom-control-label" for="checkbox1">Required question</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" id="checkbox2" value="checkbox2">
+                                        <label class="checkbox-custom custom-control-label custom-control-label" for="checkbox2">Private response</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="font-weight-bold" for="hint">Hint text</label>
+                                <input type="text" id="hint" name="translations_wrapper[lang_en][name]" data-hint="name" aria-describedby="hint_help" class="form-control" value="" placeholder="e.g. What is you school name?">
+                                <small id="hint_help" class="form-text text-muted">This is a text to help participants to understand how to fill the field.</small>
+                            </div>
+                            
+                            <hr>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-custom font-weight-bold required" for="type">Type</label>
+                                <select id="type" class="custom-select">
+                                    <option selected value="short">Short text</option>
+                                    <option value="long">Long text</option>
+                                    <option value="unique-select">Unique choice (select)</option>
+                                    <option value="unique-radio">Unique choice (radio)</option>
+                                    <option value="multiple">Multiple choices</option>
+                                    <option value="checklist">Checklist</option>
+                                    <option value="resources">Resources</option>
+                                    <option value="links">Links</option>
+                                    <option value="rating">Rating</option>
+                                    <option value="nps">NPS</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="font-weight-bold">Preview</label>
+                                <div class="bg-white border rounded d-flex flex-column justify-content-center align-items-center p-48px">
+                                    
+                                    <!-- Preview: update with form infos -->
+                                    <div class="form-group w-100">
+                                        <label class="font-weight-bold required" for="exemple">Question Label</label>
+                                        <input type="text" id="exemple" required="required" data-hint="name" aria-describedby="exemple_help" class="form-control" value="" placeholder="Your response here...">
+                                        <small id="exemple_help" class="form-text text-muted">Hint text</small>
+                                    </div>
+                                    <!-- Preview -->
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <label class="font-weight-bold" for="text_max_length">Text max length</label>
+                                    <input type="number" id="text_max_length" data-hint="name" aria-describedby="text_max_length_help" class="form-control" value="" placeholder="e.g. 100">
+                                    <small id="text_max_length_help" class="form-text text-muted">Leave empty for no limit</small>
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label class="font-weight-bold required" for="text_type_verification">Text type verification</label>
+                                    <select id="text_type_verification"  required="required" aria-describedby="text_type_verification_help" class="custom-select">
+                                        <option selected value="none">No verification</option>
+                                        <hr>
+                                        <optgroup label="Texts">
+                                            <option value="text">Text</option>
+                                            <option value="email">Email</option>
+                                            <option value="url">URL</option>
+                                        </optgroup>
+                                        <optgroup label="Numbers">
+                                            <option value="tel">Phone</option>
+                                            <option value="number">Number</option>
+                                        </optgroup>
+                                        <optgroup label="Dates">
+                                            <option value="date">Date</option>
+                                            <option value="time">Time</option>
+                                            <option value="datetime">DateTime</option>
+                                            <option value="month">Month</option>
+                                            <option value="week">Week</option>
+                                        </optgroup>
+                                    </select>
+                                    <!-- types: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email -->
+                                    <small id="text_type_verification_help" class="form-text text-muted">Choose what type of content you want in responses</small>
+                                </div>
+                            </div>
+                            
+                            <hr>
+                            
+                            <div class="form-group">
+                                <label class="font-weight-bold">Integrations</label>
+                                <div class="d-flex flex-column flex-lg-row gap-8px">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" id="show_csv" value="show_csv" checked>
+                                        <label class="checkbox-custom custom-control-label custom-control-label" for="show_csv">Show in CSV exports</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox" id="show_insights" value="show_insights" checked>
+                                        <label class="checkbox-custom custom-control-label custom-control-label" for="show_insights">Show in Insights</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Hide unless show_insights checked -->
+                            <div class="form-group">
+                                <label class="font-weight-bold required" for="insights_chart_type">Insights chart type</label>
+                                <select id="insights_chart_type"  required="required" aria-describedby="insights_chart_type_help" class="custom-select">
+                                    <option selected value="pie">Pie chart</option>
+                                    <option value="bar">Bar chart</option>
+                                    <option value="radar">Radar chart</option>
+                                    <option value="average">Average value</option>
+                                    <option value="total">Total value</option>
+                                </select>
+                            </div>
+                            
+                            <hr>
+                            
+                            <div class="form-group">
+                                <label class="font-weight-bold" for="condition">Condition</label>
+                                <a href="#" class="btn btn-lg btn-default btn-block">
+                                    <span class="icon icon-plus-circle"></span>
+                                    <span>Add condition</span>
+                                </a>
+                                <small class="form-text text-muted">You can add only one condition on a question.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div>
+                <h3>With condition</h2>
+                <div class="item--condition-wrapper" >
+                    <div class="py-8px px-12px d-flex justify-content-between align-items-center text-muted small">
+                        <span>If Participant's type is <span class="text-body">Student</span></span>
+                        <span>Condition</span>
+                    </div>
+                    <div class="item is-small is-bordered gap-0px">
+                        <div class="item-row gap-8px pb-8px" data-toggle="collapse" data-target="#question2" aria-expanded="false">
+                            <div class="d-flex p-2px text-muted" data-toggle="tooltip" data-placement="bottom" data-original-title="Short text" data-boundary="window">
+                                <span class="icon icon-format-size is-20px"></span>
+                            </div>
+                            <div class="item-content d-flex flex-column align-items-start">
+                                <h4 class="item-title">
+                                    Question Label
+                                    <span class="text-danger" data-toggle="tooltip" data-placement="bottom" data-original-title="Required question" data-boundary="window">*</span>
+                                </h4>
+                                <span class="small text-muted">n options: [list options here]</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-8px dropdown">
+                                <span class="icon icon-eye-off is-20px text-muted" data-toggle="tooltip" data-placement="bottom" data-original-title="Private response" data-boundary="window"></span>
+                                <span class="icon icon-lock is-20px text-muted" data-toggle="tooltip" data-placement="bottom" data-original-title="Locked. Can't be moved or deleted." data-boundary="window"></span>
+                                <div class="dropdown-container">
+                                    <a class="btn btn-sm btn-transparent btn-icon" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                        <span class="icon icon-chevron-right" data-toggle="tooltip" data-placement="bottom" data-original-title="Drag to move. Click for options." data-boundary="window"></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <h6 class="dropdown-header">Position</h6>
+                                        <a class="dropdown-item">
+                                            <span class="dropdown-item--label">Send to top</span>
+                                        </a>
+                                        <a class="dropdown-item">
+                                            <span class="dropdown-item--label">Move up</span>
+                                        </a>
+                                        <a class="dropdown-item">
+                                            <span class="dropdown-item--label">Move down</span>
+                                        </a>
+                                        <a class="dropdown-item">
+                                            <span class="dropdown-item--label">Send to bottom</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <h6 class="dropdown-header">Actions</h6>
+                                        <a class="dropdown-item" data-toggle="collapse" data-target="#question2">
+                                            <span class="dropdown-item--label">Edit</span>
+                                        </a>
+                                        <a class="dropdown-item is-danger">
+                                            <span class="dropdown-item--label">Delete</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="question2">
+                            <div class="bg-highlight rounded-sm p-16px mb-4px d-flex flex-column gap-16px">
+                                <ul class="nav nav-pills gap-8px" role="tablist">
+                                    <li class="nav-item d-flex align-items-center gap-8px">
+                                        <span class="icon icon-translate is-16px text-muted"></span>
+                                        <span class="small d-none d-lg-flex text-muted">Edit for each language</span>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link is-sm active" id="question1_lang_en" data-toggle="pill" href="#form-question1_lang_en" role="tab" aria-controls="form-question1_lang_en" aria-selected="true">English</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link is-sm" id="question2_lang_fr" data-toggle="pill" href="#form-question2_lang_fr" role="tab" aria-controls="form-question2_lang_fr" aria-selected="false">French</a>
+                                    </li>
+                                </ul>
+                                
+                                <div class="form-group">
+                                    <label class="font-weight-bold required" for="question_label">Question</label>
+                                    <input type="text" id="question_label" name="translations_wrapper[lang_en][name]" required="required" data-hint="name" aria-describedby="question_label_help" class="form-control" value="" placeholder="Your question here...">
+                                    <div class="d-flex flex-column flex-lg-row gap-8px mt-4px">
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="custom-control-input" type="checkbox" id="checkbox1" value="checkbox1" checked>
+                                            <label class="checkbox-custom custom-control-label custom-control-label" for="checkbox1">Required question</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="custom-control-input" type="checkbox" id="checkbox2" value="checkbox2">
+                                            <label class="checkbox-custom custom-control-label custom-control-label" for="checkbox2">Private response</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="font-weight-bold" for="hint">Hint text</label>
+                                    <input type="text" id="hint" name="translations_wrapper[lang_en][name]" data-hint="name" aria-describedby="hint_help" class="form-control" value="" placeholder="e.g. What is you school name?">
+                                    <small id="hint_help" class="form-text text-muted">This is a text to help participants to understand how to fill the field.</small>
+                                </div>
+                                
+                                <hr>
+                                
+                                <div class="form-group">
+                                    <label class="checkbox-custom font-weight-bold required" for="type">Type</label>
+                                    <select id="type" class="custom-select">
+                                        <option selected value="short">Short text</option>
+                                        <option value="long">Long text</option>
+                                        <option value="unique-select">Unique choice (select)</option>
+                                        <option value="unique-radio">Unique choice (radio)</option>
+                                        <option value="multiple">Multiple choices</option>
+                                        <option value="checklist">Checklist</option>
+                                        <option value="resources">Resources</option>
+                                        <option value="links">Links</option>
+                                        <option value="rating">Rating</option>
+                                        <option value="nps">NPS</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Preview</label>
+                                    <div class="bg-white border rounded d-flex flex-column justify-content-center align-items-center p-48px">
+                                        
+                                        <!-- Preview: update with form infos -->
+                                        <div class="form-group w-100">
+                                            <label class="font-weight-bold required" for="exemple">Question Label</label>
+                                            <input type="text" id="exemple" required="required" data-hint="name" aria-describedby="exemple_help" class="form-control" value="" placeholder="Your response here...">
+                                            <small id="exemple_help" class="form-text text-muted">Hint text</small>
+                                        </div>
+                                        <!-- Preview -->
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group col-lg-6">
+                                        <label class="font-weight-bold" for="text_max_length">Text max length</label>
+                                        <input type="number" id="text_max_length" data-hint="name" aria-describedby="text_max_length_help" class="form-control" value="" placeholder="e.g. 100">
+                                        <small id="text_max_length_help" class="form-text text-muted">Leave empty for no limit</small>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label class="font-weight-bold required" for="text_type_verification">Text type verification</label>
+                                        <select id="text_type_verification"  required="required" aria-describedby="text_type_verification_help" class="custom-select">
+                                            <option selected value="none">No verification</option>
+                                            <hr>
+                                            <optgroup label="Texts">
+                                                <option value="text">Text</option>
+                                                <option value="email">Email</option>
+                                                <option value="url">URL</option>
+                                            </optgroup>
+                                            <optgroup label="Numbers">
+                                                <option value="tel">Phone</option>
+                                                <option value="number">Number</option>
+                                            </optgroup>
+                                            <optgroup label="Dates">
+                                                <option value="date">Date</option>
+                                                <option value="time">Time</option>
+                                                <option value="datetime">DateTime</option>
+                                                <option value="month">Month</option>
+                                                <option value="week">Week</option>
+                                            </optgroup>
+                                        </select>
+                                        <!-- types: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email -->
+                                        <small id="text_type_verification_help" class="form-text text-muted">Choose what type of content you want in responses</small>
+                                    </div>
+                                </div>
+                                
+                                <hr>
+                                
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Integrations</label>
+                                    <div class="d-flex gap-8px">
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="custom-control-input" type="checkbox" id="show_csv" value="show_csv" checked>
+                                            <label class="checkbox-custom custom-control-label custom-control-label" for="show_csv">Show in CSV exports</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="custom-control-input" type="checkbox" id="show_insights" value="show_insights" checked>
+                                            <label class="checkbox-custom custom-control-label custom-control-label" for="show_insights">Show in Insights</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Hide unless show_insights checked -->
+                                <div class="form-group">
+                                    <label class="font-weight-bold required" for="insights_chart_type">Insights chart type</label>
+                                    <select id="insights_chart_type"  required="required" aria-describedby="insights_chart_type_help" class="custom-select">
+                                        <option selected value="pie">Pie chart</option>
+                                        <option value="bar">Bar chart</option>
+                                        <option value="radar">Radar chart</option>
+                                        <option value="average">Average value</option>
+                                        <option value="total">Total value</option>
+                                    </select>
+                                </div>
+                                
+                                <hr>
+                                
+                                <div class="form-group">
+                                    <label class="font-weight-bold" for="condition">Condition</label>
+                                    <a href="#" class="btn btn-lg btn-default btn-block">
+                                        <span class="icon icon-plus-circle"></span>
+                                        <span>Add condition</span>
+                                    </a>
+                                    <small class="form-text text-muted">You can add only one condition on a question.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Steps</h3>
+                <div class="grid-container">
+                    <div class="grid-vertical gap-16px">
+                        <div class="bg-highlight rounded-lg p-16px d-flex flex-column gap-8px w-100">
+                            <div class="d-flex align-items-center justify-content-between gap-8px">
+                                <h4 class="nav-title flex-fill mb-0">1. Step name</h4>
+                                <span class="badge badge-notification is-highlight">0</span>
+                                <div class="dropdown-container">
+                                    <a class="btn btn-sm btn-transparent btn-icon text-muted" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                        <span class="icon icon-dots-vertical"></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <h6 class="dropdown-header">Position</h6>
+                                        <a class="dropdown-item">
+                                            <span class="dropdown-item--label">Send to top</span>
+                                        </a>
+                                        <a class="dropdown-item">
+                                            <span class="dropdown-item--label">Move up</span>
+                                        </a>
+                                        <a class="dropdown-item">
+                                            <span class="dropdown-item--label">Move down</span>
+                                        </a>
+                                        <a class="dropdown-item">
+                                            <span class="dropdown-item--label">Send to bottom</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <h6 class="dropdown-header">Actions</h6>
+                                        <a class="dropdown-item">
+                                            <span class="dropdown-item--label">Edit</span>
+                                        </a>
+                                        <a class="dropdown-item">
+                                            <span class="dropdown-item--label">Manage</span>
+                                            <div class="dropdown-item--icon icon icon-arrow-top-right"></div>
+                                        </a>
+                                        <a class="dropdown-item is-danger">
+                                            <span class="dropdown-item--label">Delete</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-default btn-transparent text-muted text-nowrap align-self-start" href="#" role="button">
+                                <span class="icon icon-plus-circle"></span>
+                                <span>Add question</span>
+                            </button>
+                        </div>
+
+                        <div class="bg-highlight rounded-lg p-16px d-flex flex-column gap-8px w-100">
+                            <div class="d-flex align-items-center justify-content-between gap-8px">
+                                <h4 class="nav-title flex-fill mb-0">2. Step name</h4>
+                                <span class="badge badge-notification is-highlight">0</span>
+                                <div class="dropdown-container">
+                                    <a class="btn btn-sm btn-transparent btn-icon text-muted" data-toggle="dropdown" aria-expanded="false" data-boundary="window" href="#">
+                                        <span class="icon icon-dots-vertical"></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item">
+                                            <div class="dropdown-item--label">First action</div>
+                                        </a>
+                                        <a class="dropdown-item">
+                                            <div class="dropdown-item--label">Second action</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-default btn-transparent text-muted text-nowrap align-self-start" href="#" role="button">
+                                <span class="icon icon-plus-circle"></span>
+                                <span>Add question</span>
+                            </button>
+                        </div>
+
+                        <button class="btn btn-default btn-transparent text-muted text-nowrap align-self-start" href="#" role="button">
+                            <span class="icon icon-plus-circle"></span>
+                            <span>Add step</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 import navBar from '../components/navBar.html';
 import shortcutBar from '../components/shortcutBar-not-expanded.html';
-import breadcrump from "../components/breadcrump.html";
+import breadcrumb from "../components/breadcrumb.html";
 import programContent from "../components/program-event-content.html";
 import applicationTitle from "../components/application-title-no-subnav.html";
 import applicationAside from "../components/application-aside-event.html";
@@ -25,7 +25,7 @@ export const createProgramEvent = () => {
 
   applicationContainer.appendChild(applicationContent);
 
-  applicationContent.insertAdjacentHTML('beforeend',breadcrump);
+  applicationContent.insertAdjacentHTML('beforeend',breadcrumb);
   applicationContent.insertAdjacentHTML('beforeend',applicationTitle);
 
   const appMainContainer = document.createElement('div');

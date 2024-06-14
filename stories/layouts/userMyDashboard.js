@@ -1,5 +1,5 @@
 import navBar from '../components/navBar.html';
-import breadcrump from "../components/breadcrump.html";
+import breadcrumb from "../components/breadcrumb.html";
 import subNav  from "../components/subNav.html";
 import participationsContent from "../components/user-my-dashboard-content.html";
 import applicationTitle from "../components/application-title-no-btn.html";
@@ -22,7 +22,7 @@ export const createUserMyDashboard = () => {
   applicationContainer.appendChild(applicationContent);
 
 
-  applicationContent.insertAdjacentHTML('beforeend',breadcrump);
+  applicationContent.insertAdjacentHTML('beforeend',breadcrumb);
   applicationContent.insertAdjacentHTML('beforeend',applicationTitle);
   applicationContent.insertAdjacentHTML('beforeend',subNav);
 

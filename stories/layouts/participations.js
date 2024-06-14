@@ -1,5 +1,5 @@
 import navBar from '../components/navBar.html';
-import breadcrump from "../components/breadcrump.html";
+import breadcrumb from "../components/breadcrumb.html";
 import participationsContent from "../components/participations-content.html";
 import applicationTitle from "../components/application-title-no-btn.html";
 import { script } from "../utils/script.js";
@@ -20,7 +20,7 @@ export const createParticipation = () => {
 
   applicationContainer.appendChild(applicationContent);
 
-  applicationContainer.insertAdjacentHTML('beforeend',breadcrump);
+  applicationContainer.insertAdjacentHTML('beforeend',breadcrumb);
   applicationContent.insertAdjacentHTML('beforeend',applicationTitle);
 
   const appMainContainer = document.createElement('div');
