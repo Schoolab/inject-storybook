@@ -1,5 +1,4 @@
-
-import createCardHTML from '../components/ProgamAndProjectCard.html';
+import createCardHTML from '../components/cards-session.html';
 
 import { script } from "../utils/script.js"
 
@@ -8,4 +7,3 @@ export const createCard = () => {
   script();
   return createCard;
 };
-

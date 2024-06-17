@@ -1,11 +1,16 @@
-import { createCard } from './layouts/ProgamAndProjectCard.js';
+import badgeHtml from "./components/badge-notif.html";
 
 export default {
-    title: 'Components/ProgamAndProjectCard',
+    title: 'Components/Badges',
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
         layout: 'fullscreen',
       },
 };
-export const ProgamAndProjectCard = () => createCard();
+
+export const Notif = () => badgeHtml;
+
+
+
+
 
