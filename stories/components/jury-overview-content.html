@@ -134,94 +134,84 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cardsContainer">
-                        <div class="card m-0 p-5 blogPostCard">
-                            <div class="pb-0 pt-3 pt-sm-5">
-                                <div class="item is-wide is-static">
-                                    <div class="item-row">
-                                        <div class="item-row">
-                                            <ul class="metas is-list small">
-                                                <li>
-                                                    <span class="icon">😎 <a href="/program/75/details"
-                                                           class="text-muted">La piscine 2022</a>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="item-options dropdown">
-                                            <a class="btn btn-sm btn-transparent btn-icon" href="#" role="button"
-                                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span class="icon icon-dots-vertical"></span>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a class="dropdown-item" href="/program/75/manage/updates">Manage posts</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="/program/75/manage/updates/229">Edit</a>
-                                                <a class="dropdown-item is-danger deleteAction" href="#"
-                                                   data-url="/program/75/manage/updates/229/delete"
-                                                   data-confirm-modal="deleteBlogPostConfirmModal"> Delete </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-row">
-                                        <a href="#" class=" userProfileModale userProfileModale-1782"
-                                           data-url="/user/158c2ec5/profile-modal" data-toggle="modal"
-                                           data-target="#loadingContentModal">
-                                            <div class="thumbnail is-oval is-lg">
-                                                <img src="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg"
-                                                     width="150" height="150" class=" is-lg rounded-circle">
-                                            </div>
+                    <div class="cardsContainer d-flex flex-column gap-16px">
+                        <div class="card blogPostCard">
+                            <div class="card-infos d-flex flex-column align-items-stretch gap-16px p-24px">
+                                <div class="d-flex flex-grow-1 gap-12px">
+                                    <div class="thumbnail-relation m-auto">
+                                        <a href="#" class="thumbnail is-oval is-lg is-bordered">
+                                            <img src="https://inject-prod.s3.amazonaws.com/images/71446890-6864-4521-9548-8f5973075b3a/sq150.jpeg" width="150" height="150" class=" is-2xl is-bordered">
                                         </a>
-                                        <div class="item-content ml-3 py-1">
-                                            <a href="#" class="item-title h4 mb-0 userProfileModale userProfileModale-1782"
-                                               data-url="/user/158c2ec5/profile-modal" data-toggle="modal"
-                                               data-target="#loadingContentModal"> Pierre Forestier </a>
-                                            <ul class="item-caption metas is-list text-muted small">
-                                                <li>
-                                                    <a href="#"
-                                                       class="text-decoration-none userProfileModale userProfileModale-1782"
-                                                       data-url="/user/158c2ec5/profile-modal" data-toggle="modal"
-                                                       data-target="#loadingContentModal"> Startup Manager, Schoolab </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"
-                                                       class="text-decoration-none userProfileModale userProfileModale-1782"
-                                                       data-url="/user/158c2ec5/profile-modal" data-toggle="modal"
-                                                       data-target="#loadingContentModal"> 01/24/2022 11:16 </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="item-row">
-                                        <div class="item-content">
-                                            <p>Hello,&nbsp;</p>
-                                            <p>Un petit message pour vous souhaiter la bienvenue parmi le programme d'incubation "La Piscine". Je serais ton interlocuteur privilégié pour ce programme, n'hésitez surtout pas à me solliciter sur slack ou par mail : pierre.forestier@theschoolab.com.&nbsp;</p>
-                                            <p>Et pour rappel, ce programme va te permettre de te lancer rapidement, valide...</p>
-                                            <p class="text-right">
-                                                <small>
-                                                    <a class="text-muted" href="/program/75/updates/229">...see more</a>
-                                                </small>
-                                            </p>
+                                    </div>                     
+                                    <div class="card-title flex-grow-1">
+                                        <a href="#" class="h4 mb-0 line-clamp-1 d-flex align-items-center gap-4px">
+                                            <span>Pierre Forestier</span>
+                                            <span class="badge badge-role is-manager z-2" data-toggle="tooltip" data-placement="bottom" data-original-title="Program Manager" data-boundary="window"></span>
+                                        </a>
+                                        <ul class="text-muted small metas is-list mb-0">
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Program Manager, Schoolab</a>
+                                            </li>
+                                            <li>
+                                                <span>May 13</span>
+                                            </li>
+                                            <li>
+                                                <span>3:39 PM</span>
+                                            </li>
+                                        </ul>
+                                    </div> 
+                                    <div class="dropdown z-2">
+                                        <a class="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="icon is-20px icon-dots-vertical"></span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" href="#">
+                                                <span>Open post</span>
+                                            </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="dropdown-item--label">Open profile</span>
+                                                <span class="dropdown-item--shortcut icon icon-arrow-top-right"></span>
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="dropdown-item--label">Open program</span>
+                                                <span class="dropdown-item--shortcut icon icon-arrow-top-right"></span>
+                                            </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">
+                                                <span>Edit</span>
+                                            </a>
+                                            <a class="dropdown-item is-danger" href="#">
+                                                <span>Delete</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card-footer">
-                                <ul class="metas is-list small">
-                                    <li class="likeCounter" data-ref="blogPost243"> 0 like </li>
-                                    <li>
-                                        <i class="icon icon-comment mr-2"></i>
-                                        <a class="text-muted" href="/program/75/updates/229#comments"> 4 comments </a>
-                                    </li>
-                                </ul>
-                                <div class="item-actions mt-3 pb-0">
-                                    <span class="btn btn-lg btn-block btn-default likeButton"
-                                          data-url="/api/program/75/posts/229/like" data-ref="blogPost243">
-                                        <i class="icon icon-thumb-up-outline"></i><span>Like</span>
-                                    </span>
-                                    <a class="btn btn-lg btn-block btn-default commentButton"
-                                       href="/program/75/updates/229#comments">
-                                        <i class="icon icon-comment-outline"></i><span>Comment</span>
+                                <div class="d-flex flex-column gap-16px">
+                                    <p>Hello,</p>
+                                    <p>Un petit message pour vous souhaiter la bienvenue parmi le programme d'incubation "La Piscine". Je serais ton interlocuteur privilégié pour ce programme, n'hésitez surtout pas à me solliciter sur slack ou par mail : pierre.forestier@theschoolab.com.&nbsp;</p>
+                                    <p>Et pour rappel, ce programme va te permettre de te lancer rapidement, valide...</p>
+                                    <a href="#">Read more -></a>
+                                </div>
+                                <div class="gallery">
+                                    <div class="gallery-photo embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6cheowg6Rmk?si=Zi-3gDOnCZoEyk9m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between flex-nowrap">
+                                    <div class="d-flex gap-8px flex-fill">
+                                        <a href="#" class="btn btn-secondary active">
+                                            <span class="icon icon-thumb-up"></span>
+                                            <span>9</span>
+                                        </a>
+                                        <a href="#" class="btn btn-secondary">
+                                            <span class="icon icon-comment"></span>
+                                            <span>4</span>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" data-original-title="Click to copy link" data-boundary="window">
+                                        <span class="icon icon-share-variant"></span>
+                                        <span>Copy link</span>
                                     </a>
                                 </div>
                             </div>
@@ -261,7 +251,7 @@
                         </div>
                     </div>
                     <div class="item-options dropdown">
-                        <a class="btn btn-sm btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown"
+                        <a class="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
@@ -292,7 +282,7 @@
                         </div>
                     </div>
                     <div class="item-options dropdown">
-                        <a class="btn btn-sm btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown"
+                        <a class="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
@@ -323,7 +313,7 @@
                         </div>
                     </div>
                     <div class="item-options dropdown">
-                        <a class="btn btn-sm btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown"
+                        <a class="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
                             <span class="icon icon-dots-vertical"></span>
                         </a>

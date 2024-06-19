@@ -109,7 +109,7 @@
                         </div>
                     </div>
                     <div class="item-options dropdown">
-                        <a class="btn btn-sm btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown"
+                        <a class="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
@@ -140,7 +140,7 @@
                         </div>
                     </div>
                     <div class="item-options dropdown">
-                        <a class="btn btn-sm btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown"
+                        <a class="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
@@ -171,7 +171,7 @@
                         </div>
                     </div>
                     <div class="item-options dropdown">
-                        <a class="btn btn-sm btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown"
+                        <a class="btn btn-lg btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
@@ -186,60 +186,87 @@
         </div>
     </div>
     <div class="col-12 col-lg-6">
-        <div class="application-section">
+        <div class="application-section is-highlighted">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h3><span class="icon icon-format-list-checks is-24px mr-2"></span>A survey is waiting your response!</h3>
+                    <p>We need you to help us improve the CPI Concept program by responding to a survey. It will only take you a couple minutes.</p>
+                    <div class="mt-5 d-flex">
+                        <a class="btn btn-lg flex-fill btn-primary mr-3 text-nowrap" href="#"> Respond to survey </a>
+                        <a class="btn btn-lg flex-fill btn-default text-nowrap" href="#"> See all surveys </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="application-section d-flex flex-column gap-8px">
             <h3 class="application-section--title"> Upcoming events </h3>
-            <div class="item is-bordered">
-                <div class="item-cover is-3by1">
-                    <a href="/program/147/events/417">
-                        <picture>
-                            <source media="(max-width:576px)" srcset="https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co576x192.jpeg">
-                            <source media="(max-width:768px)" srcset="https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co768x256.jpeg">
-                            <source media="(max-width:1140px)" srcset="https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co1140x380.jpeg">
-                            <img class="img-fluid d-block" src="https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co1140x380.jpeg" alt="" width="1140" height="380">
-                        </picture>
-                    </a>
-                </div>
-                <div class="item-row">
-                    <div class="thumbnail is-date" title="30/03/2023">
-                        <span class="month">Mar</span>
-                        <span class="day">30</span>
+            <div class="card">
+                <div class="card-infos is-linked">
+                    <div class="card-banner">
+                        <div class="card-image is-3by1">
+                            <picture>
+                                <source media="(max-width:576px)" srcset="https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co576x192.jpeg">
+                                <source media="(max-width:768px)" srcset="https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co768x256.jpeg">
+                                <source media="(max-width:1140px)" srcset="https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co1140x380.jpeg">
+                                <img src="https://inject-prod.s3.amazonaws.com/images/efe8674b-e830-4988-b424-4bf588547b93/co1140x380.jpeg" alt="">
+                            </picture>
+                        </div>
                     </div>
-                    <div class="item-content ml-4 py-1">
-                        <a class="item-title h4 mb-0 stretched-link" href="/program/147/events/417"> Tradeshow </a>
-                        <ul class="item-caption metas small is-list">
-                            <li>09:30</li>
-                            <li>Adresse</li>
-                        </ul>
+                    <div class="d-flex gap-12px">
+                        <div class="thumbnail is-date is-lg">
+                            <span class="month">June</span>
+                            <span class="day">8</span>
+                        </div>
+                        <div class="d-flex flex-column flex-fill gap-0">
+                            <div class="card-title d-flex align-items-center gap-4px p-4px">
+                                <span class="icon icon-pin is-24px z-2" data-toggle="tooltip" data-placement="bottom" data-original-title="Pinned events are visible on the organization Hub" data-boundary="window"></span>
+                                <a href="#" class="h4 mb-0 stretched-link line-clamp-1">
+                                    {event.name}
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-end flex-wrap gap-8px">
+                                <div class="badge badge-pill badge-tag is-small">
+                                    <span class="icon icon-map-marker"></span>
+                                    <span>In person</span>
+                                </div>
+                                <div class="badge badge-pill badge-tag is-small is-draft">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 9C7.65685 9 9 7.65685 9 6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6C3 7.65685 4.34315 9 6 9ZM6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z" fill="currentColor"/>
+                                    </svg>                                   
+                                    <span>June 18 at 6 PM</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="item is-bordered">
-                <div class="item-row">
-                    <div class="thumbnail is-date" title="30/03/2023">
-                        <span class="month">Mar</span>
-                        <span class="day">30</span>
-                    </div>
-                    <div class="item-content ml-4 py-1">
-                        <a class="item-title h4 mb-0 stretched-link" href="/program/147/events/417"> Tradeshow </a>
-                        <ul class="item-caption metas small is-list">
-                            <li>09:30</li>
-                            <li>Adresse</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="item is-bordered">
-                <div class="item-row">
-                    <div class="thumbnail is-date" title="30/03/2023">
-                        <span class="month">Mar</span>
-                        <span class="day">30</span>
-                    </div>
-                    <div class="item-content ml-4 py-1">
-                        <a class="item-title h4 mb-0 stretched-link" href="/program/147/events/417"> Tradeshow </a>
-                        <ul class="item-caption metas small is-list">
-                            <li>09:30</li>
-                            <li>Adresse</li>
-                        </ul>
+            <div class="card">
+                <div class="card-infos is-linked">
+                    <div class="d-flex gap-12px">
+                        <div class="thumbnail is-date is-lg">
+                            <span class="month">June</span>
+                            <span class="day">8</span>
+                        </div>
+                        <div class="d-flex flex-column flex-fill gap-0">
+                            <div class="card-title d-flex align-items-center gap-4px p-4px">
+                                <span class="icon icon-pin is-24px z-2" data-toggle="tooltip" data-placement="bottom" data-original-title="Pinned events are visible on the organization Hub" data-boundary="window"></span>
+                                <a href="#" class="h4 mb-0 stretched-link line-clamp-1">
+                                    {event.name}
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-end flex-wrap gap-8px">
+                                <div class="badge badge-pill badge-tag is-small">
+                                    <span class="icon icon-link"></span>
+                                    <span>Online</span>
+                                </div>
+                                <div class="badge badge-pill badge-tag is-small is-open">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="6" cy="6" r="6" fill="currentColor"/>
+                                    </svg>
+                                    <span>Ongoing until 10 PM</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -251,7 +278,7 @@
             <div id="challenge-blogposts-container">
                 <a class="message mb-5 startMessageButton" href="/program/75/manage/updates/new-update">
                     <span class="thumbnail is-oval is-lg" data-toggle="tooltip" title=""
-                            data-original-title="John Doe">
+                          data-original-title="John Doe">
                         <div class="thumbnail is-oval">
                             <span class="icon icon-account"></span>
                         </div>
@@ -260,7 +287,7 @@
                         <div class="message-list">
                             <div class="message-row">
                                 <input type="text" class="form-control message-content bg-white cursorLink"
-                                        readonly="readonly" placeholder="Start a new post...">
+                                       readonly="readonly" placeholder="Start a new post...">
                             </div>
                         </div>
                     </div>
@@ -274,120 +301,117 @@
                         </div>
                     </div>
                     <div class="cardsContainer">
-                        <div class="card blogPostCard">
-                            <div class="card-body pb-0 pt-3 pt-sm-5">
-                                <div class="item is-wide is-static">
-                                    <div class="item-row">
-                                        <div class="item-row">
-                                            <ul class="metas is-list small">
+                        <div class="cardsContainer">
+                            <div class="card blogPostCard">
+                                <div class="card-infos d-flex flex-column align-items-stretch gap-16px p-24px">
+                                    <div class="d-flex flex-grow-1 gap-12px">
+                                        <div class="thumbnail-relation m-auto">
+                                            <a href="#" class="thumbnail is-oval is-lg is-bordered">
+                                                <img src="https://inject-prod.s3.amazonaws.com/images/0ee71840-6d78-4784-acff-6f8d2722dbb7/sq150.jpeg" width="150" height="150" class=" is-2xl is-bordered">
+                                            </a>
+                                        </div>                     
+                                        <div class="card-title flex-grow-1">
+                                            <a href="#" class="h4 mb-0 line-clamp-1 d-flex align-items-center gap-4px">
+                                                <span>Sarah Lamoureux</span>
+                                                <span class="badge badge-role is-manager z-2" data-toggle="tooltip" data-placement="bottom" data-original-title="Program Manager" data-boundary="window"></span>
+                                            </a>
+                                            <ul class="text-muted small metas is-list mb-0">
                                                 <li>
-                                                    <span class="icon icon-school"><span> <a href="/program/192/details" class="text-muted">Schoolab - Saint Lazare</a>
-                                                        </span></span>
+                                                    <a href="#" class="text-muted text-decoration-none">Community Builder, Schoolab</a>
+                                                </li>
+                                                <li>
+                                                    <span>May 13</span>
+                                                </li>
+                                                <li>
+                                                    <span>3:39 PM</span>
                                                 </li>
                                             </ul>
-                                        </div>
-                                        <div class="item-options dropdown">
-                                            <a class="btn btn-sm btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span class="icon icon-dots-vertical"></span>
+                                        </div> 
+                                        <div class="dropdown z-2">
+                                            <a class="btn btn-transparent btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon is-20px icon-dots-vertical"></span>
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <a class="dropdown-item" href="/program/192/manage/updates">Manage posts</a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>Open post</span>
+                                                </a>
                                                 <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="/program/192/manage/updates/540">Edit</a>
-                                                <a class="dropdown-item is-danger deleteAction" href="#" data-url="/program/192/manage/updates/540/delete" data-confirm-modal="deleteBlogPostConfirmModal"> Delete </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="dropdown-item--label">Open profile</span>
+                                                    <span class="dropdown-item--shortcut icon icon-arrow-top-right"></span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="dropdown-item--label">Open program</span>
+                                                    <span class="dropdown-item--shortcut icon icon-arrow-top-right"></span>
+                                                </a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>Edit</span>
+                                                </a>
+                                                <a class="dropdown-item is-danger" href="#">
+                                                    <span>Delete</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="item-row">
-                                        <a href="#" class=" userProfileModale userProfileModale-1161" data-url="/user/7ab381cb/profile-modal" data-toggle="modal" data-target="#loadingContentModal">
-                                            <div class="thumbnail is-oval is-lg">
-                                                <img src="https://inject-prod.s3.amazonaws.com/images/0ee71840-6d78-4784-acff-6f8d2722dbb7/sq150.jpeg" width="150" height="150" class=" is-lg rounded-circle">
+                                    <div class="d-flex flex-column gap-16px">
+                                        <p>Bonjour à tous·tes,</p>
+                                        <p>Nous sommes heureux de vous accueillir au sein de Schoolab Saint-Lazare !</p>
+                                        <p>Le système de réservation de salles de réunion est maintenant disponible, <a href="https://schoolab.skedda.com/register?i=277598&amp;k=0tUkWBHX4UlHvcRlvn6Cx60VhMZD7EZl">cliquez sur ce lien pour activer vos accès</a>.</p>
+                                        <p>Ensuite, pour y accéder il vous suffira de cliquer sur le petit 🏢 dans la barre de navigation de gauche, vous retrouverez le p...</p>
+                                        <a href="#">Read more -></a>
+                                    </div>
+                                    <div class="item is-bordered resource">
+                                        <div class="item-row p-12px">
+                                            <div class="item-row gap-8px">
+                                                <div class="item-icon icon icon-pdf-box text-danger"></div>
+                                                <div class="item-content">
+                                                    <a class="item-title h4 mb-0 stretched-link text-truncate" href="#" target="_blank">stakeholdermap-model.pdf</a>
+                                                    <ul class="item-caption metas small is-list">
+                                                        <li>
+                                                            <span>PDF File</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>120 KB</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
+                                            <div class="item-options">
+                                                <a class="btn btn-lg btn-transparent btn-icon" href="https://schoolab.skedda.com/register?i=277598&amp;k=0tUkWBHX4UlHvcRlvn6Cx60VhMZD7EZl" target="_blank">
+                                                    <span class="icon icon-download is-24px"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-nowrap">
+                                        <div class="d-flex gap-8px flex-fill">
+                                            <a href="#" class="btn btn-secondary active">
+                                                <span class="icon icon-thumb-up"></span>
+                                                <span>9</span>
+                                            </a>
+                                            <a href="#" class="btn btn-secondary">
+                                                <span class="icon icon-comment"></span>
+                                                <span>4</span>
+                                            </a>
+                                        </div>
+                                        <a href="#" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" data-original-title="Click to copy link" data-boundary="window">
+                                            <span class="icon icon-share-variant"></span>
+                                            <span>Copy link</span>
                                         </a>
-                                        <div class="item-content ml-3 py-1">
-                                            <a href="#" class="item-title h4 mb-0 userProfileModale userProfileModale-1161" data-url="/user/7ab381cb/profile-modal" data-toggle="modal" data-target="#loadingContentModal"> Sarah Lamoureux </a>
-                                            <ul class="item-caption metas is-list text-muted small">
-                                                <li>
-                                                    <a href="#" class="text-decoration-none userProfileModale userProfileModale-1161" data-url="/user/7ab381cb/profile-modal" data-toggle="modal" data-target="#loadingContentModal"> Community Builder, Schoolab </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="text-decoration-none userProfileModale userProfileModale-1161" data-url="/user/7ab381cb/profile-modal" data-toggle="modal" data-target="#loadingContentModal"> 06/20/2023 10:02 </a>
-                                                </li>
-                                            </ul>
-                                        </div>
                                     </div>
-                                    <div class="item-row">
-                                        <div class="item-content">
-                                            <p>Bonjour à tous·tes,</p>
-                                            <p>Nous sommes heureux de vous accueillir au sein de Schoolab Saint-Lazare !</p>
-                                            <p>Le système de réservation de salles de réunion est maintenant disponible, <a href="https://schoolab.skedda.com/register?i=277598&amp;k=0tUkWBHX4UlHvcRlvn6Cx60VhMZD7EZl">cliquez sur ce lien pour activer vos accès</a>.</p>
-                                            <p>Ensuite, pour y accéder il vous suffira de cliquer sur le petit 🏢 dans la barre de navigation de gauche, vous retrouverez le p...</p>
-                                            <p class="text-left">
-                                                <a class="text-primary" href="/program/b2bf50cf/updates/540">See more &rarr;</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div id="resourceList" class="resourcesWallWrapper">
-                                        <div class="resourcesWrapper ">
-                                            <section class="resourcesList">
-                                                <div class="item is-bordered resource mb-3">
-                                                    <div class="item-row">
-                                                        <div class="item-row cursorLink triggerResource">
-                                                            <div class="item-icon icon icon-file-outline"></div>
-                                                            <div class="item-content ml-3">
-                                                                <a class="item-title h4 mb-0 stretched-link text-truncate" href="https://schoolab.skedda.com/register?i=277598&amp;k=0tUkWBHX4UlHvcRlvn6Cx60VhMZD7EZl" target="_blank">Activer mon compte réservation d'espace</a>
-                                                                <ul class="item-caption metas small is-list">
-                                                                    <li><span class="icon icon-clock-outline">&nbsp;06/20/2023 10:03</span></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item-options">
-                                                            <a class="btn btn-sm btn-transparent btn-icon" href="https://schoolab.skedda.com/register?i=277598&amp;k=0tUkWBHX4UlHvcRlvn6Cx60VhMZD7EZl" target="_blank">
-                                                                <span class="icon icon-open-in-new"></span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section>
-                                            <div class="resourceEmptyState d-none">
-                                                <div class="d-flex flex-column align-items-center py-5">
-                                                    <span class="text-muted icon icon-file-outline is-lg"></span>
-                                                    <p class="text-muted text-center mt-4">
-                                                        <span>No document</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <ul class="metas is-list small">
-                                    <li class="likeCounter" data-ref="blogPost788"> 1 like </li>
-                                    <li>
-                                        <i class="icon icon-comment mr-2"></i>
-                                        <a class="text-muted" href="/program/b2bf50cf/updates/540#comments"> No comments </a>
-                                    </li>
-                                </ul>
-                                <div class="item-actions mt-3 pb-0">
-                                    <span class="btn btn-lg btn-block btn-default likeButton" data-url="/rest/program/192/posts/540/like" data-ref="blogPost788">
-                                        <i class="icon icon-thumb-up-outline"></i><span>Like</span>
-                                    </span>
-                                    <a class="btn btn-lg btn-block btn-default commentButton" href="/program/b2bf50cf/updates/540#comments">
-                                        <i class="icon icon-comment-outline"></i><span>Comment</span>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="pagerContainer mt-5 d-none">
                         <button class="btn btn-lg btn-block btn-default pagerLoadMoreButton">Load more<span
-                                    class="icon icon-loading icon-spin ml-1 d-none buttonLoader"></span></button>
+                                  class="icon icon-loading icon-spin ml-1 d-none buttonLoader"></span></button>
                     </div>
                 </div>
             </div>
             <a id="challenge-blogposts-page-btn" class="btn btn-lg btn-block btn-default mt-3 d-none"
-                href="/program/75/updates">Show more</a>
+               href="/program/75/updates">Show more</a>
         </div>
     </div>
 </div>
