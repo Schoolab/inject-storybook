@@ -1,11 +1,11 @@
-import { createModalNewProject } from './layouts/modalNewProject.js';
+import { createModal } from './layouts/modalNewProject.js';
 
 export default {
-    title: 'Pages/Modal/NewProject',
+    title: 'Components/Modals',
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
         layout: 'fullscreen',
       },
 };
-export const NewProject = () => createModalNewProject();
+export const NewProject = () => createModal();
 

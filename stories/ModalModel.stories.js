@@ -1,4 +1,4 @@
-import { createModal } from './layouts/modalExternalProgram.js';
+import { createModal } from './layouts/ModalModel.js';
 
 export default {
     title: 'Components/Modals',
@@ -7,5 +7,5 @@ export default {
         layout: 'fullscreen',
       },
 };
-export const ExternalProgram = () => createModal();
+export const Model = () => createModal();
 

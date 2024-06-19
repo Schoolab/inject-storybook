@@ -1,5 +1,5 @@
 
-import modalHTML from '../components/modal-new-project.html';
+import modalHTML from '../components/modal-model.html';
 
 import { script } from "../utils/script.js"
 

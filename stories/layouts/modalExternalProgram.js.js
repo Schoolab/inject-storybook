@@ -1,11 +1,11 @@
 
-import modalExternalProgramHTML from '../components/modal-external-program.html';
+import modalHTML from '../components/modal-external-program.html';
 
 import { script } from "../utils/script.js"
 
-export const createModalUser= () => {
-  const modalExternalProgram = modalExternalProgramHTML;
+export const createModal= () => {
+  const modal = modalHTML;
   script();
-  return modalExternalProgram;
+  return modal;
 };
 

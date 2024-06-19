@@ -1,11 +1,11 @@
 
-import modalProjectHTML from '../components/modal-project.html';
+import modalHTML from '../components/modal-project.html';
 
 import { script } from "../utils/script.js"
 
-export const createModalProject= () => {
-  const modalProject = modalProjectHTML;
+export const createModal= () => {
+  const modal = modalHTML;
   script();
-  return modalProject;
+  return modal;
 };
 
