@@ -8,29 +8,22 @@
             </div>
             <div class="modal-body d-flex flex-column gap-16px">
                 <div class="d-flex align-items-center gap-16px">
-                    <div class="d-flex flex-shrink-0" style="width:144px;height:96px;">
-                        <!-- <div class="card-image">
-                            <picture>
-                                <img src="https://inject-prod.s3.amazonaws.com/challenge/cover/pink_co900x600.png" alt="">
-                            </picture>
-                        </div> -->
-                        <div class="card-image bg-highlight">
-                            <span class="icon icon--letter is-40px position-absolute top-50 start-50 translate-middle"><span>A</span></span>
-                        </div>
-                    </div>
+                    <a href="#" class="thumbnail is-oval is-2xl is-bordered mb-3">
+                        <img src="https://inject-prod.s3.amazonaws.com/images/41c42fb1-35bd-4a31-bf08-3b2267df4b95/sq150.jpeg">
+                    </a>
                     <div class="d-flex flex-column align-items-start gap-8px w-100">
                         <div class="d-flex flex-column gap-0">
                             <div class="d-flex align-items-center gap-4px">
-                                <span class="icon icon-pin is-24px z-2" data-toggle="tooltip" data-placement="bottom" data-original-title="Pinned projects are visible on the organization Hub" data-boundary="window"></span>
                                 <a href="#" class="h3 line-clamp-1 d-flex align-items-center gap-4px">
-                                    <span>ACME</span>
+                                    <span>Pierre Lemeteil</span>
+                                    <span class="badge badge-role is-admin" data-toggle="tooltip" data-placement="bottom" data-original-title="Admin" data-boundary="window"></span>
                                 </a>
                             </div>
                             <ul class="text-muted small metas is-list mb-0">
-                                <li data-toggle="tooltip" data-placement="bottom" data-original-title="<ul class='list-unstyled d-flex flex-column gap-4px m-0'><li class='d-flex gap-4px align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/2216e7ab-c701-4503-83a2-ae7b91afb15d/sq150.jpeg'></div><span>Alexandra Jolly</span></li><li class='d-flex gap-4px align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/3155b942-7535-4b0b-8ded-97eb42a92e1b/sq150.jpeg'></div><span>Emma Salvarelli</span></li><li class='d-flex gap-4px align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/41c42fb1-35bd-4a31-bf08-3b2267df4b95/sq150.jpeg'></div><span>Pierre Lemeteil</span></li><li class='d-flex gap-4px align-items-center'><div class='thumbnail is-xs is-oval'><img alt='Avatar' src='https://inject-prod.s3.amazonaws.com/images/47fed806-ad38-46a0-9fd5-feec0e62189e/sq150.jpeg'></div><span>Terence Irving</span></li><li><span>+ 4 more</span></li></ul>" data-html="true" data-boundary="window">
+                                <li>
                                     <div class="d-flex gap-4px">
-                                        <span class="icon icon-account-multiple is-xs"></span>
-                                        <span class="text-nowrap">8 members</span>
+                                        <span class="icon icon-map-marker is-xs"></span>
+                                        <span class="text-nowrap">Bordeaux, FR</span>
                                     </div>
                                 </li>
                                 <li>
@@ -39,13 +32,24 @@
                                         <span>200 followers</span>
                                     </div>
                                 </li>
+                                <li>
+                                    <div class="d-flex gap-4px">
+                                        <span class="icon icon-clock"></span>
+                                        <span>Joined Oct 10, 2018</span>
+                                    </div>
+                                </li>
                             </ul>
                             
                         </div>
-                        <a href="#" class="badge badge-pill badge-tag is-small">
-                            <span class="icon icon-school"></span>
-                            <span>{program.name}</span>
-                        </a>
+                        <div class="badges small">
+                            <div class="badge badge-pill badge-tag is-small">
+                                <span>Chief Digital Officer</span>
+                            </div>
+                            <a href="#" class="badge badge-pill badge-tag is-small">
+                                <span class="icon icon-briefcase"></span>
+                                <span>Schoolab</span>
+                            </a>
+                        </div>
                     </div>
                     <div class="d-flex gap-8px">
                         <a href="#" class="btn btn-lg btn-primary">
@@ -59,12 +63,32 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right">
                                 <a class="dropdown-item" href="#">
-                                    <span class="dropdown-item--label">Open project</span>
+                                    <span class="dropdown-item--label">Open profile</span>
                                     <span class="dropdown-item--shortcut icon icon-arrow-top-right"></span>
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">
-                                    <span>Manage</span>
+                                    <span class="dropdown-item--icon icon icon-comment"></span>
+                                    <span class="dropdown-item--label">Chat & Video</span>
+                                    <span class="dropdown-item--shortcut icon icon-arrow-top-right"></span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <span class="dropdown-item--icon icon icon-email"></span>
+                                    <span class="dropdown-item--label">Send an email</span>
+                                    <span class="dropdown-item--shortcut icon icon-arrow-top-right"></span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <span class="dropdown-item--icon icon icon-calendar-plus"></span>
+                                    <span class="dropdown-item--label">Book a meeting</span>
+                                    <span class="dropdown-item--shortcut icon icon-arrow-top-right"></span>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <span>Login as Pierre</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <span class="dropdown-item--label">Edit</span>
+                                    <span class="dropdown-item--shortcut icon icon-arrow-top-right"></span>
                                 </a>
                             </div>
                         </div>
@@ -74,55 +98,66 @@
                 <div class="d-flex flex-column gap-16px">
                     <div class="d-flex flex-column">
                         <h4>Learn more</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, eros scelerisque scelerisque pellentesque, nulla nisl dignissim est, at elementum felis diam eget massa.</p>
+                        <p>Seasoned professional currently serving as the Chief Digital Officer at SL Group, encompassing Schoolab, RaiseLab, and MoHo. His career spans roles that include Digital Director at Schoolab for nearly 5 years and positions focused on digital innovation and product development at other companies.</p>
+                        <p>He has a robust educational background with a certification from Stanford University's Graduate School of Business in Innovation and Entrepreneurship, has a degree in engineering, master of science and computer engineering from SUPINFO.</p>
+                        <p>Pierre also has deep expertise in e-commerce and optimizing mobile purchasing funnels. He has proven his ability to develop innovative strategies to enhance the online shopping experience, focusing on leveraging mobile technologies to ease consumer access to products and services. This skill enables him to tailor shopping journeys to the specific needs of mobile users, optimizing interfaces for touchscreen displays and simplifying payment processes to maximize conversions.</p>
+                        <p>Pierre is skilled in areas such as iPhone development and has a strong track record in leading digital transformation and innovation projects.</p>
                     </div>
-                    <div class="badges small">
-                        <a href="#" class="badge badge-pill badge-tag is-small">
-                            <span>Community</span>
-                        </a>
-                        <a href="#" class="badge badge-pill badge-tag is-small">
-                            <span>SaaS</span>
-                        </a>
-                        <a href="#" class="badge badge-pill badge-tag is-small">
-                            <span>Impact</span>
-                        </a>
-                        <a href="#" class="badge badge-pill badge-tag is-small">
-                            <span>Social</span>
-                        </a>
-                        <a href="#" class="badge badge-pill badge-tag is-small">
-                            <span class="icon icon-eye-off"></span>
-                            <span>private tag</span>
-                        </a>
-                        <a href="#" class="badge badge-pill badge-tag is-small">
-                            <span class="icon icon-eye-off"></span>
-                            <span>private tag</span>
-                        </a>
+                    <div class="d-flex flex-column">
+                        <h4>Expertises</h4>
+                        <div class="badges small">
+                            <a href="#" class="badge badge-pill badge-tag is-small">
+                                <span>Digital</span>
+                            </a>
+                            <a href="#" class="badge badge-pill badge-tag is-small">
+                                <span>SaaS</span>
+                            </a>
+                            <a href="#" class="badge badge-pill badge-tag is-small">
+                                <span>Agile</span>
+                            </a>
+                            <a href="#" class="badge badge-pill badge-tag is-small">
+                                <span>Design Thinking</span>
+                            </a>
+                            <a href="#" class="badge badge-pill badge-tag is-small">
+                                <span>Mobile</span>
+                            </a>
+                            <a href="#" class="badge badge-pill badge-tag is-small">
+                                <span>Product</span>
+                            </a>
+                            <a href="#" class="badge badge-pill badge-tag is-small">
+                                <span>Operations</span>
+                            </a>
+                            <a href="#" class="badge badge-pill badge-tag is-small">
+                                <span>Data</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
-
-                <div class="bg-white rounded border p-16px pb-24px d-flex flex-column">
-                    <div class="d-flex align-items-center justify-content-between text-muted mb-3">
-                        <span class="small font-weight-bold text-truncate mr-2">{vote_session.name}</span>
-                        <span class="small">Upvotes <span class="font-weight-bold text-primary"><span class="icon icon-thumb-up"></span> 19</span></span>
+                    <div class="d-flex flex-column">
+                        <h4>Interests</h4>
+                        <div class="badges small">
+                            <a href="#" class="badge badge-pill badge-tag is-small">
+                                <span>Biking</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="card-actions">                     
-                        <a class="btn btn-lg btn-primary btn-block" href="#">
-                            <span class="icon icon-thumb-up is-sm mr-2"></span>
-                            <span>Upvote</span>
-                        </a>  
-                        <a class="btn btn-lg btn-default btn-block" href="#">
-                            <span class="icon icon-bookmark-outline is-sm mr-2"></span>
-                            <span>Follow</span>
-                        </a>
+                    <div class="d-flex flex-column">
+                        <h4>Links</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://www.linkedin.com/in/pierrelemeteil/">
+                                    <span class="icon icon-linkedin text-muted"></span>
+                                    <span>Linkedin</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="d-flex flex-column gap-4px">
                     <h4>Responses</h4>
-                    <div class="d-flex flex-column gap-8px" id="deliverables">
+                    <div class="accordion d-flex flex-column gap-8px" id="deliverables">
                         <div class="card mb-5">
-                            <div class="card-header position-relative">
+                            <div class="card-header" id="deliverable1Header" type="button" data-toggle="collapse" data-target="#delivrable1" aria-expanded="false" aria-controls="delivrable1">
                                 <div class="d-flex align-items-center gap-8px">
                                     <div class="d-none">
                                         <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="100" style="--percent:100;">
@@ -132,7 +167,7 @@
                                         </svg>
                                     </div>                               
                                     <div class="d-flex flex-column gap-0 w-100">
-                                        <a href="#" class="h4 stretched-link" id="deliverable1Header" type="button" data-toggle="collapse" data-target="#delivrable1" aria-expanded="false" aria-controls="delivrable1">{registration.questionnaire.name}</a> 
+                                        <p class="h4">{registration.questionnaire.name}</p> 
                                         <ul class="text-muted small metas is-list m-0">
                                             <li>3 fields evaluated</li>
                                             <li>3 fields completed by the participant</li>
@@ -227,8 +262,9 @@
                     </div>
                 </div>
 
-                <div class="d-flex">
-                    <a class="btn btn-lg btn-block btn-default" href="#">
+                <div class="d-flex" data-toggle="tooltip" data-placement="bottom" data-original-title="This page is not available or is private." data-html="true" data-boundary="window">
+                    <a class="btn btn-lg btn-block btn-default disabled" href="#">
+                        <span class="icon icon-lock"></span>
                         <span>Open full page</span>
                     </a>
                 </div>

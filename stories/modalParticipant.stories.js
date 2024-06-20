@@ -1,11 +1,11 @@
-import { createModalUser } from './layouts/modalUser.js';
+import { createModal } from './layouts/modalParticipant.js';
 
 export default {
-    title: 'Pages/Modal/User',
+    title: 'Components/Modals',
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
         layout: 'fullscreen',
       },
 };
-export const User = () => createModalUser();
+export const Participant = () => createModal();
 

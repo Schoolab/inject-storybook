@@ -11,4 +11,3 @@ export const MoHo = {
     render: () => createNavBar(),
     storyName: 'MoHo'
 }
-

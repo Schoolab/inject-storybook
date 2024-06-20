@@ -7,5 +7,7 @@ export default {
         layout: 'fullscreen',
       },
 };
-export const RaiseLab = () => createNavBar();
-
+export const Raiselab = {
+  render: () => createNavBar(),
+  storyName: 'RaiseLab'
+}

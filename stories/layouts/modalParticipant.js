@@ -1,5 +1,5 @@
 
-import modalHTML from '../components/modal-user.html';
+import modalHTML from '../components/modal-participant.html';
 
 import { script } from "../utils/script.js"
 
@@ -8,4 +8,3 @@ export const createModal= () => {
   script();
   return modal;
 };
-
