@@ -1,4 +1,4 @@
-import { createNavBarCustom } from './layouts/navBarCustom.js';
+import { createNavBar } from './layouts/navBarCustomSchoolab.js';
 
 export default {
     title: 'Components/NavBar',
@@ -7,5 +7,5 @@ export default {
         layout: 'fullscreen',
       },
 };
-export const RaiseLab = () => createNavBarCustom();
+export const Schoolab = () => createNavBar();
 
