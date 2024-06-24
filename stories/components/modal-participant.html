@@ -1,25 +1,43 @@
 <div class="application-modals modal show overflow-y-scroll" tabindex="-1" role="dialog" style="z-index: 1040; display: block;" aria-modal="true">
     <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px!important;">
         <div class="modal-content">
-            <div class="modal-header is-floating">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span class="icon icon-close" aria-hidden="true"></span>
-                </button>
+            <div class="modal-header border-bottom">
+                <h3 class="modal-title line-clamp-1">
+                    <span class="text-truncate">Pierre Lemeteil</span>
+                    <!-- <span class="badge badge-role is-admin" data-toggle="tooltip" data-placement="top" data-original-title="Admin" data-boundary="window"></span> -->
+                </h3>
+                <div class="modal-pagination d-flex align-items-center ml-auto">
+                    <small class="pagination-label mr-3 text-muted">1&nbsp;of&nbsp;803</small>
+                    <a class="btn btn-default mr-3 disabled" data-toggle="tooltip" data-original-title="Previous" href="#">
+                        <span class="icon icon-chevron-left"></span>
+                    </a>
+                    <a class="btn btn-default" data-toggle="tooltip" data-original-title="Next" href="#">
+                        <span class="icon icon-chevron-right"></span>
+                    </a>
+                </div>
+                <div class="modal-actions">
+                    <!-- <a class="btn btn-transparent border-0 p-4px text-muted" data-toggle="tooltip" data-original-title="Open in new tab" href="#">
+                        <span class="icon icon-arrow-top-right is-24px"></span>
+                    </a> -->
+                    <button class="close m-0 p-0" type="button" data-dismiss="modal" aria-label="Fermer">
+                        <span class="icon icon-close" aria-hidden="true"></span>
+                    </button>
+                </div>
             </div>
             <div class="modal-body d-flex flex-column gap-16px">
-                <div class="d-flex align-items-center gap-16px">
+                <div class="d-flex flex-column flex-md-row align-items-center flex-wrap flex-md-nowrap gap-16px">
                     <a href="#" class="thumbnail is-oval is-2xl is-bordered mb-3">
                         <img src="https://inject-prod.s3.amazonaws.com/images/41c42fb1-35bd-4a31-bf08-3b2267df4b95/sq150.jpeg">
                     </a>
-                    <div class="d-flex flex-column align-items-start gap-8px w-100">
-                        <div class="d-flex flex-column gap-0">
+                    <div class="d-flex flex-column align-items-center align-items-md-start gap-8px flex-fill">
+                        <div class="d-flex flex-column align-items-center align-items-md-start gap-0">
                             <div class="d-flex align-items-center gap-4px">
-                                <a href="#" class="h3 line-clamp-1 d-flex align-items-center gap-4px">
+                                <a href="#" class="h3 d-flex align-items-center gap-4px">
                                     <span>Pierre Lemeteil</span>
-                                    <span class="badge badge-role is-admin" data-toggle="tooltip" data-placement="top" data-original-title="Admin" data-boundary="window"></span>
+                                    <!-- <span class="badge badge-role is-admin" data-toggle="tooltip" data-placement="top" data-original-title="Admin" data-boundary="window"></span> -->
                                 </a>
                             </div>
-                            <ul class="text-muted small metas is-list mb-0">
+                            <ul class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start text-muted small metas is-list mb-0">
                                 <li>
                                     <div class="d-flex gap-4px">
                                         <span class="icon icon-map-marker is-xs"></span>
@@ -41,7 +59,7 @@
                             </ul>
                             
                         </div>
-                        <div class="badges small">
+                        <div class="d-flex align-items-center align-items-md-start badges small">
                             <div class="badge badge-pill badge-tag is-small">
                                 <span>Chief Digital Officer</span>
                             </div>
@@ -51,7 +69,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="d-flex gap-8px">
+                    <div class="d-flex gap-8px align-items-center">
                         <a href="#" class="btn btn-lg btn-primary">
                             <span class="icon icon-bookmark-outline"></span>
                             <span>Follow</span>
@@ -64,12 +82,16 @@
                             <div class="dropdown-menu dropdown-menu-right">
                                 <a class="dropdown-item" href="#">
                                     <span class="dropdown-item--label">Open profile</span>
-                                    <span class="dropdown-item--shortcut icon icon-arrow-top-right"></span>
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">
                                     <span class="dropdown-item--icon icon icon-comment"></span>
-                                    <span class="dropdown-item--label">Chat & Video</span>
+                                    <span class="dropdown-item--label">Open Chat</span>
+                                    <span class="dropdown-item--shortcut icon icon-arrow-top-right"></span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <span class="dropdown-item--icon icon icon-video"></span>
+                                    <span class="dropdown-item--label">Open Video</span>
                                     <span class="dropdown-item--shortcut icon icon-arrow-top-right"></span>
                                 </a>
                                 <a class="dropdown-item" href="#">
@@ -82,13 +104,26 @@
                                     <span class="dropdown-item--label">Book a meeting</span>
                                     <span class="dropdown-item--shortcut icon icon-arrow-top-right"></span>
                                 </a>
+                            </div>
+                        </div>
+                        <div class="dropdown z-2">
+                            <a class="btn btn-transparent btn-lg btn-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="icon is-20px icon-dots-vertical"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item is-interactive" href="#">
+                                    <span class="dropdown-item--icon icon icon-account-key"></span>
+                                    <span class="dropdown-item--label">Login as Pierre</span>
+                                </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">
-                                    <span>Login as Pierre</span>
+                                    <span>Edit profile</span>
                                 </a>
                                 <a class="dropdown-item" href="#">
-                                    <span class="dropdown-item--label">Edit</span>
-                                    <span class="dropdown-item--shortcut icon icon-arrow-top-right"></span>
+                                    <span>Manage roles</span>
+                                </a>
+                                <a class="dropdown-item is-danger" href="#">
+                                    <span>Disable this user</span>
                                 </a>
                             </div>
                         </div>
@@ -157,7 +192,7 @@
                     <h4>Responses</h4>
                     <div class="accordion d-flex flex-column gap-8px" id="deliverables">
                         <div class="card mb-5">
-                            <div class="card-header" id="deliverable1Header" type="button" data-toggle="collapse" data-target="#delivrable1" aria-expanded="false" aria-controls="delivrable1">
+                            <div class="card-header position-relative" id="deliverable1Header" type="button" data-toggle="collapse" data-target="#delivrable1" aria-expanded="false" aria-controls="delivrable1">
                                 <div class="d-flex align-items-center gap-8px">
                                     <div class="d-none">
                                         <svg class="progress-circle-container is-small flex-shrink-0" viewBox="0 0 32 32" data-percent="100" style="--percent:100;">
@@ -263,8 +298,9 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="d-flex" data-toggle="tooltip" data-placement="top" data-original-title="This page is not available or is private." data-html="true" data-boundary="window">
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex flex-fill" data-toggle="tooltip" data-placement="top" data-original-title="This page is not available or is private." data-html="true" data-boundary="window">
                     <a class="btn btn-lg btn-block btn-default disabled" href="#">
                         <span class="icon icon-lock"></span>
                         <span>Open full page</span>

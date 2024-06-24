@@ -2,23 +2,32 @@
     <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px!important;">
         <div class="modal-content">
             <div class="modal-header border-bottom">
-                <h3 class="modal-title">Modal title</h3>
-                <nav class="nav nav-tabs m-0 w-100">
-                    <a href="#" class=" nav-link nav-item active">Item</a>
-                    <a href="#" class=" nav-link nav-item">Item</a>
-                    <a href="#" class=" nav-link nav-item">Item</a>
+                <h3 class="modal-title line-clamp-1">
+                    <span class="text-truncate">Modal title</span>
+                </h3>
+                <nav class="modal-nav nav nav-tabs">
+                    <a href="#" class=" nav-link nav-item active" id="info-tab" data-toggle="tab" data-target="#info" type="button" role="tab" aria-controls="info" aria-selected="true">
+                        <span>About</span>
+                    </a>
+                    <a href="#" class=" nav-link nav-item" id="responses-tab" data-toggle="tab" data-target="#responses" type="button" role="tab" aria-controls="responses" aria-selected="false">
+                        <span>Responses</span>
+                    </a>
+                    <a href="#" class=" nav-link nav-item" id="data-tab" data-toggle="tab" data-target="#data" type="button" role="tab" aria-controls="data" aria-selected="false">
+                        <span class="icon icon-eye-off ml-n4px" data-toggle="tooltip" data-placement="top" data-original-title="Accessible only to admins" data-boundary="window"></span>
+                        <span>Data</span>
+                    </a>
                 </nav>
-                <div class="d-flex align-items-center ml-auto">
-                    <small class="mr-3 text-muted">1&nbsp;of&nbsp;6</small>
-                    <a class="btn btn-default mr-3" data-toggle="tooltip" data-original-title="previous" href="#">
+                <div class="modal-pagination d-flex align-items-center ml-auto">
+                    <small class="pagination-label mr-3 text-muted">1&nbsp;of&nbsp;6</small>
+                    <a class="btn btn-default mr-3" data-toggle="tooltip" data-original-title="Previous" href="#">
                         <span class="icon icon-chevron-left"></span>
                     </a>
                     <a class="btn btn-default" data-toggle="tooltip" data-original-title="Next" href="#">
                         <span class="icon icon-chevron-right"></span>
                     </a>
                 </div>
-                <div class="d-flex gap-0">
-                    <a class="btn btn-transparent p-4px text-muted" data-toggle="tooltip" data-original-title="Open in new tab" href="#">
+                <div class="modal-actions">
+                    <a class="btn btn-transparent border-0 p-4px text-muted" data-toggle="tooltip" data-original-title="Open in new tab" href="#">
                         <span class="icon icon-arrow-top-right is-24px"></span>
                     </a>
                     <button class="close m-0 p-0" type="button" data-dismiss="modal" aria-label="Fermer">
@@ -26,8 +35,22 @@
                     </button>
                 </div>
             </div>
-            <div class="modal-body">
-                
+            <div class="tab-content" id="projectTabsContent">
+                <div id="info" role="tabpanel" aria-labelledby="info-tab" class="tab-pane fade active show">
+                    <div class="modal-body d-flex flex-column gap-16px">
+                        <p>Content here...</p>
+                    </div>
+                </div>
+                <div id="responses" role="tabpanel" aria-labelledby="responses-tab" class="tab-pane fade">
+                    <div class="modal-body d-flex flex-column gap-16px">
+                        <p>Content here...</p>
+                    </div>
+                </div>
+                <div id="data" role="tabpanel" aria-labelledby="data-tab" class="tab-pane fade">
+                    <div class="modal-body d-flex flex-column gap-16px">
+                        <p>Content here...</p>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer border-top">
                 <div class="dropdown">
