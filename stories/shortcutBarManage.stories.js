@@ -1,4 +1,4 @@
-import {createShortcutBar} from './layouts/shortcutBar.js';
+import {createShortcutBar} from './layouts/shortcutBarManage.js';
 
 export default {
     title: 'Components/ShortcutBar',
@@ -8,6 +8,6 @@ export default {
       },
 };
 
-export const Default = () => createShortcutBar();
+export const Manage = () => createShortcutBar();
 
 

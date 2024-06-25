@@ -1,5 +1,5 @@
 import navBar from '../components/navBar.html';
-import shortcutBar from '../components/shortcutBar-not-expanded.html';
+import shortcutBar from '../components/shortcutBar-collapsed.html';
 import breadcrumb from "../components/breadcrumb.html";
 import LearningModulesCapsule from "../components/learning-content-capsule.html";
 import subNav from "../components/subNav.html";

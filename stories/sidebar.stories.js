@@ -1,11 +1,11 @@
-import { createManage } from './layouts/manage.js';
+import { createSidebar } from './layouts/sidebar.js';
 
 export default {
-    title: 'Components/SecondSidebar',
+    title: 'Components/Sidebar',
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
         layout: 'fullscreen',
       },
 };
 
-export const SecondSidebar = () => createManage();
+export const Manage = () => createSidebar();

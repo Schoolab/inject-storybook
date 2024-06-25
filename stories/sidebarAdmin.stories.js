@@ -1,13 +1,11 @@
-import {createShortcutBar} from './layouts/shortcutBar.js';
+import { createSidebar } from './layouts/sidebarAdmin.js';
 
 export default {
-    title: 'Components/ShortcutBar',
+    title: 'Components/Sidebar',
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
         layout: 'fullscreen',
       },
 };
 
-export const Default = () => createShortcutBar();
-
-
+export const Admin = () => createSidebar();
