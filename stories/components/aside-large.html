@@ -1,0 +1,79 @@
+<aside class="application-aside is-large">    
+    <div class="aside-content-container">
+        <div class="aside-header"> 
+            <h4 class="aside-title line-clamp-1">
+                <span class="text-truncate">Title</span>
+            </h4>
+            <nav class="aside-nav nav nav-tabs">
+                <a href="#" class=" nav-link nav-item active" id="info-tab" data-toggle="tab" data-target="#info" type="button" role="tab" aria-controls="info" aria-selected="true">
+                    <span>Info</span>
+                </a>
+                <a href="#" class=" nav-link nav-item" id="responses-tab" data-toggle="tab" data-target="#responses" type="button" role="tab" aria-controls="responses" aria-selected="false">
+                    <span>Responses</span>
+                </a>
+                <a href="#" class=" nav-link nav-item" id="data-tab" data-toggle="tab" data-target="#data" type="button" role="tab" aria-controls="data" aria-selected="false">
+                    <span class="icon icon-eye-off ml-n4px" data-toggle="tooltip" data-placement="top" data-original-title="Accessible only to admins" data-boundary="window"></span>
+                    <span>Limited</span>
+                </a>
+            </nav>
+            <div class="aside-pagination d-flex align-items-center ml-auto">
+                <small class="pagination-label mr-3 text-muted">1&nbsp;of&nbsp;6</small>
+                <a class="btn btn-default mr-3" data-toggle="tooltip" data-original-title="Previous" href="#">
+                    <span class="icon icon-chevron-left"></span>
+                </a>
+                <a class="btn btn-default" data-toggle="tooltip" data-original-title="Next" href="#">
+                    <span class="icon icon-chevron-right"></span>
+                </a>
+            </div>
+            <div class="aside-actions">
+                <a class="btn btn-transparent border-0 p-4px text-muted" data-toggle="tooltip" data-original-title="Open in new tab" href="#">
+                    <span class="icon icon-arrow-top-right is-24px"></span>
+                </a>
+                <button class="btn btn-transparent border-0 p-4px text-muted" type="button" data-dismiss="modal" aria-label="Fermer">
+                    <span class="icon icon-close is-24px" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+        <div class="tab-content h-100" id="projectTabsContent">
+            <div id="info" role="tabpanel" aria-labelledby="info-tab" class="tab-pane h-100 fade active show">
+                <div class="aside-body d-flex flex-column gap-16px">
+                    <p>Content here...</p>
+                </div>
+            </div>
+            <div id="responses" role="tabpanel" aria-labelledby="responses-tab" class="tab-pane h-100 fade">
+                <div class="aside-body d-flex flex-column gap-16px">
+                    <p>Content here...</p>
+                </div>
+            </div>
+            <div id="data" role="tabpanel" aria-labelledby="data-tab" class="tab-pane h-100 fade">
+                <div class="aside-body d-flex flex-column gap-16px">
+                    <p>Content here...</p>
+                </div>
+            </div>
+        </div>
+        <div class="aside-footer">
+            <div class="dropdown">
+                <a class="btn btn-default btn-lg dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>Options</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">
+                        <span class="dropdown-item--label">Open</span>
+                        <span class="dropdown-item--shortcut icon icon-arrow-top-right"></span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <span>Edit</span>
+                    </a>
+                    <a class="dropdown-item is-danger" href="#">
+                        <span>Delete</span>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex gap-8px ml-auto">
+                <a class="btn btn-lg btn-default" href="#">Discard changes</a>
+                <a class="btn btn-lg btn-primary" href="#">Save</a>
+            </div>
+        </div>
+    </div>
+</aside>

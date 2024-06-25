@@ -21,7 +21,7 @@ export const aside = () => {
             },
             displayAsideOnDesktop: function(){
                 if (window.matchMedia( "(min-width: 991.99px)" ).matches) {  
-                    if( $( ".aside-content" ).length === 1 ){
+                    if( $( ".aside-body" ).length === 1 ){
                         modelAside.index= 0;
                     }                  
                     view.update();                           
@@ -51,7 +51,7 @@ export const aside = () => {
                 });
             },              
             localStorageSetItem : function(){ 
-                if( $( ".aside-content" ).length > 1 ){               
+                if( $( ".aside-body" ).length > 1 ){               
                     window.localStorage.setItem(modelAside.currentPathname, modelAside.index);  
                 }
             },
@@ -63,7 +63,7 @@ export const aside = () => {
             },
 
             init: function(){
-                if( $( ".aside-content" ).length > 0 ){                     
+                if( $( ".aside-body" ).length > 0 ){                     
                     this.localStorageGetItem(); 
                     this.localStorageSetItem();               
                     view.update();

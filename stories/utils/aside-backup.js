@@ -20,7 +20,7 @@ export const aside = () => {
             displayAsideOnDesktop: function(){
                 if (window.matchMedia( "(min-width: 991.99px)" ).matches) {                  
                     // modelAside.aside.removeClass( "d-none");
-                    if( $( ".aside-content" ).length === 1 ){
+                    if( $( ".aside-body" ).length === 1 ){
                         modelAside.index= 0;
                     }
                     view.update();             
