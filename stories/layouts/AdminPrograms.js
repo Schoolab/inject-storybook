@@ -1,6 +1,6 @@
 import navBar from '../components/navBar.html';
 
-import sidebar from "../components/sidebar.html";
+import sidebar from "../components/sidebar-admin.html";
 import breadcrumb from "../components/breadcrumb.html";
 import LearningModulesContent from "../components/admin-programs-content.html";
 import subNav from "../components/subNav.html";
