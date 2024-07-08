@@ -1,0 +1,158 @@
+<div id="tables-filters" class="d-flex flex-wrap align-items-sm-start gap-8px">
+    
+    <form class="d-flex flex-grow-1 flex-sm-grow-0 order-1">
+        <input name="search" autocomplete="off" type="search" id="search" class="form-control w-100 w-md-auto field-sizing" style="max-width:100%;" aria-describedby="search" placeholder="Search..." value="">
+    </form>
+
+    <div class="d-flex flex-column flex-fill flex-sm-row gap-8px order-3 order-sm-2">
+        
+        <div class="dropdown" data-save-to-close="true">
+            <a class="btn btn-lg btn-default dropdown-toggle w-100" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
+                <span class="icon icon-sort-ascending"></span>
+                <span class="d-sm-none d-md-flex">Sort by</span> <span>Name</span>
+            </a>
+            <div class="dropdown-menu" style="width:512px;max-width:calc(100% - 2rem);">
+                <form class="d-flex flex-column gap-16px px-16px py-8px">
+                    <div class="form-group d-flex flex-column gap-8px">
+                        <label for="sortBy">In this view, sort by...</label>
+                        <div id="sort1" class="d-flex gap-8px align-items-center">
+                            <div class="input-group">
+                                <div class="input-group-prepend" style="flex: 1 1 50%;">
+                                    <select name="filters" id="filter-select" class="custom-select">
+                                        <option value="name">Name</option>
+                                        <option value="date">Date</option>
+                                        <option value="tags">Tags</option>
+                                        <option value="col">Column</option>
+                                        <option value="col">Column</option>
+                                        <option value="col">Column</option>
+                                    </select>
+                                </div>
+                                <select name="filters" id="filter-select" class="custom-select" style="flex: 1 1 50%;">
+                                    <option value="name">Descending</option>
+                                    <option value="date">Ascending</option>
+                                </select>
+                            </div>
+                            <!-- Hidden when 1 line -->
+                            <!-- <a href="#" class="btn btn-lg btn-default btn-icon">
+                                <span class="icon icon-delete"></span>
+                            </a> -->
+                        </div>
+                        <a href="#" class="btn btn-lg btn-default btn-block">
+                            <span class="icon icon-plus-circle"></span>
+                            <span>Add sort</span>
+                        </a>
+                    </div>
+                    <div class="d-flex gap-8px justify-content-end">
+                        <a href="#" class="btn btn-lg btn-default" data-toggle="dropdown">Cancel</a>
+                        <button type="submit" class="btn btn-lg btn-primary disabled" data-toggle="dropdown">Apply</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="dropdown d-flex flex-nowrap gap-8px" data-save-to-close="true">
+            <a class="btn btn-lg btn-transparent text-muted" href="#" role="button" data-reference="parent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
+                <span class="icon icon-plus-circle"></span>
+                <span>Add filter</span>
+            </a>
+            <div class="dropdown-menu" style="width:512px;max-width:calc(100% - 2rem);">
+                <form class="d-flex flex-column gap-16px px-16px py-8px">
+                    <div class="form-group d-flex flex-column gap-8px">
+                        <label for="filterBy">In this view, filter by...</label>
+                        <a href="#" class="btn btn-lg btn-default btn-block">
+                            <span class="icon icon-plus-circle"></span>
+                            <span>Add filter</span></a>
+                    </div>
+                    <div class="d-flex gap-8px justify-content-end">
+                        <a href="#" class="btn btn-lg btn-default" data-toggle="dropdown">Cancel</a>
+                        <button type="submit" class="btn btn-lg btn-primary disabled" data-toggle="dropdown">Apply</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="d-flex gap-8px order-2 order-sm-3">
+        <div class="d-flex gap-8px gap-sm-0px">
+            <div class="dropdown" data-toggle="tooltip" data-placement="top" data-original-title="Manage notifications subscriptions" data-boundary="window" data-save-to-close="true">
+                <a href="#" class="btn btn-lg btn-transparent btn-icon text-primary" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Manage notifications subscriptions" data-boundary="window">
+                    <span class="icon icon-bell-ring"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" style="width:512px;max-width:calc(100% - 2rem);">
+                    <form class="d-flex flex-column gap-16px px-16px py-8px">
+                        <div class="form-group d-flex flex-column gap-8px">
+                            <label for="filterBy">Send me a notification...</label>
+                            <div id="sort1" class="d-flex gap-8px align-items-center">
+                                <span class="d-flex flex-shrink-0" style="width:80px">When</span>
+                                <div class="input-group">
+                                    <div class="input-group-prepend" style="flex: 1 1 50%;">
+                                        <input type="number" class="form-control" id="validationDefault01" placeholder="Value" value="">
+                                    </div>
+                                    <select name="filters" id="filter-select" class="custom-select" style="flex: 1 1 50%;">
+                                        <option value="added" selected="">items added</option>
+                                        <option value="updated">items updated</option>
+                                    </select>
+                                </div>
+                                <a href="#" class="btn btn-lg btn-default btn-icon">
+                                    <span class="icon icon-delete"></span>
+                                </a>
+                            </div>
+                            <a href="#" class="btn btn-lg btn-default btn-block">
+                                <span class="icon icon-plus-circle"></span>
+                                <span>Add trigger</span>
+                            </a>
+                        </div>
+                        <div class="form-group d-flex flex-column gap-8px">
+                            <label for="filterBy">Filter by...</label>
+                            <a href="#" class="btn btn-lg btn-default btn-block">
+                                <span class="icon icon-plus-circle"></span>
+                                <span>Add filter</span>
+                            </a>
+                        </div>
+                        <div class="form-group d-flex flex-column gap-8px">
+                            <label for="sendBy">Send by...</label>
+                            <div class="d-flex gap-16px">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="checkbox" id="push" value="push" disabled>
+                                    <label class="custom-control-label" for="push">Push notifications</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="checkbox" id="email" value="email" checked>
+                                    <label class="custom-control-label" for="email">Email</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="checkbox" id="digest" value="digest" checked>
+                                    <label class="custom-control-label" for="digest">Daily digest</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <a href="#" class="btn btn-lg btn-danger" data-toggle="dropdown">Delete notifications</a>
+                            <div class="d-flex gap-8px justify-content-end flex-fill">
+                                <a href="#" class="btn btn-lg btn-default" data-toggle="dropdown">Cancel</a>
+                                <button type="submit" class="btn btn-lg btn-primary" data-toggle="dropdown">Apply</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a href="#" class="btn btn-lg btn-transparent btn-icon text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Download all data in this view" data-boundary="window">
+                <span class="icon icon-download"></span>
+            </a>
+        </div>
+        <a href="#" id="btn-new" class="btn btn-lg btn-primary text-nowrap">
+            <span class="icon icon-plus-circle"></span>
+            <span>Add {{item}}</span>
+        </a>
+    </div>
+    
+</div>
+
+<div style="position: absolute;bottom: 1rem;left: 50vw; transform: translateX(-50%);" class="toast is-warning fade" id="modalHidePrevented" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+    <div class="toast-body"><span class="mr-auto">You cannot close this modal until you saved or canceled your changes.</span>
+        <button class="ml-2 my-1 close" data-dismiss="toast" data-delay="6000" aria-label="close">
+            <div class="icon icon-close"></div>
+        </button>
+    </div>
+</div>

@@ -1,11 +1,10 @@
-import { createTables } from './layouts/tables.js';
+import { createForms } from './layouts/FormsInput.js';
 
 export default {
-    title: 'Components/Tables',
+    title: 'Components/Forms',
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
         layout: 'fullscreen',
       },
 };
-export const Default = () => createTables();
-
+export const Input = () => createForms();

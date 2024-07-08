@@ -4,30 +4,30 @@
             <ul class="nav nav-main flex-column">
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <span class="nav-link--icon icon icon-view-dashboard"></span>
+                        <span class="nav-link--icon icon icon-view-dashboard" aria-hidden="true"></span>
                         <span class="nav-link--label">Dashboard</span>
-                        <span class="badge badge-notification is-interactive">NEW</span>
+                        <span class="badge badge-notification is-interactive" aria-label="New feature">NEW</span>
                     </a>
                 </li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="right" data-original-title="<p class='m-2px font-weight-bold'>Access locked.</p><p class='small'>Ask your organization manager for access.</p>" data-html="true" data-boundary="window">
-                    <a href="#" class="nav-link disabled">
-                        <span class="nav-link--icon icon icon-chart-line"></span>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" tabindex="0" data-original-title="<p class='m-2px font-weight-bold'>Access locked.</p><p class='small'>Ask your organization manager for access.</p>" data-html="true" data-boundary="window">
+                    <span class="nav-link disabled">
+                        <span class="nav-link--icon icon icon-chart-line" aria-hidden="true"></span>
                         <span class="nav-link--label">Insight</span>
-                        <span class="nav-link--icon icon icon-lock"></span>
-                    </a>
+                        <span class="nav-link--icon icon icon-lock" aria-hidden="true"></span>
+                    </span>
                 </li>
                 <li class="nav-item">
                     <a id="headingProgram" href="#" class="nav-link active" type="button" data-toggle="collapse" data-target="#collapseProgram" aria-expanded="true" aria-controls="collapseProgram">
-                        <span class="nav-link--icon icon icon-school"></span>
+                        <span class="nav-link--icon icon icon-school" aria-hidden="true"></span>
                         <span class="nav-link--label">Program</span>
-                        <span class="badge badge-notification is-accent">2</span>
+                        <span class="badge badge-notification is-accent" aria-label="2 notifications in this group">2</span>
                     </a>
                     <ul id="collapseProgram" class="collapse show" aria-labelledby="headingProgram" data-parent="#accordionManageNav">
                         <li>
-                            <a href="#" class=" nav-link active">
-                                <span class="nav-link--icon">🚀</span>
+                            <a href="#" class=" nav-link active" aria-current="page">
+                                <span class="nav-link--icon" aria-hidden="true">🚀</span>
                                 <span class="nav-link--label">Getting started</span>
-                                <span class="badge badge-notification is-accent">2</span>
+                                <span class="badge badge-notification is-accent" aria-label="2 notifications">2</span>
                             </a>
                         </li>
                         <li>
@@ -65,14 +65,14 @@
                                 <span class="nav-link--label">Exports</span>
                             </a>
                         </li>
-                        <li data-toggle="tooltip" data-placement="right" data-original-title="<p class='m-2px font-weight-bold'>Open in new tab.</p><p class='small'>This link will open in a new tab.</p>" data-html="true" data-boundary="window">
-                            <a href="#" class="nav-link">
+                        <li>
+                            <a href="#" class="nav-link" data-toggle="tooltip" data-placement="right" data-original-title="<p class='m-2px font-weight-bold'>Open in new tab.</p><p class='small'>This link will open in a new tab.</p>" data-html="true" data-boundary="window">
                                 <span class="nav-link--label">Google Drive</span>
                                 <span class="icon icon-arrow-top-right is-12px my-4px text-muted"></span>
                             </a>
                         </li>
-                        <li data-toggle="tooltip" data-placement="right" data-original-title="<p class='m-2px font-weight-bold'>Open in new tab.</p><p class='small'>This link will open in a new tab.</p>" data-html="true" data-boundary="window">
-                            <a href="#" class="nav-link">
+                        <li>
+                            <a href="#" class="nav-link" data-toggle="tooltip" data-placement="right" data-original-title="<p class='m-2px font-weight-bold'>Open in new tab.</p><p class='small'>This link will open in a new tab.</p>" data-html="true" data-boundary="window">
                                 <span class="nav-link--label">Pipedrive</span>
                                 <span class="icon icon-arrow-top-right is-12px my-4px text-muted"></span>
                             </a>
@@ -88,7 +88,7 @@
                     <a id="headingParticipants" href="#" class="nav-link" type="button" data-toggle="collapse" data-target="#collapseParticipants" aria-expanded="false" aria-controls="collapseParticipants">
                         <span class="nav-link--icon icon icon-account"></span>
                         <span class="nav-link--label">Participants</span>
-                        <span class="badge badge-notification is-accent">9+</span>
+                        <span class="badge badge-notification is-accent" aria-label="More than 9 notifications in this group">9+</span>
                     </a>
                     <ul id="collapseParticipants" class="collapse" aria-labelledby="headingParticipants" data-parent="#accordionManageNav">
                         <li>
@@ -104,7 +104,7 @@
                         <li>
                             <a href="#" class="nav-link">
                                 <span class="nav-link--label">Registrations</span>
-                                <span class="badge badge-notification is-accent">9+</span>
+                                <span class="badge badge-notification is-accent" aria-label="More than 9 notifications">9+</span>
                             </a>
                         </li>
                         <li>
@@ -123,7 +123,7 @@
                     <a id="headingProjects" href="#" class="nav-link" type="button" data-toggle="collapse" data-target="#collapseProjects" aria-expanded="false" aria-controls="collapseProjects">
                         <span class="nav-link--icon icon icon-clipboard-text"></span>
                         <span class="nav-link--label">Projects</span>
-                        <span class="badge badge-notification is-accent">3</span>
+                        <span class="badge badge-notification is-accent" aria-label="3 notifications in this group">3</span>
                     </a>
                      <ul id="collapseProjects" class="collapse" aria-labelledby="headingProjects" data-parent="#accordionManageNav">
                         <li>
@@ -134,7 +134,7 @@
                         <li>
                             <a href="#" class="nav-link">
                                 <span class="nav-link--label">Applications</span>
-                                <span class="badge badge-notification is-accent">3</span>
+                                <span class="badge badge-notification is-accent" aria-label="3 notifications">3</span>
                             </a>
                         </li>
                         <li>
@@ -219,13 +219,13 @@
                         <span class="nav-link--icon icon icon-frequently-asked-questions"></span>
                         <span class="nav-link--label">F.A.Q.</span>
                         <span class="badge badge-notification is-interactive">NEW</span>
-                        <span class="badge badge-notification is-accent">4</span>
+                        <span class="badge badge-notification is-accent" aria-label="4 notifications">4</span>
                     </a>
                     <ul id="collapseFAQ" class="collapse" aria-labelledby="headingFAQ" data-parent="#accordionManageNav">
                         <li>
                             <a href="#" class="nav-link">
                                 <span class="nav-link--label">Questions</span>
-                                <span class="badge badge-notification is-accent">4</span>
+                                <span class="badge badge-notification is-accent" aria-label="4 notifications">4</span>
                             </a>
                         </li>
                         <li>

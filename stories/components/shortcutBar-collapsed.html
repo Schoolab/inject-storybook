@@ -1,17 +1,23 @@
 <div class="application-shortcutbar">
-    <div class="shortcutbar-container flex-fill">
+    <div class="shortcutbar-container flex-fill" aria-label="Shortcut Bar">
         <div class="shortcutbar-option dropright mb-lg-5 mb-0" data-toggle="tooltip" data-placement="right" data-original-title="Switch program" data-boundary="window" style="z-index: 2;">
             <a href="#" class="shortcutbar-option--link" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false">
-                <span class="icon icon--program"><span>SSL</span></span>
+                <span class="icon icon--program"><span aria-hidden="true">SSL</span></span>
                 <div class="shortcutbar-option--label">Schoolab - Saint Lazare Schoolab - Saint Lazare</div>
-                <span class="icon icon-chevron-down shortcutbar-expanded-item-show"></span>
+                <span class="icon icon-chevron-down shortcutbar-expanded-item-show" aria-hidden="true"></span>
             </a>
             <div class="dropdown-menu" style="max-width: 225px;">
                 <h6 class="dropdown-header">Switch program</h6>
-                <a class="dropdown-item active" href="#"><span class="text-truncate">Schoolab - Saint Lazare Schoolab - Saint Lazare</span></a>
-                <a class="dropdown-item" href="#">Starter S20</a>
+                <a class="dropdown-item active" href="#">
+                    <span class="text-truncate">Schoolab - Saint Lazare Schoolab - Saint Lazare</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                    <span>Starter S20</span>
+                </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">My programs(3) <span class="ml-3 icon icon-open-in-new"></span>
+                <a class="dropdown-item" href="#">
+                    <span>My programs (3)</span>
+                    <span class="ml-3 icon icon-open-in-new" aria-hidden="true"></span>
                 </a>
             </div>
             <div class="shortcutbar-option--label">Switch program</div>
@@ -19,50 +25,199 @@
         <div class="d-flex flex-row flex-lg-column">
             <div class="shortcutbar-option">
                 <a class="shortcutbar-option--link " href="#" data-toggle="tooltip" data-placement="right" data-original-title="Program dashboard" data-boundary="window">
-                    <span class="icon icon-home"></span>
+                    <span class="icon icon-home" aria-hidden="true"></span>
                     <div class="shortcutbar-option--label">Program dashboard</div>
                 </a>
                 <div class="shortcutbar-option--label">Program dashboard</div>
             </div>
             <div class="shortcutbar-option">
                 <a class="shortcutbar-option--link active" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Learning course" data-boundary="window">
-                    <span class="icon icon-library"></span>
+                    <span class="icon icon-library" aria-hidden="true"></span>
                     <div class="shortcutbar-option--label">Learning course</div>
                 </a>
                 <div class="shortcutbar-option--label">Learning course</div>
             </div>
             <div class="shortcutbar-option">
                 <a class="shortcutbar-option--link" href="https://www.google.com" data-toggle="tooltip" data-placement="right" data-original-title="My project" data-boundary="window">
-                    <span class="icon icon--letter"><span>m</span></span>
+                    <span class="icon icon--letter" aria-hidden="true">
+                        <span aria-hidden="true">m</span>
+                    </span>
                     <div class="shortcutbar-option--label">My Project</div>
                 </a>
                 <div class="shortcutbar-option--label">My Project</div>
             </div>
             <div class="shortcutbar-option">
                 <a class="shortcutbar-option--link active has-dot" data-content="9" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Second project" data-boundary="window">
-                    <span class="icon icon--letter"><span>s</span></span>
+                    <span class="icon icon--letter" aria-hidden="true">
+                        <span aria-hidden="true">s</span>
+                    </span>
                     <div class="shortcutbar-option--label">Second project</div>
+                    <span class="sr-only">9 notifications</span>
                 </a>
                 <div class="shortcutbar-option--label">Second project</div>
             </div>
             <div class="shortcutbar-option dropright" data-toggle="tooltip" data-placement="right" data-original-title="More projects" data-boundary="window" style="z-index: 2;">
                 <a href="#" class="shortcutbar-option--link" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false">
-                    <span class="icon icon-more"></span>
+                    <span class="icon icon-more" aria-hidden="true"></span>
                     <div class="shortcutbar-option--label">More projects</div>
-                    <span class="icon icon-chevron-down shortcutbar-expanded-item-show"></span>
+                    <span class="icon icon-chevron-down shortcutbar-expanded-item-show" aria-hidden="true"></span>
                 </a>
                 <div class="dropdown-menu" style="max-width: 225px;">
                     <h6 class="dropdown-header">More projects</h6>
-                    <a class="dropdown-item align-items-center" href="#" data-original-title="" title="">
-                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" data-original-title="" title=""><span class="">t</span></div>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">t</span>
+                        </div>
                         <span class="text-truncate">Third project</span>
                     </a>
-                    <a class="dropdown-item align-items-center" href="#" data-original-title="" title="">
-                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" data-original-title="" title=""><span class="">f</span></div>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
                         <span class="text-truncate">Fourth project</span>
                     </a>
-                    <a class="dropdown-item align-items-center" href="#" data-original-title="" title="">
-                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" data-original-title="" title=""><span class="">f</span></div>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
+                        <span class="text-truncate">Fifth project with a long text</span>
+                    </a>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" aria-hidden="true">
+                            <span aria-hidden="true">f</span>
+                        </div>
                         <span class="text-truncate">Fifth project with a long text</span>
                     </a>
                 </div>
@@ -70,21 +225,21 @@
             </div>
             <div class="shortcutbar-option ">
                 <a class="shortcutbar-option--link active" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Custom shortcut" data-boundary="window">
-                    <span class="icon icon--custom"><span>C</span></span>
+                    <span class="icon icon--custom"><span aria-hidden="true">C</span></span>
                     <div class="shortcutbar-option--label">Custom shortcut</div>
                 </a>
                 <div class="shortcutbar-option--label">Custom shortcut</div>
             </div> 
             <div class="shortcutbar-option ">
                 <a class="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Custom shortcut" data-boundary="window">
-                    <span class="icon icon--custom">👋</span>
+                    <span class="icon icon--custom" aria-hidden="true">👋</span>
                     <div class="shortcutbar-option--label">Custom shortcut</div>
                 </a>
                 <div class="shortcutbar-option--label">Custom shortcut</div>
             </div>  
             <div class="shortcutbar-option ">
                 <a class="shortcutbar-option--link " href="#" data-toggle="tooltip" data-placement="right" data-original-title="Custom shortcut" data-boundary="window">
-                    <span class="icon icon--custom"><span>C</span></span>
+                    <span class="icon icon--custom"><span aria-hidden="true">C</span></span>
                     <div class="shortcutbar-option--label">Custom shortcut</div>
                 </a>
                 <div class="shortcutbar-option--label">Custom shortcut</div>
@@ -92,14 +247,14 @@
             <div class="shortcutbar-separator"></div>          
             <div class="shortcutbar-option">
                 <a class="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Expert space" data-boundary="window">
-                    <span class="icon icon-account-supervisor-circle"></span>
+                    <span class="icon icon-account-supervisor-circle" aria-hidden="true"></span>
                     <div class="shortcutbar-option--label">Expert space</div>
                 </a>
                 <div class="shortcutbar-option--label">Expert space</div>
             </div>
             <div class="shortcutbar-option">
                 <a class="shortcutbar-option--link" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Jury space" data-boundary="window">
-                    <span class="icon icon-gavel"></span>
+                    <span class="icon icon-gavel" aria-hidden="true"></span>
                     <div class="shortcutbar-option--label">Jury space</div>
                 </a>
                 <div class="shortcutbar-option--label">Jury space</div>
@@ -107,37 +262,40 @@
             <div class="shortcutbar-separator"></div>
             <div class="shortcutbar-option dropright" data-toggle="tooltip" data-placement="right" data-original-title="Previews" data-boundary="window" style="z-index: 2;">
                 <a href="#" class="shortcutbar-option--link" data-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false">
-                    <span class="icon icon-eye"></span>
+                    <span class="icon icon-eye" aria-hidden="true"></span>
                     <div class="shortcutbar-option--label">Previews</div>
-                    <span class="icon icon-chevron-down shortcutbar-expanded-item-show"></span>
+                    <span class="icon icon-chevron-down shortcutbar-expanded-item-show" aria-hidden="true"></span>
                 </a>
                 <div class="dropdown-menu" style="max-width: 225px;">
                     <h6 class="dropdown-header">Previews</h6>
-                    <a class="dropdown-item align-items-center" href="#" data-original-title="" title="">
+                    <a class="dropdown-item align-items-center" href="#">
                         <span class="flex-shrink-0 icon icon-library is-sm"></span>
                         <span class="text-truncate">Learning course</span>
                     </a>
-                    <a class="dropdown-item align-items-center" href="#" data-original-title="" title="">
-                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" data-original-title="" title=""><span class="">f</span></div>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" data-original-title="" title=""><span class="">f</span>
+                        </div>
                         <span class="text-truncate">First project</span>
                         
                     </a>
-                    <a class="dropdown-item align-items-center" href="#" data-original-title="" title="">
+                    <a class="dropdown-item align-items-center" href="#">
                         <div class="flex-shrink-0 icon icon--letter is-sm mr-2" data-original-title="" title=""><span class="">s</span></div>
                         <span class="text-truncate">Second project</span>
                         
                     </a>
-                    <a class="dropdown-item align-items-center" href="#" data-original-title="" title="">
+                    <a class="dropdown-item align-items-center" href="#">
                         <div class="flex-shrink-0 icon icon--letter is-sm mr-2" data-original-title="" title=""><span class="">t</span></div>
                         <span class="text-truncate">Third project with a long texte</span>
                         
                     </a>
-                    <a class="dropdown-item align-items-center" href="#" data-original-title="" title="">
-                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" data-original-title="" title=""><span class="">f</span></div>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" data-original-title="" title=""><span class="">f</span>
+                        </div>
                         <span class="text-truncate">Fourth project</span>
                     </a>
-                    <a class="dropdown-item align-items-center" href="#" data-original-title="" title="">
-                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" data-original-title="" title=""><span class="">f</span></div>
+                    <a class="dropdown-item align-items-center" href="#">
+                        <div class="flex-shrink-0 icon icon--letter is-sm mr-2" data-original-title="" title=""><span class="">f</span>
+                        </div>
                         <span class="text-truncate">Fifth project</span>
                     </a>
                 </div>
@@ -145,7 +303,7 @@
             </div>
             <div class="shortcutbar-option">
                 <a class="shortcutbar-option--link active" href="#" data-toggle="tooltip" data-placement="right" data-original-title="Manage program" data-boundary="window">
-                    <span class="icon icon-cog"></span>
+                    <span class="icon icon-cog" aria-hidden="true"></span>
                     <div class="shortcutbar-option--label">Manage program</div>
                 </a>
                 <div class="shortcutbar-option--label">Manage program</div>
