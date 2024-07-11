@@ -1,26 +1,36 @@
-<div id="tables-views" class="d-flex align-items-lg-start gap-8px justify-content-lg-between pb-16px border-bottom">
+<div id="tables-views" class="d-flex align-items-lg-start justify-content-between gap-8px pb-16px border-bottom">
         
-    <form name="related" class="btn-group btn-group-lg btn-group-toggle btn-filter-radios d-flex dataTableFilter" data-toggle="buttons" data-col="0">
-        <label class="btn btn-default btn-lg active">
-            <input type="radio" class="btn-check" name="resourcesMainFilters[related]" id="resourcesMainFilters_related_0" value="_default" autocomplete="off" required="" checked="" />
-            All {items}
-        </label>
-        <label class="btn btn-default btn-lg">
-            <input type="radio" class="btn-check" name="resourcesMainFilters[related]" id="resourcesMainFilters_related_1" value="challenge" autocomplete="off" required="" />
-            Draft
-        </label>
-        <label class="btn btn-default btn-lg">
-            <input type="radio" class="btn-check" name="resourcesMainFilters[related]" id="resourcesMainFilters_related_2" value="module.user" autocomplete="off" required="" />
-            Pending review
-        </label>
-        <label class="btn btn-default btn-lg">
-            <input type="radio" class="btn-check" name="resourcesMainFilters[related]" id="resourcesMainFilters_related_3" value="module.application" autocomplete="off" required="" />
-            Rejected
-        </label>
-        <label class="btn btn-default btn-lg">
-            <input type="radio" class="btn-check" name="resourcesMainFilters[related]" id="resourcesMainFilters_related_4" value="event" autocomplete="off" required="" />
-            Accepted
-        </label>
+    <form name="views" class="dataTableFilter">
+        <select name="filters" id="filter-select" class="custom-select field-sizing d-md-none">
+            <option value="_default">All {items}</option>
+            <option value="draft">Draft</option>
+            <option value="pending">Pending review</option>
+            <option value="rejected">Rejected</option>
+            <option value="accepted">Accepted</option>
+        </select>
+
+        <div class="d-none d-md-flex btn-group btn-group-lg btn-group-toggle btn-filter-radios" data-toggle="buttons" data-col="0">
+            <label class="btn btn-default btn-lg active">
+                <input type="radio" class="btn-check" name="resourcesMainFilters[related]" id="resourcesMainFilters_related_0" value="_default" autocomplete="off" required="" checked="" />
+                All {items}
+            </label>
+            <label class="btn btn-default btn-lg">
+                <input type="radio" class="btn-check" name="resourcesMainFilters[related]" id="resourcesMainFilters_related_1" value="draft" autocomplete="off" required="" />
+                Draft
+            </label>
+            <label class="btn btn-default btn-lg">
+                <input type="radio" class="btn-check" name="resourcesMainFilters[related]" id="resourcesMainFilters_related_2" value="pending" autocomplete="off" required="" />
+                Pending review
+            </label>
+            <label class="btn btn-default btn-lg">
+                <input type="radio" class="btn-check" name="resourcesMainFilters[related]" id="resourcesMainFilters_related_3" value="rejected" autocomplete="off" required="" />
+                Rejected
+            </label>
+            <label class="btn btn-default btn-lg">
+                <input type="radio" class="btn-check" name="resourcesMainFilters[related]" id="resourcesMainFilters_related_4" value="accepted" autocomplete="off" required="" />
+                Accepted
+            </label>
+        </div>
     </form>
 
     <a href="#" class="btn btn-lg btn-transparent text-muted">

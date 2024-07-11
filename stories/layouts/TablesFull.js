@@ -16,7 +16,7 @@ import {datatables} from '../utils/datatables.js'
 export const createTables = () => {
 
   const applicationSection = document.createElement('div');
-  applicationSection.className = 'application-section gap-16px';
+  applicationSection.className = 'd-flex flex-column p-24px gap-16px';
 
   applicationSection.insertAdjacentHTML('beforeend',folders);
   applicationSection.insertAdjacentHTML('beforeend',views);
