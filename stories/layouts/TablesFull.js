@@ -8,7 +8,7 @@ import breadcrumb from "../components/breadcrumb.html";
 import folders from "../components/tables-folders.html";
 import views from "../components/tables-views.html";
 import filters from "../components/tables-filters.html";
-import content from "../components/tables.html";
+import content from "../components/tables-data.html";
 
 import { script } from "../utils/script.js"
 import {datatables} from '../utils/datatables.js'

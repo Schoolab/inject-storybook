@@ -15,7 +15,7 @@ export const datatables = () => {
             searching: false,
             scrollCollapse: true,
             scrollX: true,
-            scrollY: "75vh",
+            // scrollY: "75vh",
             ordering: false
         }); 
         jQuery(window).on('resize', function () {
