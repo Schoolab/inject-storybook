@@ -8,5 +8,6 @@ export const createTables = () => {
   const tables = tablesHTML;
   script();
   datatables();
+
   return tables;
 };
