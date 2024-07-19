@@ -1,4 +1,4 @@
-import { createTables } from './layouts/TablesData.js';
+import { createTables } from './layouts/tables/Default.js';
 
 export default {
     title: 'Components/Tables',
@@ -7,5 +7,5 @@ export default {
         layout: 'fullscreen',
       },
 };
-export const Data = () => createTables();
+export const Default = () => createTables();
 

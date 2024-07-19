@@ -1,4 +1,4 @@
-import { createTables } from './layouts/TablesEmpty.js';
+import { createTables } from './layouts/tables/Empty.js';
 
 export default {
     title: 'Components/Tables',

@@ -1,4 +1,4 @@
-import { createTables } from './layouts/TablesSkewed.js';
+import { createTables } from './layouts/tables/Skewed.js';
 
 export default {
     title: 'Components/Tables',

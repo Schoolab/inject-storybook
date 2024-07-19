@@ -1,25 +1,26 @@
 
 <table class="table table-hover responsive w-100" id="doc-table-data-types" role="grid">
+    <caption class="sr-only">Data cells types table</caption>
     <thead>
-        <th class="sorting_disabled" style="min-width: 20px;">
+        <th id="checkbox" class="table-checkbox sorting_disabled" style="min-width: 20px;">
             <div class="custom-control custom-checkbox table-checkbox--control nolabel-checkbox">
                 <input type="checkbox" id="selectAll" class="custom-control-input selectAllBulkSelectors" name="select" />
                 <label class="custom-control-label" for="selectAll"></label>
             </div>
         </th>
-        <th class="sorting" style="min-width: 320px;">
+        <th id="large" class="sorting" style="min-width: 320px;">
             Large
         </th>
-        <th class="sorting" style="min-width: 280px;">
+        <th id="small" class="sorting" style="min-width: 280px;">
             Small
         </th>
-        <th class="sorting" style="min-width: 280px;">
+        <th id="multiple" class="sorting" style="min-width: 280px;">
             Multiple
         </th>
-        <th class="sorting_disabled" style="min-width: 280px;">
+        <th id="no-data" class="sorting_disabled" style="min-width: 280px;">
             No data
         </th>
-        <th class="sorting_disabled" style="min-width: 280px;">
+        <th id="empty" class="sorting_disabled" style="min-width: 280px;">
             Empty
         </th>
     </thead>
@@ -31,30 +32,30 @@
                     <label class="custom-control-label" for="1"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="text-muted">
-                            <div class="icon is-24px">👋</div>
+                            <div aria-hidden="true" class="icon is-24px">👋</div>
                         </div>
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <p class="font-weight-bold">Title with icon</p>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>Meta</li>
-                            </ul>
+                            <p class="font-weight-bold" aria-labelledby="large">Title with icon</p>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>Meta</p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -77,23 +78,23 @@
                         </div>
                     </div>
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="text-muted">
-                            <div class="icon is-24px">👋</div>
+                            <div aria-hidden="true" class="icon is-24px">👋</div>
                         </div>
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <p class="font-weight-bold">Title with icon</a>
+                            <p class="font-weight-bold" aria-labelledby="small">Title with icon</a>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                 
@@ -110,26 +111,26 @@
                     <label class="custom-control-label" for="2"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <p class="font-weight-bold">Title</p>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>Meta</li>
-                            </ul>
+                            <p class="font-weight-bold" aria-labelledby="large">Title</p>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>Meta</p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -153,19 +154,19 @@
                     </div>
 
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <p class="font-weight-bold">Title</a>
+                            <p class="font-weight-bold" aria-labelledby="small">Title</a>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                 
@@ -182,30 +183,30 @@
                     <label class="custom-control-label" for="3"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="text-muted">
-                            <div class="icon is-24px icon-text-box"></div>
+                            <div aria-hidden="true" class="icon is-24px icon-text-box"></div>
                         </div>
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <p>Text with icon</p>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>Meta</li>
-                            </ul>
+                            <p aria-labelledby="large">Text with icon</p>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>Meta</p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -228,23 +229,23 @@
                         </div>
                     </div>
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="text-muted">
-                            <div class="icon is-24px icon-text-box"></div>
+                            <div aria-hidden="true" class="icon is-24px icon-text-box"></div>
                         </div>
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <p>Text with icon</a>
+                            <p aria-labelledby="small">Text with icon</a>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                 
@@ -261,26 +262,26 @@
                     <label class="custom-control-label" for="4"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <p>Text</p>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>Meta</li>
-                            </ul>
+                            <p aria-labelledby="large">Text</p>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>Meta</p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -304,19 +305,19 @@
                     </div>
 
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <p>Text</a>
+                            <p aria-labelledby="small">Text</a>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                 
@@ -333,25 +334,25 @@
                     <label class="custom-control-label" for="5"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
 
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <a href="#" class="btn btn-lg btn-secondary align-self-start" role="button" data-toggle="tooltip" data-placement="right" data-html="true" data-title="<p class='small text-muted'>Click to open full content in a modal</p><p>Here goes a long content inside a tooltip to show when needed.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officia facere ullam inventore? Facere alias labore tenetur itaque cumque! Necessitatibus tempora earum aliquid? Tenetur nostrum fugit sunt, cum tempore voluptates!</p>" aria-expanded="false">
+                            <a aria-labelledby="large" href="#" class="btn btn-lg btn-secondary align-self-start" role="button" data-toggle="tooltip" data-placement="right" data-html="true" data-title="<p class='small text-muted'>Click to open full content in a modal</p><p>Here goes a long content inside a tooltip to show when needed.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officia facere ullam inventore? Facere alias labore tenetur itaque cumque! Necessitatibus tempora earum aliquid? Tenetur nostrum fugit sunt, cum tempore voluptates!</p>" aria-expanded="false">
                                 <span class="icon icon-text"></span>
                             </a>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -375,21 +376,21 @@
                     </div>
 
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <a href="#" class="btn btn-lg btn-secondary align-self-start" role="button" data-toggle="tooltip" data-placement="right" data-html="true" data-title="<p class='small text-muted'>Click to open full content in a modal</p><p>Here goes a long content inside a tooltip to show when needed.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officia facere ullam inventore? Facere alias labore tenetur itaque cumque! Necessitatibus tempora earum aliquid? Tenetur nostrum fugit sunt, cum tempore voluptates!</p>" aria-expanded="false">
+                            <a aria-labelledby="small" href="#" class="btn btn-lg btn-secondary align-self-start" role="button" data-toggle="tooltip" data-placement="right" data-html="true" data-title="<p class='small text-muted'>Click to open full content in a modal</p><p>Here goes a long content inside a tooltip to show when needed.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officia facere ullam inventore? Facere alias labore tenetur itaque cumque! Necessitatibus tempora earum aliquid? Tenetur nostrum fugit sunt, cum tempore voluptates!</p>" aria-expanded="false">
                                 <span class="icon icon-text"></span>
                             </a>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                 
@@ -406,30 +407,30 @@
                     <label class="custom-control-label" for="6"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="text-muted">
-                            <div class="icon is-24px icon-text-box"></div>
+                            <div aria-hidden="true" class="icon is-24px icon-text-box"></div>
                         </div>
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <a href="#" class="is-primary font-weight-bold stretched-link">Link with icon</a>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>Meta</li>
-                            </ul>
+                            <a href="#" class="is-primary font-weight-bold stretched-link" aria-labelledby="large">Link with icon</a>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>Meta</p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -452,24 +453,24 @@
                         </div>
                     </div>
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
                     
                         <div class="text-muted">
-                            <div class="icon is-24px icon-text-box"></div>
+                            <div aria-hidden="true" class="icon is-24px icon-text-box"></div>
                         </div>
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <a href="#" class="underlined-link stretched-link">Link with icon</a>
+                            <a href="#" class="underlined-link stretched-link" aria-labelledby="small">Link with icon</a>
                             <span class="icon icon-arrow-top-right text-muted"></span>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
 
@@ -486,26 +487,26 @@
                     <label class="custom-control-label" for="7"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
 
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <a href="#" class="is-primary font-weight-bold stretched-link">Link</a>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>Meta</li>
-                            </ul>
+                            <a href="#" class="is-primary font-weight-bold stretched-link" aria-labelledby="large">Link</a>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>Meta</p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -528,19 +529,19 @@
                         </div>
                     </div>
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <a href="#" class="underlined-link stretched-link">Link</a>
+                            <a href="#" class="underlined-link stretched-link" aria-labelledby="small">Link</a>
                             <span class="icon icon-arrow-top-right text-muted"></span>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                 </div>
@@ -556,32 +557,32 @@
                     <label class="custom-control-label" for="8"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="text-muted">
-                            <div class="icon is-24px icon-clock"></div>
+                            <div aria-hidden="true" class="icon is-24px icon-clock"></div>
                         </div>
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <p>July 12, 2024 at 2:00 PM</p>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>
+                            <p aria-labelledby="large">July 12, 2024 at 2:00 PM</p>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>
                                     <span>by</span> <a href="#">User Name</a>
-                                </li>
-                            </ul>
+                                </p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -604,23 +605,23 @@
                         </div>
                     </div>
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="text-muted">
-                            <div class="icon is-24px icon-clock"></div>
+                            <div aria-hidden="true" class="icon is-24px icon-clock"></div>
                         </div>
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <p>July 12, 2024 at 2:00 PM</a>
+                            <p aria-labelledby="small">July 12, 2024 at 2:00 PM</a>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                 
@@ -637,28 +638,28 @@
                     <label class="custom-control-label" for="9"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <p>July 12, 2024 at 2:00 PM</p>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>
+                            <p aria-labelledby="large">July 12, 2024 at 2:00 PM</p>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>
                                     <span>by</span> <a href="#">User Name</a>
-                                </li>
-                            </ul>
+                                </p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -682,19 +683,19 @@
                     </div>
 
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <p>July 12, 2024 at 2:00 PM</a>
+                            <p aria-labelledby="small">July 12, 2024 at 2:00 PM</a>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                 
@@ -711,7 +712,7 @@
                     <label class="custom-control-label" for="10"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
@@ -724,22 +725,20 @@
                         </svg>
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <p>1/4</p>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>
-                                    Meta
-                                </li>
-                            </ul>
+                            <p aria-labelledby="large">1/4</p>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>Meta</p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -763,7 +762,7 @@
                     </div>
 
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
@@ -777,12 +776,12 @@
                         </svg>
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <p>1/4</a>
+                            <p aria-labelledby="small">1/4</a>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                 
@@ -799,30 +798,30 @@
                     <label class="custom-control-label" for="11"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="thumbnail is-lg">
-                            <img alt="Org Name thumbnail" src="img/placeholder-thumbnail-logo.png">
+                            <img alt="Org Name thumbnail" src="../img/placeholder-thumbnail-logo.png">
                         </div>
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <a href="#" class="is-primary font-weight-bold stretched-link">Org Name</a>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>domain.tld</li>
-                            </ul>
+                            <a href="#" class="is-primary font-weight-bold stretched-link" aria-labelledby="large">Org Name</a>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>domain.tld</p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -845,24 +844,24 @@
                         </div>
                     </div>
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
                     
                         <div class="thumbnail is-sm">
-                            <img alt="Org Name thumbnail" src="img/placeholder-thumbnail-logo.png">
+                            <img alt="Org Name thumbnail" src="../img/placeholder-thumbnail-logo.png">
                         </div>
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <a href="#" class="underlined-link stretched-link">Org Name</a>
+                            <a href="#" class="underlined-link stretched-link" aria-labelledby="small">Org Name</a>
                             <span class="icon icon-arrow-top-right text-muted"></span>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
 
@@ -873,17 +872,17 @@
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
 
-                        <div class="thumbnail-stack" data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-0 p-0"><li>Org Name</li><li>Org Name</li><li>Org Name</li><li>Org Name</li><li>Org Name</li></ul>' aria-expanded="false">
+                        <div aria-labelledby="multiple" class="thumbnail-stack" data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-0 p-0"><li>Org Name</li><li>Org Name</li><li>Org Name</li><li>Org Name</li><li>Org Name</li></ul>' data-boundary="window">
                             <a href="#" class="thumbnail is-sm">
-                                <img alt="Org Name thumbnail" src="img/placeholder-thumbnail-logo.png">
+                                <img alt="Org Name thumbnail" src="../img/placeholder-thumbnail-logo.png">
                             </a>
 
                             <a href="#" class="thumbnail is-sm">
-                                <img alt="Org Name thumbnail" src="img/placeholder-thumbnail-logo.png">
+                                <img alt="Org Name thumbnail" src="../img/placeholder-thumbnail-logo.png">
                             </a>
 
                             <a href="#" class="thumbnail is-sm">
-                                <img alt="Org Name thumbnail" src="img/placeholder-thumbnail-logo.png">
+                                <img alt="Org Name thumbnail" src="../img/placeholder-thumbnail-logo.png">
                             </a>
                         </div>
 
@@ -891,7 +890,7 @@
 
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
 
@@ -907,30 +906,31 @@
                     <label class="custom-control-label" for="12"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
-                        <div class="icon icon--program is-lg">
-                            <span aria-hidden="true">SSL</span>
+                        <div aria-hidden="true" class="icon icon--program is-lg">
+                            <span aria-hidden="true">PN</span>
                         </div>
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <a href="#" class="is-primary font-weight-bold stretched-link">Program Name</a>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>Org Name</li>
-                            </ul>
+                            <a href="#" class="is-primary font-weight-bold stretched-link" aria-labelledby="large">Program Name</a>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>Org Name</p>
+                                <p>23 programs</p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -953,24 +953,24 @@
                         </div>
                     </div>
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
                     
-                        <div class="icon icon--program is-sm">
-                            <span aria-hidden="true">SSL</span>
+                        <div aria-hidden="true" class="icon icon--program is-sm">
+                            <span aria-hidden="true">PN</span>
                         </div>
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <a href="#" class="underlined-link stretched-link">Program Name</a>
+                            <a href="#" class="underlined-link stretched-link" aria-labelledby="small">Program Name</a>
                             <span class="icon icon-arrow-top-right text-muted"></span>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
 
@@ -981,17 +981,17 @@
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
 
-                        <div class="thumbnail-stack" data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-0 p-0"><li>Program Name</li><li>Program Name</li><li>Program Name</li><li>Program Name</li><li>Program Name</li></ul>' aria-expanded="false">
-                            <div class="icon icon--program is-sm">
-                                <span aria-hidden="true">SSL</span>
+                        <div aria-labelledby="multiple" class="thumbnail-stack" data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-0 p-0"><li>Program Name</li><li>Program Name</li><li>Program Name</li><li>Program Name</li><li>Program Name</li></ul>' data-boundary="window">
+                            <div aria-hidden="true" class="icon icon--program is-sm">
+                                <span aria-hidden="true">PN</span>
                             </div>
 
-                            <div class="icon icon--program is-sm">
-                                <span aria-hidden="true">SSL</span>
+                            <div aria-hidden="true" class="icon icon--program is-sm">
+                                <span aria-hidden="true">PN</span>
                             </div>
 
-                            <div class="icon icon--program is-sm">
-                                <span aria-hidden="true">SSL</span>
+                            <div aria-hidden="true" class="icon icon--program is-sm">
+                                <span aria-hidden="true">PN</span>
                             </div>
                         </div>
 
@@ -999,7 +999,7 @@
 
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
 
@@ -1015,30 +1015,30 @@
                     <label class="custom-control-label" for="13"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
-                        <div class="icon icon--letter is-lg">
+                        <div aria-hidden="true" class="icon icon--letter is-lg">
                             <span aria-hidden="true">P</span>
                         </div>
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <a href="#" class="is-primary font-weight-bold stretched-link">Project Name</a>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>2 members</li>
-                            </ul>
+                            <a href="#" class="is-primary font-weight-bold stretched-link" aria-labelledby="large">Project Name</a>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>2 members</p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -1061,24 +1061,24 @@
                         </div>
                     </div>
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
                     
-                        <div class="icon icon--letter is-sm">
+                        <div aria-hidden="true" class="icon icon--letter is-sm">
                             <span aria-hidden="true">P</span>
                         </div>
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <a href="#" class="underlined-link stretched-link">Project Name</a>
+                            <a href="#" class="underlined-link stretched-link" aria-labelledby="small">Project Name</a>
                             <span class="icon icon-arrow-top-right text-muted"></span>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
 
@@ -1089,16 +1089,16 @@
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
 
-                        <div class="thumbnail-stack" data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-0 p-0"><li>Project Name</li><li>Project Name</li><li>Project Name</li><li>Project Name</li><li>Project Name</li></ul>' aria-expanded="false">
-                            <div class="icon icon--letter is-sm">
+                        <div aria-labelledby="multiple" class="thumbnail-stack" data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-0 p-0"><li>Project Name</li><li>Project Name</li><li>Project Name</li><li>Project Name</li><li>Project Name</li></ul>' data-boundary="window">
+                            <div aria-hidden="true" class="icon icon--letter is-sm">
                                 <span aria-hidden="true">P</span>
                             </div>
     
-                            <div class="icon icon--letter is-sm">
+                            <div aria-hidden="true" class="icon icon--letter is-sm">
                                 <span aria-hidden="true">P</span>
                             </div>
     
-                            <div class="icon icon--letter is-sm">
+                            <div aria-hidden="true" class="icon icon--letter is-sm">
                                 <span aria-hidden="true">P</span>
                             </div>
                         </div>
@@ -1107,7 +1107,7 @@
 
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
 
@@ -1123,7 +1123,7 @@
                     <label class="custom-control-label" for="14"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
@@ -1133,20 +1133,20 @@
                         </div>
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <a href="#" class="is-primary font-weight-bold stretched-link">User Name</a>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>name@domain.tld</li>
-                            </ul>
+                            <a href="#" class="is-primary font-weight-bold stretched-link" aria-labelledby="large">User Name</a>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>name@domain.tld</p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -1169,7 +1169,7 @@
                         </div>
                     </div>
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
@@ -1180,13 +1180,13 @@
                         </div>
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <a href="#" class="underlined-link stretched-link">User Name</a>
+                            <a href="#" class="underlined-link stretched-link" aria-labelledby="small">User Name</a>
                             <span class="icon icon-arrow-top-right text-muted"></span>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
 
@@ -1197,7 +1197,7 @@
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
 
-                        <div class="thumbnail-stack" data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-0 p-0"><li>User Name</li><li>User Name</li><li>User Name</li><li>User Name</li><li>User Name</li></ul>' aria-expanded="false">
+                        <div aria-labelledby="multiple" class="thumbnail-stack" data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-0 p-0"><li>User Name</li><li>User Name</li><li>User Name</li><li>User Name</li><li>User Name</li></ul>' data-boundary="window">
                             <a href="#" class="thumbnail is-sm is-oval">
                                 <span class="icon icon-account"></span>
                             </a>
@@ -1215,7 +1215,7 @@
 
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
 
@@ -1231,7 +1231,7 @@
                     <label class="custom-control-label" for="15"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
@@ -1239,21 +1239,21 @@
                         <div class="item-icon icon icon-file-pdf-box text-danger"></div>
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <a href="#" class="is-primary font-weight-bold stretched-link">filename.ext</a>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>PDF File</li>
-                                <li>0 KB</li>
-                            </ul>
+                            <a href="#" class="is-primary font-weight-bold stretched-link" aria-labelledby="large">filename.ext</a>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>PDF File</p>
+                                <p>0 KB</p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Download file" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Download file" data-boundary="window">
                         <span class="icon icon-cloud-download"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -1276,22 +1276,22 @@
                         </div>
                     </div>
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
                     
-                        <div class="icon icon-file-pdf-box is-24px text-danger"></div>
+                        <div aria-hidden="true" class="icon icon-file-pdf-box is-24px text-danger"></div>
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <a href="#" class="underlined-link stretched-link">filename.ext</a>
+                            <a href="#" class="underlined-link stretched-link" aria-labelledby="small">filename.ext</a>
                             <span class="icon icon-arrow-top-right text-muted"></span>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Download file" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Download file" data-boundary="window">
                         <span class="icon icon-cloud-download"></span>
                     </a>
 
@@ -1302,7 +1302,7 @@
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
 
-                        <div class="thumbnail-stack" data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-0 p-0"><li>filename.ext</li><li>filename.ext</li><li>filename.ext</li><li>filename.ext</li><li>filename.ext</li></ul>' aria-expanded="false">
+                        <div aria-labelledby="multiple" class="thumbnail-stack" data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-0 p-0"><li>filename.ext</li><li>filename.ext</li><li>filename.ext</li><li>filename.ext</li><li>filename.ext</li></ul>' data-boundary="window">
                             <div class="border rounded-sm bg-white icon icon-file-pdf-box is-24px text-danger"></div>
 
                             <div class="border rounded-sm bg-white icon icon-file-pdf-box is-24px text-danger"></div>
@@ -1314,7 +1314,7 @@
 
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Download files" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Download files" data-boundary="window">
                         <span class="icon icon-cloud-download"></span>
                     </a>
 
@@ -1330,7 +1330,7 @@
                     <label class="custom-control-label" for="16"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
@@ -1341,21 +1341,21 @@
                         </div>
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <a href="#" class="is-primary font-weight-bold stretched-link">Event Name</a>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>July 12, 2024</li>
-                                <li>4:30 PM</li>
-                            </ul>
+                            <a href="#" class="is-primary font-weight-bold stretched-link" aria-labelledby="large">Event Name</a>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>July 12, 2024</p>
+                                <p>4:30 PM</p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -1378,7 +1378,7 @@
                         </div>
                     </div>
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
@@ -1390,13 +1390,13 @@
                         </div>
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <a href="#" class="underlined-link stretched-link">Event Name</a>
+                            <a href="#" class="underlined-link stretched-link" aria-labelledby="small">Event Name</a>
                             <span class="icon icon-arrow-top-right text-muted"></span>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
 
@@ -1413,7 +1413,7 @@
                     <label class="custom-control-label" for="17"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
@@ -1422,27 +1422,27 @@
                             <div class="thumbnail is-lg is-oval">
                                 <span class="icon icon-account"></span>
                             </div>
-                            <div class="icon icon--letter is-24px is-top">
+                            <div aria-hidden="true" class="icon icon--letter is-24px is-top">
                                 <span>P</span>
                             </div>
                         </div>
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <a href="#" class="is-primary font-weight-bold stretched-link">Mentor / Project</a>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>July 12, 2024</li>
-                                <li>4:30 PM</li>
-                            </ul>
+                            <a href="#" class="is-primary font-weight-bold stretched-link" aria-labelledby="large">Mentor / Project</a>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>July 12, 2024</p>
+                                <p>4:30 PM</p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -1465,7 +1465,7 @@
                         </div>
                     </div>
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
@@ -1476,13 +1476,13 @@
                         </div>
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <a href="#" class="underlined-link stretched-link">Mentor / Project</a>
+                            <a href="#" class="underlined-link stretched-link" aria-labelledby="small">Mentor / Project</a>
                             <span class="icon icon-arrow-top-right text-muted"></span>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
 
@@ -1499,13 +1499,13 @@
                     <label class="custom-control-label" for="18"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
                         <div class="thumbnail-relation m-auto">
-                            <div class="icon icon--letter is-40px">
+                            <div aria-hidden="true" class="icon icon--letter is-40px">
                                 <span>P</span>
                             </div>
                             <div class="thumbnail is-sm is-oval is-top">
@@ -1514,21 +1514,21 @@
                         </div>
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <a href="#" class="is-primary font-weight-bold stretched-link">Project / Mentor</a>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>July 12, 2024</li>
-                                <li>4:30 PM</li>
-                            </ul>
+                            <a href="#" class="is-primary font-weight-bold stretched-link" aria-labelledby="large">Project / Mentor</a>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>July 12, 2024</p>
+                                <p>4:30 PM</p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -1551,24 +1551,24 @@
                         </div>
                     </div>
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
                     
-                        <div class="icon icon--letter is-24px is-top">
+                        <div aria-hidden="true" class="icon icon--letter is-24px is-top">
                             <span>P</span>
                         </div>
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <a href="#" class="underlined-link stretched-link">Project / Mentor</a>
+                            <a href="#" class="underlined-link stretched-link" aria-labelledby="small">Project / Mentor</a>
                             <span class="icon icon-arrow-top-right text-muted"></span>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
 
@@ -1585,31 +1585,31 @@
                     <label class="custom-control-label" for="19"></label>
                 </div>
             </td>
-            <td>
+            <th>
                 <div class="d-flex align-items-center flex-fill gap-0">
                     
                     <div class="d-flex align-items-start flex-fill gap-8px">
                         
-                        <div class="icon icon--sdg is-sdg-1 is-40px">
+                        <div aria-hidden="true" class="icon icon--sdg is-sdg-1 is-40px">
                             <span>1</span>
                         </div>
                         
                         <div class="d-flex flex-column flex-fill gap-0">
-                            <a href="#" class="is-primary font-weight-bold stretched-link">Goal Name</a>
-                            <ul class="text-muted small metas is-list mb-0">
-                                <li>12 programs</li>
-                                <li>3 projects</li>
-                            </ul>
+                            <a href="#" class="is-primary font-weight-bold stretched-link" aria-labelledby="large">Goal Name</a>
+                            <div class="text-muted small metas is-list mb-0">
+                                <p>12 programs</p>
+                                <p>3 projects</p>
+                            </div>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
                     
                     <div class="dropdown-container z-1">
-                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn btn-lg btn-transparent text-muted" role="button" data-toggle="dropdown" aria-expanded="false" data-boundary="window">
                             <span class="icon icon-dots-vertical"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -1632,24 +1632,24 @@
                         </div>
                     </div>
                 </div>
-            </td>
+            </th>
             <td>
                 <div class="d-flex align-items-center flex-fill gap-0">
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
                     
-                        <div class="icon icon--sdg is-sdg-1 is-24px is-top">
+                        <div aria-hidden="true" class="icon icon--sdg is-sdg-1 is-24px is-top">
                             <span>1</span>
                         </div>
                         
                         <div class="d-flex flex-fill gap-4px">
-                            <a href="#" class="underlined-link stretched-link">Goal Name</a>
+                            <a href="#" class="underlined-link stretched-link" aria-labelledby="small">Goal Name</a>
                             <span class="icon icon-arrow-top-right text-muted"></span>
                         </div>
                         
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
 
@@ -1660,16 +1660,16 @@
 
                     <div class="d-flex align-items-start flex-fill gap-8px">
 
-                        <div class="thumbnail-stack" data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-0 p-0"><li>Goal Name</li><li>Goal Name</li><li>Goal Name</li><li>Goal Name</li><li>Goal Name</li></ul>' aria-expanded="false">
-                            <div class="icon icon--sdg is-sdg-1 is-24px is-top">
+                        <div aria-labelledby="multiple" class="thumbnail-stack" data-toggle="tooltip" data-placement="top" data-html="true" data-title='<ul class="list-unstyled m-0 p-0"><li>Goal Name</li><li>Goal Name</li><li>Goal Name</li><li>Goal Name</li><li>Goal Name</li></ul>' data-boundary="window">
+                            <div aria-hidden="true" class="icon icon--sdg is-sdg-1 is-24px is-top">
                                 <span>1</span>
                             </div>
 
-                            <div class="icon icon--sdg is-sdg-2 is-24px is-top">
+                            <div aria-hidden="true" class="icon icon--sdg is-sdg-2 is-24px is-top">
                                 <span>2</span>
                             </div>
 
-                            <div class="icon icon--sdg is-sdg-3 is-24px is-top">
+                            <div aria-hidden="true" class="icon icon--sdg is-sdg-3 is-24px is-top">
                                 <span>3</span>
                             </div>
                         </div>
@@ -1678,7 +1678,7 @@
 
                     </div>
 
-                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" aria-expanded="false">
+                    <a href="#" class="btn btn-lg btn-transparent text-muted show-on-hover z-1" role="button" data-toggle="tooltip" data-placement="top" data-title="Copy to clipboard" data-boundary="window">
                         <span class="icon icon-content-copy"></span>
                     </a>
 

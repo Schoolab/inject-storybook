@@ -1,4 +1,4 @@
-import { createTables } from './layouts/TablesNotifications.js';
+import { createTables } from './layouts/tables/Notifications.js';
 
 export default {
     title: 'Components/Tables',

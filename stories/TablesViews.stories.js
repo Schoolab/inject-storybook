@@ -1,4 +1,4 @@
-import { createTables } from './layouts/TablesViews.js';
+import { createTables } from './layouts/tables/Views.js';
 
 export default {
     title: 'Components/Tables',

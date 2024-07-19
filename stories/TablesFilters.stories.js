@@ -1,4 +1,4 @@
-import { createTables } from './layouts/TablesFilters.js';
+import { createTables } from './layouts/tables/Filters.js';
 
 export default {
     title: 'Components/Tables',

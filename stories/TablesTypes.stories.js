@@ -1,4 +1,4 @@
-import { createTables } from './layouts/TablesFull.js';
+import { createTables } from './layouts/tables/Types.js';
 
 export default {
     title: 'Components/Tables',
@@ -7,5 +7,5 @@ export default {
         layout: 'fullscreen',
       },
 };
-export const Full = () => createTables();
+export const Types = () => createTables();
 
