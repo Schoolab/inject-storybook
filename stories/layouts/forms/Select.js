@@ -1,6 +1,6 @@
-import createFormsHTML from '../components/forms-textarea.html';
+import createFormsHTML from '../../components/forms/select.html';
 
-import { script } from "../utils/script.js"
+import { script } from "../../utils/script.js"
 
 export const createForms = () => {
   const createForms = createFormsHTML;

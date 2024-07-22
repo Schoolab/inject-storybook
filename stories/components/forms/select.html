@@ -1,0 +1,28 @@
+<div class="form-group">
+    <label class="required" for="exemple">Type</label>
+    <small id="exemple_help" class="form-text text-muted">
+        Choose the type of this custom field.
+    </small>
+    <select 
+        id="exemple"
+        required="required"
+        data-hint="type"
+        aria-describedby="exemple_help"
+        class="form-control custom-select"
+        placeholder="Choose an option"
+    >
+        <option valut="short" selected>Short text</option>
+        <option value="long">Long text</option>
+        <option value="unique_select">Unique choice (select)</option>
+        <option value="unique_radio">Unique choice (radio)</option>
+        <option value="multiple">Multiple choices</option>
+        <option value="checklist">Checklist</option>
+        <option value="resources">Resources</option>
+        <option value="links">Links</option>
+        <option value="rating">Rating</option>
+        <option value="nbs">NPS</option>
+    </select>
+    <div class="invalid-feedback">
+        Please enter a message in the textarea.
+    </div>
+</div>

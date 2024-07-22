@@ -1,4 +1,4 @@
-import { createForms } from './layouts/FormsInput.js';
+import { createForms } from '../layouts/forms/Input.js';
 
 export default {
     title: 'Components/Forms',

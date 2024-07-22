@@ -1,4 +1,4 @@
-import { createItems } from './layouts/itemsObjectives.js';
+import { createItems } from '../layouts/items/Questionnaires.js';
 
 export default {
     title: 'Components/Items',
@@ -7,5 +7,5 @@ export default {
         layout: 'fullscreen',
       },
 };
-export const Objectives = () => createItems();
+export const Questionnaires = () => createItems();
 

@@ -1,4 +1,4 @@
-import { createForms } from './layouts/FormsTextarea.js';
+import { createForms } from '../layouts/forms/Textarea.js';
 
 export default {
     title: 'Components/Forms',
