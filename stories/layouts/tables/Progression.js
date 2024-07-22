@@ -1,7 +1,7 @@
 import folders from "../../components/tables/folders.html";
 import views from "../../components/tables/views.html";
 import filters from "../../components/tables/filters.html";
-import content from "../../components/tables/empty-state.html";
+import content from "../../components/tables/skewed.html";
 
 import { script } from "../../utils/script.js"
 import {datatables} from '../../utils/datatables.js'

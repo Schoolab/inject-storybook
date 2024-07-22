@@ -1,11 +1,10 @@
-import { createTables } from './layouts/tables/Types.js';
+import { createTables } from '../layouts/tables/Views.js';
 
 export default {
-    title: 'Components/Tables',
+    title: 'Components/Tables/Elements',
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
         layout: 'fullscreen',
       },
 };
-export const Types = () => createTables();
-
+export const Views = () => createTables();

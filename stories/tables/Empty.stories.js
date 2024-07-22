@@ -1,4 +1,4 @@
-import { createTables } from './layouts/tables/Skewed.js';
+import { createTables } from '../layouts/tables/Empty.js';
 
 export default {
     title: 'Components/Tables',
@@ -7,5 +7,4 @@ export default {
         layout: 'fullscreen',
       },
 };
-export const Skewed = () => createTables();
-
+export const Empty = () => createTables();

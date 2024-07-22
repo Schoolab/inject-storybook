@@ -1,10 +1,11 @@
-import { createTables } from './layouts/tables/Notifications.js';
+import { createTables } from '../layouts/tables/Old.js';
 
 export default {
-    title: 'Components/Tables',
+    title: 'Components/Tables/Elements',
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
         layout: 'fullscreen',
       },
 };
-export const Notifications = () => createTables();
+export const Old = () => createTables();
+
