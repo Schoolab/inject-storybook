@@ -1,7 +1,7 @@
 
 import sidebarHTML from '../components/sidebar-admin.html';
 
-// import navBar from '../components/navBar.html';
+// import navBar from '../components/navbars/default.html';
 // import shortcutBar from '../components/shortcutBar-collapsed.html';
 import { script } from "../utils/script.js"
 

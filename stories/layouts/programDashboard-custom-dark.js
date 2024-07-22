@@ -1,4 +1,4 @@
-import navBar from '../components/navBar-custom-raiselab.html';
+import navBar from '../components/navbars/custom-raiselab.html';
 import shortcutBar from '../components/shortcutBar.html';
 import breadcrumb from "../components/breadcrumb.html";
 import programContent from "../components/program-dashboard-content.html";

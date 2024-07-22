@@ -1,4 +1,4 @@
-import navBar from '../components/navBar.html';
+import navBar from '../components/navbars/default.html';
 import subNav  from "../components/subNav-programsHub.html";
 import content from "../components/programsHub-default-content.html";
 import { script } from "../utils/script.js"

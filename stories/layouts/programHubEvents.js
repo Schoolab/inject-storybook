@@ -1,4 +1,4 @@
-import navBar from '../components/navBar.html';
+import navBar from '../components/navbars/default.html';
 import content from "../components/programHub-events-content.html";
 import applicationTitle from "../components/application-title-no-subnav.html";
 import breadcrumb from "../components/breadcrumb.html";

@@ -1,4 +1,4 @@
-import navBar from '../components/navBar.html';
+import navBar from '../components/navbars/default.html';
 import shortcutBar from '../components/shortcutBar.html';
 import subNav  from "../components/subNav.html";
 import content from "../components/program-library-content.html";

@@ -1,4 +1,4 @@
-import navBar from '../components/navBar.html';
+import navBar from '../components/navbars/default.html';
 
 import sidebar from "../components/sidebar-admin.html";
 import breadcrumb from "../components/breadcrumb.html";

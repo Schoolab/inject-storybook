@@ -1,4 +1,4 @@
-import navBar from '../components/navBar.html';
+import navBar from '../components/navbars/default.html';
 import shortcutBar from '../components/shortcutBar.html';
 import breadcrumb from "../components/breadcrumb.html";
 import programContent from "../components/jury-participants-session-content.html";

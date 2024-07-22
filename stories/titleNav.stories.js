@@ -1,7 +1,7 @@
-import { createTitleNav } from './layouts/titleNav.js';
+import { createTitleNav } from './layouts/TitleNav.js';
 
 export default {
-    title: 'Components/TitleNav',
+    title: 'Components/Page Header',
     parameters: {
         // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
         layout: 'fullscreen',

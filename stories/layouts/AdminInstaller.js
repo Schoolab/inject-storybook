@@ -1,4 +1,4 @@
-import navBar from '../components/navBar.html';
+import navBar from '../components/navbars/default.html';
 import breadcrumb from "../components/breadcrumb.html";
 import LearningModulesContent from "../components/admin-installer-content.html";
 import applicationTitle from "../components/application-title.html";

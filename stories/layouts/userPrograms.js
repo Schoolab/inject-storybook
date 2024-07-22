@@ -1,4 +1,4 @@
-import navBar from '../components/navBar.html';
+import navBar from '../components/navbars/default.html';
 import breadcrumb from "../components/breadcrumb.html";
 import subNav  from "../components/subNav.html";
 import participationsContent from "../components/user-programs-content.html";

@@ -1,0 +1,240 @@
+<div class="modal-dialog modal-dialog-centered " role="document">
+    <div class="modal-content">
+        <div class="modal-header border-bottom">
+            <h3 class="modal-title line-clamp-1">
+                <span class="text-truncate">New project</span>
+            </h3>
+            <div class="modal-actions">
+                <!-- <a class="btn btn-transparent border-0 p-4px text-muted" data-toggle="tooltip" data-original-title="Open in new tab" href="#">
+                    <span class="icon icon-arrow-top-right is-24px"></span>
+                </a> -->
+                <button class="btn btn-transparent border-0 p-4px text-muted" type="button" data-dismiss="modal" aria-label="Close">
+                    <span class="icon icon-close is-24px" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+        <div class="modal-body">
+            <form name="translations_wrapper" method="post" action="">
+                <div id="translations_wrapper_lang_fr">
+                    <div class="form-group"> <label class="checkbox-custom font-weight-bold required" for="translations_wrapper_lang_fr_name">Nom</label>
+                        <input type="text" id="translations_wrapper_lang_fr_name" name="translations_wrapper[lang_fr][name]" required="required" data-hint="name" aria-describedby="translations_wrapper_lang_fr_name_help" class="form-control"> <small id="translations_wrapper_lang_fr_name_help" class="form-text text-muted">min 3 caractères, max 50 caractères</small>
+                    </div>
+                    <div class="form-group"> <label class="checkbox-custom font-weight-bold required" for="translations_wrapper_lang_fr_overview ">Description courte</label>
+                        <textarea id="translations_wrapper_lang_fr_overview" name="translations_wrapper[lang_fr][overview]" length="500" maxlength="500" data-hint="overview" aria-describedby="translations_wrapper_lang_fr_overview_help" rows="4" class="form-control" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 102px;"></textarea> <small id="translations_wrapper_lang_fr_overview_help" class="form-text text-muted">Juste une ou deux lignes pour décrire le projet.</small>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" >Impact</label>
+                        <div class="d-flex flex-wrap">
+                            <div class="custom-label">
+                                <input class="d-none clean" type="checkbox" id="translations_wrapper_lang_fr_impact_no" name="translations_wrapper[lang_fr][impact_no]" value="impact_no">
+                                <label class="p-5 d-flex flex-column" for="translations_wrapper_lang_fr_impact_no">
+                                    <span class="icon icon-close-thick is-md mb-3"></span>
+                                    <span class="text-truncate">No</span>
+                                </label>
+                            </div>
+                            <div class="custom-label">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_impact_sustainable" name="translations_wrapper[lang_fr][impact_sustainable]" value="impact_sustainable">
+                                <label class="p-5 d-flex flex-column" for="translations_wrapper_lang_fr_impact_sustainable">
+                                    <span class="icon icon-leaf is-md mb-3"></span>
+                                    <span class="text-truncate">Sustainable</span>
+                                </label>
+                            </div>
+                            <div class="custom-label">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_impact_equitable" name="translations_wrapper[lang_fr][impact_equitable]" value="impact_equitable">
+                                <label class="p-5 d-flex flex-column" for="translations_wrapper_lang_fr_impact_equitable">
+                                    <span class="icon icon-scale-balance is-md mb-3"></span>
+                                    <span class="text-truncate">Equitable</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" >Verticals</label>
+                        <div class="d-flex flex-wrap">
+                            <div class="custom-label">
+                                <input class="d-none clean" type="checkbox" id="translations_wrapper_lang_fr_vertical_no" name="translations_wrapper[lang_fr][vertical_no]" value="vertical_no">
+                                <label class="p-5 d-flex flex-column" for="translations_wrapper_lang_fr_vertical_no">
+                                    <span class="icon icon-close-thick is-md mb-3"></span>
+                                    <span class="text-truncate">No</span>
+                                </label>
+                            </div>
+                            <div class="custom-label">
+                                <input class="d-none" disabled checked type="checkbox" id="translations_wrapper_lang_fr_vertical_Peaople&food" name="translations_wrapper[lang_fr][vertical_Peaople&food]" value="vertical_Peaople&food">
+                                <label class="p-5 d-flex flex-column" for="translations_wrapper_lang_fr_vertical_Peaople&food">
+                                    <span class="icon icon-corn is-md mb-3"></span>
+                                    <span class="text-truncate">People & Food</span>
+                                </label>
+                            </div>
+                            <div class="custom-label">
+                                <input class="d-none" disabled type="checkbox" id="translations_wrapper_lang_fr_vertical_Deplastify" name="translations_wrapper[lang_fr][vertical_Deplastify]" value="vertical_Deplastify">
+                                <label class="p-5 d-flex flex-column" for="translations_wrapper_lang_fr_vertical_Deplastify">
+                                    <span class="icon icon-bottle-soda-classic-outline is-md mb-3"></span>
+                                    <span class="text-truncate">Deplastify & Circular Economy</span>
+                                </label>
+                            </div>
+                            <div class="custom-label">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_vertical_inclusion" name="translations_wrapper[lang_fr][vertical_inclusion]" value="vertical_inclusion">
+                                <label class="p-5 d-flex flex-column" for="translations_wrapper_lang_fr_vertical_inclusion">
+                                    <span class="icon icon-account-group is-md mb-3"></span>
+                                    <span class="text-truncate">Inclusion for Growth</span>
+                                </label>
+                            </div>
+                            <div class="custom-label">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_vertical_Other" name="translations_wrapper[lang_fr][vertical_Other]" value="vertical_Other">
+                                <label class="p-5 d-flex flex-column" for="translations_wrapper_lang_fr_vertical_Other">
+                                    <span class="icon icon-orbit is-md mb-3"></span>
+                                    <span class="text-truncate">Other</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" >SDGs</label>
+                        <div class="d-flex flex-wrap">
+                            <div class="custom-label custom-label--sdg">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd1" name="translations_wrapper[lang_fr][sdg_odd1]" value="sdg_odd1">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd1">
+                                    <img src= "../img/odd/F-WEB-Goal-01.png" alt="odd1"/>
+                                </label>
+                            </div>
+                            <div class="custom-label custom-label--sdg">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd2" name="translations_wrapper[lang_fr][sdg_odd2]" value="sdg_odd2">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd2">
+                                    <img src= "../img/odd/F-WEB-Goal-02.png" alt="odd2"/>
+                                </label>
+                            </div>
+                            <div class="custom-label custom-label--sdg">
+                                <input disabled class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd3" name="translations_wrapper[lang_fr][sdg_odd3]" value="sdg_odd3">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd3">
+                                    <img src= "../img/odd/F-WEB-Goal-03.png" alt="odd3"/>
+                                </label>
+                            </div>
+                            <div class="custom-label custom-label--sdg">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd4" name="translations_wrapper[lang_fr][sdg_odd3]" value="sdg_odd4">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd4">
+                                    <img src= "../img/odd/F-WEB-Goal-04.png" alt="odd4"/>
+                                </label>
+                            </div>
+                            <div class="custom-label custom-label--sdg">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd5" name="translations_wrapper[lang_fr][sdg_odd5]" value="sdg_odd5">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd5">
+                                    <img src= "../img/odd/F-WEB-Goal-05.png" alt="odd5"/>
+                                </label>
+                            </div>
+                            <div class="custom-label custom-label--sdg">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd6" name="translations_wrapper[lang_fr][sdg_odd6]" value="sdg_odd6">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd6">
+                                    <img src= "../img/odd/F-WEB-Goal-06.png" alt="odd6"/>
+                                </label>
+                            </div>
+                            <div class="custom-label custom-label--sdg">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd7" name="translations_wrapper[lang_fr][sdg_odd7]" value="sdg_odd7">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd7">
+                                    <img src= "../img/odd/F-WEB-Goal-07.png" alt="odd7"/>
+                                </label>
+                            </div>
+                            <div class="custom-label custom-label--sdg">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd8" name="translations_wrapper[lang_fr][sdg_odd8]" value="sdg_odd8">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd8">
+                                    <img src= "../img/odd/F-WEB-Goal-08.png" alt="odd8"/>
+                                </label>
+                            </div>
+                            <div class="custom-label custom-label--sdg">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd9" name="translations_wrapper[lang_fr][sdg_odd9]" value="sdg_odd9">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd9">
+                                    <img src= "../img/odd/F-WEB-Goal-09.png" alt="odd9"/>
+                                </label>
+                            </div>
+                            <div class="custom-label custom-label--sdg">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd10" name="translations_wrapper[lang_fr][sdg_odd10]" value="sdg_odd10">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd10">
+                                    <img src= "../img/odd/F-WEB-Goal-10.png" alt="odd1"/>
+                                </label>
+                            </div>
+                            <div class="custom-label custom-label--sdg">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd11" name="translations_wrapper[lang_fr][sdg_odd11]" value="sdg_odd11">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd11">
+                                    <img src= "../img/odd/F-WEB-Goal-11.png" alt="odd11"/>
+                                </label>
+                            </div>
+                            <div class="custom-label custom-label--sdg">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd12" name="translations_wrapper[lang_fr][sdg_odd12]" value="sdg_odd12">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd12">
+                                    <img src= "../img/odd/F-WEB-Goal-12.png" alt="odd12"/>
+                                </label>
+                            </div>
+                            <div class="custom-label custom-label--sdg">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd13" name="translations_wrapper[lang_fr][sdg_odd13]" value="sdg_odd13">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd13">
+                                    <img src= "../img/odd/F-WEB-Goal-13.png" alt="odd13"/>
+                                </label>
+                            </div>
+                            <div class="custom-label custom-label--sdg">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd14" name="translations_wrapper[lang_fr][sdg_odd14]" value="sdg_odd14">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd14">
+                                    <img src= "../img/odd/F-WEB-Goal-14.png" alt="odd14"/>
+                                </label>
+                            </div>
+                            <div class="custom-label custom-label--sdg">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd15" name="translations_wrapper[lang_fr][sdg_odd15]" value="sdg_odd15">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd15">
+                                    <img src= "../img/odd/F-WEB-Goal-15.png" alt="odd15"/>
+                                </label>
+                            </div>
+                            <div class="custom-label custom-label--sdg">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd16" name="translations_wrapper[lang_fr][sdg_odd16]" value="sdg_odd16">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd16">
+                                    <img src= "../img/odd/F-WEB-Goal-16.png" alt="odd16"/>
+                                </label>
+                            </div>
+                            <div class="custom-label custom-label--sdg">
+                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd17" name="translations_wrapper[lang_fr][sdg_odd17]" value="sdg_odd17">
+                                <label class="d-flex flex-column p-1" for="translations_wrapper_lang_fr_sdg_odd17">
+                                    <img src= "../img/odd/F-WEB-Goal-17.png" alt="odd17"/>
+                                </label>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" id="translations_wrapper__token" name="translations_wrapper[_token]" value="ecd887896.SN-WXDe3rF-mCWBCXEHEuJWOeUn0ZeT1m9lM_NBPI3g.cJX-DWj__jzMO1QpHwrw28q4My-HNbKY64x9ypN5dCcmlKRoUNnKZsFqOQ">
+            </form>
+        </div>
+        <div class="modal-footer border-top">
+            <div class="dropdown">
+                <a class="btn btn-default btn-lg dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>Options</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">
+                        <span class="dropdown-item--label">Open</span>
+                        <span class="dropdown-item--shortcut icon icon-arrow-top-right"></span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <span>Edit</span>
+                    </a>
+                    <a class="dropdown-item is-danger" href="#">
+                        <span>Delete</span>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex gap-8px ml-auto">
+                <a class="btn btn-lg btn-default" href="#">Discard changes</a>
+                <a class="btn btn-lg btn-primary" href="#">Save</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+$('.custom-label').find('input').change(function() {
+    if(this.checked) {
+        if($(this).hasClass('clean')){
+            $(this).parent().parent().find('input:not(.clean)').prop( "checked", false );
+        }
+        else{
+            $(this).parent().parent().find('input.clean').prop( "checked", false );
+        }
+    }
+});
+</script>
