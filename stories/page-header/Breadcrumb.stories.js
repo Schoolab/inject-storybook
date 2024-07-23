@@ -1,5 +1,5 @@
-// import { createBreadcrumb } from './components/breadcrumb.js';
-import breadcrumbHtml from "./components/breadcrumb.html";
+// import { createBreadcrumb } from './components/page-header/breadcrumb.js';
+import breadcrumbHtml from "../components/page-header/breadcrumb.html";
 
 export default {
     title: 'Components/Page Header',
@@ -10,7 +10,7 @@ export default {
 };
 // export const breadcrumb = () => createBreadcrumb();
 
-export const breadcrumb = () => breadcrumbHtml;
+export const Breadcrumb = () => breadcrumbHtml;
 
 
 

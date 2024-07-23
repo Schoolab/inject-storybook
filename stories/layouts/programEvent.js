@@ -1,9 +1,9 @@
 import navBar from '../components/navbars/default.html';
 import shortcutBar from '../components/shortcutBar-collapsed.html';
-import breadcrumb from "../components/breadcrumb.html";
+import breadcrumb from "../components/page-header/breadcrumb.html";
 import programContent from "../components/program-event-content.html";
-import applicationTitle from "../components/application-title-no-subnav.html";
-import applicationAside from "../components/application-aside-event.html";
+import applicationTitle from "../components/page-header/title-no-subnav.html";
+import applicationAside from "../components/asides/event.html";
 import { script } from "../utils/script.js";
 import {aside} from '../utils/aside.js'
 

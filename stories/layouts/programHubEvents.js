@@ -1,7 +1,7 @@
 import navBar from '../components/navbars/default.html';
 import content from "../components/programHub-events-content.html";
-import applicationTitle from "../components/application-title-no-subnav.html";
-import breadcrumb from "../components/breadcrumb.html";
+import applicationTitle from "../components/page-header/title-no-subnav.html";
+import breadcrumb from "../components/page-header/breadcrumb.html";
 import { script } from "../utils/script.js"
 
 export const createProgramHubEvents = () => {

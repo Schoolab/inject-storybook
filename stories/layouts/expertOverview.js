@@ -1,9 +1,9 @@
 import navBar from '../components/navbars/default.html';
 import shortcutBar from '../components/shortcutBar.html';
-import breadcrumb from "../components/breadcrumb.html";
+import breadcrumb from "../components/page-header/breadcrumb.html";
 import projectOverviewContent from "../components/expert-overview-content.html";
-import subNav  from "../components/subNav.html";
-import applicationTitle from "../components/application-title.html";
+import subNav  from "../components/page-header/subNav.html";
+import applicationTitle from "../components/page-header/title.html";
 import { script } from "../utils/script.js";
 
 export const createExpertOverview = () => {

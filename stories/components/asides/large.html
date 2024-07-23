@@ -1,9 +1,10 @@
 <aside class="application-aside is-large">    
     <div class="aside-content-container">
-        <div class="aside-header"> 
-            <h4 class="aside-title line-clamp-1">
+
+        <div class="aside-header">
+            <h3 class="aside-title line-clamp-1">
                 <span class="text-truncate">Title</span>
-            </h4>
+            </h3>
             <nav class="aside-nav nav nav-tabs">
                 <a href="#" class=" nav-link nav-item active" id="info-tab" data-toggle="tab" data-target="#info" type="button" role="tab" aria-controls="info" aria-selected="true">
                     <span>Info</span>
@@ -29,11 +30,12 @@
                 <a class="btn btn-transparent border-0 p-4px text-muted" data-toggle="tooltip" data-original-title="Open in new tab" href="#">
                     <span class="icon icon-arrow-top-right is-24px"></span>
                 </a>
-                <button class="btn btn-transparent border-0 p-4px text-muted" type="button" data-dismiss="modal" aria-label="Fermer">
+                <button class="btn btn-transparent border-0 p-4px text-muted close-aside" type="button" data-dismiss="aside" aria-label="Close">
                     <span class="icon icon-close is-24px" aria-hidden="true"></span>
                 </button>
             </div>
         </div>
+
         <div class="tab-content h-100" id="projectTabsContent">
             <div id="info" role="tabpanel" aria-labelledby="info-tab" class="tab-pane h-100 fade active show">
                 <div class="aside-body d-flex flex-column gap-16px">
@@ -51,6 +53,7 @@
                 </div>
             </div>
         </div>
+
         <div class="aside-footer">
             <div class="dropdown">
                 <a class="btn btn-default btn-lg dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -75,5 +78,6 @@
                 <a class="btn btn-lg btn-primary" href="#">Save</a>
             </div>
         </div>
+        
     </div>
 </aside>

@@ -1,10 +1,10 @@
 import navBar from '../components/navbars/default.html';
 import shortcutBar from '../components/shortcutBar-collapsed.html';
-import breadcrumb from "../components/breadcrumb.html";
+import breadcrumb from "../components/page-header/breadcrumb.html";
 import projectOverviewContent from "../components/jury-evaluation-content-user.html";
-import subNav  from "../components/subNav.html";
-import applicationTitle from "../components/application-title.html";
-import applicationAside from "../components/application-aside-jury.html";
+import subNav  from "../components/page-header/subNav.html";
+import applicationTitle from "../components/page-header/title.html";
+import applicationAside from "../components/asides/jury.html";
 import applicationFooter from "../components/application-footer.html";
 import { script } from "../utils/script.js"
 import {aside} from '../utils/aside.js'

@@ -1,8 +1,8 @@
 import navBar from '../components/navbars/default.html';
 import shortcutBar from '../components/shortcutBar.html';
-import breadcrumb from "../components/breadcrumb.html";
+import breadcrumb from "../components/page-header/breadcrumb.html";
 import programContent from "../components/expert-coaching-session-content.html";
-import applicationTitle from "../components/application-title-coaching-session.html";
+import applicationTitle from "../components/page-header/title-coaching-session.html";
 import { script } from "../utils/script.js";
 
 export const createExpertCoachingSession = () => {

@@ -1,11 +1,11 @@
 import navBar from '../components/navbars/default.html';
 import shortcutBar from '../components/shortcutBar-collapsed.html';
-import breadcrumb from "../components/breadcrumb.html";
+import breadcrumb from "../components/page-header/breadcrumb.html";
 import LearningModulesCapsule from "../components/learning-content-capsule.html";
-import subNav from "../components/subNav.html";
-import applicationTitle from "../components/application-title-no-desc.html";
+import subNav from "../components/page-header/subNav.html";
+import applicationTitle from "../components/page-header/title-no-desc.html";
 import applicationFooter from "../components/application-footer.html";
-import applicationAside from "../components/application-aside-capsules.html";
+import applicationAside from "../components/asides/capsules.html";
 import {script} from '../utils/script.js'
 import {aside} from '../utils/aside.js'
 

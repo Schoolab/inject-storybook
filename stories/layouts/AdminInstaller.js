@@ -1,7 +1,7 @@
 import navBar from '../components/navbars/default.html';
-import breadcrumb from "../components/breadcrumb.html";
+import breadcrumb from "../components/page-header/breadcrumb.html";
 import LearningModulesContent from "../components/admin-installer-content.html";
-import applicationTitle from "../components/application-title.html";
+import applicationTitle from "../components/page-header/title.html";
 import {script} from '../utils/script.js'
 
 export const createAdminInstaller = () => {

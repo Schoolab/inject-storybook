@@ -1,10 +1,10 @@
 import navBar from '../components/navbars/default.html';
 import shortcutBar from '../components/shortcutBar-collapsed.html';
 import sidebar from "../components/sidebar.html";
-import breadcrumb from "../components/breadcrumb.html";
+import breadcrumb from "../components/page-header/breadcrumb.html";
 import LearningModulesContent from "../components/manage-setup-content.html";
-import subNav from "../components/subNav.html";
-import applicationTitle from "../components/application-title.html";
+import subNav from "../components/page-header/subNav.html";
+import applicationTitle from "../components/page-header/title.html";
 import {script} from '../utils/script.js'
 
 export const createManageSetup = () => {

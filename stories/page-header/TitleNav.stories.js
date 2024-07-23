@@ -1,4 +1,4 @@
-import { createTitleNav } from './layouts/TitleNav.js';
+import { createTitleNav } from '../layouts/page-header/TitleNav.js';
 
 export default {
     title: 'Components/Page Header',
