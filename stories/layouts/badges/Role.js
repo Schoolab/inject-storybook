@@ -1,6 +1,6 @@
-import createBadgeHTML from '../components/badge-tag.html';
+import createBadgeHTML from '../../components/badges/role.html';
 
-import { script } from "../utils/script.js"
+import { script } from "../../utils/script.js"
 
 export const createBadge = () => {
   const createBadge = createBadgeHTML;

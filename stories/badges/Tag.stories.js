@@ -1,4 +1,4 @@
-import badgeHtml from "./components/badge-role.html";
+import badgeHtml from "../components/badges/tag.html";
 
 export default {
     title: 'Components/Badges',
@@ -8,4 +8,9 @@ export default {
       },
 };
 
-export const Role = () => badgeHtml;
+export const Tag = () => badgeHtml;
+
+
+
+
+

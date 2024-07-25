@@ -1,4 +1,4 @@
-import badgeHtml from "./components/badge-tag.html";
+import badgeHtml from "../components/badges/notif.html";
 
 export default {
     title: 'Components/Badges',
@@ -8,7 +8,7 @@ export default {
       },
 };
 
-export const Tag = () => badgeHtml;
+export const Notif = () => badgeHtml;
 
 
 
