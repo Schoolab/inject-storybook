@@ -22,74 +22,75 @@
                     <div class="form-group"> <label class="checkbox-custom font-weight-bold required" for="translations_wrapper_lang_fr_overview ">Description courte</label>
                         <textarea id="translations_wrapper_lang_fr_overview" name="translations_wrapper[lang_fr][overview]" length="500" maxlength="500" data-hint="overview" aria-describedby="translations_wrapper_lang_fr_overview_help" rows="4" class="form-control" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 102px;"></textarea> <small id="translations_wrapper_lang_fr_overview_help" class="form-text text-muted">Juste une ou deux lignes pour décrire le projet.</small>
                     </div>
-                    <div class="form-group">
-                        <label class="font-weight-bold" >Impact</label>
-                        <div class="d-flex flex-wrap">
-                            <div class="custom-label">
-                                <input class="d-none clean" type="checkbox" id="translations_wrapper_lang_fr_impact_no" name="translations_wrapper[lang_fr][impact_no]" value="impact_no">
-                                <label class="p-5 d-flex flex-column" for="translations_wrapper_lang_fr_impact_no">
-                                    <span class="icon icon-close-thick is-md mb-3"></span>
-                                    <span class="text-truncate">No</span>
-                                </label>
+                    <fieldset class="form-group">
+                        <legend class="label">Impact</legend>
+                        <div class="grid gap-xs mt-2xs" id="id-1">
+                            <div class="g-col-12 g-col-sm-6 g-col-md-4">
+                                <div class="flex-fill mb-lg-0 custom-control custom-control-card custom-checkbox">
+                                    <input type="checkbox" id="id-1_0" name="form1" class="custom-control-input" value="0">
+                                    <label class="text-nowrap custom-control-label custom-control-label d-flex flex-column gap-xs" for="id-1_0">
+                                        <span class="icon is-sm icon-cancel"></span>
+                                        <span>None</span>
+                                    </label>
+                                </div>
+                            </div>                   
+                            <div class="g-col-12 g-col-sm-6 g-col-md-4">
+                                <div class="flex-fill  mb-lg-0 custom-control custom-control-card custom-checkbox">
+                                    <input type="checkbox" id="id-1_1" name="form1" class="custom-control-input" value="1" checked="checked">
+                                    <label class="text-nowrap custom-control-label custom-control-label d-flex flex-column gap-xs" for="id-1_1">
+                                        <span class="icon is-sm icon-sprout"></span>
+                                        <span>Sustainable</span>
+                                    </label>
+                                </div>
                             </div>
-                            <div class="custom-label">
-                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_impact_sustainable" name="translations_wrapper[lang_fr][impact_sustainable]" value="impact_sustainable">
-                                <label class="p-5 d-flex flex-column" for="translations_wrapper_lang_fr_impact_sustainable">
-                                    <span class="icon icon-leaf is-md mb-3"></span>
-                                    <span class="text-truncate">Sustainable</span>
-                                </label>
-                            </div>
-                            <div class="custom-label">
-                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_impact_equitable" name="translations_wrapper[lang_fr][impact_equitable]" value="impact_equitable">
-                                <label class="p-5 d-flex flex-column" for="translations_wrapper_lang_fr_impact_equitable">
-                                    <span class="icon icon-scale-balance is-md mb-3"></span>
-                                    <span class="text-truncate">Equitable</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="font-weight-bold" >Verticals</label>
-                        <div class="d-flex flex-wrap">
-                            <div class="custom-label">
-                                <input class="d-none clean" type="checkbox" id="translations_wrapper_lang_fr_vertical_no" name="translations_wrapper[lang_fr][vertical_no]" value="vertical_no">
-                                <label class="p-5 d-flex flex-column" for="translations_wrapper_lang_fr_vertical_no">
-                                    <span class="icon icon-close-thick is-md mb-3"></span>
-                                    <span class="text-truncate">No</span>
-                                </label>
-                            </div>
-                            <div class="custom-label">
-                                <input class="d-none" disabled checked type="checkbox" id="translations_wrapper_lang_fr_vertical_Peaople&food" name="translations_wrapper[lang_fr][vertical_Peaople&food]" value="vertical_Peaople&food">
-                                <label class="p-5 d-flex flex-column" for="translations_wrapper_lang_fr_vertical_Peaople&food">
-                                    <span class="icon icon-corn is-md mb-3"></span>
-                                    <span class="text-truncate">People & Food</span>
-                                </label>
-                            </div>
-                            <div class="custom-label">
-                                <input class="d-none" disabled type="checkbox" id="translations_wrapper_lang_fr_vertical_Deplastify" name="translations_wrapper[lang_fr][vertical_Deplastify]" value="vertical_Deplastify">
-                                <label class="p-5 d-flex flex-column" for="translations_wrapper_lang_fr_vertical_Deplastify">
-                                    <span class="icon icon-bottle-soda-classic-outline is-md mb-3"></span>
-                                    <span class="text-truncate">Deplastify & Circular Economy</span>
-                                </label>
-                            </div>
-                            <div class="custom-label">
-                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_vertical_inclusion" name="translations_wrapper[lang_fr][vertical_inclusion]" value="vertical_inclusion">
-                                <label class="p-5 d-flex flex-column" for="translations_wrapper_lang_fr_vertical_inclusion">
-                                    <span class="icon icon-account-group is-md mb-3"></span>
-                                    <span class="text-truncate">Inclusion for Growth</span>
-                                </label>
-                            </div>
-                            <div class="custom-label">
-                                <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_vertical_Other" name="translations_wrapper[lang_fr][vertical_Other]" value="vertical_Other">
-                                <label class="p-5 d-flex flex-column" for="translations_wrapper_lang_fr_vertical_Other">
-                                    <span class="icon icon-orbit is-md mb-3"></span>
-                                    <span class="text-truncate">Other</span>
-                                </label>
+                           
+                            <div class="g-col-12 g-col-sm-6 g-col-md-4">
+                                <div class="flex-fill  mb-lg-0 custom-control custom-control-card custom-checkbox">
+                                    <input type="checkbox" id="id-1_2" name="form1" class="custom-control-input" value="2">
+                                    <label class="text-nowrap custom-control-label custom-control-label d-flex flex-column gap-xs" for="id-1_2">
+                                        <span class="icon is-sm icon-scale-balance"></span>
+                                        <span>Equitable</span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="font-weight-bold" >SDGs</label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <legend class="label">Verticals</legend>
+                        <div class="grid gap-xs mt-2xs" id="id-2">
+                            <div class="g-col-12 g-col-sm-6 g-col-md-4">
+                                <div class="flex-fill mb-lg-0 custom-control custom-control-card custom-checkbox">
+                                    <input type="checkbox" id="id-2_0" name="form2" class="custom-control-input" value="0">
+                                    <label class="text-nowrap custom-control-label custom-control-label d-flex flex-column gap-xs" for="id-2_0">
+                                        <span class="icon is-sm icon-recycle"></span>
+                                        <span>Plastic</span>
+                                    </label>
+                                </div>
+                            </div>
+                       
+                            <div class="g-col-12 g-col-sm-6 g-col-md-4">
+                                <div class="flex-fill mb-lg-0 custom-control custom-control-card custom-checkbox">
+                                    <input type="checkbox" id="id-2_1" name="form2" class="custom-control-input" value="1" checked="checked">
+                                    <label class="text-nowrap custom-control-label custom-control-label d-flex flex-column gap-xs" for="id-2_1">
+                                        <span class="icon is-sm icon-barley"></span>
+                                        <span>Food</span>
+                                    </label>
+                                </div>
+                            </div>
+                       
+                            <div class="g-col-12 g-col-sm-6 g-col-md-4">
+                                <div class="flex-fill mb-lg-0 custom-control custom-control-card custom-checkbox">
+                                    <input type="checkbox" id="id-2_2" name="form2" class="custom-control-input" value="2">
+                                    <label class="text-nowrap custom-control-label custom-control-label d-flex flex-column gap-xs" for="id-2_2">
+                                        <span class="icon is-sm icon-scale-balance"></span>
+                                        <span>DEI</span>
+                                    </label>
+                                </div>  
+                            </div>                            
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <legend class="label" >SDGs</legend>
                         <div class="d-flex flex-wrap">
                             <div class="custom-label custom-label--sdg">
                                 <input class="d-none" type="checkbox" id="translations_wrapper_lang_fr_sdg_odd1" name="translations_wrapper[lang_fr][sdg_odd1]" value="sdg_odd1">
@@ -195,7 +196,7 @@
                             </div>
                             
                         </div>
-                    </div>
+                    </fieldset>
                 </div>
                 <input type="hidden" id="translations_wrapper__token" name="translations_wrapper[_token]" value="ecd887896.SN-WXDe3rF-mCWBCXEHEuJWOeUn0ZeT1m9lM_NBPI3g.cJX-DWj__jzMO1QpHwrw28q4My-HNbKY64x9ypN5dCcmlKRoUNnKZsFqOQ">
             </form>
