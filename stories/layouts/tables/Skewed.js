@@ -56,7 +56,7 @@ export const createTables = () => {
       let thisTable = event.target.closest('table');
       thisTable.classList.remove('dropdowns-opened');
       $(thisTable).find('tr').removeClass('non-dropdown');
-    });        
+    });
   })
   
   return tables;
