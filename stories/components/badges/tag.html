@@ -1,121 +1,270 @@
 <div class="container py-64px d-flex flex-column gap-2xl">
-
-    <div class="badges is-small flex-nowrap">
-        <div class="badge badge-pill badge-tag is-small">Food</div>
-        <a class="badge badge-pill badge-tag is-small" href="#">Plastic</a>
-        <a class="badge badge-pill badge-tag is-small" href="#">DEI</a>
-        <span class="text-muted small text-nowrap">+2</span>
-    </div>
-
-    <div class="badges is-small flex-nowrap">
-        <div class="badge badge-pill badge-tag is-small is-open">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="6" cy="6" r="6" fill="currentColor"/>
-            </svg>
-            <span>Open</span>
+    
+    <div class="d-flex flex-column gap-sm">
+        
+        <h2>In cards</h2>
+        
+        <div id="verticals" class="badges is-small flex-nowrap">
+            <div class="badge badge-pill badge-tag is-small">Food</div>
+            <a class="badge badge-pill badge-tag is-small" href="#">Plastic</a>
+            <a class="badge badge-pill badge-tag is-small" href="#">DEI</a>
+            <span class="text-muted small text-nowrap">+2</span>
         </div>
-        <div class="badge badge-pill badge-tag is-small is-progress">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7969 7.55348L8.8987 6.77876C8.9642 6.53371 9 6.27334 9 6C9 5.72666 8.9642 5.46629 8.8987 5.22124L11.7969 4.44652C11.9294 4.94201 12 5.46276 12 6C12 6.53724 11.9294 7.05799 11.7969 7.55348ZM11.197 2.99952L8.60035 4.50194C8.33632 4.0456 7.9544 3.66368 7.49806 3.39965L9.00048 0.80297C9.91099 1.32978 10.6702 2.08901 11.197 2.99952ZM7.55348 0.203056L6.77876 3.1013C6.53371 3.0358 6.27334 3 6 3C5.72666 3 5.46629 3.0358 5.22124 3.1013L4.44652 0.203056C4.94201 0.0706099 5.46276 0 6 0C6.53724 0 7.05799 0.0706099 7.55348 0.203056ZM2.99952 0.80297L4.50194 3.39965C4.0456 3.66368 3.66368 4.0456 3.39965 4.50194L0.80297 2.99952C1.32978 2.08901 2.08901 1.32979 2.99952 0.80297ZM0.203056 4.44652C0.0706099 4.94201 0 5.46276 0 6C0 6.53724 0.0706099 7.05799 0.203056 7.55348L3.1013 6.77876C3.0358 6.53371 3 6.27334 3 6C3 5.72666 3.0358 5.46629 3.1013 5.22124L0.203056 4.44652ZM0.80297 9.00048L3.39965 7.49806C3.66368 7.9544 4.0456 8.33632 4.50194 8.60035L2.99952 11.197C2.08901 10.6702 1.32979 9.91099 0.80297 9.00048ZM4.44652 11.7969L5.22124 8.8987C5.46629 8.9642 5.72666 9 6 9C6.27334 9 6.53371 8.9642 6.77876 8.8987L7.55348 11.7969C7.05799 11.9294 6.53724 12 6 12C5.46276 12 4.94201 11.9294 4.44652 11.7969ZM9.00048 11.197L7.49806 8.60035C7.9544 8.33632 8.33632 7.9544 8.60035 7.49806L11.197 9.00048C10.6702 9.91099 9.91099 10.6702 9.00048 11.197Z" fill="currentColor"/>
-            </svg>
-            <span>In progress</span>
-        </div>
-        <div class="badge badge-pill badge-tag is-small is-closed">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12ZM3 5C2.44772 5 2 5.44772 2 6C2 6.55228 2.44772 7 3 7H9C9.55229 7 10 6.55228 10 6C10 5.44772 9.55229 5 9 5H3Z" fill="currentColor"/>
-            </svg>
-            <span>Closed</span>
-        </div>
-        <div class="badge badge-pill badge-tag is-small is-done">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="6" cy="6" r="6" fill="currentColor"/>
-            </svg>
-            <span>Done</span>
-        </div>
-        <div class="badge badge-pill badge-tag is-small is-draft">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 9C7.65685 9 9 7.65685 9 6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6C3 7.65685 4.34315 9 6 9ZM6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z" fill="currentColor"/>
-            </svg>
-            <span>Draft</span>
-        </div>
-    </div>
-
-    <div class="badges is-small flex-nowrap">
-        <div class="dropdown">
-            <a class="badge badge-pill badge-tag is-small is-open dropdown-toggle" data-toggle="dropdown" role="button" href="#">
+        
+        <div class="badges is-small flex-nowrap">
+            <div class="badge badge-pill badge-tag is-small is-open">
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="6" cy="6" r="6" fill="currentColor"/>
                 </svg>
                 <span>Open</span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-left">
-                <a class="dropdown-item active">Open</a>
-                <a class="dropdown-item">In progress</a>
-                <a class="dropdown-item">Closed</a>
-                <a class="dropdown-item">Done</a>
-                <a class="dropdown-item">Draft</a>
             </div>
-        </div>
-        <div class="dropdown">
-            <a class="badge badge-pill badge-tag is-small is-progress dropdown-toggle" data-toggle="dropdown" role="button" href="#">
+            <div class="badge badge-pill badge-tag is-small is-progress">
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7969 7.55348L8.8987 6.77876C8.9642 6.53371 9 6.27334 9 6C9 5.72666 8.9642 5.46629 8.8987 5.22124L11.7969 4.44652C11.9294 4.94201 12 5.46276 12 6C12 6.53724 11.9294 7.05799 11.7969 7.55348ZM11.197 2.99952L8.60035 4.50194C8.33632 4.0456 7.9544 3.66368 7.49806 3.39965L9.00048 0.80297C9.91099 1.32978 10.6702 2.08901 11.197 2.99952ZM7.55348 0.203056L6.77876 3.1013C6.53371 3.0358 6.27334 3 6 3C5.72666 3 5.46629 3.0358 5.22124 3.1013L4.44652 0.203056C4.94201 0.0706099 5.46276 0 6 0C6.53724 0 7.05799 0.0706099 7.55348 0.203056ZM2.99952 0.80297L4.50194 3.39965C4.0456 3.66368 3.66368 4.0456 3.39965 4.50194L0.80297 2.99952C1.32978 2.08901 2.08901 1.32979 2.99952 0.80297ZM0.203056 4.44652C0.0706099 4.94201 0 5.46276 0 6C0 6.53724 0.0706099 7.05799 0.203056 7.55348L3.1013 6.77876C3.0358 6.53371 3 6.27334 3 6C3 5.72666 3.0358 5.46629 3.1013 5.22124L0.203056 4.44652ZM0.80297 9.00048L3.39965 7.49806C3.66368 7.9544 4.0456 8.33632 4.50194 8.60035L2.99952 11.197C2.08901 10.6702 1.32979 9.91099 0.80297 9.00048ZM4.44652 11.7969L5.22124 8.8987C5.46629 8.9642 5.72666 9 6 9C6.27334 9 6.53371 8.9642 6.77876 8.8987L7.55348 11.7969C7.05799 11.9294 6.53724 12 6 12C5.46276 12 4.94201 11.9294 4.44652 11.7969ZM9.00048 11.197L7.49806 8.60035C7.9544 8.33632 8.33632 7.9544 8.60035 7.49806L11.197 9.00048C10.6702 9.91099 9.91099 10.6702 9.00048 11.197Z" fill="currentColor"/>
                 </svg>
                 <span>In progress</span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-left">
-                <a class="dropdown-item">Open</a>
-                <a class="dropdown-item active">In progress</a>
-                <a class="dropdown-item">Closed</a>
-                <a class="dropdown-item">Done</a>
-                <a class="dropdown-item">Draft</a>
             </div>
-        </div>
-        <div class="dropdown">
-            <a class="badge badge-pill badge-tag is-small is-closed dropdown-toggle" data-toggle="dropdown" role="button" href="#">
+            <div class="badge badge-pill badge-tag is-small is-closed">
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12ZM3 5C2.44772 5 2 5.44772 2 6C2 6.55228 2.44772 7 3 7H9C9.55229 7 10 6.55228 10 6C10 5.44772 9.55229 5 9 5H3Z" fill="currentColor"/>
                 </svg>
                 <span>Closed</span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-left">
-                <a class="dropdown-item">Open</a>
-                <a class="dropdown-item">In progress</a>
-                <a class="dropdown-item active">Closed</a>
-                <a class="dropdown-item">Done</a>
-                <a class="dropdown-item">Draft</a>
             </div>
-        </div>
-        <div class="dropdown">
-            <a class="badge badge-pill badge-tag is-small is-done dropdown-toggle" data-toggle="dropdown" role="button" href="#">
+            <div class="badge badge-pill badge-tag is-small is-done">
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="6" cy="6" r="6" fill="currentColor"/>
                 </svg>
                 <span>Done</span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-left">
-                <a class="dropdown-item">Open</a>
-                <a class="dropdown-item">In progress</a>
-                <a class="dropdown-item">Closed</a>
-                <a class="dropdown-item active">Done</a>
-                <a class="dropdown-item">Draft</a>
             </div>
-        </div>
-        <div class="dropdown">
-            <a class="badge badge-pill badge-tag is-small is-draft dropdown-toggle" data-toggle="dropdown" role="button" href="#">
+            <div class="badge badge-pill badge-tag is-small is-draft">
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6 9C7.65685 9 9 7.65685 9 6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6C3 7.65685 4.34315 9 6 9ZM6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z" fill="currentColor"/>
                 </svg>
                 <span>Draft</span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-left">
-                <a class="dropdown-item">Open</a>
-                <a class="dropdown-item">In progress</a>
-                <a class="dropdown-item">Closed</a>
-                <a class="dropdown-item">Done</a>
-                <a class="dropdown-item active">Draft</a>
             </div>
         </div>
+        
     </div>
+    
+    <div class="d-flex flex-column gap-sm">
+        
+        <h2>In tables</h2>
+        
+        <fieldset class="form-group">
+            <legend for="impact" class="label">Impact</legend>
+            <div id="impact" class="badges is-small flex-nowrap">
+                <div class="badge badge-pill badge-tag is-small">
+                    <span class="icon icon-cancel"></span>
+                    <span>None</span>
+                </div>
+                <div class="badge badge-pill badge-tag is-small">
+                    <span class="icon icon-help-circle"></span>
+                    <span>Not obvious</span>
+                </div>
+                <div class="badge badge-pill badge-tag is-small">
+                    <span class="icon icon-sprout"></span>
+                    <span>Native</span>
+                </div>
+                <div class="badge badge-pill badge-tag is-small">
+                    <span class="icon icon-bullhorn"></span>
+                    <span>Push</span>
+                </div>
+            </div>
+        </fieldset>
+        
+        <fieldset class="form-group">
+            <legend for="verticals" class="label">Verticals</legend>
+            <div id="verticals" class="badges is-small flex-nowrap">
+                <div class="badge badge-pill badge-tag is-small">
+                    <span class="icon icon-recycle"></span>
+                    <span>Food</span>
+                </div>
+                <div class="badge badge-pill badge-tag is-small">
+                    <span class="icon icon-help-circle"></span>
+                    <span>Plastic</span>
+                </div>
+                <div class="badge badge-pill badge-tag is-small">
+                    <span class="icon icon-sprout"></span>
+                    <span>DEI</span>
+                </div>
+            </div>
+        </fieldset>
 
+        <fieldset class="form-group">
+            <legend for="ecosystem" class="label">Ecosystem</legend>
+            <div id="ecosystem" class="badges is-small flex-nowrap">
+                <div class="badge badge-pill badge-tag is-small">
+                    <span class="icon icon-school"></span>
+                    <span>Student</span>
+                </div>
+                <div class="badge badge-pill badge-tag is-small">
+                    <span class="icon icon-rocket"></span>
+                    <span>Startups</span>
+                </div>
+                <div class="badge badge-pill badge-tag is-small">
+                    <span class="icon icon-briefcase"></span>
+                    <span>Corporate</span>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <legend for="sdgs" class="label">SDGs</legend>
+            <div id="sdgs" class="badges is-small flex-nowrap">
+                <div class="badge badge-pill badge-tag is-small">
+                    <div aria-hidden="true" class="icon icon--sdg is-sdg-1"><span>1</span></div>
+                    <span>No poverty</span>
+                </div>
+                <div class="badge badge-pill badge-tag is-small">
+                    <div aria-hidden="true" class="icon icon--sdg is-sdg-2"><span>2</span></div>
+                    <span>Zero hunger</span>
+                </div>
+                <div class="badge badge-pill badge-tag is-small">
+                    <div aria-hidden="true" class="icon icon--sdg is-sdg-3"><span>3</span></div>
+                    <span>Good health and well being</span>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <legend class="label">Organization Status</legend>
+            <div class="badges is-small flex-nowrap">
+                <div class="badges is-small flex-nowrap">
+                    <div class="badge badge-pill badge-tag is-small is-open">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6" cy="6" r="6" fill="currentColor"/>
+                        </svg>
+                        <span>Active</span>
+                    </div>
+                    <div class="badge badge-pill badge-tag is-small is-closed">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12ZM3 5C2.44772 5 2 5.44772 2 6C2 6.55228 2.44772 7 3 7H9C9.55229 7 10 6.55228 10 6C10 5.44772 9.55229 5 9 5H3Z" fill="currentColor"/>
+                        </svg>
+                        <span>Inactive</span>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <legend class="label">Read only</legend>
+            <div class="badges is-small flex-nowrap">
+                <div class="badges is-small flex-nowrap">
+                    <div class="badge badge-pill badge-tag is-small">
+                        <span class="icon icon-pencil text-success"></span>
+                        <span>Write</span>
+                    </div>
+                    <div class="badge badge-pill badge-tag is-small">
+                        <span class="icon icon-pencil-off text-danger"></span>
+                        <span>Read only</span>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <legend class="label">Visibility</legend>
+            <div class="badges is-small flex-nowrap">
+                <div class="badges is-small flex-nowrap">
+                    <div class="badge badge-pill badge-tag is-small">
+                        <span class="icon icon-eye"></span>
+                        <span>Public</span>
+                    </div>
+                    <div class="badge badge-pill badge-tag is-small">
+                        <span class="icon icon-eye-off"></span>
+                        <span>Private</span>
+                    </div>
+                    <div class="badge badge-pill badge-tag is-small">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.9642 9.55192L17.3598 9.5643C18.2736 9.56763 18.7305 9.5693 18.9736 9.75834C19.1853 9.92299 19.3103 10.1736 19.3153 10.4433C19.3211 10.7529 19.0504 11.1244 18.5089 11.8673L12.6659 19.8843C11.8141 21.053 11.3882 21.6373 11.0231 21.711C10.7076 21.7747 10.3855 21.6734 10.1716 21.4431C9.92406 21.1767 9.94602 20.4652 9.98995 19.0424L10.103 15.3794C10.1189 14.8661 10.1268 14.6095 10.0319 14.413C9.94846 14.2402 9.81113 14.0995 9.63961 14.011C9.44461 13.9104 9.18531 13.9094 8.6667 13.9075L5.27102 13.8952C4.35723 13.8918 3.90033 13.8902 3.65726 13.7011C3.44556 13.5365 3.32053 13.2859 3.31552 13.0162C3.30976 12.7066 3.58049 12.3351 4.12194 11.5922L9.96497 3.5752C10.8167 2.40651 11.2426 1.82217 11.6078 1.74845C11.9233 1.68474 12.2453 1.78606 12.4592 2.01634C12.7068 2.28282 12.6848 2.99424 12.6409 4.41709L12.5278 8.08004C12.512 8.59336 12.5041 8.85001 12.5989 9.04644C12.6824 9.21923 12.8197 9.35996 12.9913 9.44847C13.1863 9.54909 13.4456 9.55003 13.9642 9.55192Z" fill="#9C6FFC"/>
+                        </svg>                                                     
+                        <span>Admin</span>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <legend for="impact" class="label">Program Status</legend>
+            <div class="badges is-small flex-nowrap">
+                <div class="dropdown">
+                    <a class="badge badge-pill badge-tag is-small is-open dropdown-toggle" data-toggle="dropdown" role="button" href="#">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6" cy="6" r="6" fill="currentColor"/>
+                        </svg>
+                        <span>Open</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-left">
+                        <a class="dropdown-item active">Open</a>
+                        <a class="dropdown-item">In progress</a>
+                        <a class="dropdown-item">Closed</a>
+                        <a class="dropdown-item">Done</a>
+                        <a class="dropdown-item">Draft</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="badge badge-pill badge-tag is-small is-progress dropdown-toggle" data-toggle="dropdown" role="button" href="#">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7969 7.55348L8.8987 6.77876C8.9642 6.53371 9 6.27334 9 6C9 5.72666 8.9642 5.46629 8.8987 5.22124L11.7969 4.44652C11.9294 4.94201 12 5.46276 12 6C12 6.53724 11.9294 7.05799 11.7969 7.55348ZM11.197 2.99952L8.60035 4.50194C8.33632 4.0456 7.9544 3.66368 7.49806 3.39965L9.00048 0.80297C9.91099 1.32978 10.6702 2.08901 11.197 2.99952ZM7.55348 0.203056L6.77876 3.1013C6.53371 3.0358 6.27334 3 6 3C5.72666 3 5.46629 3.0358 5.22124 3.1013L4.44652 0.203056C4.94201 0.0706099 5.46276 0 6 0C6.53724 0 7.05799 0.0706099 7.55348 0.203056ZM2.99952 0.80297L4.50194 3.39965C4.0456 3.66368 3.66368 4.0456 3.39965 4.50194L0.80297 2.99952C1.32978 2.08901 2.08901 1.32979 2.99952 0.80297ZM0.203056 4.44652C0.0706099 4.94201 0 5.46276 0 6C0 6.53724 0.0706099 7.05799 0.203056 7.55348L3.1013 6.77876C3.0358 6.53371 3 6.27334 3 6C3 5.72666 3.0358 5.46629 3.1013 5.22124L0.203056 4.44652ZM0.80297 9.00048L3.39965 7.49806C3.66368 7.9544 4.0456 8.33632 4.50194 8.60035L2.99952 11.197C2.08901 10.6702 1.32979 9.91099 0.80297 9.00048ZM4.44652 11.7969L5.22124 8.8987C5.46629 8.9642 5.72666 9 6 9C6.27334 9 6.53371 8.9642 6.77876 8.8987L7.55348 11.7969C7.05799 11.9294 6.53724 12 6 12C5.46276 12 4.94201 11.9294 4.44652 11.7969ZM9.00048 11.197L7.49806 8.60035C7.9544 8.33632 8.33632 7.9544 8.60035 7.49806L11.197 9.00048C10.6702 9.91099 9.91099 10.6702 9.00048 11.197Z" fill="currentColor"/>
+                        </svg>
+                        <span>In progress</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-left">
+                        <a class="dropdown-item">Open</a>
+                        <a class="dropdown-item active">In progress</a>
+                        <a class="dropdown-item">Closed</a>
+                        <a class="dropdown-item">Done</a>
+                        <a class="dropdown-item">Draft</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="badge badge-pill badge-tag is-small is-closed dropdown-toggle" data-toggle="dropdown" role="button" href="#">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12ZM3 5C2.44772 5 2 5.44772 2 6C2 6.55228 2.44772 7 3 7H9C9.55229 7 10 6.55228 10 6C10 5.44772 9.55229 5 9 5H3Z" fill="currentColor"/>
+                        </svg>
+                        <span>Closed</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-left">
+                        <a class="dropdown-item">Open</a>
+                        <a class="dropdown-item">In progress</a>
+                        <a class="dropdown-item active">Closed</a>
+                        <a class="dropdown-item">Done</a>
+                        <a class="dropdown-item">Draft</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="badge badge-pill badge-tag is-small is-done dropdown-toggle" data-toggle="dropdown" role="button" href="#">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6" cy="6" r="6" fill="currentColor"/>
+                        </svg>
+                        <span>Done</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-left">
+                        <a class="dropdown-item">Open</a>
+                        <a class="dropdown-item">In progress</a>
+                        <a class="dropdown-item">Closed</a>
+                        <a class="dropdown-item active">Done</a>
+                        <a class="dropdown-item">Draft</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="badge badge-pill badge-tag is-small is-draft dropdown-toggle" data-toggle="dropdown" role="button" href="#">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 9C7.65685 9 9 7.65685 9 6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6C3 7.65685 4.34315 9 6 9ZM6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z" fill="currentColor"/>
+                        </svg>
+                        <span>Draft</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-left">
+                        <a class="dropdown-item">Open</a>
+                        <a class="dropdown-item">In progress</a>
+                        <a class="dropdown-item">Closed</a>
+                        <a class="dropdown-item">Done</a>
+                        <a class="dropdown-item active">Draft</a>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        
+    </div>
+    
 </div>
