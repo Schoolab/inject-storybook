@@ -20,11 +20,65 @@ export const script = () => {
         
         // Bootstrap Select
         document.addEventListener('DOMContentLoaded', function() {
-            $('select.custom-select:not(.filterSelect)').selectpicker({
+            // $('select.custom-select:not(.filterSelect)').selectpicker({
+            //     noneSelectedText: 'Nothing selected',
+            //     styleBase: 'btn btn-lg',
+            //     style: 'btn-default',
+            //     iconBase: 'dropdown-item--icon icon',
+            //     showTick: true,
+            //     tickIcon: 'icon-check',
+            //     noneResultsText: 'No results for “{0}”…',
+            //     liveSearch: true,
+            //     liveSearchPlaceholder: "Search…",
+            //     liveSearchNormalize: true,
+            //     virtualScroll: "400"
+            // });
+
+            $('select:not(.table-filter):not(.card-filter):not(.dropdown-card):not(.select-with-search):not(.filterSelect)').selectpicker({
+                width: false,
                 noneSelectedText: 'Nothing selected',
                 styleBase: 'btn btn-lg',
                 style: 'btn-default',
-                iconBase: 'dropdown-item--icon icon',
+                iconBase: 'icon',
+                showTick: true,
+                tickIcon: 'icon-check',
+            });
+    
+            $('select.table-filter').selectpicker({
+                width: 'fit',
+                noneSelectedText: 'Nothing selected',
+                styleBase: 'btn',
+                style: 'btn-transparent',
+                iconBase: 'icon',
+                showTick: true,
+                tickIcon: 'icon-check',
+            });
+    
+            $('select.card-filter').selectpicker({
+                width: 'fit',
+                noneSelectedText: 'Nothing selected',
+                styleBase: 'btn',
+                style: 'btn-link card-filter',
+                iconBase: 'icon',
+                showTick: true,
+                tickIcon: 'icon-check',
+            });
+    
+            $('select.dropdown-card').selectpicker({
+                width: false,
+                noneSelectedText: 'Nothing selected',
+                styleBase: 'btn',
+                style: 'btn-card',
+                iconBase: 'icon',
+                showTick: false
+            });
+    
+            $('select.select-with-search').selectpicker({
+                width: false,
+                noneSelectedText: 'Nothing selected',
+                styleBase: 'btn btn-lg',
+                style: 'btn-default',
+                iconBase: 'icon',
                 showTick: true,
                 tickIcon: 'icon-check',
                 noneResultsText: 'No results for “{0}”…',
