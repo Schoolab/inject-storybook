@@ -34,7 +34,7 @@ export const script = () => {
             //     virtualScroll: "400"
             // });
 
-            $('select:not(.table-filter):not(.card-filter):not(.dropdown-card):not(.select-with-search):not(.filterSelect)').selectpicker({
+            $('select:not(.table-filter):not(.card-filter):not(.dropdown-card):not(.select-with-search):not(.filterSelect):not(.custom-select-tags').selectpicker({
                 width: false,
                 noneSelectedText: 'Nothing selected',
                 styleBase: 'btn btn-lg',
