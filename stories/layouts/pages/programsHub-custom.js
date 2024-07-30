@@ -1,6 +1,6 @@
 import navBar from '../../components/navBar-custom-dark.html';
 import subNav  from "../../components/page-header/subNav-programsHub.html";
-import content from "../../components/programsHub-default-custom-content.html";
+import content from "../../components/pages/programsHub-default-custom-content.html";
 import { script } from "../../utils/script.js"
 
 export const createProgramHub = () => {

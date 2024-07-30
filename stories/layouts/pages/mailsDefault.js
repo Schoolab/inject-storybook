@@ -1,4 +1,4 @@
-import mailsDefaultContent from "../../components/mails-default-content.html";
+import mailsDefaultContent from "../../components/pages/mails-default-content.html";
 import { script } from "../../utils/script.js";
 
 export const createMailsDefault = () => {

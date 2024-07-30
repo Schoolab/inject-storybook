@@ -1,4 +1,4 @@
-import mailsQuestionContent from "../../components/mails-question-content.html";
+import mailsQuestionContent from "../../components/pages/mails-question-content.html";
 import { script } from "../../utils/script.js";
 
 export const createMailsQuestion = () => {

@@ -1,6 +1,6 @@
 import navBar from '../../components/navbars/default.html';
 import breadcrumb from "../../components/page-header/breadcrumb.html";
-import participationsContent from "../../components/participations-content.html";
+import participationsContent from "../../components/pages/participations-content.html";
 import applicationTitle from "../../components/page-header/title-no-btn.html";
 import { script } from "../../utils/script.js";
 

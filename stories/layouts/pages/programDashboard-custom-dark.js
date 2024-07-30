@@ -1,7 +1,7 @@
 import navBar from '../../components/navbars/custom-raiselab.html';
 import shortcutBar from '../../components/shortcut-bar/default.html';
 import breadcrumb from "../../components/page-header/breadcrumb.html";
-import programContent from "../../components/program-dashboard-content.html";
+import programContent from "../../components/pages/program-dashboard-content.html";
 import subNav   from "../../components/page-header/subNav.html";
 import applicationTitle from "../../components/page-header/title.html";
 import { script } from "../../utils/script.js";

@@ -1,4 +1,4 @@
-import { createAlertes } from './layouts/alertes.js';
+import { createAlertes } from './layouts/Alerts.js';
 
 export default {
     title: 'Components/Alertes',

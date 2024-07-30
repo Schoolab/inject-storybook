@@ -1,5 +1,5 @@
 
-import alertesHTML from '../components/alertes.html';
+import alertesHTML from '../components/alerts.html';
 
 import { script } from "../utils/script.js"
 

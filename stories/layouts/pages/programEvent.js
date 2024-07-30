@@ -1,7 +1,7 @@
 import navBar from '../../components/navbars/default.html';
 import shortcutBar from '../../components/shortcut-bar/collapsed.html';
 import breadcrumb from "../../components/page-header/breadcrumb.html";
-import programContent from "../../components/program-event-content.html";
+import programContent from "../../components/pages/program-event-content.html";
 import applicationTitle from "../../components/page-header/title-no-subnav.html";
 import applicationAside from "../../components/asides/event.html";
 import { script } from "../../utils/script.js";

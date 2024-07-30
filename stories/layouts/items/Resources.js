@@ -1,4 +1,4 @@
-import itemsHTML from '../../components/items/courses.html';
+import itemsHTML from '../../components/items/resources.html';
 
 import { script } from "../../utils/script.js"
 

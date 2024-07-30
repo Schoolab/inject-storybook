@@ -2,7 +2,7 @@ import navBar from '../../components/navbars/default.html';
 
 import sidebar from "../../components/sidebars/admin.html";
 import breadcrumb from "../../components/page-header/breadcrumb.html";
-import LearningModulesContent from "../../components/admin-programs-content.html";
+import LearningModulesContent from "../../components/pages/admin-programs-content.html";
 import subNav from "../../components/page-header/subNav.html";
 import applicationTitle from "../../components/page-header/title.html";
 import {script} from '../../utils/script.js'
