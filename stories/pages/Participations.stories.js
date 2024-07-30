@@ -1,0 +1,11 @@
+// import { createParticipation } from '../layouts/pages/participations.js';
+
+// export default {
+//     title: 'Pages/User/Participations',
+//     parameters: {
+//         // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
+//         layout: 'fullscreen',
+//       },
+// };
+
+// export const Participations = () => createParticipation();

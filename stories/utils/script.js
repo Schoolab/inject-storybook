@@ -34,8 +34,18 @@ export const script = () => {
             //     virtualScroll: "400"
             // });
 
-            $('select:not(.table-filter):not(.card-filter):not(.dropdown-card):not(.select-with-search):not(.filterSelect):not(.custom-select-tags').selectpicker({
+            $('.form-group select:not(.custom-select-tags)').selectpicker({
                 width: false,
+                noneSelectedText: 'Nothing selected',
+                styleBase: 'btn btn-lg',
+                style: 'btn-default',
+                iconBase: 'icon',
+                showTick: true,
+                tickIcon: 'icon-check',
+            });
+
+            $('select:not(.table-filter):not(.card-filter):not(.dropdown-card):not(.select-with-search):not(.filterSelect):not(.custom-select-tags)').selectpicker({
+                width: '100%',
                 noneSelectedText: 'Nothing selected',
                 styleBase: 'btn btn-lg',
                 style: 'btn-default',
