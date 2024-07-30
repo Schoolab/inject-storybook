@@ -1,4 +1,4 @@
-import { createSidebar } from '../layouts/sidebars/Old.js';
+import { createSidebar } from '../layouts/sidebars/ManageOld.js';
 
 export default {
     title: 'Components/Sidebar',
