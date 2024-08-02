@@ -117,11 +117,8 @@ export const script = () => {
                 plugins: ['remove_button', 'clear_button'],
                 render: {
                     item: function(item, escape) {
-                        return '<div class="badge badge-pill badge-tag is-small"><span>' + escape(item. name) + '</span></div>';
-                    },
-                    remove_button: function(item, escape) {
-                        return '<a href="javascript:void(0)" class="remove icon icon-close-circle" tabindex="-1" title="Remove"></a>';
-                    },
+                        return '<div class="badge badge-pill"><span>' + escape(item. name) + '</span></div>';
+                    }
                 },
                 create: function (input) {
                     return {

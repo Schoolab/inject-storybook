@@ -5,8 +5,8 @@
 @import '../../inject-css/css/main.css';
 
 @import './icon.css';
-@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
-@import url('https://demo.schoolab.tools/bundles/starrating/css/rating.css');
+/* @import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css'); */
+/* @import url('https://demo.schoolab.tools/bundles/starrating/css/rating.css'); */
 @import url('https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.4/b-flash-1.5.4/b-html5-1.5.4/b-print-1.5.4/r-2.2.2/datatables.min.css');
 
 /* Import Inter Font */
@@ -38,68 +38,4 @@
 
 pre {
     color: #fff;
-}
-.rating div.star,
-.rating span.star {
-    font-family: Font Awesome\ 5 Free;
-    font-size: 15px;
-    font-weight: 900
-}
-
-@media (max-width:992px) {
-
-    .rating div.star,
-    .rating span.star {
-        font-size: 20px
-    }
-}
-
-.rating div.star:before,
-.rating span.star:before {
-    content: "\f005";
-    font-weight: 400
-}
-
-.rating[disabled=disabled] div.star:before,
-.rating[disabled=disabled] span.star:before {
-    color: #eaeaea
-}
-
-.rating:not([disabled=disabled]) div.star:hover:before,
-.rating:not([disabled=disabled]) div.star:hover~div.star:before,
-.rating:not([disabled=disabled]) span.star:hover:before,
-.rating:not([disabled=disabled]) span.star:hover~span.star:before {
-    color: #ffe57f;
-    font-weight: 900
-}
-
-.rating div.star-full,
-.rating span.star-full {
-    font-family: Font Awesome\ 5 Free;
-    font-size: 15px;
-    font-weight: 900
-}
-
-@media (max-width:992px) {
-
-    .rating div.star-full,
-    .rating span.star-full {
-        font-size: 20px
-    }
-}
-
-.rating div.star-full:before,
-.rating span.star-full:before {
-    color: #ffd740
-}
-
-.rating div.star-empty,
-.rating span.star-empty {
-    font-family: Font Awesome\ 5 Free;
-    font-weight: 400
-}
-
-.rating div.star-empty:before,
-.rating span.star-empty:before {
-    content: "\f005"
 }
