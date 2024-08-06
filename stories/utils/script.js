@@ -34,7 +34,7 @@ export const script = () => {
             //     virtualScroll: "400"
             // });
 
-            $('.form-group select:not(.custom-select-tags)').selectpicker({
+            $('.form-group select:not(.custom-select-tags):not(.filterSelect)').selectpicker({
                 width: false,
                 noneSelectedText: 'Nothing selected',
                 styleBase: 'btn btn-lg',
