@@ -1,0 +1,1668 @@
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .preview {
+            width: 100px;
+            display: inline-block;
+            margin: 10px;
+        }
+        .preview .inner {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background: #f5f5f5;
+            -webkit-border-radius: 3px 3px 0 0;
+            -moz-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0;
+        }
+        .preview .inner  {
+            line-height: 85px;
+            font-size: 40px;
+            color: #333;
+        }
+        .label {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 10px;
+            font-family: Monaco, monospace;
+            color: #666;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background: #ddd;
+            -webkit-border-radius: 0 0 3px 3px;
+            -moz-border-radius: 0 0 3px 3px;
+            border-radius: 0 0 3px 3px;
+            color: #666;
+        }
+    </style>
+
+
+    <h1>inject-icons</h1>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-youtube"></span>
+            </span>
+            <br>
+            <span class='label'>youtube</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-work"></span>
+            </span>
+            <br>
+            <span class='label'>work</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-votes"></span>
+            </span>
+            <br>
+            <span class='label'>votes</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-volume_on"></span>
+            </span>
+            <br>
+            <span class='label'>volume_on</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-volume_off"></span>
+            </span>
+            <br>
+            <span class='label'>volume_off</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-view-dashboard"></span>
+            </span>
+            <br>
+            <span class='label'>view-dashboard</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-unfold-more-horizontal"></span>
+            </span>
+            <br>
+            <span class='label'>unfold-more-horizontal</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-undo"></span>
+            </span>
+            <br>
+            <span class='label'>undo</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-translate"></span>
+            </span>
+            <br>
+            <span class='label'>translate</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-translate-generate"></span>
+            </span>
+            <br>
+            <span class='label'>translate-generate</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-toolbox"></span>
+            </span>
+            <br>
+            <span class='label'>toolbox</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-tone"></span>
+            </span>
+            <br>
+            <span class='label'>tone</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-timeline"></span>
+            </span>
+            <br>
+            <span class='label'>timeline</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-time"></span>
+            </span>
+            <br>
+            <span class='label'>time</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-thumb-up"></span>
+            </span>
+            <br>
+            <span class='label'>thumb-up</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-thumb-down"></span>
+            </span>
+            <br>
+            <span class='label'>thumb-down</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-text"></span>
+            </span>
+            <br>
+            <span class='label'>text</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-tag"></span>
+            </span>
+            <br>
+            <span class='label'>tag</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-table"></span>
+            </span>
+            <br>
+            <span class='label'>table</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-tab"></span>
+            </span>
+            <br>
+            <span class='label'>tab</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-summarize"></span>
+            </span>
+            <br>
+            <span class='label'>summarize</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-star"></span>
+            </span>
+            <br>
+            <span class='label'>star</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-star-outline"></span>
+            </span>
+            <br>
+            <span class='label'>star-outline</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-spellcheck"></span>
+            </span>
+            <br>
+            <span class='label'>spellcheck</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-sort-descending"></span>
+            </span>
+            <br>
+            <span class='label'>sort-descending</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-sort-ascending"></span>
+            </span>
+            <br>
+            <span class='label'>sort-ascending</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-shorter-text"></span>
+            </span>
+            <br>
+            <span class='label'>shorter-text</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-service-saml"></span>
+            </span>
+            <br>
+            <span class='label'>service-saml</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-send_circle"></span>
+            </span>
+            <br>
+            <span class='label'>send_circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-send"></span>
+            </span>
+            <br>
+            <span class='label'>send</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-school"></span>
+            </span>
+            <br>
+            <span class='label'>school</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-restore"></span>
+            </span>
+            <br>
+            <span class='label'>restore</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-redo"></span>
+            </span>
+            <br>
+            <span class='label'>redo</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-rating"></span>
+            </span>
+            <br>
+            <span class='label'>rating</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-radiobox-marked"></span>
+            </span>
+            <br>
+            <span class='label'>radiobox-marked</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-questionnaire"></span>
+            </span>
+            <br>
+            <span class='label'>questionnaire</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-point"></span>
+            </span>
+            <br>
+            <span class='label'>point</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-plus"></span>
+            </span>
+            <br>
+            <span class='label'>plus</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-plus-circle"></span>
+            </span>
+            <br>
+            <span class='label'>plus-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-play"></span>
+            </span>
+            <br>
+            <span class='label'>play</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-play-circle"></span>
+            </span>
+            <br>
+            <span class='label'>play-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-pin"></span>
+            </span>
+            <br>
+            <span class='label'>pin</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-pencil"></span>
+            </span>
+            <br>
+            <span class='label'>pencil</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-pencil-off"></span>
+            </span>
+            <br>
+            <span class='label'>pencil-off</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-pause"></span>
+            </span>
+            <br>
+            <span class='label'>pause</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-paste"></span>
+            </span>
+            <br>
+            <span class='label'>paste</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-org"></span>
+            </span>
+            <br>
+            <span class='label'>org</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-notifications"></span>
+            </span>
+            <br>
+            <span class='label'>notifications</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-notifications-paused"></span>
+            </span>
+            <br>
+            <span class='label'>notifications-paused</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-notifications-off"></span>
+            </span>
+            <br>
+            <span class='label'>notifications-off</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-notifications-none"></span>
+            </span>
+            <br>
+            <span class='label'>notifications-none</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-notifications-active"></span>
+            </span>
+            <br>
+            <span class='label'>notifications-active</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-newspaper"></span>
+            </span>
+            <br>
+            <span class='label'>newspaper</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-minus"></span>
+            </span>
+            <br>
+            <span class='label'>minus</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-minus-circle"></span>
+            </span>
+            <br>
+            <span class='label'>minus-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-menu"></span>
+            </span>
+            <br>
+            <span class='label'>menu</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-menu-down"></span>
+            </span>
+            <br>
+            <span class='label'>menu-down</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-medal"></span>
+            </span>
+            <br>
+            <span class='label'>medal</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-markdown"></span>
+            </span>
+            <br>
+            <span class='label'>markdown</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-magnify"></span>
+            </span>
+            <br>
+            <span class='label'>magnify</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-longer-text"></span>
+            </span>
+            <br>
+            <span class='label'>longer-text</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-lock"></span>
+            </span>
+            <br>
+            <span class='label'>lock</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-location"></span>
+            </span>
+            <br>
+            <span class='label'>location</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-link"></span>
+            </span>
+            <br>
+            <span class='label'>link</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-link-plus"></span>
+            </span>
+            <br>
+            <span class='label'>link-plus</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-link-off"></span>
+            </span>
+            <br>
+            <span class='label'>link-off</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-lightning-bolt"></span>
+            </span>
+            <br>
+            <span class='label'>lightning-bolt</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-lifebuoy"></span>
+            </span>
+            <br>
+            <span class='label'>lifebuoy</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-library"></span>
+            </span>
+            <br>
+            <span class='label'>library</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-language"></span>
+            </span>
+            <br>
+            <span class='label'>language</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-label"></span>
+            </span>
+            <br>
+            <span class='label'>label</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-intelligence"></span>
+            </span>
+            <br>
+            <span class='label'>intelligence</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-information"></span>
+            </span>
+            <br>
+            <span class='label'>information</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-information-outline"></span>
+            </span>
+            <br>
+            <span class='label'>information-outline</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-improve-writing"></span>
+            </span>
+            <br>
+            <span class='label'>improve-writing</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-image_plus"></span>
+            </span>
+            <br>
+            <span class='label'>image_plus</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-image"></span>
+            </span>
+            <br>
+            <span class='label'>image</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-home"></span>
+            </span>
+            <br>
+            <span class='label'>home</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-help"></span>
+            </span>
+            <br>
+            <span class='label'>help</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-gavel"></span>
+            </span>
+            <br>
+            <span class='label'>gavel</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-folder"></span>
+            </span>
+            <br>
+            <span class='label'>folder</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-filter-variant"></span>
+            </span>
+            <br>
+            <span class='label'>filter-variant</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-faq"></span>
+            </span>
+            <br>
+            <span class='label'>faq</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-eye"></span>
+            </span>
+            <br>
+            <span class='label'>eye</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-eye-off"></span>
+            </span>
+            <br>
+            <span class='label'>eye-off</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-email"></span>
+            </span>
+            <br>
+            <span class='label'>email</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-drag"></span>
+            </span>
+            <br>
+            <span class='label'>drag</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-download"></span>
+            </span>
+            <br>
+            <span class='label'>download</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-dots-vertical"></span>
+            </span>
+            <br>
+            <span class='label'>dots-vertical</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-delete"></span>
+            </span>
+            <br>
+            <span class='label'>delete</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-cut"></span>
+            </span>
+            <br>
+            <span class='label'>cut</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-copy"></span>
+            </span>
+            <br>
+            <span class='label'>copy</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-console"></span>
+            </span>
+            <br>
+            <span class='label'>console</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-comment"></span>
+            </span>
+            <br>
+            <span class='label'>comment</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-cog"></span>
+            </span>
+            <br>
+            <span class='label'>cog</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-code"></span>
+            </span>
+            <br>
+            <span class='label'>code</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-cloud-download"></span>
+            </span>
+            <br>
+            <span class='label'>cloud-download</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-close"></span>
+            </span>
+            <br>
+            <span class='label'>close</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-close-circle"></span>
+            </span>
+            <br>
+            <span class='label'>close-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-clipboard-text"></span>
+            </span>
+            <br>
+            <span class='label'>clipboard-text</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-chevron-up"></span>
+            </span>
+            <br>
+            <span class='label'>chevron-up</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-chevron-right"></span>
+            </span>
+            <br>
+            <span class='label'>chevron-right</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-chevron-left"></span>
+            </span>
+            <br>
+            <span class='label'>chevron-left</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-chevron-down"></span>
+            </span>
+            <br>
+            <span class='label'>chevron-down</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-checklist"></span>
+            </span>
+            <br>
+            <span class='label'>checklist</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-checkbox-marked"></span>
+            </span>
+            <br>
+            <span class='label'>checkbox-marked</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-check"></span>
+            </span>
+            <br>
+            <span class='label'>check</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-check-circle"></span>
+            </span>
+            <br>
+            <span class='label'>check-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-chart-pie"></span>
+            </span>
+            <br>
+            <span class='label'>chart-pie</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-chart-line"></span>
+            </span>
+            <br>
+            <span class='label'>chart-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-calendar"></span>
+            </span>
+            <br>
+            <span class='label'>calendar</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-calendar-blank"></span>
+            </span>
+            <br>
+            <span class='label'>calendar-blank</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-bullseye-arrow"></span>
+            </span>
+            <br>
+            <span class='label'>bullseye-arrow</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-bookmark"></span>
+            </span>
+            <br>
+            <span class='label'>bookmark</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-bookmark-outline"></span>
+            </span>
+            <br>
+            <span class='label'>bookmark-outline</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-book-open-variant"></span>
+            </span>
+            <br>
+            <span class='label'>book-open-variant</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-board"></span>
+            </span>
+            <br>
+            <span class='label'>board</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-attachment_add"></span>
+            </span>
+            <br>
+            <span class='label'>attachment_add</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-attachment"></span>
+            </span>
+            <br>
+            <span class='label'>attachment</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-attachment-generate"></span>
+            </span>
+            <br>
+            <span class='label'>attachment-generate</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-arrow-top-right"></span>
+            </span>
+            <br>
+            <span class='label'>arrow-top-right</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-arrow-left"></span>
+            </span>
+            <br>
+            <span class='label'>arrow-left</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-alert"></span>
+            </span>
+            <br>
+            <span class='label'>alert</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-alert-decagram"></span>
+            </span>
+            <br>
+            <span class='label'>alert-decagram</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-alert-circle"></span>
+            </span>
+            <br>
+            <span class='label'>alert-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-account"></span>
+            </span>
+            <br>
+            <span class='label'>account</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-account-supervisor-circle"></span>
+            </span>
+            <br>
+            <span class='label'>account-supervisor-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-account-plus"></span>
+            </span>
+            <br>
+            <span class='label'>account-plus</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-account-multiple"></span>
+            </span>
+            <br>
+            <span class='label'>account-multiple</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-account-group"></span>
+            </span>
+            <br>
+            <span class='label'>account-group</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-account-circle"></span>
+            </span>
+            <br>
+            <span class='label'>account-circle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-vertical-plastic"></span>
+            </span>
+            <br>
+            <span class='label'>vertical-plastic</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-vertical-food"></span>
+            </span>
+            <br>
+            <span class='label'>vertical-food</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-vertical-dei"></span>
+            </span>
+            <br>
+            <span class='label'>vertical-dei</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-status-warning"></span>
+            </span>
+            <br>
+            <span class='label'>status-warning</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-status-stop"></span>
+            </span>
+            <br>
+            <span class='label'>status-stop</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-status-iddle"></span>
+            </span>
+            <br>
+            <span class='label'>status-iddle</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-status-filled"></span>
+            </span>
+            <br>
+            <span class='label'>status-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-status-dashed"></span>
+            </span>
+            <br>
+            <span class='label'>status-dashed</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-status-bordered"></span>
+            </span>
+            <br>
+            <span class='label'>status-bordered</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-role-visitor"></span>
+            </span>
+            <br>
+            <span class='label'>role-visitor</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-role-participant"></span>
+            </span>
+            <br>
+            <span class='label'>role-participant</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-role-manager"></span>
+            </span>
+            <br>
+            <span class='label'>role-manager</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-role-jury"></span>
+            </span>
+            <br>
+            <span class='label'>role-jury</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-role-expert"></span>
+            </span>
+            <br>
+            <span class='label'>role-expert</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-role-admin"></span>
+            </span>
+            <br>
+            <span class='label'>role-admin</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-plan-native"></span>
+            </span>
+            <br>
+            <span class='label'>plan-native</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-plan-data"></span>
+            </span>
+            <br>
+            <span class='label'>plan-data</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-impact-push"></span>
+            </span>
+            <br>
+            <span class='label'>impact-push</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-impact-not-obvious"></span>
+            </span>
+            <br>
+            <span class='label'>impact-not-obvious</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-impact-none"></span>
+            </span>
+            <br>
+            <span class='label'>impact-none</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-impact-native"></span>
+            </span>
+            <br>
+            <span class='label'>impact-native</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-format-underlined"></span>
+            </span>
+            <br>
+            <span class='label'>format-underlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-format-title"></span>
+            </span>
+            <br>
+            <span class='label'>format-title</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-format-strikethrough"></span>
+            </span>
+            <br>
+            <span class='label'>format-strikethrough</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-format-size"></span>
+            </span>
+            <br>
+            <span class='label'>format-size</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-format-quote"></span>
+            </span>
+            <br>
+            <span class='label'>format-quote</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-format-list-numbered"></span>
+            </span>
+            <br>
+            <span class='label'>format-list-numbered</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-format-list-bulleted"></span>
+            </span>
+            <br>
+            <span class='label'>format-list-bulleted</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-format-italic"></span>
+            </span>
+            <br>
+            <span class='label'>format-italic</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-format-color-text"></span>
+            </span>
+            <br>
+            <span class='label'>format-color-text</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-format-color-fill"></span>
+            </span>
+            <br>
+            <span class='label'>format-color-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-format-clear"></span>
+            </span>
+            <br>
+            <span class='label'>format-clear</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-format-bold"></span>
+            </span>
+            <br>
+            <span class='label'>format-bold</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-format-align-right"></span>
+            </span>
+            <br>
+            <span class='label'>format-align-right</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-format-align-left"></span>
+            </span>
+            <br>
+            <span class='label'>format-align-left</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-format-align-justify"></span>
+            </span>
+            <br>
+            <span class='label'>format-align-justify</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-format-align-center"></span>
+            </span>
+            <br>
+            <span class='label'>format-align-center</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-file-zip-box"></span>
+            </span>
+            <br>
+            <span class='label'>file-zip-box</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-file-word-box"></span>
+            </span>
+            <br>
+            <span class='label'>file-word-box</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-file-presentation-box"></span>
+            </span>
+            <br>
+            <span class='label'>file-presentation-box</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-file-powerpoint-box"></span>
+            </span>
+            <br>
+            <span class='label'>file-powerpoint-box</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-file-play-box"></span>
+            </span>
+            <br>
+            <span class='label'>file-play-box</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-file-pdf-box"></span>
+            </span>
+            <br>
+            <span class='label'>file-pdf-box</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-file-google-spreadsheet"></span>
+            </span>
+            <br>
+            <span class='label'>file-google-spreadsheet</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-file-excel-box"></span>
+            </span>
+            <br>
+            <span class='label'>file-excel-box</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-file-document-box"></span>
+            </span>
+            <br>
+            <span class='label'>file-document-box</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-ecosystem-student"></span>
+            </span>
+            <br>
+            <span class='label'>ecosystem-student</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-ecosystem-startups"></span>
+            </span>
+            <br>
+            <span class='label'>ecosystem-startups</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <span class="icon icon-ecosystem-corporate"></span>
+            </span>
+            <br>
+            <span class='label'>ecosystem-corporate</span>
+        </div>
