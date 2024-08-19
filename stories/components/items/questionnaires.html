@@ -7,7 +7,7 @@
                 <div class="item is-small is-bordered gap-0px">
                     <div class="item-row gap-xs pb-8px" data-toggle="collapse" data-target="#question1" aria-expanded="false">
                         <div class="d-flex p-3xs text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Short text" data-boundary="window">
-                            <span class="icon icon-format-size is-20px"></span>
+                            <span class="icon icon-text-input is-20px"></span>
                         </div>
                         <div class="item-content d-flex flex-column align-items-start">
                             <h4 class="item-title">
@@ -89,7 +89,7 @@
                             
                             <div class="form-group">
                                 <label class="checkbox-custom font-weight-bold required" for="type">Type</label>
-                                <select id="type" class="custom-select">
+                                <select id="type" class=" form-control custom-select">
                                     <option selected value="short">Short text</option>
                                     <option value="long">Long text</option>
                                     <option value="unique-select">Unique choice (select)</option>
@@ -126,7 +126,7 @@
                                 </div>
                                 <div class="form-group col-lg-6">
                                     <label class="font-weight-bold required" for="text_type_verification">Text type verification</label>
-                                    <select id="text_type_verification"  required="required" aria-describedby="text_type_verification_help" class="custom-select">
+                                    <select id="text_type_verification" required="required" aria-describedby="text_type_verification_help" class=" form-control custom-select">
                                         <option selected value="none">No verification</option>
                                         <hr>
                                         <optgroup label="Texts">
@@ -170,7 +170,7 @@
                             <!-- Hide unless show_insights checked -->
                             <div class="form-group">
                                 <label class="font-weight-bold required" for="insights_chart_type">Insights chart type</label>
-                                <select id="insights_chart_type"  required="required" aria-describedby="insights_chart_type_help" class="custom-select">
+                                <select id="insights_chart_type" required="required" aria-describedby="insights_chart_type_help" class=" form-control custom-select">
                                     <option selected value="pie">Pie chart</option>
                                     <option value="bar">Bar chart</option>
                                     <option value="radar">Radar chart</option>
@@ -205,7 +205,7 @@
                     <div class="item is-small is-bordered gap-0px">
                         <div class="item-row gap-xs pb-8px" data-toggle="collapse" data-target="#question2" aria-expanded="false">
                             <div class="d-flex p-3xs text-muted" data-toggle="tooltip" data-placement="top" data-original-title="Short text" data-boundary="window">
-                                <span class="icon icon-format-size is-20px"></span>
+                                <span class="icon icon-text-input is-20px"></span>
                             </div>
                             <div class="item-content d-flex flex-column align-items-start">
                                 <h4 class="item-title">
@@ -287,7 +287,7 @@
                                 
                                 <div class="form-group">
                                     <label class="checkbox-custom font-weight-bold required" for="type">Type</label>
-                                    <select id="type" class="custom-select">
+                                    <select id="type" class=" form-control custom-select">
                                         <option selected value="short">Short text</option>
                                         <option value="long">Long text</option>
                                         <option value="unique-select">Unique choice (select)</option>
@@ -324,24 +324,23 @@
                                     </div>
                                     <div class="form-group col-lg-6">
                                         <label class="font-weight-bold required" for="text_type_verification">Text type verification</label>
-                                        <select id="text_type_verification"  required="required" aria-describedby="text_type_verification_help" class="custom-select">
+                                        <select id="text_type_verification" required="required" aria-describedby="text_type_verification_help" class=" form-control custom-select">
                                             <option selected value="none">No verification</option>
-                                            <hr>
                                             <optgroup label="Texts">
-                                                <option value="text">Text</option>
-                                                <option value="email">Email</option>
-                                                <option value="url">URL</option>
+                                                <option data-icon="icon-text-input" value="text">Text</option>
+                                                <option data-icon="icon-email" value="email">Email</option>
+                                                <option data-icon="icon-link" value="url">URL</option>
                                             </optgroup>
                                             <optgroup label="Numbers">
-                                                <option value="tel">Phone</option>
-                                                <option value="number">Number</option>
+                                                <option data-icon="icon-phone" value="tel">Phone</option>
+                                                <option data-icon="icon-numbers" value="number">Number</option>
                                             </optgroup>
                                             <optgroup label="Dates">
-                                                <option value="date">Date</option>
-                                                <option value="time">Time</option>
-                                                <option value="datetime">DateTime</option>
-                                                <option value="month">Month</option>
-                                                <option value="week">Week</option>
+                                                <option data-icon="icon-calendar" value="date">Date</option>
+                                                <option data-icon="icon-time" value="time">Time</option>
+                                                <option data-icon="icon-time" value="datetime">DateTime</option>
+                                                <option data-icon="icon-calendar-blank" value="month">Month</option>
+                                                <option data-icon="icon-calendar-blank" value="week">Week</option>
                                             </optgroup>
                                         </select>
                                         <!-- types: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email -->
@@ -368,7 +367,7 @@
                                 <!-- Hide unless show_insights checked -->
                                 <div class="form-group">
                                     <label class="font-weight-bold required" for="insights_chart_type">Insights chart type</label>
-                                    <select id="insights_chart_type"  required="required" aria-describedby="insights_chart_type_help" class="custom-select">
+                                    <select id="insights_chart_type" required="required" aria-describedby="insights_chart_type_help" class=" form-control custom-select">
                                         <option selected value="pie">Pie chart</option>
                                         <option value="bar">Bar chart</option>
                                         <option value="radar">Radar chart</option>
@@ -390,6 +389,20 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Types</h3>
+                <div class="d-flex gap-md">
+                    <span class="icon icon-text-input is-24px"></span>
+                    <span class="icon icon-radiobox-marked is-24px"></span>
+                    <span class="icon icon-checkbox-marked is-24px"></span>
+                    <span class="icon icon-checklist is-24px"></span>
+                    <span class="icon icon-attachment is-24px"></span>
+                    <span class="icon icon-link is-24px"></span>
+                    <span class="icon icon-rating is-24px"></span>
+                    <span class="icon icon-votes is-24px"></span>
                 </div>
             </div>
 

@@ -1,1668 +1,1570 @@
+<style>
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: .5rem 1rem;
+        text-align: center;
+    }
+    .previews {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .preview {
+        position: relative;
+        width: 6rem;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        row-gap: 0;
+        padding: .5rem;
+        background-color: #fff;
+        border-radius: .5rem;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .preview::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: .5rem;
+        pointer-events: none;
+    }
+    .preview:hover {
+        background-color: #F5F5F5;
+    }
+    .preview:hover::before {
+        border: 1px solid rgba(0,0,0,.25);
+    }
+    .preview .inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 4rem;
+        text-align: center;
+    }
+    .preview .inner  {
+        line-height: 1.5rem;
+        font-size: 1.5rem;
+        color: #0F0F0F;
+    }
+    .preview-label {
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: .75rem;
+        line-height: 1rem;
+        font-family: Monaco, monospace;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #AAA;
+    }
+</style>
 
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        .preview {
-            width: 100px;
-            display: inline-block;
-            margin: 10px;
-        }
-        .preview .inner {
-            display: inline-block;
-            width: 100%;
-            text-align: center;
-            background: #f5f5f5;
-            -webkit-border-radius: 3px 3px 0 0;
-            -moz-border-radius: 3px 3px 0 0;
-            border-radius: 3px 3px 0 0;
-        }
-        .preview .inner  {
-            line-height: 85px;
-            font-size: 40px;
-            color: #333;
-        }
-        .label {
-            display: inline-block;
-            width: 100%;
-            box-sizing: border-box;
-            padding: 5px;
-            font-size: 10px;
-            font-family: Monaco, monospace;
-            color: #666;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            background: #ddd;
-            -webkit-border-radius: 0 0 3px 3px;
-            -moz-border-radius: 0 0 3px 3px;
-            border-radius: 0 0 3px 3px;
-            color: #666;
-        }
-    </style>
+<h1>inject-icons</h1>
+<p>Click to copy icon name...</p>
 
+<div class="previews">
 
-    <h1>inject-icons</h1>
-
-
-        <div class="preview">
+        <div class="preview" data-value="youtube">
             <span class="inner">
                 <span class="icon icon-youtube"></span>
             </span>
-            <br>
-            <span class='label'>youtube</span>
+            <span class='preview-label'>youtube</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="work">
             <span class="inner">
                 <span class="icon icon-work"></span>
             </span>
-            <br>
-            <span class='label'>work</span>
+            <span class='preview-label'>work</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="votes">
             <span class="inner">
                 <span class="icon icon-votes"></span>
             </span>
-            <br>
-            <span class='label'>votes</span>
+            <span class='preview-label'>votes</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="volume_on">
             <span class="inner">
                 <span class="icon icon-volume_on"></span>
             </span>
-            <br>
-            <span class='label'>volume_on</span>
+            <span class='preview-label'>volume_on</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="volume_off">
             <span class="inner">
                 <span class="icon icon-volume_off"></span>
             </span>
-            <br>
-            <span class='label'>volume_off</span>
+            <span class='preview-label'>volume_off</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="view-dashboard">
             <span class="inner">
                 <span class="icon icon-view-dashboard"></span>
             </span>
-            <br>
-            <span class='label'>view-dashboard</span>
+            <span class='preview-label'>view-dashboard</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="unfold-more-horizontal">
             <span class="inner">
                 <span class="icon icon-unfold-more-horizontal"></span>
             </span>
-            <br>
-            <span class='label'>unfold-more-horizontal</span>
+            <span class='preview-label'>unfold-more-horizontal</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="undo">
             <span class="inner">
                 <span class="icon icon-undo"></span>
             </span>
-            <br>
-            <span class='label'>undo</span>
+            <span class='preview-label'>undo</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="translate">
             <span class="inner">
                 <span class="icon icon-translate"></span>
             </span>
-            <br>
-            <span class='label'>translate</span>
+            <span class='preview-label'>translate</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="translate-generate">
             <span class="inner">
                 <span class="icon icon-translate-generate"></span>
             </span>
-            <br>
-            <span class='label'>translate-generate</span>
+            <span class='preview-label'>translate-generate</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="toolbox">
             <span class="inner">
                 <span class="icon icon-toolbox"></span>
             </span>
-            <br>
-            <span class='label'>toolbox</span>
+            <span class='preview-label'>toolbox</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="tone">
             <span class="inner">
                 <span class="icon icon-tone"></span>
             </span>
-            <br>
-            <span class='label'>tone</span>
+            <span class='preview-label'>tone</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="timeline">
             <span class="inner">
                 <span class="icon icon-timeline"></span>
             </span>
-            <br>
-            <span class='label'>timeline</span>
+            <span class='preview-label'>timeline</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="time">
             <span class="inner">
                 <span class="icon icon-time"></span>
             </span>
-            <br>
-            <span class='label'>time</span>
+            <span class='preview-label'>time</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="thumb-up">
             <span class="inner">
                 <span class="icon icon-thumb-up"></span>
             </span>
-            <br>
-            <span class='label'>thumb-up</span>
+            <span class='preview-label'>thumb-up</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="thumb-down">
             <span class="inner">
                 <span class="icon icon-thumb-down"></span>
             </span>
-            <br>
-            <span class='label'>thumb-down</span>
+            <span class='preview-label'>thumb-down</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="text">
             <span class="inner">
                 <span class="icon icon-text"></span>
             </span>
-            <br>
-            <span class='label'>text</span>
+            <span class='preview-label'>text</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="text-input">
+            <span class="inner">
+                <span class="icon icon-text-input"></span>
+            </span>
+            <span class='preview-label'>text-input</span>
+        </div>
+
+
+        <div class="preview" data-value="tag">
             <span class="inner">
                 <span class="icon icon-tag"></span>
             </span>
-            <br>
-            <span class='label'>tag</span>
+            <span class='preview-label'>tag</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="table">
             <span class="inner">
                 <span class="icon icon-table"></span>
             </span>
-            <br>
-            <span class='label'>table</span>
+            <span class='preview-label'>table</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="tab">
             <span class="inner">
                 <span class="icon icon-tab"></span>
             </span>
-            <br>
-            <span class='label'>tab</span>
+            <span class='preview-label'>tab</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="summary">
+            <span class="inner">
+                <span class="icon icon-summary"></span>
+            </span>
+            <span class='preview-label'>summary</span>
+        </div>
+
+
+        <div class="preview" data-value="summarize">
             <span class="inner">
                 <span class="icon icon-summarize"></span>
             </span>
-            <br>
-            <span class='label'>summarize</span>
+            <span class='preview-label'>summarize</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="star">
             <span class="inner">
                 <span class="icon icon-star"></span>
             </span>
-            <br>
-            <span class='label'>star</span>
+            <span class='preview-label'>star</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="star-outline">
             <span class="inner">
                 <span class="icon icon-star-outline"></span>
             </span>
-            <br>
-            <span class='label'>star-outline</span>
+            <span class='preview-label'>star-outline</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="spellcheck">
             <span class="inner">
                 <span class="icon icon-spellcheck"></span>
             </span>
-            <br>
-            <span class='label'>spellcheck</span>
+            <span class='preview-label'>spellcheck</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="sort-descending">
             <span class="inner">
                 <span class="icon icon-sort-descending"></span>
             </span>
-            <br>
-            <span class='label'>sort-descending</span>
+            <span class='preview-label'>sort-descending</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="sort-ascending">
             <span class="inner">
                 <span class="icon icon-sort-ascending"></span>
             </span>
-            <br>
-            <span class='label'>sort-ascending</span>
+            <span class='preview-label'>sort-ascending</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="shorter-text">
             <span class="inner">
                 <span class="icon icon-shorter-text"></span>
             </span>
-            <br>
-            <span class='label'>shorter-text</span>
+            <span class='preview-label'>shorter-text</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="service-saml">
             <span class="inner">
                 <span class="icon icon-service-saml"></span>
             </span>
-            <br>
-            <span class='label'>service-saml</span>
+            <span class='preview-label'>service-saml</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="send_circle">
             <span class="inner">
                 <span class="icon icon-send_circle"></span>
             </span>
-            <br>
-            <span class='label'>send_circle</span>
+            <span class='preview-label'>send_circle</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="send">
             <span class="inner">
                 <span class="icon icon-send"></span>
             </span>
-            <br>
-            <span class='label'>send</span>
+            <span class='preview-label'>send</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="school">
             <span class="inner">
                 <span class="icon icon-school"></span>
             </span>
-            <br>
-            <span class='label'>school</span>
+            <span class='preview-label'>school</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="restore">
             <span class="inner">
                 <span class="icon icon-restore"></span>
             </span>
-            <br>
-            <span class='label'>restore</span>
+            <span class='preview-label'>restore</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="redo">
             <span class="inner">
                 <span class="icon icon-redo"></span>
             </span>
-            <br>
-            <span class='label'>redo</span>
+            <span class='preview-label'>redo</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="rating">
             <span class="inner">
                 <span class="icon icon-rating"></span>
             </span>
-            <br>
-            <span class='label'>rating</span>
+            <span class='preview-label'>rating</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="radiobox-marked">
             <span class="inner">
                 <span class="icon icon-radiobox-marked"></span>
             </span>
-            <br>
-            <span class='label'>radiobox-marked</span>
+            <span class='preview-label'>radiobox-marked</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="questionnaire">
             <span class="inner">
                 <span class="icon icon-questionnaire"></span>
             </span>
-            <br>
-            <span class='label'>questionnaire</span>
+            <span class='preview-label'>questionnaire</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="point">
             <span class="inner">
                 <span class="icon icon-point"></span>
             </span>
-            <br>
-            <span class='label'>point</span>
+            <span class='preview-label'>point</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="plus">
             <span class="inner">
                 <span class="icon icon-plus"></span>
             </span>
-            <br>
-            <span class='label'>plus</span>
+            <span class='preview-label'>plus</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="plus-circle">
             <span class="inner">
                 <span class="icon icon-plus-circle"></span>
             </span>
-            <br>
-            <span class='label'>plus-circle</span>
+            <span class='preview-label'>plus-circle</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="play">
             <span class="inner">
                 <span class="icon icon-play"></span>
             </span>
-            <br>
-            <span class='label'>play</span>
+            <span class='preview-label'>play</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="play-circle">
             <span class="inner">
                 <span class="icon icon-play-circle"></span>
             </span>
-            <br>
-            <span class='label'>play-circle</span>
+            <span class='preview-label'>play-circle</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="pin">
             <span class="inner">
                 <span class="icon icon-pin"></span>
             </span>
-            <br>
-            <span class='label'>pin</span>
+            <span class='preview-label'>pin</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="phone">
+            <span class="inner">
+                <span class="icon icon-phone"></span>
+            </span>
+            <span class='preview-label'>phone</span>
+        </div>
+
+
+        <div class="preview" data-value="pencil">
             <span class="inner">
                 <span class="icon icon-pencil"></span>
             </span>
-            <br>
-            <span class='label'>pencil</span>
+            <span class='preview-label'>pencil</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="pencil-off">
             <span class="inner">
                 <span class="icon icon-pencil-off"></span>
             </span>
-            <br>
-            <span class='label'>pencil-off</span>
+            <span class='preview-label'>pencil-off</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="pause">
             <span class="inner">
                 <span class="icon icon-pause"></span>
             </span>
-            <br>
-            <span class='label'>pause</span>
+            <span class='preview-label'>pause</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="paste">
             <span class="inner">
                 <span class="icon icon-paste"></span>
             </span>
-            <br>
-            <span class='label'>paste</span>
+            <span class='preview-label'>paste</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="org">
             <span class="inner">
                 <span class="icon icon-org"></span>
             </span>
-            <br>
-            <span class='label'>org</span>
+            <span class='preview-label'>org</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="objective">
+            <span class="inner">
+                <span class="icon icon-objective"></span>
+            </span>
+            <span class='preview-label'>objective</span>
+        </div>
+
+
+        <div class="preview" data-value="numbers">
+            <span class="inner">
+                <span class="icon icon-numbers"></span>
+            </span>
+            <span class='preview-label'>numbers</span>
+        </div>
+
+
+        <div class="preview" data-value="notifications">
             <span class="inner">
                 <span class="icon icon-notifications"></span>
             </span>
-            <br>
-            <span class='label'>notifications</span>
+            <span class='preview-label'>notifications</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="notifications-paused">
             <span class="inner">
                 <span class="icon icon-notifications-paused"></span>
             </span>
-            <br>
-            <span class='label'>notifications-paused</span>
+            <span class='preview-label'>notifications-paused</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="notifications-off">
             <span class="inner">
                 <span class="icon icon-notifications-off"></span>
             </span>
-            <br>
-            <span class='label'>notifications-off</span>
+            <span class='preview-label'>notifications-off</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="notifications-none">
             <span class="inner">
                 <span class="icon icon-notifications-none"></span>
             </span>
-            <br>
-            <span class='label'>notifications-none</span>
+            <span class='preview-label'>notifications-none</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="notifications-active">
             <span class="inner">
                 <span class="icon icon-notifications-active"></span>
             </span>
-            <br>
-            <span class='label'>notifications-active</span>
+            <span class='preview-label'>notifications-active</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="newspaper">
             <span class="inner">
                 <span class="icon icon-newspaper"></span>
             </span>
-            <br>
-            <span class='label'>newspaper</span>
+            <span class='preview-label'>newspaper</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="minus">
             <span class="inner">
                 <span class="icon icon-minus"></span>
             </span>
-            <br>
-            <span class='label'>minus</span>
+            <span class='preview-label'>minus</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="minus-circle">
             <span class="inner">
                 <span class="icon icon-minus-circle"></span>
             </span>
-            <br>
-            <span class='label'>minus-circle</span>
+            <span class='preview-label'>minus-circle</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="menu">
             <span class="inner">
                 <span class="icon icon-menu"></span>
             </span>
-            <br>
-            <span class='label'>menu</span>
+            <span class='preview-label'>menu</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="menu-down">
             <span class="inner">
                 <span class="icon icon-menu-down"></span>
             </span>
-            <br>
-            <span class='label'>menu-down</span>
+            <span class='preview-label'>menu-down</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="medal">
             <span class="inner">
                 <span class="icon icon-medal"></span>
             </span>
-            <br>
-            <span class='label'>medal</span>
+            <span class='preview-label'>medal</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="markdown">
             <span class="inner">
                 <span class="icon icon-markdown"></span>
             </span>
-            <br>
-            <span class='label'>markdown</span>
+            <span class='preview-label'>markdown</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="magnify">
             <span class="inner">
                 <span class="icon icon-magnify"></span>
             </span>
-            <br>
-            <span class='label'>magnify</span>
+            <span class='preview-label'>magnify</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="longer-text">
             <span class="inner">
                 <span class="icon icon-longer-text"></span>
             </span>
-            <br>
-            <span class='label'>longer-text</span>
+            <span class='preview-label'>longer-text</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="lock">
             <span class="inner">
                 <span class="icon icon-lock"></span>
             </span>
-            <br>
-            <span class='label'>lock</span>
+            <span class='preview-label'>lock</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="location">
             <span class="inner">
                 <span class="icon icon-location"></span>
             </span>
-            <br>
-            <span class='label'>location</span>
+            <span class='preview-label'>location</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="link">
             <span class="inner">
                 <span class="icon icon-link"></span>
             </span>
-            <br>
-            <span class='label'>link</span>
+            <span class='preview-label'>link</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="link-plus">
             <span class="inner">
                 <span class="icon icon-link-plus"></span>
             </span>
-            <br>
-            <span class='label'>link-plus</span>
+            <span class='preview-label'>link-plus</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="link-off">
             <span class="inner">
                 <span class="icon icon-link-off"></span>
             </span>
-            <br>
-            <span class='label'>link-off</span>
+            <span class='preview-label'>link-off</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="lightning-bolt">
             <span class="inner">
                 <span class="icon icon-lightning-bolt"></span>
             </span>
-            <br>
-            <span class='label'>lightning-bolt</span>
+            <span class='preview-label'>lightning-bolt</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="lifebuoy">
             <span class="inner">
                 <span class="icon icon-lifebuoy"></span>
             </span>
-            <br>
-            <span class='label'>lifebuoy</span>
+            <span class='preview-label'>lifebuoy</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="library">
             <span class="inner">
                 <span class="icon icon-library"></span>
             </span>
-            <br>
-            <span class='label'>library</span>
+            <span class='preview-label'>library</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="language">
             <span class="inner">
                 <span class="icon icon-language"></span>
             </span>
-            <br>
-            <span class='label'>language</span>
+            <span class='preview-label'>language</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="label">
             <span class="inner">
                 <span class="icon icon-label"></span>
             </span>
-            <br>
-            <span class='label'>label</span>
+            <span class='preview-label'>label</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="intelligence">
             <span class="inner">
                 <span class="icon icon-intelligence"></span>
             </span>
-            <br>
-            <span class='label'>intelligence</span>
+            <span class='preview-label'>intelligence</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="information">
             <span class="inner">
                 <span class="icon icon-information"></span>
             </span>
-            <br>
-            <span class='label'>information</span>
+            <span class='preview-label'>information</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="information-outline">
             <span class="inner">
                 <span class="icon icon-information-outline"></span>
             </span>
-            <br>
-            <span class='label'>information-outline</span>
+            <span class='preview-label'>information-outline</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="improve-writing">
             <span class="inner">
                 <span class="icon icon-improve-writing"></span>
             </span>
-            <br>
-            <span class='label'>improve-writing</span>
+            <span class='preview-label'>improve-writing</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="image_plus">
             <span class="inner">
                 <span class="icon icon-image_plus"></span>
             </span>
-            <br>
-            <span class='label'>image_plus</span>
+            <span class='preview-label'>image_plus</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="image">
             <span class="inner">
                 <span class="icon icon-image"></span>
             </span>
-            <br>
-            <span class='label'>image</span>
+            <span class='preview-label'>image</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="home">
             <span class="inner">
                 <span class="icon icon-home"></span>
             </span>
-            <br>
-            <span class='label'>home</span>
+            <span class='preview-label'>home</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="help">
             <span class="inner">
                 <span class="icon icon-help"></span>
             </span>
-            <br>
-            <span class='label'>help</span>
+            <span class='preview-label'>help</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="gavel">
             <span class="inner">
                 <span class="icon icon-gavel"></span>
             </span>
-            <br>
-            <span class='label'>gavel</span>
+            <span class='preview-label'>gavel</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="folder">
             <span class="inner">
                 <span class="icon icon-folder"></span>
             </span>
-            <br>
-            <span class='label'>folder</span>
+            <span class='preview-label'>folder</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="filter-variant">
             <span class="inner">
                 <span class="icon icon-filter-variant"></span>
             </span>
-            <br>
-            <span class='label'>filter-variant</span>
+            <span class='preview-label'>filter-variant</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="faq">
             <span class="inner">
                 <span class="icon icon-faq"></span>
             </span>
-            <br>
-            <span class='label'>faq</span>
+            <span class='preview-label'>faq</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="eye">
             <span class="inner">
                 <span class="icon icon-eye"></span>
             </span>
-            <br>
-            <span class='label'>eye</span>
+            <span class='preview-label'>eye</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="eye-off">
             <span class="inner">
                 <span class="icon icon-eye-off"></span>
             </span>
-            <br>
-            <span class='label'>eye-off</span>
+            <span class='preview-label'>eye-off</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="email">
             <span class="inner">
                 <span class="icon icon-email"></span>
             </span>
-            <br>
-            <span class='label'>email</span>
+            <span class='preview-label'>email</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="drag">
             <span class="inner">
                 <span class="icon icon-drag"></span>
             </span>
-            <br>
-            <span class='label'>drag</span>
+            <span class='preview-label'>drag</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="download">
             <span class="inner">
                 <span class="icon icon-download"></span>
             </span>
-            <br>
-            <span class='label'>download</span>
+            <span class='preview-label'>download</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="dots-vertical">
             <span class="inner">
                 <span class="icon icon-dots-vertical"></span>
             </span>
-            <br>
-            <span class='label'>dots-vertical</span>
+            <span class='preview-label'>dots-vertical</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="delete">
             <span class="inner">
                 <span class="icon icon-delete"></span>
             </span>
-            <br>
-            <span class='label'>delete</span>
+            <span class='preview-label'>delete</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="cut">
             <span class="inner">
                 <span class="icon icon-cut"></span>
             </span>
-            <br>
-            <span class='label'>cut</span>
+            <span class='preview-label'>cut</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="copy">
             <span class="inner">
                 <span class="icon icon-copy"></span>
             </span>
-            <br>
-            <span class='label'>copy</span>
+            <span class='preview-label'>copy</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="console">
             <span class="inner">
                 <span class="icon icon-console"></span>
             </span>
-            <br>
-            <span class='label'>console</span>
+            <span class='preview-label'>console</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="comment">
             <span class="inner">
                 <span class="icon icon-comment"></span>
             </span>
-            <br>
-            <span class='label'>comment</span>
+            <span class='preview-label'>comment</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="cog">
             <span class="inner">
                 <span class="icon icon-cog"></span>
             </span>
-            <br>
-            <span class='label'>cog</span>
+            <span class='preview-label'>cog</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="code">
             <span class="inner">
                 <span class="icon icon-code"></span>
             </span>
-            <br>
-            <span class='label'>code</span>
+            <span class='preview-label'>code</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="cloud-download">
             <span class="inner">
                 <span class="icon icon-cloud-download"></span>
             </span>
-            <br>
-            <span class='label'>cloud-download</span>
+            <span class='preview-label'>cloud-download</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="close">
             <span class="inner">
                 <span class="icon icon-close"></span>
             </span>
-            <br>
-            <span class='label'>close</span>
+            <span class='preview-label'>close</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="close-circle">
             <span class="inner">
                 <span class="icon icon-close-circle"></span>
             </span>
-            <br>
-            <span class='label'>close-circle</span>
+            <span class='preview-label'>close-circle</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="clipboard-text">
             <span class="inner">
                 <span class="icon icon-clipboard-text"></span>
             </span>
-            <br>
-            <span class='label'>clipboard-text</span>
+            <span class='preview-label'>clipboard-text</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="chevron-up">
             <span class="inner">
                 <span class="icon icon-chevron-up"></span>
             </span>
-            <br>
-            <span class='label'>chevron-up</span>
+            <span class='preview-label'>chevron-up</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="chevron-right">
             <span class="inner">
                 <span class="icon icon-chevron-right"></span>
             </span>
-            <br>
-            <span class='label'>chevron-right</span>
+            <span class='preview-label'>chevron-right</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="chevron-left">
             <span class="inner">
                 <span class="icon icon-chevron-left"></span>
             </span>
-            <br>
-            <span class='label'>chevron-left</span>
+            <span class='preview-label'>chevron-left</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="chevron-down">
             <span class="inner">
                 <span class="icon icon-chevron-down"></span>
             </span>
-            <br>
-            <span class='label'>chevron-down</span>
+            <span class='preview-label'>chevron-down</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="checklist">
             <span class="inner">
                 <span class="icon icon-checklist"></span>
             </span>
-            <br>
-            <span class='label'>checklist</span>
+            <span class='preview-label'>checklist</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="checkbox-marked">
             <span class="inner">
                 <span class="icon icon-checkbox-marked"></span>
             </span>
-            <br>
-            <span class='label'>checkbox-marked</span>
+            <span class='preview-label'>checkbox-marked</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="check">
             <span class="inner">
                 <span class="icon icon-check"></span>
             </span>
-            <br>
-            <span class='label'>check</span>
+            <span class='preview-label'>check</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="check-circle">
             <span class="inner">
                 <span class="icon icon-check-circle"></span>
             </span>
-            <br>
-            <span class='label'>check-circle</span>
+            <span class='preview-label'>check-circle</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="chart-pie">
             <span class="inner">
                 <span class="icon icon-chart-pie"></span>
             </span>
-            <br>
-            <span class='label'>chart-pie</span>
+            <span class='preview-label'>chart-pie</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="chart-line">
             <span class="inner">
                 <span class="icon icon-chart-line"></span>
             </span>
-            <br>
-            <span class='label'>chart-line</span>
+            <span class='preview-label'>chart-line</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="calendar">
             <span class="inner">
                 <span class="icon icon-calendar"></span>
             </span>
-            <br>
-            <span class='label'>calendar</span>
+            <span class='preview-label'>calendar</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="calendar-blank">
             <span class="inner">
                 <span class="icon icon-calendar-blank"></span>
             </span>
-            <br>
-            <span class='label'>calendar-blank</span>
+            <span class='preview-label'>calendar-blank</span>
         </div>
 
 
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-bullseye-arrow"></span>
-            </span>
-            <br>
-            <span class='label'>bullseye-arrow</span>
-        </div>
-
-
-        <div class="preview">
+        <div class="preview" data-value="bookmark">
             <span class="inner">
                 <span class="icon icon-bookmark"></span>
             </span>
-            <br>
-            <span class='label'>bookmark</span>
+            <span class='preview-label'>bookmark</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="bookmark-outline">
             <span class="inner">
                 <span class="icon icon-bookmark-outline"></span>
             </span>
-            <br>
-            <span class='label'>bookmark-outline</span>
+            <span class='preview-label'>bookmark-outline</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="book-open-variant">
             <span class="inner">
                 <span class="icon icon-book-open-variant"></span>
             </span>
-            <br>
-            <span class='label'>book-open-variant</span>
+            <span class='preview-label'>book-open-variant</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="board">
             <span class="inner">
                 <span class="icon icon-board"></span>
             </span>
-            <br>
-            <span class='label'>board</span>
+            <span class='preview-label'>board</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="attachment_add">
             <span class="inner">
                 <span class="icon icon-attachment_add"></span>
             </span>
-            <br>
-            <span class='label'>attachment_add</span>
+            <span class='preview-label'>attachment_add</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="attachment">
             <span class="inner">
                 <span class="icon icon-attachment"></span>
             </span>
-            <br>
-            <span class='label'>attachment</span>
+            <span class='preview-label'>attachment</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="attachment-generate">
             <span class="inner">
                 <span class="icon icon-attachment-generate"></span>
             </span>
-            <br>
-            <span class='label'>attachment-generate</span>
+            <span class='preview-label'>attachment-generate</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="arrow-top-right">
             <span class="inner">
                 <span class="icon icon-arrow-top-right"></span>
             </span>
-            <br>
-            <span class='label'>arrow-top-right</span>
+            <span class='preview-label'>arrow-top-right</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="arrow-left">
             <span class="inner">
                 <span class="icon icon-arrow-left"></span>
             </span>
-            <br>
-            <span class='label'>arrow-left</span>
+            <span class='preview-label'>arrow-left</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="alert">
             <span class="inner">
                 <span class="icon icon-alert"></span>
             </span>
-            <br>
-            <span class='label'>alert</span>
+            <span class='preview-label'>alert</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="alert-decagram">
             <span class="inner">
                 <span class="icon icon-alert-decagram"></span>
             </span>
-            <br>
-            <span class='label'>alert-decagram</span>
+            <span class='preview-label'>alert-decagram</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="alert-circle">
             <span class="inner">
                 <span class="icon icon-alert-circle"></span>
             </span>
-            <br>
-            <span class='label'>alert-circle</span>
+            <span class='preview-label'>alert-circle</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="account">
             <span class="inner">
                 <span class="icon icon-account"></span>
             </span>
-            <br>
-            <span class='label'>account</span>
+            <span class='preview-label'>account</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="account-supervisor-circle">
             <span class="inner">
                 <span class="icon icon-account-supervisor-circle"></span>
             </span>
-            <br>
-            <span class='label'>account-supervisor-circle</span>
+            <span class='preview-label'>account-supervisor-circle</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="account-plus">
             <span class="inner">
                 <span class="icon icon-account-plus"></span>
             </span>
-            <br>
-            <span class='label'>account-plus</span>
+            <span class='preview-label'>account-plus</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="account-multiple">
             <span class="inner">
                 <span class="icon icon-account-multiple"></span>
             </span>
-            <br>
-            <span class='label'>account-multiple</span>
+            <span class='preview-label'>account-multiple</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="account-group">
             <span class="inner">
                 <span class="icon icon-account-group"></span>
             </span>
-            <br>
-            <span class='label'>account-group</span>
+            <span class='preview-label'>account-group</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="account-circle">
             <span class="inner">
                 <span class="icon icon-account-circle"></span>
             </span>
-            <br>
-            <span class='label'>account-circle</span>
+            <span class='preview-label'>account-circle</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="vertical-plastic">
             <span class="inner">
                 <span class="icon icon-vertical-plastic"></span>
             </span>
-            <br>
-            <span class='label'>vertical-plastic</span>
+            <span class='preview-label'>vertical-plastic</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="vertical-food">
             <span class="inner">
                 <span class="icon icon-vertical-food"></span>
             </span>
-            <br>
-            <span class='label'>vertical-food</span>
+            <span class='preview-label'>vertical-food</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="vertical-dei">
             <span class="inner">
                 <span class="icon icon-vertical-dei"></span>
             </span>
-            <br>
-            <span class='label'>vertical-dei</span>
+            <span class='preview-label'>vertical-dei</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="status-warning">
             <span class="inner">
                 <span class="icon icon-status-warning"></span>
             </span>
-            <br>
-            <span class='label'>status-warning</span>
+            <span class='preview-label'>status-warning</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="status-stop">
             <span class="inner">
                 <span class="icon icon-status-stop"></span>
             </span>
-            <br>
-            <span class='label'>status-stop</span>
+            <span class='preview-label'>status-stop</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="status-iddle">
             <span class="inner">
                 <span class="icon icon-status-iddle"></span>
             </span>
-            <br>
-            <span class='label'>status-iddle</span>
+            <span class='preview-label'>status-iddle</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="status-filled">
             <span class="inner">
                 <span class="icon icon-status-filled"></span>
             </span>
-            <br>
-            <span class='label'>status-filled</span>
+            <span class='preview-label'>status-filled</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="status-dashed">
             <span class="inner">
                 <span class="icon icon-status-dashed"></span>
             </span>
-            <br>
-            <span class='label'>status-dashed</span>
+            <span class='preview-label'>status-dashed</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="status-bordered">
             <span class="inner">
                 <span class="icon icon-status-bordered"></span>
             </span>
-            <br>
-            <span class='label'>status-bordered</span>
+            <span class='preview-label'>status-bordered</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="role-visitor">
             <span class="inner">
                 <span class="icon icon-role-visitor"></span>
             </span>
-            <br>
-            <span class='label'>role-visitor</span>
+            <span class='preview-label'>role-visitor</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="role-participant">
             <span class="inner">
                 <span class="icon icon-role-participant"></span>
             </span>
-            <br>
-            <span class='label'>role-participant</span>
+            <span class='preview-label'>role-participant</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="role-manager">
             <span class="inner">
                 <span class="icon icon-role-manager"></span>
             </span>
-            <br>
-            <span class='label'>role-manager</span>
+            <span class='preview-label'>role-manager</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="role-jury">
             <span class="inner">
                 <span class="icon icon-role-jury"></span>
             </span>
-            <br>
-            <span class='label'>role-jury</span>
+            <span class='preview-label'>role-jury</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="role-expert">
             <span class="inner">
                 <span class="icon icon-role-expert"></span>
             </span>
-            <br>
-            <span class='label'>role-expert</span>
+            <span class='preview-label'>role-expert</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="role-admin">
             <span class="inner">
                 <span class="icon icon-role-admin"></span>
             </span>
-            <br>
-            <span class='label'>role-admin</span>
+            <span class='preview-label'>role-admin</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="plan-native">
             <span class="inner">
                 <span class="icon icon-plan-native"></span>
             </span>
-            <br>
-            <span class='label'>plan-native</span>
+            <span class='preview-label'>plan-native</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="plan-data">
             <span class="inner">
                 <span class="icon icon-plan-data"></span>
             </span>
-            <br>
-            <span class='label'>plan-data</span>
+            <span class='preview-label'>plan-data</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="impact-push">
             <span class="inner">
                 <span class="icon icon-impact-push"></span>
             </span>
-            <br>
-            <span class='label'>impact-push</span>
+            <span class='preview-label'>impact-push</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="impact-not-obvious">
             <span class="inner">
                 <span class="icon icon-impact-not-obvious"></span>
             </span>
-            <br>
-            <span class='label'>impact-not-obvious</span>
+            <span class='preview-label'>impact-not-obvious</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="impact-none">
             <span class="inner">
                 <span class="icon icon-impact-none"></span>
             </span>
-            <br>
-            <span class='label'>impact-none</span>
+            <span class='preview-label'>impact-none</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="impact-native">
             <span class="inner">
                 <span class="icon icon-impact-native"></span>
             </span>
-            <br>
-            <span class='label'>impact-native</span>
+            <span class='preview-label'>impact-native</span>
         </div>
 
 
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-format-underlined"></span>
-            </span>
-            <br>
-            <span class='label'>format-underlined</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-format-title"></span>
-            </span>
-            <br>
-            <span class='label'>format-title</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-format-strikethrough"></span>
-            </span>
-            <br>
-            <span class='label'>format-strikethrough</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-format-size"></span>
-            </span>
-            <br>
-            <span class='label'>format-size</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-format-quote"></span>
-            </span>
-            <br>
-            <span class='label'>format-quote</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-format-list-numbered"></span>
-            </span>
-            <br>
-            <span class='label'>format-list-numbered</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-format-list-bulleted"></span>
-            </span>
-            <br>
-            <span class='label'>format-list-bulleted</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-format-italic"></span>
-            </span>
-            <br>
-            <span class='label'>format-italic</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-format-color-text"></span>
-            </span>
-            <br>
-            <span class='label'>format-color-text</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-format-color-fill"></span>
-            </span>
-            <br>
-            <span class='label'>format-color-fill</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-format-clear"></span>
-            </span>
-            <br>
-            <span class='label'>format-clear</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-format-bold"></span>
-            </span>
-            <br>
-            <span class='label'>format-bold</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-format-align-right"></span>
-            </span>
-            <br>
-            <span class='label'>format-align-right</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-format-align-left"></span>
-            </span>
-            <br>
-            <span class='label'>format-align-left</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-format-align-justify"></span>
-            </span>
-            <br>
-            <span class='label'>format-align-justify</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-format-align-center"></span>
-            </span>
-            <br>
-            <span class='label'>format-align-center</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-file-zip-box"></span>
-            </span>
-            <br>
-            <span class='label'>file-zip-box</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-file-word-box"></span>
-            </span>
-            <br>
-            <span class='label'>file-word-box</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-file-presentation-box"></span>
-            </span>
-            <br>
-            <span class='label'>file-presentation-box</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-file-powerpoint-box"></span>
-            </span>
-            <br>
-            <span class='label'>file-powerpoint-box</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-file-play-box"></span>
-            </span>
-            <br>
-            <span class='label'>file-play-box</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-file-pdf-box"></span>
-            </span>
-            <br>
-            <span class='label'>file-pdf-box</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-file-google-spreadsheet"></span>
-            </span>
-            <br>
-            <span class='label'>file-google-spreadsheet</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-file-excel-box"></span>
-            </span>
-            <br>
-            <span class='label'>file-excel-box</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <span class="icon icon-file-document-box"></span>
-            </span>
-            <br>
-            <span class='label'>file-document-box</span>
-        </div>
-
-
-        <div class="preview">
+        <div class="preview" data-value="ecosystem-student">
             <span class="inner">
                 <span class="icon icon-ecosystem-student"></span>
             </span>
-            <br>
-            <span class='label'>ecosystem-student</span>
+            <span class='preview-label'>ecosystem-student</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="ecosystem-startups">
             <span class="inner">
                 <span class="icon icon-ecosystem-startups"></span>
             </span>
-            <br>
-            <span class='label'>ecosystem-startups</span>
+            <span class='preview-label'>ecosystem-startups</span>
         </div>
 
 
-        <div class="preview">
+        <div class="preview" data-value="ecosystem-corporate">
             <span class="inner">
                 <span class="icon icon-ecosystem-corporate"></span>
             </span>
-            <br>
-            <span class='label'>ecosystem-corporate</span>
+            <span class='preview-label'>ecosystem-corporate</span>
         </div>
+
+
+        <div class="preview" data-value="format-underlined">
+            <span class="inner">
+                <span class="icon icon-format-underlined"></span>
+            </span>
+            <span class='preview-label'>format-underlined</span>
+        </div>
+
+
+        <div class="preview" data-value="format-title">
+            <span class="inner">
+                <span class="icon icon-format-title"></span>
+            </span>
+            <span class='preview-label'>format-title</span>
+        </div>
+
+
+        <div class="preview" data-value="format-strikethrough">
+            <span class="inner">
+                <span class="icon icon-format-strikethrough"></span>
+            </span>
+            <span class='preview-label'>format-strikethrough</span>
+        </div>
+
+
+        <div class="preview" data-value="format-size">
+            <span class="inner">
+                <span class="icon icon-format-size"></span>
+            </span>
+            <span class='preview-label'>format-size</span>
+        </div>
+
+
+        <div class="preview" data-value="format-quote">
+            <span class="inner">
+                <span class="icon icon-format-quote"></span>
+            </span>
+            <span class='preview-label'>format-quote</span>
+        </div>
+
+
+        <div class="preview" data-value="format-list-numbered">
+            <span class="inner">
+                <span class="icon icon-format-list-numbered"></span>
+            </span>
+            <span class='preview-label'>format-list-numbered</span>
+        </div>
+
+
+        <div class="preview" data-value="format-list-bulleted">
+            <span class="inner">
+                <span class="icon icon-format-list-bulleted"></span>
+            </span>
+            <span class='preview-label'>format-list-bulleted</span>
+        </div>
+
+
+        <div class="preview" data-value="format-italic">
+            <span class="inner">
+                <span class="icon icon-format-italic"></span>
+            </span>
+            <span class='preview-label'>format-italic</span>
+        </div>
+
+
+        <div class="preview" data-value="format-color-text">
+            <span class="inner">
+                <span class="icon icon-format-color-text"></span>
+            </span>
+            <span class='preview-label'>format-color-text</span>
+        </div>
+
+
+        <div class="preview" data-value="format-color-fill">
+            <span class="inner">
+                <span class="icon icon-format-color-fill"></span>
+            </span>
+            <span class='preview-label'>format-color-fill</span>
+        </div>
+
+
+        <div class="preview" data-value="format-clear">
+            <span class="inner">
+                <span class="icon icon-format-clear"></span>
+            </span>
+            <span class='preview-label'>format-clear</span>
+        </div>
+
+
+        <div class="preview" data-value="format-bold">
+            <span class="inner">
+                <span class="icon icon-format-bold"></span>
+            </span>
+            <span class='preview-label'>format-bold</span>
+        </div>
+
+
+        <div class="preview" data-value="format-align-right">
+            <span class="inner">
+                <span class="icon icon-format-align-right"></span>
+            </span>
+            <span class='preview-label'>format-align-right</span>
+        </div>
+
+
+        <div class="preview" data-value="format-align-left">
+            <span class="inner">
+                <span class="icon icon-format-align-left"></span>
+            </span>
+            <span class='preview-label'>format-align-left</span>
+        </div>
+
+
+        <div class="preview" data-value="format-align-justify">
+            <span class="inner">
+                <span class="icon icon-format-align-justify"></span>
+            </span>
+            <span class='preview-label'>format-align-justify</span>
+        </div>
+
+
+        <div class="preview" data-value="format-align-center">
+            <span class="inner">
+                <span class="icon icon-format-align-center"></span>
+            </span>
+            <span class='preview-label'>format-align-center</span>
+        </div>
+
+
+        <div class="preview" data-value="file-zip-box">
+            <span class="inner">
+                <span class="icon icon-file-zip-box"></span>
+            </span>
+            <span class='preview-label'>file-zip-box</span>
+        </div>
+
+
+        <div class="preview" data-value="file-word-box">
+            <span class="inner">
+                <span class="icon icon-file-word-box"></span>
+            </span>
+            <span class='preview-label'>file-word-box</span>
+        </div>
+
+
+        <div class="preview" data-value="file-presentation-box">
+            <span class="inner">
+                <span class="icon icon-file-presentation-box"></span>
+            </span>
+            <span class='preview-label'>file-presentation-box</span>
+        </div>
+
+
+        <div class="preview" data-value="file-powerpoint-box">
+            <span class="inner">
+                <span class="icon icon-file-powerpoint-box"></span>
+            </span>
+            <span class='preview-label'>file-powerpoint-box</span>
+        </div>
+
+
+        <div class="preview" data-value="file-play-box">
+            <span class="inner">
+                <span class="icon icon-file-play-box"></span>
+            </span>
+            <span class='preview-label'>file-play-box</span>
+        </div>
+
+
+        <div class="preview" data-value="file-pdf-box">
+            <span class="inner">
+                <span class="icon icon-file-pdf-box"></span>
+            </span>
+            <span class='preview-label'>file-pdf-box</span>
+        </div>
+
+
+        <div class="preview" data-value="file-google-spreadsheet">
+            <span class="inner">
+                <span class="icon icon-file-google-spreadsheet"></span>
+            </span>
+            <span class='preview-label'>file-google-spreadsheet</span>
+        </div>
+
+
+        <div class="preview" data-value="file-excel-box">
+            <span class="inner">
+                <span class="icon icon-file-excel-box"></span>
+            </span>
+            <span class='preview-label'>file-excel-box</span>
+        </div>
+
+
+        <div class="preview" data-value="file-document-box">
+            <span class="inner">
+                <span class="icon icon-file-document-box"></span>
+            </span>
+            <span class='preview-label'>file-document-box</span>
+        </div>
+
+</div>
+
+<script defer>
+    document.addEventListener('DOMContentLoaded', (event) => {
+
+        const previews = document.querySelectorAll('.preview');
+
+        previews.forEach(preview => {
+            preview.addEventListener('click', () => {
+                const value = preview.dataset.value;
+
+                navigator.clipboard.writeText(value)
+                .then(() => {
+                    console.log('Value copied:', value);
+                })
+                .catch(err => {
+                    console.error('Error:', err);
+                });
+            });
+        });
+        
+    });
+</script>
