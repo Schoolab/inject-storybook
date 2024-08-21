@@ -6,7 +6,7 @@ url("../fonts/inject-icons.woff2?b9fd6bebf6c4497c12c77089b2e63dd5") format("woff
 url("../fonts/inject-icons.eot?b9fd6bebf6c4497c12c77089b2e63dd5#iefix") format("embedded-opentype");
 }
 
-span[class^="icon-"]:before, span[class*=" icon-"]:before {
+[class^="icon-"]:before, [class*=" icon-"]:before {
     font-family: inject-icons !important;
     font-style: normal;
     font-weight: normal !important;
