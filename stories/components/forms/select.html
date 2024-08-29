@@ -9,18 +9,19 @@
         data-hint="type"
         aria-describedby="exemple_help"
         class="form-control custom-select"
-        placeholder="Choose an option..."
+        defaultValue=""
     >
-        <option valut="short" selected>Short text</option>
-        <option value="long">Long text</option>
-        <option value="unique_select">Unique choice (select)</option>
-        <option value="unique_radio">Unique choice (radio)</option>
-        <option value="multiple">Multiple choices</option>
-        <option value="checklist">Checklist</option>
-        <option value="resources">Resources</option>
-        <option value="links">Links</option>
-        <option value="rating">Rating</option>
-        <option value="nbs">NPS</option>
+        <option valut="" disabled selected>Choose an option...</option>
+        <option data-icon="icon-text-input" valut="short" >Short text</option>
+        <option data-icon="icon-textarea" value="long">Long text</option>
+        <option data-icon="icon-select" value="unique_select">Unique choice (select)</option>
+        <option data-icon="icon-radiobox-marked" value="unique_radio">Unique choice (radio)</option>
+        <option data-icon="icon-checkbox-marked" value="multiple">Multiple choices</option>
+        <option data-icon="icon-checklist" value="checklist">Checklist</option>
+        <option data-icon="icon-attachment" value="resources">Resources</option>
+        <option data-icon="icon-link" value="links">Links</option>
+        <option data-icon="icon-rating" value="rating">Rating</option>
+        <option data-icon="icon-votes" value="nps">NPS</option>
     </select>
     <div class="invalid-feedback">
         Please choose an option in the select.

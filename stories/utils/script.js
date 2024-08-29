@@ -32,8 +32,8 @@ export const script = () => {
             //     liveSearchPlaceholder: "Search…",
             //     liveSearchNormalize: true,
             //     virtualScroll: "400"
-            // });
-
+            // });       
+            
             $('.form-group select:not(.custom-select-tags):not(.filterSelect)').selectpicker({
                 width: false,
                 noneSelectedText: 'Nothing selected',
@@ -43,7 +43,7 @@ export const script = () => {
                 showTick: true,
                 tickIcon: 'icon-check',
             });
-
+            
             $('select:not(.table-filter):not(.card-filter):not(.dropdown-card):not(.select-with-search):not(.filterSelect):not(.custom-select-tags)').selectpicker({
                 width: '100%',
                 noneSelectedText: 'Nothing selected',
@@ -53,7 +53,7 @@ export const script = () => {
                 showTick: true,
                 tickIcon: 'icon-check',
             });
-    
+            
             $('select.table-filter').selectpicker({
                 width: 'fit',
                 noneSelectedText: 'Nothing selected',
@@ -63,7 +63,7 @@ export const script = () => {
                 showTick: true,
                 tickIcon: 'icon-check',
             });
-    
+            
             $('select.card-filter').selectpicker({
                 width: 'fit',
                 noneSelectedText: 'Nothing selected',
@@ -73,7 +73,7 @@ export const script = () => {
                 showTick: true,
                 tickIcon: 'icon-check',
             });
-    
+            
             $('select.dropdown-card').selectpicker({
                 width: false,
                 noneSelectedText: 'Nothing selected',
@@ -82,7 +82,7 @@ export const script = () => {
                 iconBase: 'icon',
                 showTick: false
             });
-    
+            
             $('select.select-with-search').selectpicker({
                 width: false,
                 noneSelectedText: 'Nothing selected',
@@ -126,27 +126,64 @@ export const script = () => {
                         text: input,
                     };
                 },
-                });
             });
-            
-            // Prevent dropdown to close if not saved
-            $('[data-save-to-close="true"]').on('hide.bs.dropdown', function(e) {
-                if (e.clickEvent) {
-                    e.preventDefault(); 
-                    
-                    var dropdownMenu = $(this).find('.dropdown-menu form');
-                    
-                    dropdownMenu.addClass('shaking'); 
-                    
-                    setTimeout(function() {
-                        dropdownMenu.removeClass('shaking'); 
-                    }, 1000);
-                    
-                    $('#modalHidePrevented').toast('show');
+        });
+        
+        // Prevent dropdown to close if not saved
+        $('[data-save-to-close="true"]').on('hide.bs.dropdown', function(e) {
+            if (e.clickEvent) {
+                e.preventDefault(); 
+                
+                var dropdownMenu = $(this).find('.dropdown-menu form');
+                
+                dropdownMenu.addClass('shaking'); 
+                
+                setTimeout(function() {
+                    dropdownMenu.removeClass('shaking'); 
+                }, 1000);
+                
+                $('#modalHidePrevented').toast('show');
+            }
+        });
+    });
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        CKEDITOR.replace( 'ckeditor', {
+            toolbar: [
+                { 
+                    name: 'basicstyles', 
+                    items: [ 
+                        'Bold',
+                        'Italic',
+                    ]
+                },
+                {
+                    name: 'links',
+                    items: [
+                        'Link',
+                        'Unlink'
+                    ]
+                },
+                {
+                    name: 'paragraph',
+                    items: [
+                        'BulletedList',
+                        'NumberedList',
+                        '-',
+                        'Blockquote'
+                    ]
+                },
+                {
+                    name: 'insert',
+                    items: [
+                        'Image',
+                        'Table'
+                    ]
                 }
-            });
-        })
-    };
+            ]
+        });
+    });
+};
     
     
     
