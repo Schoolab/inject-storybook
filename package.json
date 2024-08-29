@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@schoolab/inject-css": "1.0.92",
-    "@schoolab/inject-icons": "1.5.3",
+    "@schoolab/inject-icons": "1.6.1",
     "jquery": "^3.5.1"
   }
 }

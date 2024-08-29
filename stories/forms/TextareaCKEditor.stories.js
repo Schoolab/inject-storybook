@@ -1,4 +1,4 @@
-import { createForms } from '../layouts/forms/CKEditor.js';
+import { createForms } from '../layouts/forms/TextareaCKEditor.js';
 
 export default {
     title: 'Components/Forms',

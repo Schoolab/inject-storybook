@@ -182,6 +182,12 @@ export const script = () => {
                 }
             ]
         });
+
+        CKEDITOR.on('instanceReady', function( ev ) {
+            ev.editor.on('notificationShow', function( notification ) {
+                notification.cancel();
+            });
+        });
     });
 };
     

@@ -1,4 +1,4 @@
-import createFormsHTML from '../../components/forms/ckeditor.html';
+import createFormsHTML from '../../components/forms/textarea-ckeditor.html';
 
 import { script } from "../../utils/script.js"
 
